@@ -67,7 +67,11 @@ LEAGUES = [
 
 MMT = timezone(timedelta(hours=6, minutes=30))
 SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": "JavisCornerTerminal/2.1"})
+SESSION.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+})
 
 ALERT_MIN_LAMBDA = float(os.getenv("ALERT_MIN_LAMBDA", "10.8"))
 MIN_EDGE_TARGET = 0.04
@@ -168,7 +172,7 @@ class PureCornerModel:
 
 
 # ==========================================
-# 3. PARALLEL GLOBAL DATA FETCHER
+# 3. RESILIENT GLOBAL DATA FETCHER
 # ==========================================
 def safe_float(val):
     try:
@@ -179,7 +183,14 @@ def safe_float(val):
         return None
 
 
-def fetch_json(url, timeout=12):
+def pick_stat(stats_map, *keys):
+    for k in keys:
+        if stats_map.get(k) is not None:
+            return stats_map[k]
+    return None
+
+
+def fetch_json(url, timeout=14):
     try:
         r = SESSION.get(url, timeout=timeout)
         if r.status_code == 200:
@@ -191,45 +202,52 @@ def fetch_json(url, timeout=12):
 
 def fetch_league_boards(lg, now_utc):
     slug = lg["slug"]
+    base = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
     up_range = f"{now_utc.strftime('%Y%m%d')}-{(now_utc + timedelta(days=UPCOMING_DAYS)).strftime('%Y%m%d')}"
     past_start = (now_utc - timedelta(days=lg.get("lookback", 45))).strftime("%Y%m%d")
     past_end = now_utc.strftime("%Y%m%d")
 
-    up_board = fetch_json(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard?dates={up_range}")
-    past_board = fetch_json(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard?dates={past_start}-{past_end}")
-    return lg, up_board, past_board
+    default_board = fetch_json(base)
+    up_board = fetch_json(f"{base}?dates={up_range}")
+    past_board = fetch_json(f"{base}?dates={past_start}-{past_end}")
+    return lg, default_board, up_board, past_board
 
 
 def extract_boxscore_stats(slug, event_id):
     url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/summary?event={event_id}"
     data = fetch_json(url)
     if not data:
-        return False
+        return None
 
     teams_box = data.get("boxscore", {}).get("teams", [])
     if len(teams_box) != 2:
-        return False
+        return None
 
     parsed = {}
     for entry in teams_box:
         tid = str(entry.get("team", {}).get("id", ""))
         stats_map = {}
         for st in entry.get("statistics", []):
-            name = (st.get("name") or "").lower()
-            stats_map[name] = safe_float(st.get("displayValue"))
+            name = (st.get("name") or "").lower().strip()
+            label = (st.get("label") or "").lower().strip()
+            val = safe_float(st.get("displayValue"))
+            if name:
+                stats_map[name] = val
+            if label:
+                stats_map[label] = val
 
-        corners = stats_map.get("woncorners")
+        corners = pick_stat(stats_map, "woncorners", "cornerkicks", "corners", "corner kicks")
         if corners is None:
-            return False
+            return None
 
         parsed[tid] = {
             "corners": corners,
-            "shots_on_target": stats_map.get("shotsontarget") or 4.0,
-            "total_shots": stats_map.get("totalshots") or 12.0,
-            "blocked_shots": stats_map.get("blockedshots"),
-            "crosses": stats_map.get("totalcrosses") or stats_map.get("accuratecrosses"),
-            "touches_in_box": stats_map.get("touchesinoppbox") or stats_map.get("touchesinbox"),
-            "clearances": stats_map.get("clearances"),
+            "shots_on_target": pick_stat(stats_map, "shotsontarget", "shots on target", "shotsongoal") or 4.0,
+            "total_shots": pick_stat(stats_map, "totalshots", "total shots", "shots") or 12.0,
+            "blocked_shots": pick_stat(stats_map, "blockedshots", "blocked shots"),
+            "crosses": pick_stat(stats_map, "totalcrosses", "accuratecrosses", "crosses", "total crosses"),
+            "touches_in_box": pick_stat(stats_map, "touchesinoppbox", "touchesinbox", "touches in opposition box"),
+            "clearances": pick_stat(stats_map, "clearances", "totalclearances"),
         }
 
     tids = list(parsed.keys())
@@ -351,7 +369,8 @@ def main():
     cache_path = "data/event_cache.json"
     notified_path = "data/notified.json"
 
-    cache = load_json_safe(cache_path, {})
+    raw_cache = load_json_safe(cache_path, {})
+    cache = {k: v for k, v in raw_cache.items() if isinstance(v, dict)}
     notified = set(load_json_safe(notified_path, []))
 
     model = PureCornerModel(use_home_adv=True)
@@ -361,15 +380,20 @@ def main():
     seen_upcoming_ids = set()
     active_team_ids = set()
     team_history_events = {}
+    boards_ok = 0
 
-    with ThreadPoolExecutor(max_workers=12) as ex:
+    with ThreadPoolExecutor(max_workers=10) as ex:
         futs = [ex.submit(fetch_league_boards, lg, now_utc) for lg in LEAGUES]
         for fut in as_completed(futs):
-            lg, up_board, past_board = fut.result()
+            lg, default_board, up_board, past_board = fut.result()
             slug = lg["slug"]
+            if default_board or up_board or past_board:
+                boards_ok += 1
 
-            if up_board:
-                for ev in up_board.get("events", []):
+            for board in (default_board, up_board):
+                if not board:
+                    continue
+                for ev in board.get("events", []):
                     ev_id = str(ev.get("id", ""))
                     if not ev_id or ev_id in seen_upcoming_ids:
                         continue
@@ -388,8 +412,10 @@ def main():
                     active_team_ids.update([hid, aid])
                     upcoming_items.append((lg, ev, home_c, away_c, hid, aid))
 
-            if past_board:
-                for ev in past_board.get("events", []):
+            for board in (default_board, past_board):
+                if not board:
+                    continue
+                for ev in board.get("events", []):
                     comp = (ev.get("competitions") or [{}])[0]
                     if not comp.get("status", {}).get("type", {}).get("completed"):
                         continue
@@ -416,14 +442,16 @@ def main():
                 break
 
     if needed_boxscores:
-        with ThreadPoolExecutor(max_workers=12) as ex:
+        with ThreadPoolExecutor(max_workers=10) as ex:
             futs = {
                 ex.submit(extract_boxscore_stats, slug, eid): eid
                 for eid, slug in needed_boxscores.items()
             }
             for fut in as_completed(futs):
                 eid = futs[fut]
-                cache[eid] = fut.result()
+                res = fut.result()
+                if isinstance(res, dict):
+                    cache[eid] = res
 
     team_avgs = compute_team_averages(active_team_ids, team_history_events, cache)
     all_matches = []
@@ -433,9 +461,6 @@ def main():
         ev_id = str(ev["id"])
         h_stats = team_avgs[hid]
         a_stats = team_avgs[aid]
-
-        if h_stats["sample_size"] == 0 and a_stats["sample_size"] == 0:
-            continue
 
         exp_h, exp_a, total_lam, mode = model.get_expected_corners(h_stats, a_stats)
         target = model.suggest_target_line(total_lam)
@@ -469,13 +494,18 @@ def main():
             hot_alerts.append(match_obj)
             notified.add(ev_id)
 
-    all_matches.sort(key=lambda x: x["totalLambda"], reverse=True)
+    all_matches.sort(key=lambda x: (x["homeStats"]["sample_size"] + x["awayStats"]["sample_size"] > 0, x["totalLambda"]), reverse=True)
 
     output = {
         "updatedAtUTC": now_utc.isoformat(),
         "updatedAtMMT": now_utc.astimezone(MMT).strftime("%d %b %Y, %I:%M %p"),
         "leagueCount": len(LEAGUES),
         "matchCount": len(all_matches),
+        "debug": {
+            "boardsOk": boards_ok,
+            "upcomingFound": len(upcoming_items),
+            "cachedGames": len(cache),
+        },
         "matches": all_matches,
     }
 
@@ -491,7 +521,7 @@ def main():
         json.dump(list(notified)[-500:], f)
 
     send_push_alerts(hot_alerts)
-    print(f"Javis Global Scan Complete: {len(all_matches)} matches across {len(LEAGUES)} competitions, {len(hot_alerts)} alerts.")
+    print(f"Javis Scan: boards={boards_ok}/45, matches={len(all_matches)}, cached={len(cache)}, alerts={len(hot_alerts)}")
 
 
 if __name__ == "__main__":
