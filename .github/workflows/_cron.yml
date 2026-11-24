@@ -33,7 +33,7 @@ jobs:
       - name: Save Updated Matches JSON
         run: |
           git config user.name "Javis Bot"
-          git config user.email "javis@users.noreply.github.com"
-          git add matches.json data/
+          git  user.email "javis@users.noreply.github.com"
+          git add matches.json history.json data/ 
           git diff --staged --quiet || git commit -m "Update Javis corner matches"
           git push
