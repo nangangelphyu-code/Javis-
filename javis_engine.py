@@ -55,108 +55,209 @@ SESSION.headers.update({
     "Accept-Language": "en-US,en;q=0.9",
 })
 
-ALERT_MIN_LAMBDA = float(os.getenv("ALERT_MIN_LAMBDA", "10.8"))
-MIN_EDGE_TARGET = 0.04
+ENGINE_VERSION = "4.0-cn-ultra-3L"
+STANDARD_LINE = 9.5
 UPCOMING_DAYS = int(os.getenv("UPCOMING_DAYS", "7"))
-MIN_SAMPLES_REQUIRED = 2
-MAX_SAMPLES_PER_TEAM = 6
+MIN_SAMPLES_REQUIRED = 2   # Strict >= 2g data verification
+L3_WINDOW = 3              # CN Ultra L3 window (last 3 matches)
 NOTI_WINDOW_HOURS = 12.0
+MAX_HISTORY_RECORDS = 1000
 
 
 # ==========================================
-# 2. PURE CORNER MODEL (Full + Lite Fallback)
+# 2. CN ULTRA 3-LAYER SCORING ENGINE (MAX 7.0)
 # ==========================================
-class PureCornerModel:
-    def __init__(self, use_home_adv=True):
-        self.w_avg_corners = 0.25
-        self.w_blocked_shots = 0.22
-        self.w_shots_on_target = 0.12
-        self.w_crosses = 0.08
-        self.w_touches_in_box = 0.03
-        self.w_corners_conceded = 0.50
-        self.w_opp_clearances = 0.09
-        self.use_home_adv = use_home_adv
+def score_cn_ultra_3layer(home_stats, away_stats, home_name, away_name):
+    # --- Layer 1: Momentum (L3 Corner Avg, Max +3) ---
+    h_cr = float(home_stats["l3_corners"])
+    a_cr = float(away_stats["l3_corners"])
+    total_cr = round(h_cr + a_cr, 2)
+    if total_cr > 12.0:
+        l1 = 3.0
+    elif 10.0 <= total_cr <= 12.0:
+        l1 = 2.0
+    elif 8.0 <= total_cr < 10.0:
+        l1 = 1.0
+    else:
+        l1 = 0.0
 
-    def _has_full_stats(self, s):
-        keys = ("blocked_shots", "crosses", "touches_in_box", "opp_clearances")
-        return all(s.get(k) is not None for k in keys)
+    # --- Layer 2: Chaos (SOT + Blocked Exact OR Total Shots Fallback, Max +2) ---
+    has_exact = (
+        home_stats.get("l3_blocked") is not None
+        and away_stats.get("l3_blocked") is not None
+    )
+    if has_exact:
+        l2_mode = "exact"
+        h_ch = round(float(home_stats["l3_sot"]) + float(home_stats["l3_blocked"]), 2)
+        a_ch = round(float(away_stats["l3_sot"]) + float(away_stats["l3_blocked"]), 2)
+        total_ch = round(h_ch + a_ch, 2)
+        if total_ch > 15.0:
+            l2 = 2.0
+        elif 10.0 <= total_ch <= 15.0:
+            l2 = 1.0
+        else:
+            l2 = 0.0
+    else:
+        l2_mode = "fallback"
+        h_ch = round(float(home_stats["l3_total_shots"]), 2)
+        a_ch = round(float(away_stats["l3_total_shots"]), 2)
+        total_ch = round(h_ch + a_ch, 2)
+        if total_ch > 26.0:
+            l2 = 2.0
+        elif 19.0 <= total_ch <= 26.0:
+            l2 = 1.0
+        else:
+            l2 = 0.0
 
-    def calculate_attack_score(self, s, full=True):
-        if full:
-            return (
-                s["avg_corners"] * self.w_avg_corners
-                + s["blocked_shots"] * self.w_blocked_shots
-                + s["shots_on_target"] * self.w_shots_on_target
-                + s["crosses"] * self.w_crosses
-                + s["touches_in_box"] * self.w_touches_in_box
-            )
-        return (
-            s["avg_corners"] * 0.58
-            + s["shots_on_target"] * 0.24
-            + s.get("total_shots", 12.0) * 0.06
-        )
+    # --- Layer 3: Conceded Corners (Individual Sum, Max +2 / Min -1) ---
+    def conceded_pts(val):
+        if val > 5.0:
+            return 1.0
+        if 4.0 <= val <= 5.0:
+            return 0.5
+        return -0.5
 
-    def calculate_defense_score(self, s, full=True):
-        if full:
-            return (
-                s["corners_conceded"] * self.w_corners_conceded
-                + s["opp_clearances"] * self.w_opp_clearances
-            )
-        return (
-            s["corners_conceded"] * 0.66
-            + s.get("shots_conceded", 12.0) * 0.063
-        )
+    h_con = float(home_stats["l3_conceded"])
+    a_con = float(away_stats["l3_conceded"])
+    h_con_pts = conceded_pts(h_con)
+    a_con_pts = conceded_pts(a_con)
+    l3 = round(h_con_pts + a_con_pts, 1)
 
-    def get_expected_corners(self, home_stats, away_stats):
-        is_full = self._has_full_stats(home_stats) and self._has_full_stats(away_stats)
-        att_h = self.calculate_attack_score(home_stats, is_full)
-        def_h = self.calculate_defense_score(home_stats, is_full)
-        att_a = self.calculate_attack_score(away_stats, is_full)
-        def_a = self.calculate_defense_score(away_stats, is_full)
+    # --- Total Score & Verdict Classification ---
+    total_score = round(l1 + l2 + l3, 1)
+    if total_score >= 6.0:
+        tier = "GOLDEN"
+        verdict = "GOLDEN BET"
+    elif total_score >= 4.5:
+        tier = "VALUE"
+        verdict = "VALUE BET"
+    elif total_score >= 3.0:
+        tier = "RISKY"
+        verdict = "RISKY"
+    else:
+        tier = "NO_BET"
+        verdict = "NO BET"
 
-        exp_h = (att_h + def_a) / 2.0
-        exp_a = (att_a + def_h) / 2.0
+    # --- Simple Reference Total (Avg Expected Corners from L1 + L3) ---
+    exp_home = round((h_cr + a_con) / 2.0, 1)
+    exp_away = round((a_cr + h_con) / 2.0, 1)
+    ref_total = round(exp_home + exp_away, 1)
 
-        if self.use_home_adv:
-            exp_h *= 1.05
-            exp_a *= 0.95
-
-        total_lambda = exp_h + exp_a
-        mode = "full" if is_full else "lite"
-        return round(exp_h, 2), round(exp_a, 2), round(total_lambda, 2), mode
-
-    @staticmethod
-    def poisson_probability(lam, k):
-        return ((lam ** k) * math.exp(-lam)) / math.factorial(k)
-
-    def calculate_over_under_prob(self, total_lambda, line):
-        if line % 1 == 0:
-            line_int = int(line)
-            under_prob = sum(self.poisson_probability(total_lambda, k) for k in range(line_int))
-            push_prob = self.poisson_probability(total_lambda, line_int)
-            over_prob = max(0.0, 1.0 - under_prob - push_prob)
-            return over_prob, under_prob, push_prob
-        under_prob = sum(self.poisson_probability(total_lambda, k) for k in range(int(line) + 1))
-        over_prob = max(0.0, 1.0 - under_prob)
-        return over_prob, under_prob, 0.0
-
-    def suggest_target_line(self, total_lambda):
-        best_line = max(7.5, round(total_lambda - 0.5) - 0.5)
-        over_p, under_p, push_p = self.calculate_over_under_prob(total_lambda, best_line)
-        fair_odds = round(1.0 / over_p, 2) if over_p > 0.05 else 9.99
-        min_ev_odds = round(1.0 / max(0.05, over_p - MIN_EDGE_TARGET), 2)
-        return {
-            "line": best_line,
-            "overProb": round(over_p * 100, 1),
-            "underProb": round(under_p * 100, 1),
-            "pushProb": round(push_p * 100, 1),
-            "fairOdds": fair_odds,
-            "minValueOdds": min_ev_odds,
+    # --- Single-Team Corner Dominance Alert ---
+    gap = round(h_cr - a_cr, 2)
+    dominance = None
+    if (h_cr >= 6.5 and a_con >= 5.5) or (gap >= 3.0 and h_cr >= 6.5):
+        dominance = {
+            "side": "HOME",
+            "team": home_name,
+            "teamAvg": h_cr,
+            "oppConceded": a_con,
+            "gap": round(abs(gap), 1),
+            "expTeam": exp_home,
+            "note": (
+                f"{home_name} တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ {h_cr} လုံးအထိ အားသာနေပြီး "
+                f"ပြိုင်ဘက်ကလည်း ပျမ်းမျှ {a_con} လုံး ပြန်ပေးနေရသည်။ Total Over အပြင် "
+                f"Home Team Corner Over / Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+            ),
+        }
+    elif (a_cr >= 6.5 and h_con >= 5.5) or (gap <= -3.0 and a_cr >= 6.5):
+        dominance = {
+            "side": "AWAY",
+            "team": away_name,
+            "teamAvg": a_cr,
+            "oppConceded": h_con,
+            "gap": round(abs(gap), 1),
+            "expTeam": exp_away,
+            "note": (
+                f"{away_name} တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ {a_cr} လုံးအထိ အားသာနေပြီး "
+                f"အိမ်ရှင်ကလည်း ပျမ်းမျှ {h_con} လုံး ပြန်ပေးနေရသည်။ Total Over အပြင် "
+                f"Away Team Corner Over / Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+            ),
         }
 
+    # --- Outlier Spike Detection (Fake Average Warning) ---
+    spike_teams = []
+    if home_stats.get("has_spike"):
+        spike_teams.append(home_name)
+    if away_stats.get("has_spike"):
+        spike_teams.append(away_name)
+    has_spike = len(spike_teams) > 0
+    spike_note = (
+        f"{' နှင့် '.join(spike_teams)} ၏ နောက်ဆုံးပွဲများတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော "
+        f"အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။"
+        if has_spike else None
+    )
+
+    # --- Clear Burmese Analytical Reasoning ---
+    reasons = []
+    if l1 >= 2.0:
+        reasons.append(f"L3 ထောင့်ကန်ဘောပေါင်း {total_cr} လုံးဖြင့် အရှိန်ကောင်းနေသည် (+{l1:g})")
+    elif l1 == 1.0:
+        reasons.append(f"L3 ထောင့်ကန်ဘောပေါင်း {total_cr} လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)")
+    else:
+        reasons.append(f"L3 ထောင့်ကန်ဘောပေါင်း {total_cr} လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)")
+
+    l2_label = "SOT+Blocked" if l2_mode == "exact" else "Total Shots"
+    if l2 == 2.0:
+        reasons.append(f"{l2_label} စုစုပေါင်း {total_ch} ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)")
+    elif l2 == 1.0:
+        reasons.append(f"{l2_label} စုစုပေါင်း {total_ch} ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)")
+    else:
+        reasons.append(f"{l2_label} စုစုပေါင်း {total_ch} ကြိမ်သာရှိ၍ ဂိုးပေါက်ဖိအားနည်းသည် (0)")
+
+    if l3 >= 1.5:
+        reasons.append(f"နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် ({h_con} / {a_con}, +{l3:g})")
+    elif l3 <= 0:
+        tight = []
+        if h_con < 4.0:
+            tight.append(f"{home_name} ({h_con})")
+        if a_con < 4.0:
+            tight.append(f"{away_name} ({a_con})")
+        if tight:
+            reasons.append(f"{' နှင့် '.join(tight)} ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် ({l3:g})")
+        else:
+            reasons.append(f"ခံစစ်ပြန်ပေးရမှု သာမန်အဆင့်သာရှိသည် ({l3:g})")
+    else:
+        reasons.append(f"ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် ({h_con} / {a_con}, +{l3:g})")
+
+    if tier == "GOLDEN":
+        summary_text = f"အလွှာ ၃ ခုလုံး အားကောင်းပြီး {total_score}/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။"
+    elif tier == "VALUE":
+        summary_text = f"စုစုပေါင်း {total_score}/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် Motivation စစ်ဆေးပြီး ကိုက်ညီပါက ဝင်နိုင်သည်။"
+    elif tier == "RISKY":
+        summary_text = f"စုစုပေါင်း {total_score}/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။"
+    else:
+        summary_text = f"စုစုပေါင်း {total_score}/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။"
+
+    return {
+        "score": total_score,
+        "maxScore": 7.0,
+        "tier": tier,
+        "verdict": verdict,
+        "targetLine": STANDARD_LINE,
+        "l1": {"pts": l1, "max": 3.0, "home": h_cr, "away": a_cr, "total": total_cr},
+        "l2": {"pts": l2, "max": 2.0, "mode": l2_mode, "home": h_ch, "away": a_ch, "total": total_ch},
+        "l3": {
+            "pts": l3,
+            "max": 2.0,
+            "home": h_con,
+            "away": a_con,
+            "homePts": h_con_pts,
+            "awayPts": a_con_pts,
+        },
+        "refExpHome": exp_home,
+        "refExpAway": exp_away,
+        "refTotal": ref_total,
+        "dominance": dominance,
+        "hasSpike": has_spike,
+        "spikeNote": spike_note,
+        "summaryText": summary_text,
+        "reasons": reasons,
+    }
+
 
 # ==========================================
-# 3. RESILIENT DATA FETCHER & CONSISTENCY ENGINE
+# 3. RESILIENT ESPN DATA FETCHER & L3 ENGINE
 # ==========================================
 def safe_float(val):
     try:
@@ -225,9 +326,22 @@ def extract_boxscore_stats(slug, event_id):
         return None
 
     header_comp = (data.get("header", {}).get("competitions") or [{}])[0]
-    state = header_comp.get("status", {}).get("type", {}).get("state", "")
+    status_obj = header_comp.get("status", {})
+    status_type = status_obj.get("type", {})
+    state = status_type.get("state", "")
     if state and state != "post":
         return None
+
+    # Detect Extra Time / Penalties (cup matches beyond 90 mins)
+    status_detail = (status_type.get("shortDetail") or status_type.get("detail") or "").upper()
+    period = status_obj.get("period", 2) or 2
+    is_extra_time = (
+        period > 2
+        or "AET" in status_detail
+        or "ET" in status_detail
+        or "PEN" in status_detail
+        or "EXTRA" in status_detail
+    )
 
     teams_box = data.get("boxscore", {}).get("teams", [])
     if len(teams_box) != 2:
@@ -252,12 +366,9 @@ def extract_boxscore_stats(slug, event_id):
 
         parsed[tid] = {
             "corners": corners,
-            "shots_on_target": pick_stat(stats_map, "shotsontarget", "shots on target", "shotsongoal") or 4.0,
-            "total_shots": pick_stat(stats_map, "totalshots", "total shots", "shots") or 12.0,
+            "shots_on_target": pick_stat(stats_map, "shotsontarget", "shots on target", "shotsongoal") or 0.0,
+            "total_shots": pick_stat(stats_map, "totalshots", "total shots", "shots") or 0.0,
             "blocked_shots": pick_stat(stats_map, "blockedshots", "blocked shots"),
-            "crosses": pick_stat(stats_map, "totalcrosses", "accuratecrosses", "crosses", "total crosses"),
-            "touches_in_box": pick_stat(stats_map, "touchesinoppbox", "touchesinbox", "touches in opposition box"),
-            "clearances": pick_stat(stats_map, "clearances", "totalclearances"),
         }
 
     tids = list(parsed.keys())
@@ -265,26 +376,29 @@ def extract_boxscore_stats(slug, event_id):
         t0, t1 = tids[0], tids[1]
         parsed[t0]["corners_conceded"] = parsed[t1]["corners"]
         parsed[t1]["corners_conceded"] = parsed[t0]["corners"]
-        parsed[t0]["shots_conceded"] = parsed[t1]["total_shots"]
-        parsed[t1]["shots_conceded"] = parsed[t0]["total_shots"]
         parsed["_total_corners"] = parsed[t0]["corners"] + parsed[t1]["corners"]
+        parsed["_extra_time"] = is_extra_time
     return parsed
 
 
-def calc_std_dev(vals):
-    if len(vals) < 2:
-        return 0.0
-    mean = sum(vals) / len(vals)
-    var = sum((v - mean) ** 2 for v in vals) / len(vals)
-    return round(math.sqrt(var), 2)
+def detect_spike(seq):
+    if len(seq) < 2:
+        return False
+    spread = max(seq) - min(seq)
+    if spread >= 7:
+        return True
+    if len(seq) >= 3:
+        s = sorted(seq)
+        if s[-1] >= 11 and (s[-1] - s[-2]) >= 5:
+            return True
+    return False
 
 
-def compute_team_averages(team_ids, team_history_events, cache):
-    averages = {}
+def compute_team_l3_stats(team_ids, team_history_events, cache):
+    results = {}
     for tid in team_ids:
         ev_refs = sorted(team_history_events.get(tid, []), key=lambda x: x[0], reverse=True)
         rows = []
-        match_totals = []
         seen_eids = set()
         for _, eid, _ in ev_refs:
             if eid in seen_eids:
@@ -293,51 +407,43 @@ def compute_team_averages(team_ids, team_history_events, cache):
             entry = cache.get(eid)
             if isinstance(entry, dict) and tid in entry:
                 rows.append(entry[tid])
-                if "_total_corners" in entry:
-                    match_totals.append(entry["_total_corners"])
-            if len(rows) >= MAX_SAMPLES_PER_TEAM:
+            if len(rows) >= L3_WINDOW:
                 break
 
         if not rows:
-            averages[tid] = {"sample_size": 0}
+            results[tid] = {"sample_size": 0}
             continue
 
-        def avg_key(k):
-            vals = [r[k] for r in rows if r.get(k) is not None]
-            return round(sum(vals) / len(vals), 2) if vals else None
+        def avg_required(k):
+            vals = [float(r[k]) for r in rows if r.get(k) is not None]
+            return round(sum(vals) / len(vals), 2) if vals else 0.0
 
-        team_corners_seq = [r["corners"] for r in rows]
-        std_team = calc_std_dev(team_corners_seq)
-        std_total = calc_std_dev(match_totals) if len(match_totals) >= 2 else std_team
+        def avg_optional(k):
+            vals = [float(r[k]) for r in rows if r.get(k) is not None]
+            # Require blocked_shots present in ALL L3 rows for exact mode integrity
+            if len(vals) == len(rows):
+                return round(sum(vals) / len(vals), 2)
+            return None
 
-        averages[tid] = {
-            "avg_corners": avg_key("corners") or 5.0,
-            "shots_on_target": avg_key("shots_on_target") or 4.2,
-            "total_shots": avg_key("total_shots") or 12.0,
-            "corners_conceded": avg_key("corners_conceded") or 5.0,
-            "shots_conceded": avg_key("shots_conceded") or 12.0,
-            "blocked_shots": avg_key("blocked_shots"),
-            "crosses": avg_key("crosses"),
-            "touches_in_box": avg_key("touches_in_box"),
-            "opp_clearances": avg_key("clearances"),
+        corners_seq = [int(round(r["corners"])) for r in rows]
+        conceded_seq = [int(round(r.get("corners_conceded", 0))) for r in rows]
+
+        results[tid] = {
             "sample_size": len(rows),
-            "std_dev": std_total,
-            "recent_corners": team_corners_seq[:5],
+            "l3_corners": avg_required("corners"),
+            "l3_conceded": avg_required("corners_conceded"),
+            "l3_sot": avg_required("shots_on_target"),
+            "l3_total_shots": avg_required("total_shots"),
+            "l3_blocked": avg_optional("blocked_shots"),
+            "recent_corners": corners_seq,
+            "recent_conceded": conceded_seq,
+            "has_spike": detect_spike(corners_seq),
         }
-    return averages
-
-
-def classify_stability(h_stats, a_stats):
-    avg_std = (h_stats.get("std_dev", 2.0) + a_stats.get("std_dev", 2.0)) / 2.0
-    if avg_std <= 2.15:
-        return "Stable", round(avg_std, 2)
-    if avg_std <= 2.95:
-        return "Moderate", round(avg_std, 2)
-    return "Volatile", round(avg_std, 2)
+    return results
 
 
 # ==========================================
-# 4. AUTO-RESULT BACKTEST GRADER
+# 4. AUTO-RESULT BACKTEST GRADER (OVER 9.5)
 # ==========================================
 def grade_pending_history(history_list, cache, now_utc):
     to_check = []
@@ -354,7 +460,7 @@ def grade_pending_history(history_list, cache, now_utc):
     if to_check:
         with ThreadPoolExecutor(max_workers=5) as ex:
             futs = {}
-            for item in to_check[:35]:
+            for item in to_check[:40]:
                 eid = item["id"]
                 if eid in cache and isinstance(cache[eid], dict):
                     continue
@@ -384,25 +490,17 @@ def grade_pending_history(history_list, cache, now_utc):
         hid = str(item.get("homeId", ""))
         aid = str(item.get("awayId", ""))
         if hid in box and aid in box:
-            act_h = box[hid]["corners"]
-            act_a = box[aid]["corners"]
-            act_tot = round(act_h + act_a, 1)
-            line = float(item["targetLine"])
-            lam = float(item["totalLambda"])
-
-            if act_tot > line:
-                grade = "HIT"
-            elif act_tot == line:
-                grade = "PUSH"
-            else:
-                grade = "MISS"
+            act_h = int(round(box[hid]["corners"]))
+            act_a = int(round(box[aid]["corners"]))
+            act_tot = act_h + act_a
+            line = float(item.get("targetLine", STANDARD_LINE))
+            grade = "HIT" if act_tot > line else "MISS"
 
             item["actualHomeCorners"] = act_h
             item["actualAwayCorners"] = act_a
             item["actualTotal"] = act_tot
             item["grade"] = grade
-            item["absError"] = round(abs(act_tot - lam), 2)
-            item["biasError"] = round(act_tot - lam, 2)
+            item["isExtraTime"] = bool(box.get("_extra_time", False))
             item["status"] = "GRADED"
             item["gradedAtMMT"] = now_utc.astimezone(MMT).strftime("%d %b, %I:%M %p")
 
@@ -410,110 +508,103 @@ def grade_pending_history(history_list, cache, now_utc):
 
 
 def build_history_summary(history_list):
-    graded = [h for h in history_list if h.get("status") == "GRADED"]
-    hits = sum(1 for h in graded if h.get("grade") == "HIT")
-    misses = sum(1 for h in graded if h.get("grade") == "MISS")
-    pushes = sum(1 for h in graded if h.get("grade") == "PUSH")
-    decided = hits + misses
-    hit_rate = round((hits / decided) * 100, 1) if decided > 0 else 0.0
-    avg_err = round(sum(h["absError"] for h in graded) / len(graded), 2) if graded else 0.0
-    avg_bias = round(sum(h["biasError"] for h in graded) / len(graded), 2) if graded else 0.0
+    graded_all = [h for h in history_list if h.get("status") == "GRADED"]
+    v4_graded = [h for h in graded_all if h.get("engineVersion") == ENGINE_VERSION]
+    active_graded = v4_graded if v4_graded else graded_all
 
-    prime = [h for h in graded if h.get("isPrimeSignal") and h.get("grade") in ("HIT", "MISS")]
-    prime_hits = sum(1 for h in prime if h.get("grade") == "HIT")
-    prime_rate = round((prime_hits / len(prime)) * 100, 1) if prime else 0.0
+    def calc_bucket(items):
+        hits = sum(1 for x in items if x.get("grade") == "HIT")
+        misses = sum(1 for x in items if x.get("grade") == "MISS")
+        tot = hits + misses
+        rate = round((hits / tot) * 100, 1) if tot > 0 else 0.0
+        return {"hits": hits, "misses": misses, "total": tot, "hitRate": rate}
 
-    full_g = [h for h in graded if h.get("modelMode") == "full" and h.get("grade") in ("HIT", "MISS")]
-    lite_g = [h for h in graded if h.get("modelMode") == "lite" and h.get("grade") in ("HIT", "MISS")]
-    full_rate = round((sum(1 for h in full_g if h["grade"] == "HIT") / len(full_g)) * 100, 1) if full_g else 0.0
-    lite_rate = round((sum(1 for h in lite_g if h["grade"] == "HIT") / len(lite_g)) * 100, 1) if lite_g else 0.0
+    picks_items = [h for h in active_graded if h.get("tier") in ("GOLDEN", "VALUE")]
+    tier_stats = {
+        "GOLDEN": calc_bucket([h for h in active_graded if h.get("tier") == "GOLDEN"]),
+        "VALUE": calc_bucket([h for h in active_graded if h.get("tier") == "VALUE"]),
+        "RISKY": calc_bucket([h for h in active_graded if h.get("tier") == "RISKY"]),
+        "NO_BET": calc_bucket([h for h in active_graded if h.get("tier") == "NO_BET"]),
+    }
+
+    exact_stats = calc_bucket([h for h in picks_items if h.get("l2Mode") == "exact"])
+    fallback_stats = calc_bucket([h for h in picks_items if h.get("l2Mode") == "fallback"])
 
     by_league = {}
-    for h in graded:
+    for h in picks_items:
         code = h.get("leagueCode", "OTH")
-        rec = by_league.setdefault(code, {"code": code, "name": h.get("leagueName", code), "hits": 0, "misses": 0, "pushes": 0, "errSum": 0.0, "total": 0})
-        rec["total"] += 1
-        rec["errSum"] += h.get("absError", 0.0)
-        if h["grade"] == "HIT":
+        rec = by_league.setdefault(code, {"code": code, "name": h.get("leagueName", code), "hits": 0, "misses": 0})
+        if h.get("grade") == "HIT":
             rec["hits"] += 1
-        elif h["grade"] == "MISS":
+        elif h.get("grade") == "MISS":
             rec["misses"] += 1
-        else:
-            rec["pushes"] += 1
 
     league_stats = []
     for rec in by_league.values():
-        dec = rec["hits"] + rec["misses"]
+        tot = rec["hits"] + rec["misses"]
         league_stats.append({
             "code": rec["code"],
             "name": rec["name"],
             "hits": rec["hits"],
             "misses": rec["misses"],
-            "pushes": rec["pushes"],
-            "hitRate": round((rec["hits"] / dec) * 100, 1) if dec > 0 else 0.0,
-            "avgError": round(rec["errSum"] / rec["total"], 2) if rec["total"] > 0 else 0.0,
+            "total": tot,
+            "hitRate": round((rec["hits"] / tot) * 100, 1) if tot > 0 else 0.0,
         })
-    league_stats.sort(key=lambda x: (x["hits"] + x["misses"] > 0, x["hitRate"], x["hits"]), reverse=True)
+    league_stats.sort(key=lambda x: (x["total"] > 0, x["hitRate"], x["hits"]), reverse=True)
+
+    overall_picks = calc_bucket(picks_items)
+    overall_all = calc_bucket(active_graded)
 
     return {
-        "totalGraded": len(graded),
-        "pendingCount": sum(1 for h in history_list if h.get("status") == "PENDING"),
-        "hits": hits,
-        "misses": misses,
-        "pushes": pushes,
-        "hitRate": hit_rate,
-        "avgAbsError": avg_err,
-        "avgBias": avg_bias,
-        "primeHits": prime_hits,
-        "primeTotal": len(prime),
-        "primeHitRate": prime_rate,
-        "fullModeHitRate": full_rate,
-        "fullModeCount": len(full_g),
-        "liteModeHitRate": lite_rate,
-        "liteModeCount": len(lite_g),
+        "standardLine": STANDARD_LINE,
+        "totalGraded": len(active_graded),
+        "pendingCount": sum(1 for h in history_list if h.get("status") == "PENDING" and h.get("engineVersion") == ENGINE_VERSION),
+        "picksSummary": overall_picks,
+        "allSummary": overall_all,
+        "byTier": tier_stats,
+        "exactMode": exact_stats,
+        "fallbackMode": fallback_stats,
         "byLeague": league_stats,
     }
 
 
 # ==========================================
-# 5. SMART 12-HOUR KICKOFF PUSH ALERTS
+# 5. OPTIONAL PUSH NOTIFICATIONS (GOLDEN ONLY)
 # ==========================================
-def send_push_alerts(prime_alerts):
-    if not prime_alerts:
+def send_push_alerts(golden_alerts):
+    if not golden_alerts:
         return
-
     ntfy_topic = os.getenv("NTFY_TOPIC", "").strip()
     tg_token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     tg_chat = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+    if not ntfy_topic and not (tg_token and tg_chat):
+        return
 
-    for m in prime_alerts[:12]:
-        title = f"JAVIS PRIME +EV | {m['leagueCode']} (λ {m['totalLambda']})"
+    for m in golden_alerts[:10]:
+        c = m["cn"]
+        title = f"JAVIS GOLDEN ({c['score']}/7) | {m['leagueCode']}"
         body = (
             f"{m['home']} vs {m['away']}\n"
-            f"Competition: {m['leagueName']} ({m['stability']})\n"
-            f"Kickoff (MMT): {m['kickoffMMT']}\n"
-            f"Exp Corners: {m['expHome']} - {m['expAway']} (Total λ: {m['totalLambda']})\n"
-            f"Target: Over {m['target']['line']} ({m['target']['overProb']}%)\n"
-            f"Min Odds for +EV: >= {m['target']['minValueOdds']}\n"
-            f"Stake: 1% - 2% Flat"
+            f"{m['leagueName']} · {m['kickoffMMT']}\n"
+            f"Score: {c['score']}/7.0 (Target: Over {STANDARD_LINE})\n"
+            f"L1: +{c['l1']['pts']:g} ({c['l1']['total']}) | L2: +{c['l2']['pts']:g} ({c['l2']['mode']}) | L3: {c['l3']['pts']:+g}\n"
+            f"Ref Avg Total: {c['refTotal']} corners"
         )
-
         if ntfy_topic:
             try:
                 SESSION.post(
                     f"https://ntfy.sh/{ntfy_topic}",
                     data=body.encode("utf-8"),
-                    headers={"Title": title, "Priority": "high", "Tags": "bar_chart,fire"},
+                    headers={"Title": title, "Priority": "high"},
                     timeout=10,
                 )
             except Exception as e:
                 print("ntfy error:", e)
-
         if tg_token and tg_chat:
             try:
                 SESSION.post(
                     f"https://api.telegram.org/bot{tg_token}/sendMessage",
-                    json={"chat_id": tg_chat, "text": f"⚡ {title}\n\n{body}"},
+                    json={"chat_id": tg_chat, "text": f"{title}\n\n{body}"},
                     timeout=10,
                 )
             except Exception as e:
@@ -546,13 +637,12 @@ def main():
     history_records = raw_history.get("records", []) if isinstance(raw_history, dict) else []
     history_map = {str(r["id"]): r for r in history_records if "id" in r}
 
-    model = PureCornerModel(use_home_adv=True)
     now_utc = datetime.now(timezone.utc)
 
-    # Step 1: Grade any completed matches in history.json first
-    history_summary = grade_pending_history(history_records, cache, now_utc)
+    # Step 1: Grade pending matches in history.json
+    grade_pending_history(history_records, cache, now_utc)
 
-    # Step 2: Fetch all 28 curated competitions
+    # Step 2: Fetch upcoming & recent boards for 28 curated leagues
     upcoming_items = []
     seen_upcoming_ids = set()
     active_team_ids = set()
@@ -603,7 +693,7 @@ def main():
                         if tid:
                             team_history_events.setdefault(tid, []).append((ev_date, ev_id, slug))
 
-    # Step 2b: Backfill team schedules for any active team with < 3 completed events found
+    # Step 2b: Backfill team schedules for any active team with < 3 completed events
     sparse_teams = [tid for tid in active_team_ids if len({e[1] for e in team_history_events.get(tid, [])}) < 3]
     if sparse_teams:
         with ThreadPoolExecutor(max_workers=5) as ex:
@@ -616,7 +706,7 @@ def main():
                 for item in fut.result():
                     team_history_events.setdefault(tid, []).append(item)
 
-    # Step 3: Fetch boxscores for active teams' recent completed games
+    # Step 3: Fetch boxscores for active teams' L3 recent completed matches
     needed_boxscores = {}
     for tid in active_team_ids:
         ev_refs = sorted(team_history_events.get(tid, []), key=lambda x: x[0], reverse=True)
@@ -629,7 +719,7 @@ def main():
             if eid not in cache:
                 needed_boxscores[eid] = slug
             picked += 1
-            if picked >= MAX_SAMPLES_PER_TEAM + 1:
+            if picked >= L3_WINDOW + 2:
                 break
 
     if needed_boxscores:
@@ -644,34 +734,30 @@ def main():
                 if isinstance(res, dict):
                     cache[eid] = res
 
-    # Step 4: Strict >= 2g Data Filter & Chronological Build
-    team_avgs = compute_team_averages(active_team_ids, team_history_events, cache)
+    # Step 4: Strict >= 2g Verification + CN Ultra 3-Layer Scoring
+    team_stats = compute_team_l3_stats(active_team_ids, team_history_events, cache)
     all_matches = []
-    prime_alerts = []
+    golden_alerts = []
     filtered_low_data = 0
 
     for lg, ev, home_c, away_c, hid, aid in upcoming_items:
         ev_id = str(ev["id"])
-        h_stats = team_avgs.get(hid, {"sample_size": 0})
-        a_stats = team_avgs.get(aid, {"sample_size": 0})
+        h_stats = team_stats.get(hid, {"sample_size": 0})
+        a_stats = team_stats.get(aid, {"sample_size": 0})
 
         if h_stats.get("sample_size", 0) < MIN_SAMPLES_REQUIRED or a_stats.get("sample_size", 0) < MIN_SAMPLES_REQUIRED:
             filtered_low_data += 1
             continue
 
-        exp_h, exp_a, total_lam, mode = model.get_expected_corners(h_stats, a_stats)
-        target = model.suggest_target_line(total_lam)
-        stability, avg_std = classify_stability(h_stats, a_stats)
-
         dt_utc = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
         dt_mmt = dt_utc.astimezone(MMT)
         hours_to_ko = (dt_utc - now_utc).total_seconds() / 3600.0
-
         if hours_to_ko < -0.1:
             continue
 
-        is_prime = (total_lam >= ALERT_MIN_LAMBDA) and (stability != "Volatile")
-        signal_tier = "PRIME" if is_prime else ("STRONG" if total_lam >= 10.4 else "STANDARD")
+        home_name = home_c["team"]["displayName"]
+        away_name = away_c["team"]["displayName"]
+        cn = score_cn_ultra_3layer(h_stats, a_stats, home_name, away_name)
 
         match_obj = {
             "id": ev_id,
@@ -681,72 +767,81 @@ def main():
             "leagueGroup": lg["group"],
             "homeId": hid,
             "awayId": aid,
-            "home": home_c["team"]["displayName"],
-            "away": away_c["team"]["displayName"],
+            "home": home_name,
+            "away": away_name,
             "kickoffUTC": ev["date"],
             "kickoffMMT": dt_mmt.strftime("%d %b, %I:%M %p"),
-            "modelMode": mode,
-            "stability": stability,
-            "stdDev": avg_std,
-            "expHome": exp_h,
-            "expAway": exp_a,
-            "totalLambda": total_lam,
-            "target": target,
             "homeStats": h_stats,
             "awayStats": a_stats,
-            "isPrimeSignal": is_prime,
-            "signalTier": signal_tier,
+            "cn": cn,
         }
         all_matches.append(match_obj)
 
+        # Pre-match lock into history.json (only once per match before kickoff)
         if ev_id not in history_map and hours_to_ko > 0:
             rec = {
                 "id": ev_id,
+                "engineVersion": ENGINE_VERSION,
                 "leagueSlug": lg["slug"],
                 "leagueCode": lg["code"],
                 "leagueName": lg["name"],
-                "leagueGroup": lg["group"],
                 "homeId": hid,
                 "awayId": aid,
-                "home": match_obj["home"],
-                "away": match_obj["away"],
+                "home": home_name,
+                "away": away_name,
                 "kickoffUTC": ev["date"],
                 "kickoffMMT": match_obj["kickoffMMT"],
-                "modelMode": mode,
-                "stability": stability,
-                "expHome": exp_h,
-                "expAway": exp_a,
-                "totalLambda": total_lam,
-                "targetLine": target["line"],
-                "overProb": target["overProb"],
-                "fairOdds": target["fairOdds"],
-                "minValueOdds": target["minValueOdds"],
-                "isPrimeSignal": is_prime,
+                "score": cn["score"],
+                "tier": cn["tier"],
+                "verdict": cn["verdict"],
+                "l2Mode": cn["l2"]["mode"],
+                "refTotal": cn["refTotal"],
+                "targetLine": STANDARD_LINE,
+                "dominanceSide": cn["dominance"]["side"] if cn["dominance"] else None,
+                "hasSpike": cn["hasSpike"],
                 "status": "PENDING",
                 "actualHomeCorners": None,
                 "actualAwayCorners": None,
                 "actualTotal": None,
                 "grade": None,
-                "absError": None,
-                "biasError": None,
+                "isExtraTime": False,
             }
             history_records.append(rec)
             history_map[ev_id] = rec
+        elif ev_id in history_map and history_map[ev_id].get("status") == "PENDING" and history_map[ev_id].get("engineVersion") != ENGINE_VERSION and hours_to_ko > 0:
+            # Upgrade pre-match pending v3.0 record to v4.0 CN Ultra before kickoff
+            rec = history_map[ev_id]
+            rec.update({
+                "engineVersion": ENGINE_VERSION,
+                "score": cn["score"],
+                "tier": cn["tier"],
+                "verdict": cn["verdict"],
+                "l2Mode": cn["l2"]["mode"],
+                "refTotal": cn["refTotal"],
+                "targetLine": STANDARD_LINE,
+                "dominanceSide": cn["dominance"]["side"] if cn["dominance"] else None,
+                "hasSpike": cn["hasSpike"],
+            })
 
-        if is_prime and ev_id not in notified and (0 < hours_to_ko <= NOTI_WINDOW_HOURS):
-            prime_alerts.append(match_obj)
+        if cn["tier"] == "GOLDEN" and ev_id not in notified and (0 < hours_to_ko <= NOTI_WINDOW_HOURS):
+            golden_alerts.append(match_obj)
             notified.add(ev_id)
 
+    # Sort strictly chronologically (closest kickoff first)
     all_matches.sort(key=lambda x: x["kickoffUTC"])
 
     history_summary = build_history_summary(history_records)
     history_records.sort(key=lambda x: x.get("kickoffUTC", ""), reverse=True)
 
     output = {
+        "engineVersion": ENGINE_VERSION,
+        "standardLine": STANDARD_LINE,
         "updatedAtUTC": now_utc.isoformat(),
         "updatedAtMMT": now_utc.astimezone(MMT).strftime("%d %b %Y, %I:%M %p"),
         "leagueCount": len(LEAGUES),
         "matchCount": len(all_matches),
+        "goldenCount": sum(1 for m in all_matches if m["cn"]["tier"] == "GOLDEN"),
+        "valueCount": sum(1 for m in all_matches if m["cn"]["tier"] == "VALUE"),
         "filteredLowDataCount": filtered_low_data,
         "matches": all_matches,
     }
@@ -756,21 +851,26 @@ def main():
 
     with open(history_path, "w", encoding="utf-8") as f:
         json.dump({
+            "engineVersion": ENGINE_VERSION,
             "updatedAtMMT": output["updatedAtMMT"],
             "summary": history_summary,
-            "records": history_records[:400],
+            "records": history_records[:MAX_HISTORY_RECORDS],
         }, f, ensure_ascii=False, indent=2)
 
-    if len(cache) > 2500:
-        cache = dict(list(cache.items())[-2500:])
+    if len(cache) > 3000:
+        cache = dict(list(cache.items())[-3000:])
     with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f)
 
     with open(notified_path, "w", encoding="utf-8") as f:
-        json.dump(list(notified)[-500:], f)
+        json.dump(list(notified)[-600:], f)
 
-    send_push_alerts(prime_alerts)
-    print(f"Javis v3.0 Scan: verified={len(all_matches)}, filtered_low_data={filtered_low_data}, graded={history_summary['totalGraded']}, alerts={len(prime_alerts)}")
+    send_push_alerts(golden_alerts)
+    print(
+        f"Javis v4.0 CN Ultra Scan: verified={len(all_matches)}, "
+        f"golden={output['goldenCount']}, value={output['valueCount']}, "
+        f"filtered_low_data={filtered_low_data}, graded={history_summary['totalGraded']}"
+    )
 
 
 if __name__ == "__main__":
