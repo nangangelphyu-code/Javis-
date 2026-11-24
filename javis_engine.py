@@ -1,5 +1,5 @@
+```python
 import json
-import math
 import os
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -47,19 +47,31 @@ LEAGUES = [
     {"slug": "den.1", "code": "DEN", "name": "Danish Superliga", "group": "global", "lookback": 70},
 ]
 
+SLUG_TO_CODE = {lg["slug"]: lg["code"] for lg in LEAGUES}
+SLUG_TO_CODE.update({
+    "esp.copa_del_rey": "CDR",
+    "ita.coppa_italia": "CIT",
+    "ger.dfb_pokal": "DFB",
+    "fra.coupe_de_france": "CDF",
+    "fifa.worldq.uefa": "WCQ",
+    "fifa.worldq.conmebol": "WCQ",
+    "uefa.nations": "UNL",
+})
+
 MMT = timezone(timedelta(hours=6, minutes=30))
 SESSION = requests.Session()
 SESSION.headers.update({
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
     "Accept-Language": "en-US,en;q=0.9",
 })
 
-ENGINE_VERSION = "4.0-cn-ultra-3L"
+ENGINE_VERSION = "4.1-cn-ultra-3L"
+CACHE_SCHEMA_VERSION = "4.1"
 STANDARD_LINE = 9.5
 UPCOMING_DAYS = int(os.getenv("UPCOMING_DAYS", "7"))
 MIN_SAMPLES_REQUIRED = 2   # Strict >= 2g data verification
-L3_WINDOW = 3              # CN Ultra L3 window (last 3 matches)
+L3_WINDOW = 3              # Exact Last 3 completed matches
 NOTI_WINDOW_HOURS = 12.0
 MAX_HISTORY_RECORDS = 1000
 
@@ -138,7 +150,7 @@ def score_cn_ultra_3layer(home_stats, away_stats, home_name, away_name):
         tier = "NO_BET"
         verdict = "NO BET"
 
-    # --- Simple Reference Total (Avg Expected Corners from L1 + L3) ---
+    # --- Reference Expected Corners ---
     exp_home = round((h_cr + a_con) / 2.0, 1)
     exp_away = round((a_cr + h_con) / 2.0, 1)
     ref_total = round(exp_home + exp_away, 1)
@@ -156,8 +168,8 @@ def score_cn_ultra_3layer(home_stats, away_stats, home_name, away_name):
             "expTeam": exp_home,
             "note": (
                 f"{home_name} တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ {h_cr} လုံးအထိ အားသာနေပြီး "
-                f"ပြိုင်ဘက်ကလည်း ပျမ်းမျှ {a_con} လုံး ပြန်ပေးနေရသည်။ Total Over အပြင် "
-                f"Home Team Corner Over / Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+                f"ပြိုင်ဘက်ကလည်း ပျမ်းမျှ {a_con} လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် "
+                f"Home Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
             ),
         }
     elif (a_cr >= 6.5 and h_con >= 5.5) or (gap <= -3.0 and a_cr >= 6.5):
@@ -170,12 +182,12 @@ def score_cn_ultra_3layer(home_stats, away_stats, home_name, away_name):
             "expTeam": exp_away,
             "note": (
                 f"{away_name} တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ {a_cr} လုံးအထိ အားသာနေပြီး "
-                f"အိမ်ရှင်ကလည်း ပျမ်းမျှ {h_con} လုံး ပြန်ပေးနေရသည်။ Total Over အပြင် "
-                f"Away Team Corner Over / Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+                f"အိမ်ရှင်ကလည်း ပျမ်းမျှ {h_con} လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် "
+                f"Away Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
             ),
         }
 
-    # --- Outlier Spike Detection (Fake Average Warning) ---
+    # --- Outlier Spike Detection ---
     spike_teams = []
     if home_stats.get("has_spike"):
         spike_teams.append(home_name)
@@ -183,7 +195,7 @@ def score_cn_ultra_3layer(home_stats, away_stats, home_name, away_name):
         spike_teams.append(away_name)
     has_spike = len(spike_teams) > 0
     spike_note = (
-        f"{' နှင့် '.join(spike_teams)} ၏ နောက်ဆုံးပွဲများတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော "
+        f"{' နှင့် '.join(spike_teams)} ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော "
         f"အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။"
         if has_spike else None
     )
@@ -223,7 +235,7 @@ def score_cn_ultra_3layer(home_stats, away_stats, home_name, away_name):
     if tier == "GOLDEN":
         summary_text = f"အလွှာ ၃ ခုလုံး အားကောင်းပြီး {total_score}/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။"
     elif tier == "VALUE":
-        summary_text = f"စုစုပေါင်း {total_score}/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် Motivation စစ်ဆေးပြီး ကိုက်ညီပါက ဝင်နိုင်သည်။"
+        summary_text = f"စုစုပေါင်း {total_score}/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။"
     elif tier == "RISKY":
         summary_text = f"စုစုပေါင်း {total_score}/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။"
     else:
@@ -257,8 +269,17 @@ def score_cn_ultra_3layer(home_stats, away_stats, home_name, away_name):
 
 
 # ==========================================
-# 3. RESILIENT ESPN DATA FETCHER & L3 ENGINE
+# 3. MULTI-COMPETITION ESPN DATA FETCHER & AUDIT TRAIL
 # ==========================================
+def parse_utc(iso_str):
+    if not iso_str:
+        return None
+    try:
+        return datetime.fromisoformat(str(iso_str).replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
 def safe_float(val):
     try:
         if val is None or val == "" or val == "--":
@@ -303,36 +324,66 @@ def fetch_league_boards(lg, now_utc):
     return lg, default_board, up_board, past_board
 
 
-def fetch_team_schedule_events(slug, tid):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/teams/{tid}/schedule"
-    data = fetch_json(url)
-    found = []
-    if not data:
-        return found
-    for ev in data.get("events", []):
-        comp = (ev.get("competitions") or [{}])[0]
-        if comp.get("status", {}).get("type", {}).get("completed"):
+def fetch_team_all_completed_events(tid, candidate_slugs, now_utc):
+    """
+    Fetch ALL completed matches for a team across ALL competitions (League + Cups + UEFA),
+    so domestic cup or European matches between league games are NEVER skipped.
+    """
+    found = {}
+    urls = [f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/teams/{tid}/schedule"]
+    for slug in candidate_slugs:
+        if slug:
+            urls.append(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/teams/{tid}/schedule")
+
+    for url in urls:
+        data = fetch_json(url)
+        if not data:
+            continue
+        default_slug = data.get("league", {}).get("slug", "")
+        for ev in data.get("events", []):
+            comp = (ev.get("competitions") or [{}])[0]
+            st_type = comp.get("status", {}).get("type", {})
+            if not st_type.get("completed") and st_type.get("state") != "post":
+                continue
             eid = str(ev.get("id", ""))
-            edate = ev.get("date", "")
-            if eid:
-                found.append((edate, eid, slug))
-    return found
+            edate = comp.get("date") or ev.get("date") or ""
+            dt = parse_utc(edate)
+            if not eid or not dt or dt >= now_utc:
+                continue
+            ev_slug = (ev.get("league") or {}).get("slug") or default_slug or (candidate_slugs[0] if candidate_slugs else "all")
+            found[eid] = (dt.timestamp(), edate, eid, ev_slug)
+        if len(found) >= 8 and "soccer/all/" in url:
+            break
+
+    return list(found.values())
 
 
 def extract_boxscore_stats(slug, event_id):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/summary?event={event_id}"
-    data = fetch_json(url)
+    """
+    Fetch boxscore using universal 'all' endpoint first (with league slug fallback)
+    and store complete match metadata for Last 3 Games Audit Trail verification.
+    """
+    urls = [f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event={event_id}"]
+    if slug and slug != "all":
+        urls.append(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/summary?event={event_id}")
+
+    data = None
+    for u in urls:
+        cand = fetch_json(u)
+        if cand and cand.get("boxscore", {}).get("teams"):
+            data = cand
+            break
     if not data:
         return None
 
-    header_comp = (data.get("header", {}).get("competitions") or [{}])[0]
+    header = data.get("header", {})
+    header_comp = (header.get("competitions") or [{}])[0]
     status_obj = header_comp.get("status", {})
     status_type = status_obj.get("type", {})
     state = status_type.get("state", "")
     if state and state != "post":
         return None
 
-    # Detect Extra Time / Penalties (cup matches beyond 90 mins)
     status_detail = (status_type.get("shortDetail") or status_type.get("detail") or "").upper()
     period = status_obj.get("period", 2) or 2
     is_extra_time = (
@@ -343,13 +394,37 @@ def extract_boxscore_stats(slug, event_id):
         or "EXTRA" in status_detail
     )
 
+    ev_date_iso = header_comp.get("date") or ""
+    dt_utc = parse_utc(ev_date_iso)
+    date_short = dt_utc.astimezone(MMT).strftime("%d %b") if dt_utc else "--"
+
+    league_obj = header.get("league") or {}
+    ev_slug = league_obj.get("slug") or slug or ""
+    league_code = (
+        SLUG_TO_CODE.get(ev_slug)
+        or (league_obj.get("abbreviation") or "").upper()
+        or "CMP"
+    )
+
+    comp_meta = {}
+    for c in header_comp.get("competitors", []):
+        ctid = str(c.get("team", {}).get("id", ""))
+        if ctid:
+            comp_meta[ctid] = {
+                "name": c.get("team", {}).get("shortDisplayName") or c.get("team", {}).get("displayName") or "Team",
+                "venue": "H" if c.get("homeAway") == "home" else "A",
+            }
+
     teams_box = data.get("boxscore", {}).get("teams", [])
     if len(teams_box) != 2:
         return None
 
     parsed = {}
     for entry in teams_box:
-        tid = str(entry.get("team", {}).get("id", ""))
+        t_obj = entry.get("team", {})
+        tid = str(t_obj.get("id", ""))
+        if not tid:
+            continue
         stats_map = {}
         for st in entry.get("statistics", []):
             name = (st.get("name") or "").lower().strip()
@@ -364,20 +439,34 @@ def extract_boxscore_stats(slug, event_id):
         if corners is None:
             return None
 
+        meta = comp_meta.get(tid, {})
         parsed[tid] = {
+            "name": meta.get("name") or t_obj.get("shortDisplayName") or t_obj.get("displayName") or "Team",
+            "venue": meta.get("venue") or "-",
             "corners": corners,
             "shots_on_target": pick_stat(stats_map, "shotsontarget", "shots on target", "shotsongoal") or 0.0,
             "total_shots": pick_stat(stats_map, "totalshots", "total shots", "shots") or 0.0,
             "blocked_shots": pick_stat(stats_map, "blockedshots", "blocked shots"),
         }
 
-    tids = list(parsed.keys())
-    if len(tids) == 2:
-        t0, t1 = tids[0], tids[1]
-        parsed[t0]["corners_conceded"] = parsed[t1]["corners"]
-        parsed[t1]["corners_conceded"] = parsed[t0]["corners"]
-        parsed["_total_corners"] = parsed[t0]["corners"] + parsed[t1]["corners"]
-        parsed["_extra_time"] = is_extra_time
+    tids = [k for k in parsed.keys() if not k.startswith("_")]
+    if len(tids) != 2:
+        return None
+
+    t0, t1 = tids[0], tids[1]
+    parsed[t0]["corners_conceded"] = parsed[t1]["corners"]
+    parsed[t0]["opponent"] = parsed[t1]["name"]
+    parsed[t1]["corners_conceded"] = parsed[t0]["corners"]
+    parsed[t1]["opponent"] = parsed[t0]["name"]
+
+    parsed["_meta"] = {
+        "v": CACHE_SCHEMA_VERSION,
+        "date": date_short,
+        "dateISO": ev_date_iso,
+        "leagueCode": league_code,
+        "totalCorners": parsed[t0]["corners"] + parsed[t1]["corners"],
+        "extraTime": is_extra_time,
+    }
     return parsed
 
 
@@ -397,16 +486,35 @@ def detect_spike(seq):
 def compute_team_l3_stats(team_ids, team_history_events, cache):
     results = {}
     for tid in team_ids:
+        # Strictly sort completed matches by actual kickoff timestamp descending (most recent first)
         ev_refs = sorted(team_history_events.get(tid, []), key=lambda x: x[0], reverse=True)
         rows = []
+        audit_matches = []
         seen_eids = set()
-        for _, eid, _ in ev_refs:
+
+        for _, edate, eid, _ in ev_refs:
             if eid in seen_eids:
                 continue
             seen_eids.add(eid)
             entry = cache.get(eid)
-            if isinstance(entry, dict) and tid in entry:
-                rows.append(entry[tid])
+            if isinstance(entry, dict) and tid in entry and isinstance(entry.get("_meta"), dict):
+                t_row = entry[tid]
+                meta = entry["_meta"]
+                rows.append(t_row)
+
+                dt_fb = parse_utc(edate)
+                d_str = meta.get("date") if meta.get("date") and meta.get("date") != "--" else (
+                    dt_fb.astimezone(MMT).strftime("%d %b") if dt_fb else "--"
+                )
+                audit_matches.append({
+                    "id": eid,
+                    "date": d_str,
+                    "leagueCode": meta.get("leagueCode", "CMP"),
+                    "venue": t_row.get("venue", "-"),
+                    "opponent": t_row.get("opponent", "Opponent"),
+                    "cornersWon": int(round(t_row["corners"])),
+                    "cornersConceded": int(round(t_row.get("corners_conceded", 0))),
+                })
             if len(rows) >= L3_WINDOW:
                 break
 
@@ -420,7 +528,6 @@ def compute_team_l3_stats(team_ids, team_history_events, cache):
 
         def avg_optional(k):
             vals = [float(r[k]) for r in rows if r.get(k) is not None]
-            # Require blocked_shots present in ALL L3 rows for exact mode integrity
             if len(vals) == len(rows):
                 return round(sum(vals) / len(vals), 2)
             return None
@@ -437,6 +544,7 @@ def compute_team_l3_stats(team_ids, team_history_events, cache):
             "l3_blocked": avg_optional("blocked_shots"),
             "recent_corners": corners_seq,
             "recent_conceded": conceded_seq,
+            "recent_matches": audit_matches,
             "has_spike": detect_spike(corners_seq),
         }
     return results
@@ -450,23 +558,19 @@ def grade_pending_history(history_list, cache, now_utc):
     for item in history_list:
         if item.get("status") != "PENDING":
             continue
-        try:
-            ko = datetime.fromisoformat(item["kickoffUTC"].replace("Z", "+00:00"))
-            if (now_utc - ko).total_seconds() >= 2.2 * 3600:
-                to_check.append(item)
-        except Exception:
-            continue
+        ko = parse_utc(item.get("kickoffUTC", ""))
+        if ko and (now_utc - ko).total_seconds() >= 2.2 * 3600:
+            to_check.append(item)
 
     if to_check:
         with ThreadPoolExecutor(max_workers=5) as ex:
             futs = {}
             for item in to_check[:40]:
                 eid = item["id"]
-                if eid in cache and isinstance(cache[eid], dict):
+                if eid in cache and isinstance(cache[eid], dict) and cache[eid].get("_meta", {}).get("v") == CACHE_SCHEMA_VERSION:
                     continue
                 slug = item.get("leagueSlug", "")
-                if slug:
-                    futs[ex.submit(extract_boxscore_stats, slug, eid)] = eid
+                futs[ex.submit(extract_boxscore_stats, slug, eid)] = eid
             for fut in as_completed(futs):
                 eid = futs[fut]
                 res = fut.result()
@@ -479,12 +583,9 @@ def grade_pending_history(history_list, cache, now_utc):
         eid = item["id"]
         box = cache.get(eid)
         if not isinstance(box, dict):
-            try:
-                ko = datetime.fromisoformat(item["kickoffUTC"].replace("Z", "+00:00"))
-                if (now_utc - ko).days >= 5:
-                    item["status"] = "VOID"
-            except Exception:
-                pass
+            ko = parse_utc(item.get("kickoffUTC", ""))
+            if ko and (now_utc - ko).days >= 5:
+                item["status"] = "VOID"
             continue
 
         hid = str(item.get("homeId", ""))
@@ -500,7 +601,7 @@ def grade_pending_history(history_list, cache, now_utc):
             item["actualAwayCorners"] = act_a
             item["actualTotal"] = act_tot
             item["grade"] = grade
-            item["isExtraTime"] = bool(box.get("_extra_time", False))
+            item["isExtraTime"] = bool(box.get("_meta", {}).get("extraTime", False))
             item["status"] = "GRADED"
             item["gradedAtMMT"] = now_utc.astimezone(MMT).strftime("%d %b, %I:%M %p")
 
@@ -509,8 +610,8 @@ def grade_pending_history(history_list, cache, now_utc):
 
 def build_history_summary(history_list):
     graded_all = [h for h in history_list if h.get("status") == "GRADED"]
-    v4_graded = [h for h in graded_all if h.get("engineVersion") == ENGINE_VERSION]
-    active_graded = v4_graded if v4_graded else graded_all
+    cn_graded = [h for h in graded_all if str(h.get("engineVersion", "")).startswith("4.")]
+    active_graded = cn_graded if cn_graded else graded_all
 
     def calc_bucket(items):
         hits = sum(1 for x in items if x.get("grade") == "HIT")
@@ -552,15 +653,12 @@ def build_history_summary(history_list):
         })
     league_stats.sort(key=lambda x: (x["total"] > 0, x["hitRate"], x["hits"]), reverse=True)
 
-    overall_picks = calc_bucket(picks_items)
-    overall_all = calc_bucket(active_graded)
-
     return {
         "standardLine": STANDARD_LINE,
         "totalGraded": len(active_graded),
-        "pendingCount": sum(1 for h in history_list if h.get("status") == "PENDING" and h.get("engineVersion") == ENGINE_VERSION),
-        "picksSummary": overall_picks,
-        "allSummary": overall_all,
+        "pendingCount": sum(1 for h in history_list if h.get("status") == "PENDING"),
+        "picksSummary": calc_bucket(picks_items),
+        "allSummary": calc_bucket(active_graded),
         "byTier": tier_stats,
         "exactMode": exact_stats,
         "fallbackMode": fallback_stats,
@@ -631,7 +729,11 @@ def main():
     history_path = "history.json"
 
     raw_cache = load_json_safe(cache_path, {})
-    cache = {k: v for k, v in raw_cache.items() if isinstance(v, dict)}
+    # Keep only v4.1 schema entries so any old unverified cache entries are cleanly rebuilt
+    cache = {
+        k: v for k, v in raw_cache.items()
+        if isinstance(v, dict) and v.get("_meta", {}).get("v") == CACHE_SCHEMA_VERSION
+    }
     notified = set(load_json_safe(notified_path, []))
     raw_history = load_json_safe(history_path, {"records": []})
     history_records = raw_history.get("records", []) if isinstance(raw_history, dict) else []
@@ -642,11 +744,11 @@ def main():
     # Step 1: Grade pending matches in history.json
     grade_pending_history(history_records, cache, now_utc)
 
-    # Step 2: Fetch upcoming & recent boards for 28 curated leagues
+    # Step 2: Fetch upcoming & recent boards for all 28 leagues
     upcoming_items = []
     seen_upcoming_ids = set()
     active_team_ids = set()
-    team_primary_slug = {}
+    team_slugs = {}
     team_history_events = {}
 
     with ThreadPoolExecutor(max_workers=6) as ex:
@@ -675,8 +777,8 @@ def main():
                     aid = str(away_c["team"]["id"])
                     seen_upcoming_ids.add(ev_id)
                     active_team_ids.update([hid, aid])
-                    team_primary_slug.setdefault(hid, slug)
-                    team_primary_slug.setdefault(aid, slug)
+                    team_slugs.setdefault(hid, []).append(slug)
+                    team_slugs.setdefault(aid, []).append(slug)
                     upcoming_items.append((lg, ev, home_c, away_c, hid, aid))
 
             for board in (default_board, past_board):
@@ -684,46 +786,50 @@ def main():
                     continue
                 for ev in board.get("events", []):
                     comp = (ev.get("competitions") or [{}])[0]
-                    if not comp.get("status", {}).get("type", {}).get("completed"):
+                    st_type = comp.get("status", {}).get("type", {})
+                    if not st_type.get("completed") and st_type.get("state") != "post":
                         continue
                     ev_id = str(ev.get("id", ""))
-                    ev_date = ev.get("date", "")
+                    ev_date = comp.get("date") or ev.get("date") or ""
+                    dt = parse_utc(ev_date)
+                    if not ev_id or not dt or dt >= now_utc:
+                        continue
                     for c in comp.get("competitors", []):
                         tid = str(c.get("team", {}).get("id", ""))
                         if tid:
-                            team_history_events.setdefault(tid, []).append((ev_date, ev_id, slug))
+                            team_history_events.setdefault(tid, []).append((dt.timestamp(), ev_date, ev_id, slug))
 
-    # Step 2b: Backfill team schedules for any active team with < 3 completed events
-    sparse_teams = [tid for tid in active_team_ids if len({e[1] for e in team_history_events.get(tid, [])}) < 3]
-    if sparse_teams:
-        with ThreadPoolExecutor(max_workers=5) as ex:
+    # Step 2b: Fetch full multi-competition schedules for every active team
+    # Ensures cup / European games played between league matches are ALWAYS included
+    if active_team_ids:
+        with ThreadPoolExecutor(max_workers=6) as ex:
             futs = {
-                ex.submit(fetch_team_schedule_events, team_primary_slug[tid], tid): tid
-                for tid in sparse_teams[:60] if tid in team_primary_slug
+                ex.submit(fetch_team_all_completed_events, tid, list(dict.fromkeys(team_slugs.get(tid, []))), now_utc): tid
+                for tid in active_team_ids
             }
             for fut in as_completed(futs):
                 tid = futs[fut]
                 for item in fut.result():
                     team_history_events.setdefault(tid, []).append(item)
 
-    # Step 3: Fetch boxscores for active teams' L3 recent completed matches
+    # Step 3: Fetch boxscores for active teams' true Last 3 completed matches (with buffer up to 6)
     needed_boxscores = {}
     for tid in active_team_ids:
         ev_refs = sorted(team_history_events.get(tid, []), key=lambda x: x[0], reverse=True)
         picked = 0
         seen_eids = set()
-        for _, eid, slug in ev_refs:
+        for _, _, eid, slug in ev_refs:
             if eid in seen_eids:
                 continue
             seen_eids.add(eid)
             if eid not in cache:
                 needed_boxscores[eid] = slug
             picked += 1
-            if picked >= L3_WINDOW + 2:
+            if picked >= L3_WINDOW + 3:
                 break
 
     if needed_boxscores:
-        with ThreadPoolExecutor(max_workers=5) as ex:
+        with ThreadPoolExecutor(max_workers=6) as ex:
             futs = {
                 ex.submit(extract_boxscore_stats, slug, eid): eid
                 for eid, slug in needed_boxscores.items()
@@ -749,7 +855,9 @@ def main():
             filtered_low_data += 1
             continue
 
-        dt_utc = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
+        dt_utc = parse_utc(ev.get("date", ""))
+        if not dt_utc:
+            continue
         dt_mmt = dt_utc.astimezone(MMT)
         hours_to_ko = (dt_utc - now_utc).total_seconds() / 3600.0
         if hours_to_ko < -0.1:
@@ -777,7 +885,7 @@ def main():
         }
         all_matches.append(match_obj)
 
-        # Pre-match lock into history.json (only once per match before kickoff)
+        # Pre-match lock into history.json
         if ev_id not in history_map and hours_to_ko > 0:
             rec = {
                 "id": ev_id,
@@ -808,8 +916,12 @@ def main():
             }
             history_records.append(rec)
             history_map[ev_id] = rec
-        elif ev_id in history_map and history_map[ev_id].get("status") == "PENDING" and history_map[ev_id].get("engineVersion") != ENGINE_VERSION and hours_to_ko > 0:
-            # Upgrade pre-match pending v3.0 record to v4.0 CN Ultra before kickoff
+        elif (
+            ev_id in history_map
+            and history_map[ev_id].get("status") == "PENDING"
+            and history_map[ev_id].get("engineVersion") != ENGINE_VERSION
+            and hours_to_ko > 0
+        ):
             rec = history_map[ev_id]
             rec.update({
                 "engineVersion": ENGINE_VERSION,
@@ -827,7 +939,6 @@ def main():
             golden_alerts.append(match_obj)
             notified.add(ev_id)
 
-    # Sort strictly chronologically (closest kickoff first)
     all_matches.sort(key=lambda x: x["kickoffUTC"])
 
     history_summary = build_history_summary(history_records)
@@ -867,7 +978,7 @@ def main():
 
     send_push_alerts(golden_alerts)
     print(
-        f"Javis v4.0 CN Ultra Scan: verified={len(all_matches)}, "
+        f"Javis v4.1 CN Ultra Scan: verified={len(all_matches)}, "
         f"golden={output['goldenCount']}, value={output['valueCount']}, "
         f"filtered_low_data={filtered_low_data}, graded={history_summary['totalGraded']}"
     )
@@ -875,3 +986,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
