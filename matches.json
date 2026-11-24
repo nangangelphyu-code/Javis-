@@ -1,6 +1,6 @@
 {
-  "updatedAtUTC": "2026-11-24T10:42:07.367354+00:00",
-  "updatedAtMMT": "24 Nov 2026, 05:12 PM",
+  "updatedAtUTC": "2026-11-24T10:55:59.353599+00:00",
+  "updatedAtMMT": "24 Nov 2026, 05:25 PM",
   "leagueCount": 45,
   "matchCount": 109,
   "debug": {
@@ -545,123 +545,6 @@
       "away": "Real Betis",
       "kickoffUTC": "2026-11-24T20:00Z",
       "kickoffMMT": "25 Nov, 02:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401933793",
-      "leagueCode": "FAC",
-      "leagueName": "FA Cup",
-      "leagueGroup": "cups",
-      "home": "Wimborne Town",
-      "away": "Bradford City",
-      "kickoffUTC": "2026-12-04T19:30Z",
-      "kickoffMMT": "05 Dec, 02:00 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401933818",
-      "leagueCode": "FAC",
-      "leagueName": "FA Cup",
-      "leagueGroup": "cups",
-      "home": "Wycombe Wanderers",
-      "away": "Milton Keynes Dons",
-      "kickoffUTC": "2026-12-04T19:45Z",
-      "kickoffMMT": "05 Dec, 02:15 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401912519",
-      "leagueCode": "LIB",
-      "leagueName": "Copa Libertadores",
-      "leagueGroup": "cups",
-      "home": "Palmeiras",
-      "away": "Estudiantes de La Plata",
-      "kickoffUTC": "2026-11-28T20:00Z",
-      "kickoffMMT": "29 Nov, 02:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -1286,45 +1169,6 @@
       "away": "FC Twente",
       "kickoffUTC": "2026-11-26T20:00Z",
       "kickoffMMT": "27 Nov, 02:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401932185",
-      "leagueCode": "EFL",
-      "leagueName": "Carabao Cup",
-      "leagueGroup": "cups",
-      "home": "Manchester City",
-      "away": "Bradford City",
-      "kickoffUTC": "2026-12-15T20:00Z",
-      "kickoffMMT": "16 Dec, 02:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -2019,6 +1863,123 @@
       "isHotSignal": false
     },
     {
+      "id": "401933793",
+      "leagueCode": "FAC",
+      "leagueName": "FA Cup",
+      "leagueGroup": "cups",
+      "home": "Wimborne Town",
+      "away": "Bradford City",
+      "kickoffUTC": "2026-12-04T19:30Z",
+      "kickoffMMT": "05 Dec, 02:00 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401933818",
+      "leagueCode": "FAC",
+      "leagueName": "FA Cup",
+      "leagueGroup": "cups",
+      "home": "Wycombe Wanderers",
+      "away": "Milton Keynes Dons",
+      "kickoffUTC": "2026-12-04T19:45Z",
+      "kickoffMMT": "05 Dec, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401912519",
+      "leagueCode": "LIB",
+      "leagueName": "Copa Libertadores",
+      "leagueGroup": "cups",
+      "home": "Palmeiras",
+      "away": "Estudiantes de La Plata",
+      "kickoffUTC": "2026-11-28T20:00Z",
+      "kickoffMMT": "29 Nov, 02:30 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
       "id": "401879225",
       "leagueCode": "EPL",
       "leagueName": "Premier League",
@@ -2058,92 +2019,14 @@
       "isHotSignal": false
     },
     {
-      "id": "401933738",
-      "leagueCode": "MLS",
-      "leagueName": "USA MLS",
-      "leagueGroup": "high5",
-      "home": "San Jose Earthquakes",
-      "away": "Houston Dynamo FC",
-      "kickoffUTC": "2026-11-25T03:00Z",
-      "kickoffMMT": "25 Nov, 09:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401882791",
-      "leagueCode": "LAL",
-      "leagueName": "La Liga",
-      "leagueGroup": "top5",
-      "home": "Levante",
-      "away": "Racing Santander",
-      "kickoffUTC": "2026-11-27T20:00Z",
-      "kickoffMMT": "28 Nov, 02:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401912257",
-      "leagueCode": "CIT",
-      "leagueName": "Coppa Italia",
+      "id": "401932185",
+      "leagueCode": "EFL",
+      "leagueName": "Carabao Cup",
       "leagueGroup": "cups",
-      "home": "Internazionale",
-      "away": "Genoa",
-      "kickoffUTC": "2026-12-01T20:00Z",
-      "kickoffMMT": "02 Dec, 02:30 AM",
+      "home": "Manchester City",
+      "away": "Bradford City",
+      "kickoffUTC": "2026-12-15T20:00Z",
+      "kickoffMMT": "16 Dec, 02:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -2175,14 +2058,14 @@
       "isHotSignal": false
     },
     {
-      "id": "401884720",
-      "leagueCode": "BUN",
-      "leagueName": "Bundesliga",
-      "leagueGroup": "top5",
-      "home": "Werder Bremen",
-      "away": "Borussia Mönchengladbach",
-      "kickoffUTC": "2026-11-27T19:30Z",
-      "kickoffMMT": "28 Nov, 02:00 AM",
+      "id": "401932919",
+      "leagueCode": "DFB",
+      "leagueName": "DFB-Pokal",
+      "leagueGroup": "cups",
+      "home": "Holstein Kiel",
+      "away": "FC Cologne",
+      "kickoffUTC": "2026-12-01T17:00Z",
+      "kickoffMMT": "01 Dec, 11:30 PM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -2214,12 +2097,129 @@
       "isHotSignal": false
     },
     {
-      "id": "401875004",
-      "leagueCode": "SER",
-      "leagueName": "Serie A",
+      "id": "401932937",
+      "leagueCode": "DFB",
+      "leagueName": "DFB-Pokal",
+      "leagueGroup": "cups",
+      "home": "VfB Stuttgart",
+      "away": "Dynamo Dresden",
+      "kickoffUTC": "2026-12-01T17:00Z",
+      "kickoffMMT": "01 Dec, 11:30 PM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401932935",
+      "leagueCode": "DFB",
+      "leagueName": "DFB-Pokal",
+      "leagueGroup": "cups",
+      "home": "Bayern Munich",
+      "away": "Hertha Berlin",
+      "kickoffUTC": "2026-12-01T19:45Z",
+      "kickoffMMT": "02 Dec, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401932915",
+      "leagueCode": "DFB",
+      "leagueName": "DFB-Pokal",
+      "leagueGroup": "cups",
+      "home": "Borussia Mönchengladbach",
+      "away": "SV Darmstadt 98",
+      "kickoffUTC": "2026-12-01T19:45Z",
+      "kickoffMMT": "02 Dec, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401876392",
+      "leagueCode": "LG1",
+      "leagueName": "Ligue 1",
       "leagueGroup": "top5",
-      "home": "Venezia",
-      "away": "Bologna",
+      "home": "Brest",
+      "away": "Paris FC",
       "kickoffUTC": "2026-11-27T19:45Z",
       "kickoffMMT": "28 Nov, 02:15 AM",
       "modelMode": "lite",
@@ -2370,12 +2370,51 @@
       "isHotSignal": false
     },
     {
-      "id": "401876392",
-      "leagueCode": "LG1",
-      "leagueName": "Ligue 1",
+      "id": "401912257",
+      "leagueCode": "CIT",
+      "leagueName": "Coppa Italia",
+      "leagueGroup": "cups",
+      "home": "Internazionale",
+      "away": "Genoa",
+      "kickoffUTC": "2026-12-01T20:00Z",
+      "kickoffMMT": "02 Dec, 02:30 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401875004",
+      "leagueCode": "SER",
+      "leagueName": "Serie A",
       "leagueGroup": "top5",
-      "home": "Brest",
-      "away": "Paris FC",
+      "home": "Venezia",
+      "away": "Bologna",
       "kickoffUTC": "2026-11-27T19:45Z",
       "kickoffMMT": "28 Nov, 02:15 AM",
       "modelMode": "lite",
@@ -2409,14 +2448,14 @@
       "isHotSignal": false
     },
     {
-      "id": "401892133",
-      "leagueCode": "ALE",
-      "leagueName": "A-League",
-      "leagueGroup": "high5",
-      "home": "Macarthur FC",
-      "away": "Melbourne City FC",
-      "kickoffUTC": "2026-11-27T08:40Z",
-      "kickoffMMT": "27 Nov, 03:10 PM",
+      "id": "401884720",
+      "leagueCode": "BUN",
+      "leagueName": "Bundesliga",
+      "leagueGroup": "top5",
+      "home": "Werder Bremen",
+      "away": "Borussia Mönchengladbach",
+      "kickoffUTC": "2026-11-27T19:30Z",
+      "kickoffMMT": "28 Nov, 02:00 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -2448,443 +2487,14 @@
       "isHotSignal": false
     },
     {
-      "id": "401875536",
-      "leagueCode": "ERE",
-      "leagueName": "Eredivisie",
-      "leagueGroup": "high5",
-      "home": "FC Groningen",
-      "away": "Willem II",
-      "kickoffUTC": "2026-11-27T19:00Z",
-      "kickoffMMT": "28 Nov, 01:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401888241",
-      "leagueCode": "TUR",
-      "leagueName": "Turkish Super Lig",
-      "leagueGroup": "global",
-      "home": "Alanyaspor",
-      "away": "Konyaspor",
-      "kickoffUTC": "2026-11-27T17:00Z",
-      "kickoffMMT": "27 Nov, 11:30 PM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401888240",
-      "leagueCode": "TUR",
-      "leagueName": "Turkish Super Lig",
-      "leagueGroup": "global",
-      "home": "Caykur Rizespor",
-      "away": "Kasimpasa",
-      "kickoffUTC": "2026-11-27T17:00Z",
-      "kickoffMMT": "27 Nov, 11:30 PM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401878348",
-      "leagueCode": "SCO",
-      "leagueName": "Scottish Premiership",
-      "leagueGroup": "global",
-      "home": "Hibernian",
-      "away": "Dundee",
-      "kickoffUTC": "2026-11-24T19:45Z",
-      "kickoffMMT": "25 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401878345",
-      "leagueCode": "SCO",
-      "leagueName": "Scottish Premiership",
-      "leagueGroup": "global",
-      "home": "Rangers",
-      "away": "Aberdeen",
-      "kickoffUTC": "2026-11-24T20:00Z",
-      "kickoffMMT": "25 Nov, 02:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401878930",
-      "leagueCode": "BEL",
-      "leagueName": "Belgian Pro League",
-      "leagueGroup": "global",
-      "home": "OH Leuven",
-      "away": "KV Kortrijk",
-      "kickoffUTC": "2026-11-27T19:45Z",
-      "kickoffMMT": "28 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401885389",
-      "leagueCode": "POR",
-      "leagueName": "Primeira Liga",
-      "leagueGroup": "global",
-      "home": "Maritimo",
-      "away": "C.D. Nacional",
-      "kickoffUTC": "2026-11-27T20:15Z",
-      "kickoffMMT": "28 Nov, 02:45 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401880824",
-      "leagueCode": "EFL1",
-      "leagueName": "England League One",
-      "leagueGroup": "global",
-      "home": "Blackpool",
-      "away": "Leicester City",
-      "kickoffUTC": "2026-11-24T19:45Z",
-      "kickoffMMT": "25 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401880838",
-      "leagueCode": "EFL1",
-      "leagueName": "England League One",
-      "leagueGroup": "global",
-      "home": "Bradford City",
-      "away": "Barnsley",
-      "kickoffUTC": "2026-11-24T19:45Z",
-      "kickoffMMT": "25 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401880823",
-      "leagueCode": "EFL1",
-      "leagueName": "England League One",
-      "leagueGroup": "global",
-      "home": "Bromley",
-      "away": "Wycombe Wanderers",
-      "kickoffUTC": "2026-11-24T19:45Z",
-      "kickoffMMT": "25 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401880829",
-      "leagueCode": "EFL1",
-      "leagueName": "England League One",
-      "leagueGroup": "global",
-      "home": "Stevenage",
-      "away": "Sheffield Wednesday",
-      "kickoffUTC": "2026-11-24T19:45Z",
-      "kickoffMMT": "25 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401912683",
-      "leagueCode": "BRB",
-      "leagueName": "Brazil Serie B",
-      "leagueGroup": "high5",
-      "home": "Vila Nova",
-      "away": "Atlético Goianiense",
-      "kickoffUTC": "2026-11-27T23:00Z",
-      "kickoffMMT": "28 Nov, 05:30 AM",
+      "id": "401882791",
+      "leagueCode": "LAL",
+      "leagueName": "La Liga",
+      "leagueGroup": "top5",
+      "home": "Levante",
+      "away": "Racing Santander",
+      "kickoffUTC": "2026-11-27T20:00Z",
+      "kickoffMMT": "28 Nov, 02:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -3228,14 +2838,14 @@
       "isHotSignal": false
     },
     {
-      "id": "401932919",
-      "leagueCode": "DFB",
-      "leagueName": "DFB-Pokal",
-      "leagueGroup": "cups",
-      "home": "Holstein Kiel",
-      "away": "FC Cologne",
-      "kickoffUTC": "2026-12-01T17:00Z",
-      "kickoffMMT": "01 Dec, 11:30 PM",
+      "id": "401933738",
+      "leagueCode": "MLS",
+      "leagueName": "USA MLS",
+      "leagueGroup": "high5",
+      "home": "San Jose Earthquakes",
+      "away": "Houston Dynamo FC",
+      "kickoffUTC": "2026-11-25T03:00Z",
+      "kickoffMMT": "25 Nov, 09:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -3267,14 +2877,14 @@
       "isHotSignal": false
     },
     {
-      "id": "401932937",
-      "leagueCode": "DFB",
-      "leagueName": "DFB-Pokal",
-      "leagueGroup": "cups",
-      "home": "VfB Stuttgart",
-      "away": "Dynamo Dresden",
-      "kickoffUTC": "2026-12-01T17:00Z",
-      "kickoffMMT": "01 Dec, 11:30 PM",
+      "id": "401912683",
+      "leagueCode": "BRB",
+      "leagueName": "Brazil Serie B",
+      "leagueGroup": "high5",
+      "home": "Vila Nova",
+      "away": "Atlético Goianiense",
+      "kickoffUTC": "2026-11-27T23:00Z",
+      "kickoffMMT": "28 Nov, 05:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -3306,14 +2916,14 @@
       "isHotSignal": false
     },
     {
-      "id": "401932935",
-      "leagueCode": "DFB",
-      "leagueName": "DFB-Pokal",
-      "leagueGroup": "cups",
-      "home": "Bayern Munich",
-      "away": "Hertha Berlin",
-      "kickoffUTC": "2026-12-01T19:45Z",
-      "kickoffMMT": "02 Dec, 02:15 AM",
+      "id": "401875536",
+      "leagueCode": "ERE",
+      "leagueName": "Eredivisie",
+      "leagueGroup": "high5",
+      "home": "FC Groningen",
+      "away": "Willem II",
+      "kickoffUTC": "2026-11-27T19:00Z",
+      "kickoffMMT": "28 Nov, 01:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -3345,14 +2955,599 @@
       "isHotSignal": false
     },
     {
-      "id": "401932915",
-      "leagueCode": "DFB",
-      "leagueName": "DFB-Pokal",
-      "leagueGroup": "cups",
-      "home": "Borussia Mönchengladbach",
+      "id": "401892133",
+      "leagueCode": "ALE",
+      "leagueName": "A-League",
+      "leagueGroup": "high5",
+      "home": "Macarthur FC",
+      "away": "Melbourne City FC",
+      "kickoffUTC": "2026-11-27T08:40Z",
+      "kickoffMMT": "27 Nov, 03:10 PM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401880824",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "home": "Blackpool",
+      "away": "Leicester City",
+      "kickoffUTC": "2026-11-24T19:45Z",
+      "kickoffMMT": "25 Nov, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401880838",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "home": "Bradford City",
+      "away": "Barnsley",
+      "kickoffUTC": "2026-11-24T19:45Z",
+      "kickoffMMT": "25 Nov, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401880823",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "home": "Bromley",
+      "away": "Wycombe Wanderers",
+      "kickoffUTC": "2026-11-24T19:45Z",
+      "kickoffMMT": "25 Nov, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401880829",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "home": "Stevenage",
+      "away": "Sheffield Wednesday",
+      "kickoffUTC": "2026-11-24T19:45Z",
+      "kickoffMMT": "25 Nov, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401878930",
+      "leagueCode": "BEL",
+      "leagueName": "Belgian Pro League",
+      "leagueGroup": "global",
+      "home": "OH Leuven",
+      "away": "KV Kortrijk",
+      "kickoffUTC": "2026-11-27T19:45Z",
+      "kickoffMMT": "28 Nov, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401878348",
+      "leagueCode": "SCO",
+      "leagueName": "Scottish Premiership",
+      "leagueGroup": "global",
+      "home": "Hibernian",
+      "away": "Dundee",
+      "kickoffUTC": "2026-11-24T19:45Z",
+      "kickoffMMT": "25 Nov, 02:15 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401878345",
+      "leagueCode": "SCO",
+      "leagueName": "Scottish Premiership",
+      "leagueGroup": "global",
+      "home": "Rangers",
+      "away": "Aberdeen",
+      "kickoffUTC": "2026-11-24T20:00Z",
+      "kickoffMMT": "25 Nov, 02:30 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401888241",
+      "leagueCode": "TUR",
+      "leagueName": "Turkish Super Lig",
+      "leagueGroup": "global",
+      "home": "Alanyaspor",
+      "away": "Konyaspor",
+      "kickoffUTC": "2026-11-27T17:00Z",
+      "kickoffMMT": "27 Nov, 11:30 PM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401888240",
+      "leagueCode": "TUR",
+      "leagueName": "Turkish Super Lig",
+      "leagueGroup": "global",
+      "home": "Caykur Rizespor",
+      "away": "Kasimpasa",
+      "kickoffUTC": "2026-11-27T17:00Z",
+      "kickoffMMT": "27 Nov, 11:30 PM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401885389",
+      "leagueCode": "POR",
+      "leagueName": "Primeira Liga",
+      "leagueGroup": "global",
+      "home": "Maritimo",
+      "away": "C.D. Nacional",
+      "kickoffUTC": "2026-11-27T20:15Z",
+      "kickoffMMT": "28 Nov, 02:45 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401931986",
+      "leagueCode": "LMX",
+      "leagueName": "Liga MX",
+      "leagueGroup": "global",
+      "home": "Toluca",
+      "away": "Atlas",
+      "kickoffUTC": "2026-11-26T01:00Z",
+      "kickoffMMT": "26 Nov, 07:30 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401931998",
+      "leagueCode": "LMX",
+      "leagueName": "Liga MX",
+      "leagueGroup": "global",
+      "home": "Monterrey",
+      "away": "América",
+      "kickoffUTC": "2026-11-26T03:10Z",
+      "kickoffMMT": "26 Nov, 09:40 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401885047",
+      "leagueCode": "BL2",
+      "leagueName": "2. Bundesliga",
+      "leagueGroup": "global",
+      "home": "1. FC Heidenheim 1846",
+      "away": "1. FC Nürnberg",
+      "kickoffUTC": "2026-11-27T17:30Z",
+      "kickoffMMT": "28 Nov, 12:00 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401885045",
+      "leagueCode": "BL2",
+      "leagueName": "2. Bundesliga",
+      "leagueGroup": "global",
+      "home": "VfL Bochum",
       "away": "SV Darmstadt 98",
-      "kickoffUTC": "2026-12-01T19:45Z",
-      "kickoffMMT": "02 Dec, 02:15 AM",
+      "kickoffUTC": "2026-11-27T17:30Z",
+      "kickoffMMT": "28 Nov, 12:00 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401841335",
+      "leagueCode": "BRA",
+      "leagueName": "Brazil Serie A",
+      "leagueGroup": "global",
+      "home": "Chapecoense",
+      "away": "Palmeiras",
+      "kickoffUTC": "2026-11-24T21:00Z",
+      "kickoffMMT": "25 Nov, 03:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -3618,45 +3813,6 @@
       "isHotSignal": false
     },
     {
-      "id": "401841335",
-      "leagueCode": "BRA",
-      "leagueName": "Brazil Serie A",
-      "leagueGroup": "global",
-      "home": "Chapecoense",
-      "away": "Palmeiras",
-      "kickoffUTC": "2026-11-24T21:00Z",
-      "kickoffMMT": "25 Nov, 03:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
       "id": "401881739",
       "leagueCode": "AUT",
       "leagueName": "Austrian Bundesliga",
@@ -3665,318 +3821,6 @@
       "away": "SC Rheindorf Altach",
       "kickoffUTC": "2026-11-27T18:30Z",
       "kickoffMMT": "28 Nov, 01:00 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401931986",
-      "leagueCode": "LMX",
-      "leagueName": "Liga MX",
-      "leagueGroup": "global",
-      "home": "Toluca",
-      "away": "Atlas",
-      "kickoffUTC": "2026-11-26T01:00Z",
-      "kickoffMMT": "26 Nov, 07:30 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401931998",
-      "leagueCode": "LMX",
-      "leagueName": "Liga MX",
-      "leagueGroup": "global",
-      "home": "Monterrey",
-      "away": "América",
-      "kickoffUTC": "2026-11-26T03:10Z",
-      "kickoffMMT": "26 Nov, 09:40 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401885047",
-      "leagueCode": "BL2",
-      "leagueName": "2. Bundesliga",
-      "leagueGroup": "global",
-      "home": "1. FC Heidenheim 1846",
-      "away": "1. FC Nürnberg",
-      "kickoffUTC": "2026-11-27T17:30Z",
-      "kickoffMMT": "28 Nov, 12:00 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401885045",
-      "leagueCode": "BL2",
-      "leagueName": "2. Bundesliga",
-      "leagueGroup": "global",
-      "home": "VfL Bochum",
-      "away": "SV Darmstadt 98",
-      "kickoffUTC": "2026-11-27T17:30Z",
-      "kickoffMMT": "28 Nov, 12:00 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401900874",
-      "leagueCode": "KSA",
-      "leagueName": "Saudi Pro League",
-      "leagueGroup": "global",
-      "home": "Al Fateh",
-      "away": "Al Riyadh",
-      "kickoffUTC": "2026-11-26T14:25Z",
-      "kickoffMMT": "26 Nov, 08:55 PM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401900443",
-      "leagueCode": "KSA",
-      "leagueName": "Saudi Pro League",
-      "leagueGroup": "global",
-      "home": "Abha",
-      "away": "Al Shabab",
-      "kickoffUTC": "2026-11-26T15:05Z",
-      "kickoffMMT": "26 Nov, 09:35 PM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401900871",
-      "leagueCode": "KSA",
-      "leagueName": "Saudi Pro League",
-      "leagueGroup": "global",
-      "home": "Al Faisaly",
-      "away": "Al Diriyah",
-      "kickoffUTC": "2026-11-26T17:30Z",
-      "kickoffMMT": "27 Nov, 12:00 AM",
-      "modelMode": "lite",
-      "expHome": 4.56,
-      "expAway": 4.12,
-      "totalLambda": 8.68,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.7,
-        "underProb": 36.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.57,
-        "minValueOdds": 1.67
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.2,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "sample_size": 0
-      },
-      "isHotSignal": false
-    },
-    {
-      "id": "401874563",
-      "leagueCode": "DEN",
-      "leagueName": "Danish Superliga",
-      "leagueGroup": "global",
-      "home": "Sønderjyske Fodbold",
-      "away": "Brøndby IF",
-      "kickoffUTC": "2026-11-27T18:00Z",
-      "kickoffMMT": "28 Nov, 12:30 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
@@ -4250,6 +4094,162 @@
       "away": "Cerezo Osaka",
       "kickoffUTC": "2026-11-25T10:30Z",
       "kickoffMMT": "25 Nov, 05:00 PM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401874563",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "leagueGroup": "global",
+      "home": "Sønderjyske Fodbold",
+      "away": "Brøndby IF",
+      "kickoffUTC": "2026-11-27T18:00Z",
+      "kickoffMMT": "28 Nov, 12:30 AM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401900874",
+      "leagueCode": "KSA",
+      "leagueName": "Saudi Pro League",
+      "leagueGroup": "global",
+      "home": "Al Fateh",
+      "away": "Al Riyadh",
+      "kickoffUTC": "2026-11-26T14:25Z",
+      "kickoffMMT": "26 Nov, 08:55 PM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401900443",
+      "leagueCode": "KSA",
+      "leagueName": "Saudi Pro League",
+      "leagueGroup": "global",
+      "home": "Abha",
+      "away": "Al Shabab",
+      "kickoffUTC": "2026-11-26T15:05Z",
+      "kickoffMMT": "26 Nov, 09:35 PM",
+      "modelMode": "lite",
+      "expHome": 4.56,
+      "expAway": 4.12,
+      "totalLambda": 8.68,
+      "target": {
+        "line": 7.5,
+        "overProb": 63.7,
+        "underProb": 36.3,
+        "pushProb": 0.0,
+        "fairOdds": 1.57,
+        "minValueOdds": 1.67
+      },
+      "homeStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "awayStats": {
+        "avg_corners": 5.0,
+        "shots_on_target": 4.2,
+        "total_shots": 12.0,
+        "corners_conceded": 5.0,
+        "shots_conceded": 12.0,
+        "sample_size": 0
+      },
+      "isHotSignal": false
+    },
+    {
+      "id": "401900871",
+      "leagueCode": "KSA",
+      "leagueName": "Saudi Pro League",
+      "leagueGroup": "global",
+      "home": "Al Faisaly",
+      "away": "Al Diriyah",
+      "kickoffUTC": "2026-11-26T17:30Z",
+      "kickoffMMT": "27 Nov, 12:00 AM",
       "modelMode": "lite",
       "expHome": 4.56,
       "expAway": 4.12,
