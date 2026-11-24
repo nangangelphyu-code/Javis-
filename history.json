@@ -1,20 +1,20 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
-  "updatedAtMMT": "25 Nov 2026, 01:24 AM",
+  "updatedAtMMT": "25 Nov 2026, 03:19 AM",
   "summary": {
     "standardLine": 9.5,
-    "totalGraded": 0,
-    "pendingCount": 89,
+    "totalGraded": 3,
+    "pendingCount": 86,
     "picksSummary": {
       "hits": 0,
-      "misses": 0,
-      "total": 0,
+      "misses": 2,
+      "total": 2,
       "hitRate": 0.0
     },
     "allSummary": {
       "hits": 0,
-      "misses": 0,
-      "total": 0,
+      "misses": 3,
+      "total": 3,
       "hitRate": 0.0
     },
     "byTier": {
@@ -26,8 +26,8 @@
       },
       "VALUE": {
         "hits": 0,
-        "misses": 0,
-        "total": 0,
+        "misses": 2,
+        "total": 2,
         "hitRate": 0.0
       },
       "RISKY": {
@@ -38,15 +38,15 @@
       },
       "NO_BET": {
         "hits": 0,
-        "misses": 0,
-        "total": 0,
+        "misses": 1,
+        "total": 1,
         "hitRate": 0.0
       }
     },
     "exactMode": {
       "hits": 0,
-      "misses": 0,
-      "total": 0,
+      "misses": 2,
+      "total": 2,
       "hitRate": 0.0
     },
     "fallbackMode": {
@@ -55,7 +55,24 @@
       "total": 0,
       "hitRate": 0.0
     },
-    "byLeague": []
+    "byLeague": [
+      {
+        "code": "SRB",
+        "name": "Serie B",
+        "hits": 0,
+        "misses": 1,
+        "total": 1,
+        "hitRate": 0.0
+      },
+      {
+        "code": "UCL",
+        "name": "Champions League",
+        "hits": 0,
+        "misses": 1,
+        "total": 1,
+        "hitRate": 0.0
+      }
+    ]
   },
   "records": [
     {
@@ -2611,11 +2628,11 @@
       "fairOdds": 1.58,
       "minValueOdds": 1.68,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 1,
+      "actualAwayCorners": 3,
+      "actualTotal": 4,
+      "grade": "MISS",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -2625,7 +2642,9 @@
       "l2Mode": "exact",
       "refTotal": 11.0,
       "dominanceSide": "AWAY",
-      "hasSpike": true
+      "hasSpike": true,
+      "isExtraTime": false,
+      "gradedAtMMT": "25 Nov, 03:19 AM"
     },
     {
       "id": "401915380",
@@ -2647,12 +2666,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 4,
+      "actualAwayCorners": 0,
+      "actualTotal": 4,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "25 Nov, 03:19 AM"
     },
     {
       "id": "401915300",
@@ -2674,12 +2694,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 5,
+      "actualAwayCorners": 1,
+      "actualTotal": 6,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "25 Nov, 03:19 AM"
     }
   ]
 }
