@@ -1,147 +1,292 @@
 {
-  "updatedAtUTC": "2026-11-24T13:07:51.777987+00:00",
-  "updatedAtMMT": "24 Nov 2026, 07:37 PM",
+  "engineVersion": "4.0-cn-ultra-3L",
+  "standardLine": 9.5,
+  "updatedAtUTC": "2026-11-24T14:14:29.045310+00:00",
+  "updatedAtMMT": "24 Nov 2026, 08:44 PM",
   "leagueCount": 28,
-  "matchCount": 10,
-  "filteredLowDataCount": 80,
+  "matchCount": 9,
+  "goldenCount": 2,
+  "valueCount": 2,
+  "filteredLowDataCount": 81,
   "matches": [
     {
-      "id": "401899536",
-      "leagueSlug": "ita.2",
-      "leagueCode": "SRB",
-      "leagueName": "Serie B",
-      "leagueGroup": "global",
-      "homeId": "3975",
-      "awayId": "3257",
-      "home": "Juve Stabia",
-      "away": "Catanzaro",
-      "kickoffUTC": "2026-11-24T18:00Z",
-      "kickoffMMT": "25 Nov, 12:30 AM",
-      "modelMode": "lite",
-      "stability": "Moderate",
-      "stdDev": 2.48,
-      "expHome": 4.97,
-      "expAway": 4.74,
-      "totalLambda": 9.71,
-      "target": {
-        "line": 8.5,
-        "overProb": 63.4,
-        "underProb": 36.6,
-        "pushProb": 0.0,
-        "fairOdds": 1.58,
-        "minValueOdds": 1.68
-      },
+      "id": "401915380",
+      "leagueSlug": "uefa.champions",
+      "leagueCode": "UCL",
+      "leagueName": "Champions League",
+      "leagueGroup": "cups",
+      "homeId": "2980",
+      "awayId": "4411",
+      "home": "Bodo/Glimt",
+      "away": "LASK Linz",
+      "kickoffUTC": "2026-11-24T17:45Z",
+      "kickoffMMT": "25 Nov, 12:15 AM",
       "homeStats": {
-        "avg_corners": 4.0,
-        "shots_on_target": 4.0,
-        "total_shots": 14.0,
-        "corners_conceded": 6.17,
-        "shots_conceded": 15.17,
-        "blocked_shots": 4.0,
-        "crosses": 0.0,
-        "touches_in_box": null,
-        "opp_clearances": 24.67,
-        "sample_size": 6,
-        "std_dev": 2.91,
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 5.33,
+        "l3_sot": 4.33,
+        "l3_total_shots": 10.0,
+        "l3_blocked": 2.33,
         "recent_corners": [
-          2.0,
-          6.0,
-          5.0,
-          5.0,
-          4.0
-        ]
+          3,
+          5,
+          4
+        ],
+        "recent_conceded": [
+          4,
+          2,
+          10
+        ],
+        "has_spike": false
       },
       "awayStats": {
-        "avg_corners": 5.17,
-        "shots_on_target": 4.83,
-        "total_shots": 13.17,
-        "corners_conceded": 6.5,
-        "shots_conceded": 16.83,
-        "blocked_shots": 3.5,
-        "crosses": 0.0,
-        "touches_in_box": null,
-        "opp_clearances": 22.0,
-        "sample_size": 6,
-        "std_dev": 2.05,
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 6.67,
+        "l3_sot": 7.0,
+        "l3_total_shots": 17.33,
+        "l3_blocked": 4.33,
         "recent_corners": [
-          1.0,
-          9.0,
-          11.0,
-          5.0,
-          5.0
-        ]
+          8,
+          4,
+          3
+        ],
+        "recent_conceded": [
+          2,
+          7,
+          11
+        ],
+        "has_spike": false
       },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
+      "cn": {
+        "score": 5.0,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 4.0,
+          "away": 5.0,
+          "total": 9.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 6.66,
+          "away": 11.33,
+          "total": 17.99
+        },
+        "l3": {
+          "pts": 2.0,
+          "max": 2.0,
+          "home": 5.33,
+          "away": 6.67,
+          "homePts": 1.0,
+          "awayPts": 1.0
+        },
+        "refExpHome": 5.3,
+        "refExpAway": 5.2,
+        "refTotal": 10.5,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 5.0/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် Motivation စစ်ဆေးပြီး ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.0 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 17.99 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.33 / 6.67, +2)"
+        ]
+      }
     },
     {
-      "id": "401880144",
-      "leagueSlug": "eng.2",
-      "leagueCode": "CHP",
-      "leagueName": "Championship",
-      "leagueGroup": "high5",
-      "homeId": "381",
-      "awayId": "334",
-      "home": "Norwich City",
-      "away": "Queens Park Rangers",
-      "kickoffUTC": "2026-11-24T19:45Z",
-      "kickoffMMT": "25 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "stability": "Volatile",
-      "stdDev": 3.54,
-      "expHome": 4.49,
-      "expAway": 4.26,
-      "totalLambda": 8.74,
-      "target": {
-        "line": 7.5,
-        "overProb": 64.5,
-        "underProb": 35.5,
-        "pushProb": 0.0,
-        "fairOdds": 1.55,
-        "minValueOdds": 1.65
-      },
+      "id": "401915299",
+      "leagueSlug": "uefa.champions",
+      "leagueCode": "UCL",
+      "leagueName": "Champions League",
+      "leagueGroup": "cups",
+      "homeId": "11420",
+      "awayId": "175",
+      "home": "RB Leipzig",
+      "away": "Lens",
+      "kickoffUTC": "2026-11-24T20:00Z",
+      "kickoffMMT": "25 Nov, 02:30 AM",
       "homeStats": {
-        "avg_corners": 5.5,
-        "shots_on_target": 5.17,
-        "total_shots": 16.33,
-        "corners_conceded": 3.5,
-        "shots_conceded": 10.0,
-        "blocked_shots": 4.33,
-        "crosses": 16.33,
-        "touches_in_box": null,
-        "opp_clearances": 20.0,
-        "sample_size": 6,
-        "std_dev": 3.21,
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 7.67,
+        "l3_sot": 6.33,
+        "l3_total_shots": 14.67,
+        "l3_blocked": 2.67,
         "recent_corners": [
-          8.0,
-          3.0,
-          5.0,
-          9.0,
-          7.0
-        ]
+          5,
+          1,
+          6
+        ],
+        "recent_conceded": [
+          3,
+          7,
+          13
+        ],
+        "has_spike": false
       },
       "awayStats": {
-        "avg_corners": 6.67,
-        "shots_on_target": 4.5,
-        "total_shots": 17.83,
-        "corners_conceded": 3.83,
-        "shots_conceded": 9.67,
-        "blocked_shots": 6.17,
-        "crosses": 18.17,
-        "touches_in_box": null,
-        "opp_clearances": 20.5,
-        "sample_size": 6,
-        "std_dev": 3.86,
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 3.0,
+        "l3_sot": 5.33,
+        "l3_total_shots": 17.0,
+        "l3_blocked": 3.67,
         "recent_corners": [
-          12.0,
-          6.0,
-          8.0,
-          4.0,
-          6.0
-        ]
+          5,
+          5,
+          6
+        ],
+        "recent_conceded": [
+          5,
+          1,
+          3
+        ],
+        "has_spike": false
       },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 4.0,
+          "away": 5.33,
+          "total": 9.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.0,
+          "away": 9.0,
+          "total": 18.0
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 7.67,
+          "away": 3.0,
+          "homePts": 1.0,
+          "awayPts": -0.5
+        },
+        "refExpHome": 3.5,
+        "refExpAway": 6.5,
+        "refTotal": 10.0,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.33 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 18.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (7.67 / 3.0, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401915298",
+      "leagueSlug": "uefa.champions",
+      "leagueCode": "UCL",
+      "leagueName": "Champions League",
+      "leagueGroup": "cups",
+      "homeId": "86",
+      "awayId": "148",
+      "home": "Real Madrid",
+      "away": "PSV Eindhoven",
+      "kickoffUTC": "2026-11-24T20:00Z",
+      "kickoffMMT": "25 Nov, 02:30 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 7.67,
+        "l3_conceded": 2.0,
+        "l3_sot": 9.0,
+        "l3_total_shots": 19.33,
+        "l3_blocked": 2.67,
+        "recent_corners": [
+          7,
+          7,
+          9
+        ],
+        "recent_conceded": [
+          0,
+          1,
+          5
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 8.0,
+        "l3_conceded": 4.33,
+        "l3_sot": 5.67,
+        "l3_total_shots": 18.67,
+        "l3_blocked": 4.67,
+        "recent_corners": [
+          8,
+          3,
+          13
+        ],
+        "recent_conceded": [
+          5,
+          2,
+          6
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 5.0,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 3.0,
+          "max": 3.0,
+          "home": 7.67,
+          "away": 8.0,
+          "total": 15.67
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 11.67,
+          "away": 10.34,
+          "total": 22.01
+        },
+        "l3": {
+          "pts": 0.0,
+          "max": 2.0,
+          "home": 2.0,
+          "away": 4.33,
+          "homePts": -0.5,
+          "awayPts": 0.5
+        },
+        "refExpHome": 6.0,
+        "refExpAway": 5.0,
+        "refTotal": 11.0,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "PSV Eindhoven ၏ နောက်ဆုံးပွဲများတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.0/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် Motivation စစ်ဆေးပြီး ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 15.67 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
+          "SOT+Blocked စုစုပေါင်း 22.01 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "Real Madrid (2.0) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
+        ]
+      }
     },
     {
       "id": "401933738",
@@ -155,533 +300,551 @@
       "away": "Houston Dynamo FC",
       "kickoffUTC": "2026-11-25T03:00Z",
       "kickoffMMT": "25 Nov, 09:30 AM",
-      "modelMode": "lite",
-      "stability": "Moderate",
-      "stdDev": 2.3,
-      "expHome": 5.16,
-      "expAway": 3.81,
-      "totalLambda": 8.97,
-      "target": {
-        "line": 7.5,
-        "overProb": 67.3,
-        "underProb": 32.7,
-        "pushProb": 0.0,
-        "fairOdds": 1.49,
-        "minValueOdds": 1.58
-      },
       "homeStats": {
-        "avg_corners": 4.67,
-        "shots_on_target": 3.5,
-        "total_shots": 12.33,
-        "corners_conceded": 4.83,
-        "shots_conceded": 14.0,
-        "blocked_shots": 4.17,
-        "crosses": 16.5,
-        "touches_in_box": null,
-        "opp_clearances": 24.33,
-        "sample_size": 6,
-        "std_dev": 3.64,
+        "sample_size": 3,
+        "l3_corners": 6.0,
+        "l3_conceded": 6.0,
+        "l3_sot": 5.33,
+        "l3_total_shots": 13.33,
+        "l3_blocked": 3.33,
         "recent_corners": [
-          2.0,
-          5.0,
-          11.0,
-          1.0,
-          4.0
-        ]
+          2,
+          5,
+          11
+        ],
+        "recent_conceded": [
+          8,
+          5,
+          5
+        ],
+        "has_spike": true
       },
       "awayStats": {
-        "avg_corners": 4.67,
-        "shots_on_target": 2.5,
-        "total_shots": 10.67,
-        "corners_conceded": 6.83,
-        "shots_conceded": 16.5,
-        "blocked_shots": 4.0,
-        "crosses": 12.67,
-        "touches_in_box": null,
-        "opp_clearances": 32.5,
-        "sample_size": 6,
-        "std_dev": 0.96,
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 6.33,
+        "l3_sot": 2.67,
+        "l3_total_shots": 11.0,
+        "l3_blocked": 4.33,
         "recent_corners": [
-          9.0,
-          6.0,
-          1.0,
-          4.0,
-          5.0
-        ]
+          9,
+          6,
+          1
+        ],
+        "recent_conceded": [
+          3,
+          6,
+          10
+        ],
+        "has_spike": true
       },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
+      "cn": {
+        "score": 6.0,
+        "maxScore": 7.0,
+        "tier": "GOLDEN",
+        "verdict": "GOLDEN BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 6.0,
+          "away": 5.33,
+          "total": 11.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.66,
+          "away": 7.0,
+          "total": 15.66
+        },
+        "l3": {
+          "pts": 2.0,
+          "max": 2.0,
+          "home": 6.0,
+          "away": 6.33,
+          "homePts": 1.0,
+          "awayPts": 1.0
+        },
+        "refExpHome": 6.2,
+        "refExpAway": 5.7,
+        "refTotal": 11.9,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "San Jose Earthquakes နှင့် Houston Dynamo FC ၏ နောက်ဆုံးပွဲများတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "အလွှာ ၃ ခုလုံး အားကောင်းပြီး 6.0/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 11.33 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 15.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (6.0 / 6.33, +2)"
+        ]
+      }
     },
     {
-      "id": "401915520",
-      "leagueSlug": "uefa.europa",
-      "leagueCode": "UEL",
-      "leagueName": "Europa League",
+      "id": "401915739",
+      "leagueSlug": "uefa.europa.conf",
+      "leagueCode": "UECL",
+      "leagueName": "Conference League",
       "leagueGroup": "cups",
-      "homeId": "2790",
-      "awayId": "20024",
-      "home": "RB Salzburg",
-      "away": "Ararat-Armenia",
+      "homeId": "20028",
+      "awayId": "19246",
+      "home": "Kauno Zalgiris",
+      "away": "Riga FC",
       "kickoffUTC": "2026-11-26T17:45Z",
       "kickoffMMT": "27 Nov, 12:15 AM",
-      "modelMode": "lite",
-      "stability": "Moderate",
-      "stdDev": 2.78,
-      "expHome": 4.66,
-      "expAway": 3.49,
-      "totalLambda": 8.14,
-      "target": {
-        "line": 7.5,
-        "overProb": 56.6,
-        "underProb": 43.4,
-        "pushProb": 0.0,
-        "fairOdds": 1.77,
-        "minValueOdds": 1.9
-      },
       "homeStats": {
-        "avg_corners": 3.5,
-        "shots_on_target": 4.0,
-        "total_shots": 12.25,
-        "corners_conceded": 3.5,
-        "shots_conceded": 12.5,
-        "blocked_shots": 2.75,
-        "crosses": 14.5,
-        "touches_in_box": null,
-        "opp_clearances": 14.25,
-        "sample_size": 4,
-        "std_dev": 2.0,
+        "sample_size": 3,
+        "l3_corners": 1.33,
+        "l3_conceded": 7.0,
+        "l3_sot": 1.33,
+        "l3_total_shots": 7.0,
+        "l3_blocked": 2.33,
         "recent_corners": [
-          4.0,
-          3.0,
-          3.0,
-          4.0
-        ]
+          2,
+          1,
+          1
+        ],
+        "recent_conceded": [
+          4,
+          4,
+          13
+        ],
+        "has_spike": false
       },
       "awayStats": {
-        "avg_corners": 4.0,
-        "shots_on_target": 4.5,
-        "total_shots": 14.0,
-        "corners_conceded": 6.25,
-        "shots_conceded": 16.25,
-        "blocked_shots": 4.25,
-        "crosses": 13.25,
-        "touches_in_box": null,
-        "opp_clearances": 20.75,
-        "sample_size": 4,
-        "std_dev": 3.56,
+        "sample_size": 3,
+        "l3_corners": 3.67,
+        "l3_conceded": 6.0,
+        "l3_sot": 4.33,
+        "l3_total_shots": 15.67,
+        "l3_blocked": 4.0,
         "recent_corners": [
-          6.0,
-          5.0,
-          3.0,
-          2.0
-        ]
+          5,
+          4,
+          2
+        ],
+        "recent_conceded": [
+          5,
+          10,
+          3
+        ],
+        "has_spike": false
       },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
+      "cn": {
+        "score": 3.0,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 1.33,
+          "away": 3.67,
+          "total": 5.0
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 3.66,
+          "away": 8.33,
+          "total": 11.99
+        },
+        "l3": {
+          "pts": 2.0,
+          "max": 2.0,
+          "home": 7.0,
+          "away": 6.0,
+          "homePts": 1.0,
+          "awayPts": 1.0
+        },
+        "refExpHome": 3.7,
+        "refExpAway": 5.3,
+        "refTotal": 9.0,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.0/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 5.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 11.99 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (7.0 / 6.0, +2)"
+        ]
+      }
     },
     {
-      "id": "401915503",
+      "id": "401915515",
       "leagueSlug": "uefa.europa",
       "leagueCode": "UEL",
       "leagueName": "Europa League",
       "leagueGroup": "cups",
-      "homeId": "1010",
-      "awayId": "441",
-      "home": "OFI Crete",
-      "away": "Anderlecht",
+      "homeId": "7911",
+      "awayId": "3746",
+      "home": "TSG Hoffenheim",
+      "away": "SK Sturm Graz",
       "kickoffUTC": "2026-11-26T20:00Z",
       "kickoffMMT": "27 Nov, 02:30 AM",
-      "modelMode": "lite",
-      "stability": "Moderate",
-      "stdDev": 2.36,
-      "expHome": 3.46,
-      "expAway": 5.73,
-      "totalLambda": 9.19,
-      "target": {
-        "line": 8.5,
-        "overProb": 56.9,
-        "underProb": 43.1,
-        "pushProb": 0.0,
-        "fairOdds": 1.76,
-        "minValueOdds": 1.89
-      },
       "homeStats": {
-        "avg_corners": 3.5,
-        "shots_on_target": 2.25,
-        "total_shots": 7.0,
-        "corners_conceded": 8.75,
-        "shots_conceded": 23.75,
-        "blocked_shots": 1.0,
-        "crosses": 11.0,
-        "touches_in_box": null,
-        "opp_clearances": 32.5,
-        "sample_size": 4,
-        "std_dev": 3.9,
+        "sample_size": 3,
+        "l3_corners": 7.67,
+        "l3_conceded": 6.33,
+        "l3_sot": 5.33,
+        "l3_total_shots": 16.33,
+        "l3_blocked": 4.33,
         "recent_corners": [
-          2.0,
-          5.0,
-          3.0,
-          4.0
-        ]
+          5,
+          11,
+          7
+        ],
+        "recent_conceded": [
+          5,
+          9,
+          5
+        ],
+        "has_spike": false
       },
       "awayStats": {
-        "avg_corners": 4.25,
-        "shots_on_target": 6.5,
-        "total_shots": 12.75,
-        "corners_conceded": 4.5,
-        "shots_conceded": 10.0,
-        "blocked_shots": 2.5,
-        "crosses": 16.75,
-        "touches_in_box": null,
-        "opp_clearances": 15.75,
-        "sample_size": 4,
-        "std_dev": 0.83,
+        "sample_size": 3,
+        "l3_corners": 5.67,
+        "l3_conceded": 4.33,
+        "l3_sot": 4.33,
+        "l3_total_shots": 16.33,
+        "l3_blocked": 5.33,
         "recent_corners": [
-          5.0,
-          4.0,
-          2.0,
-          6.0
-        ]
+          12,
+          2,
+          3
+        ],
+        "recent_conceded": [
+          2,
+          4,
+          7
+        ],
+        "has_spike": true
       },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
+      "cn": {
+        "score": 6.5,
+        "maxScore": 7.0,
+        "tier": "GOLDEN",
+        "verdict": "GOLDEN BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 3.0,
+          "max": 3.0,
+          "home": 7.67,
+          "away": 5.67,
+          "total": 13.34
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.66,
+          "away": 9.66,
+          "total": 19.32
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 6.33,
+          "away": 4.33,
+          "homePts": 1.0,
+          "awayPts": 0.5
+        },
+        "refExpHome": 6.0,
+        "refExpAway": 6.0,
+        "refTotal": 12.0,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "SK Sturm Graz ၏ နောက်ဆုံးပွဲများတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "အလွှာ ၃ ခုလုံး အားကောင်းပြီး 6.5/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 13.34 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
+          "SOT+Blocked စုစုပေါင်း 19.32 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (6.33 / 4.33, +1.5)"
+        ]
+      }
     },
     {
-      "id": "401915805",
-      "leagueSlug": "uefa.europa.conf",
-      "leagueCode": "UECL",
-      "leagueName": "Conference League",
-      "leagueGroup": "cups",
-      "homeId": "489",
-      "awayId": "936",
-      "home": "Hajduk Split",
-      "away": "Sint-Truidense",
-      "kickoffUTC": "2026-11-26T20:00Z",
-      "kickoffMMT": "27 Nov, 02:30 AM",
-      "modelMode": "lite",
-      "stability": "Moderate",
-      "stdDev": 2.78,
-      "expHome": 4.34,
-      "expAway": 3.57,
-      "totalLambda": 7.91,
-      "target": {
-        "line": 7.5,
-        "overProb": 53.4,
-        "underProb": 46.6,
-        "pushProb": 0.0,
-        "fairOdds": 1.87,
-        "minValueOdds": 2.02
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.33,
-        "total_shots": 13.33,
-        "corners_conceded": 2.33,
-        "shots_conceded": 9.67,
-        "blocked_shots": 2.67,
-        "crosses": 14.0,
-        "touches_in_box": null,
-        "opp_clearances": 25.67,
-        "sample_size": 3,
-        "std_dev": 1.7,
-        "recent_corners": [
-          8.0,
-          3.0,
-          4.0
-        ]
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 5.67,
-        "total_shots": 18.33,
-        "corners_conceded": 4.33,
-        "shots_conceded": 10.67,
-        "blocked_shots": 4.33,
-        "crosses": 19.33,
-        "touches_in_box": null,
-        "opp_clearances": 22.0,
-        "sample_size": 3,
-        "std_dev": 3.86,
-        "recent_corners": [
-          4.0,
-          7.0,
-          4.0
-        ]
-      },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
-    },
-    {
-      "id": "401915801",
-      "leagueSlug": "uefa.europa.conf",
-      "leagueCode": "UECL",
-      "leagueName": "Conference League",
-      "leagueGroup": "cups",
-      "homeId": "126",
-      "awayId": "152",
-      "home": "SC Freiburg",
-      "away": "FC Twente",
-      "kickoffUTC": "2026-11-26T20:00Z",
-      "kickoffMMT": "27 Nov, 02:30 AM",
-      "modelMode": "lite",
-      "stability": "Volatile",
-      "stdDev": 3.67,
-      "expHome": 3.69,
-      "expAway": 5.76,
-      "totalLambda": 9.45,
-      "target": {
-        "line": 8.5,
-        "overProb": 60.2,
-        "underProb": 39.8,
-        "pushProb": 0.0,
-        "fairOdds": 1.66,
-        "minValueOdds": 1.78
-      },
-      "homeStats": {
-        "avg_corners": 6.67,
-        "shots_on_target": 5.0,
-        "total_shots": 15.67,
-        "corners_conceded": 4.67,
-        "shots_conceded": 12.33,
-        "blocked_shots": 5.0,
-        "crosses": 24.0,
-        "touches_in_box": null,
-        "opp_clearances": 20.33,
-        "sample_size": 3,
-        "std_dev": 4.5,
-        "recent_corners": [
-          4.0,
-          11.0,
-          5.0
-        ]
-      },
-      "awayStats": {
-        "avg_corners": 8.0,
-        "shots_on_target": 8.67,
-        "total_shots": 25.67,
-        "corners_conceded": 1.0,
-        "shots_conceded": 5.67,
-        "blocked_shots": 7.67,
-        "crosses": 30.0,
-        "touches_in_box": null,
-        "opp_clearances": 13.0,
-        "sample_size": 3,
-        "std_dev": 2.83,
-        "recent_corners": [
-          12.0,
-          6.0,
-          6.0
-        ]
-      },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
-    },
-    {
-      "id": "401885045",
-      "leagueSlug": "ger.2",
-      "leagueCode": "BL2",
-      "leagueName": "2. Bundesliga",
+      "id": "401888240",
+      "leagueSlug": "tur.1",
+      "leagueCode": "TUR",
+      "leagueName": "Turkish Super Lig",
       "leagueGroup": "global",
-      "homeId": "121",
-      "awayId": "3812",
-      "home": "VfL Bochum",
-      "away": "SV Darmstadt 98",
-      "kickoffUTC": "2026-11-27T17:30Z",
-      "kickoffMMT": "28 Nov, 12:00 AM",
-      "modelMode": "lite",
-      "stability": "Moderate",
-      "stdDev": 2.45,
-      "expHome": 4.95,
-      "expAway": 4.22,
-      "totalLambda": 9.17,
-      "target": {
-        "line": 8.5,
-        "overProb": 56.7,
-        "underProb": 43.3,
-        "pushProb": 0.0,
-        "fairOdds": 1.77,
-        "minValueOdds": 1.9
-      },
+      "homeId": "7656",
+      "awayId": "6870",
+      "home": "Caykur Rizespor",
+      "away": "Kasimpasa",
+      "kickoffUTC": "2026-11-27T17:00Z",
+      "kickoffMMT": "27 Nov, 11:30 PM",
       "homeStats": {
-        "avg_corners": 4.0,
-        "shots_on_target": 4.67,
-        "total_shots": 14.83,
-        "corners_conceded": 5.5,
-        "shots_conceded": 14.67,
-        "blocked_shots": 4.67,
-        "crosses": 0.0,
-        "touches_in_box": null,
-        "opp_clearances": 24.67,
-        "sample_size": 6,
-        "std_dev": 2.22,
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 5.33,
+        "l3_sot": 5.0,
+        "l3_total_shots": 17.0,
+        "l3_blocked": 4.33,
         "recent_corners": [
-          1.0,
-          4.0,
-          4.0,
-          5.0,
-          4.0
-        ]
+          4,
+          8,
+          4
+        ],
+        "recent_conceded": [
+          7,
+          2,
+          7
+        ],
+        "has_spike": false
       },
       "awayStats": {
-        "avg_corners": 4.67,
-        "shots_on_target": 3.67,
-        "total_shots": 12.33,
-        "corners_conceded": 6.17,
-        "shots_conceded": 16.33,
-        "blocked_shots": 3.5,
-        "crosses": 0.0,
-        "touches_in_box": null,
-        "opp_clearances": 26.67,
-        "sample_size": 6,
-        "std_dev": 2.67,
+        "sample_size": 3,
+        "l3_corners": 3.67,
+        "l3_conceded": 3.33,
+        "l3_sot": 5.0,
+        "l3_total_shots": 13.67,
+        "l3_blocked": 3.33,
         "recent_corners": [
-          5.0,
-          3.0,
-          7.0,
-          2.0,
-          4.0
-        ]
+          4,
+          2,
+          5
+        ],
+        "recent_conceded": [
+          1,
+          7,
+          2
+        ],
+        "has_spike": false
       },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 5.33,
+          "away": 3.67,
+          "total": 9.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.33,
+          "away": 8.33,
+          "total": 17.66
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 5.33,
+          "away": 3.33,
+          "homePts": 1.0,
+          "awayPts": -0.5
+        },
+        "refExpHome": 4.3,
+        "refExpAway": 4.5,
+        "refTotal": 8.8,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.0 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 17.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (5.33 / 3.33, +0.5)"
+        ]
+      }
     },
     {
-      "id": "401881739",
-      "leagueSlug": "aut.1",
-      "leagueCode": "AUT",
-      "leagueName": "Austrian Bundesliga",
-      "leagueGroup": "global",
-      "homeId": "21846",
-      "awayId": "4405",
-      "home": "Grazer AK",
-      "away": "SC Rheindorf Altach",
-      "kickoffUTC": "2026-11-27T18:30Z",
-      "kickoffMMT": "28 Nov, 01:00 AM",
-      "modelMode": "lite",
-      "stability": "Stable",
-      "stdDev": 0.0,
-      "expHome": 4.53,
-      "expAway": 4.1,
-      "totalLambda": 8.64,
-      "target": {
-        "line": 7.5,
-        "overProb": 63.2,
-        "underProb": 36.8,
-        "pushProb": 0.0,
-        "fairOdds": 1.58,
-        "minValueOdds": 1.69
-      },
-      "homeStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.0,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "blocked_shots": 0.0,
-        "crosses": null,
-        "touches_in_box": null,
-        "opp_clearances": 0.0,
-        "sample_size": 6,
-        "std_dev": 0.0,
-        "recent_corners": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      },
-      "awayStats": {
-        "avg_corners": 5.0,
-        "shots_on_target": 4.0,
-        "total_shots": 12.0,
-        "corners_conceded": 5.0,
-        "shots_conceded": 12.0,
-        "blocked_shots": 0.0,
-        "crosses": null,
-        "touches_in_box": null,
-        "opp_clearances": 0.0,
-        "sample_size": 6,
-        "std_dev": 0.0,
-        "recent_corners": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
-    },
-    {
-      "id": "401875004",
-      "leagueSlug": "ita.1",
-      "leagueCode": "SER",
-      "leagueName": "Serie A",
+      "id": "401879225",
+      "leagueSlug": "eng.1",
+      "leagueCode": "EPL",
+      "leagueName": "Premier League",
       "leagueGroup": "top5",
-      "homeId": "17530",
-      "awayId": "107",
-      "home": "Venezia",
-      "away": "Bologna",
-      "kickoffUTC": "2026-11-27T19:45Z",
-      "kickoffMMT": "28 Nov, 02:15 AM",
-      "modelMode": "lite",
-      "stability": "Moderate",
-      "stdDev": 2.73,
-      "expHome": 3.05,
-      "expAway": 5.42,
-      "totalLambda": 8.47,
-      "target": {
-        "line": 7.5,
-        "overProb": 61.1,
-        "underProb": 38.9,
-        "pushProb": 0.0,
-        "fairOdds": 1.64,
-        "minValueOdds": 1.75
-      },
+      "homeId": "393",
+      "awayId": "363",
+      "home": "Nottingham Forest",
+      "away": "Chelsea",
+      "kickoffUTC": "2026-11-27T20:00Z",
+      "kickoffMMT": "28 Nov, 02:30 AM",
       "homeStats": {
-        "avg_corners": 3.17,
-        "shots_on_target": 3.17,
-        "total_shots": 12.5,
-        "corners_conceded": 6.67,
-        "shots_conceded": 16.0,
-        "blocked_shots": 4.0,
-        "crosses": 13.17,
-        "touches_in_box": null,
-        "opp_clearances": 31.33,
-        "sample_size": 6,
-        "std_dev": 1.77,
+        "sample_size": 3,
+        "l3_corners": 3.67,
+        "l3_conceded": 5.33,
+        "l3_sot": 2.33,
+        "l3_total_shots": 14.67,
+        "l3_blocked": 5.67,
         "recent_corners": [
-          2.0,
-          3.0,
-          1.0,
-          3.0,
-          10.0
-        ]
+          4,
+          3,
+          4
+        ],
+        "recent_conceded": [
+          6,
+          7,
+          3
+        ],
+        "has_spike": false
       },
       "awayStats": {
-        "avg_corners": 6.5,
-        "shots_on_target": 5.5,
-        "total_shots": 15.17,
-        "corners_conceded": 2.83,
-        "shots_conceded": 9.5,
-        "blocked_shots": 4.5,
-        "crosses": 21.33,
-        "touches_in_box": null,
-        "opp_clearances": 19.0,
-        "sample_size": 6,
-        "std_dev": 3.68,
+        "sample_size": 3,
+        "l3_corners": 4.33,
+        "l3_conceded": 3.67,
+        "l3_sot": 5.33,
+        "l3_total_shots": 14.0,
+        "l3_blocked": 3.0,
         "recent_corners": [
-          8.0,
-          15.0,
-          5.0,
-          3.0,
-          6.0
-        ]
+          3,
+          2,
+          8
+        ],
+        "recent_conceded": [
+          2,
+          2,
+          7
+        ],
+        "has_spike": false
       },
-      "isPrimeSignal": false,
-      "signalTier": "STANDARD"
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 3.67,
+          "away": 4.33,
+          "total": 8.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.0,
+          "away": 8.33,
+          "total": 16.33
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 5.33,
+          "away": 3.67,
+          "homePts": 1.0,
+          "awayPts": -0.5
+        },
+        "refExpHome": 3.7,
+        "refExpAway": 4.8,
+        "refTotal": 8.5,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 8.0 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 16.33 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (5.33 / 3.67, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401882791",
+      "leagueSlug": "esp.1",
+      "leagueCode": "LAL",
+      "leagueName": "La Liga",
+      "leagueGroup": "top5",
+      "homeId": "1538",
+      "awayId": "87",
+      "home": "Levante",
+      "away": "Racing Santander",
+      "kickoffUTC": "2026-11-27T20:00Z",
+      "kickoffMMT": "28 Nov, 02:30 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 3.67,
+        "l3_conceded": 3.33,
+        "l3_sot": 2.0,
+        "l3_total_shots": 14.67,
+        "l3_blocked": 6.0,
+        "recent_corners": [
+          5,
+          1,
+          5
+        ],
+        "recent_conceded": [
+          1,
+          6,
+          3
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 4.67,
+        "l3_conceded": 8.67,
+        "l3_sot": 5.33,
+        "l3_total_shots": 14.33,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          7,
+          3,
+          4
+        ],
+        "recent_conceded": [
+          14,
+          6,
+          6
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 3.67,
+          "away": 4.67,
+          "total": 8.34
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.0,
+          "away": 9.66,
+          "total": 17.66
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 3.33,
+          "away": 8.67,
+          "homePts": -0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 6.2,
+        "refExpAway": 4.0,
+        "refTotal": 10.2,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 8.34 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 17.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (3.33 / 8.67, +0.5)"
+        ]
+      }
     }
   ]
 }
