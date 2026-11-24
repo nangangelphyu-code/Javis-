@@ -6,28 +6,73 @@ from datetime import datetime, timedelta, timezone
 import requests
 
 # ==========================================
-# 1. TARGET 10 LEAGUES (100% Free Public Feed)
+# 1. GLOBAL LEAGUES, UEFA & CUPS (45 Competitions)
 # ==========================================
 LEAGUES = [
-    {"slug": "eng.1", "code": "EPL", "name": "Premier League", "group": "top5"},
-    {"slug": "esp.1", "code": "LAL", "name": "La Liga", "group": "top5"},
-    {"slug": "ita.1", "code": "SER", "name": "Serie A", "group": "top5"},
-    {"slug": "ger.1", "code": "BUN", "name": "Bundesliga", "group": "top5"},
-    {"slug": "fra.1", "code": "LG1", "name": "Ligue 1", "group": "top5"},
-    {"slug": "usa.1", "code": "MLS", "name": "USA MLS", "group": "high5"},
-    {"slug": "eng.2", "code": "CHP", "name": "England Championship", "group": "high5"},
-    {"slug": "aus.1", "code": "ALE", "name": "A-League", "group": "high5"},
-    {"slug": "bra.2", "code": "BRB", "name": "Brazil Serie B", "group": "high5"},
-    {"slug": "ned.1", "code": "ERE", "name": "Eredivisie", "group": "high5"},
+    # UEFA & International Cups
+    {"slug": "uefa.champions", "code": "UCL", "name": "Champions League", "group": "cups", "lookback": 75},
+    {"slug": "uefa.europa", "code": "UEL", "name": "Europa League", "group": "cups", "lookback": 75},
+    {"slug": "uefa.europa.conf", "code": "UECL", "name": "Conference League", "group": "cups", "lookback": 75},
+    {"slug": "uefa.nations", "code": "UNL", "name": "UEFA Nations League", "group": "cups", "lookback": 120},
+    {"slug": "fifa.world", "code": "WCP", "name": "FIFA World Cup", "group": "cups", "lookback": 120},
+    {"slug": "fifa.worldq.uefa", "code": "WCQ-E", "name": "WC Qualifiers EU", "group": "cups", "lookback": 120},
+    {"slug": "fifa.worldq.conmebol", "code": "WCQ-S", "name": "WC Qualifiers SA", "group": "cups", "lookback": 120},
+    {"slug": "conmebol.libertadores", "code": "LIB", "name": "Copa Libertadores", "group": "cups", "lookback": 75},
+    {"slug": "conmebol.sudamericana", "code": "SUD", "name": "Copa Sudamericana", "group": "cups", "lookback": 75},
+
+    # Domestic Cups
+    {"slug": "eng.fa", "code": "FAC", "name": "FA Cup", "group": "cups", "lookback": 60},
+    {"slug": "eng.league_cup", "code": "EFL", "name": "Carabao Cup", "group": "cups", "lookback": 60},
+    {"slug": "esp.copa_del_rey", "code": "CDR", "name": "Copa del Rey", "group": "cups", "lookback": 60},
+    {"slug": "ger.dfb_pokal", "code": "DFB", "name": "DFB-Pokal", "group": "cups", "lookback": 60},
+    {"slug": "ita.coppa_italia", "code": "CIT", "name": "Coppa Italia", "group": "cups", "lookback": 60},
+    {"slug": "fra.coupe_de_france", "code": "CDF", "name": "Coupe de France", "group": "cups", "lookback": 60},
+
+    # Top 5 European Leagues
+    {"slug": "eng.1", "code": "EPL", "name": "Premier League", "group": "top5", "lookback": 45},
+    {"slug": "esp.1", "code": "LAL", "name": "La Liga", "group": "top5", "lookback": 45},
+    {"slug": "ita.1", "code": "SER", "name": "Serie A", "group": "top5", "lookback": 45},
+    {"slug": "ger.1", "code": "BUN", "name": "Bundesliga", "group": "top5", "lookback": 45},
+    {"slug": "fra.1", "code": "LG1", "name": "Ligue 1", "group": "top5", "lookback": 45},
+
+    # High-Corner Priority 5
+    {"slug": "usa.1", "code": "MLS", "name": "USA MLS", "group": "high5", "lookback": 45},
+    {"slug": "eng.2", "code": "CHP", "name": "Championship", "group": "high5", "lookback": 45},
+    {"slug": "aus.1", "code": "ALE", "name": "A-League", "group": "high5", "lookback": 45},
+    {"slug": "bra.2", "code": "BRB", "name": "Brazil Serie B", "group": "high5", "lookback": 45},
+    {"slug": "ned.1", "code": "ERE", "name": "Eredivisie", "group": "high5", "lookback": 45},
+
+    # Extended Global Coverage
+    {"slug": "eng.3", "code": "EFL1", "name": "England League One", "group": "global", "lookback": 45},
+    {"slug": "por.1", "code": "POR", "name": "Primeira Liga", "group": "global", "lookback": 45},
+    {"slug": "bel.1", "code": "BEL", "name": "Belgian Pro League", "group": "global", "lookback": 45},
+    {"slug": "tur.1", "code": "TUR", "name": "Turkish Super Lig", "group": "global", "lookback": 45},
+    {"slug": "sco.1", "code": "SCO", "name": "Scottish Premiership", "group": "global", "lookback": 45},
+    {"slug": "bra.1", "code": "BRA", "name": "Brazil Serie A", "group": "global", "lookback": 45},
+    {"slug": "arg.1", "code": "ARG", "name": "Argentina Liga", "group": "global", "lookback": 45},
+    {"slug": "mex.1", "code": "LMX", "name": "Liga MX", "group": "global", "lookback": 45},
+    {"slug": "ger.2", "code": "BL2", "name": "2. Bundesliga", "group": "global", "lookback": 45},
+    {"slug": "esp.2", "code": "LL2", "name": "La Liga 2", "group": "global", "lookback": 45},
+    {"slug": "ita.2", "code": "SRB", "name": "Serie B", "group": "global", "lookback": 45},
+    {"slug": "fra.2", "code": "L2F", "name": "Ligue 2", "group": "global", "lookback": 45},
+    {"slug": "aut.1", "code": "AUT", "name": "Austrian Bundesliga", "group": "global", "lookback": 45},
+    {"slug": "sui.1", "code": "SUI", "name": "Swiss Super League", "group": "global", "lookback": 45},
+    {"slug": "den.1", "code": "DEN", "name": "Danish Superliga", "group": "global", "lookback": 45},
+    {"slug": "nor.1", "code": "NOR", "name": "Eliteserien", "group": "global", "lookback": 45},
+    {"slug": "swe.1", "code": "SWE", "name": "Allsvenskan", "group": "global", "lookback": 45},
+    {"slug": "gre.1", "code": "GRE", "name": "Greek Super League", "group": "global", "lookback": 45},
+    {"slug": "jpn.1", "code": "JPN", "name": "J1 League", "group": "global", "lookback": 45},
+    {"slug": "ksa.1", "code": "KSA", "name": "Saudi Pro League", "group": "global", "lookback": 45},
 ]
 
 MMT = timezone(timedelta(hours=6, minutes=30))
 SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": "JavisCornerTerminal/1.0"})
+SESSION.headers.update({"User-Agent": "JavisCornerTerminal/2.1"})
 
-# Alert Thresholds (ပြင်ချင်ပါက ဤနေရာတွင် ပြောင်းနိုင်သည်)
 ALERT_MIN_LAMBDA = float(os.getenv("ALERT_MIN_LAMBDA", "10.8"))
-MIN_EDGE_TARGET = 0.04  # 4% Minimum Edge
+MIN_EDGE_TARGET = 0.04
+UPCOMING_DAYS = int(os.getenv("UPCOMING_DAYS", "7"))
+MAX_SAMPLES_PER_TEAM = 5
 
 
 # ==========================================
@@ -35,7 +80,6 @@ MIN_EDGE_TARGET = 0.04  # 4% Minimum Edge
 # ==========================================
 class PureCornerModel:
     def __init__(self, use_home_adv=True):
-        # Full Model Weights
         self.w_avg_corners = 0.25
         self.w_blocked_shots = 0.22
         self.w_shots_on_target = 0.12
@@ -58,7 +102,6 @@ class PureCornerModel:
                 + s["crosses"] * self.w_crosses
                 + s["touches_in_box"] * self.w_touches_in_box
             )
-        # Calibrated Lite Fallback (when advanced stats unavailable)
         return (
             s["avg_corners"] * 0.58
             + s["shots_on_target"] * 0.24
@@ -125,7 +168,7 @@ class PureCornerModel:
 
 
 # ==========================================
-# 3. DATA FETCHER (ESPN Public Soccer API)
+# 3. PARALLEL GLOBAL DATA FETCHER
 # ==========================================
 def safe_float(val):
     try:
@@ -146,15 +189,26 @@ def fetch_json(url, timeout=12):
     return None
 
 
+def fetch_league_boards(lg, now_utc):
+    slug = lg["slug"]
+    up_range = f"{now_utc.strftime('%Y%m%d')}-{(now_utc + timedelta(days=UPCOMING_DAYS)).strftime('%Y%m%d')}"
+    past_start = (now_utc - timedelta(days=lg.get("lookback", 45))).strftime("%Y%m%d")
+    past_end = now_utc.strftime("%Y%m%d")
+
+    up_board = fetch_json(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard?dates={up_range}")
+    past_board = fetch_json(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard?dates={past_start}-{past_end}")
+    return lg, up_board, past_board
+
+
 def extract_boxscore_stats(slug, event_id):
     url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/summary?event={event_id}"
     data = fetch_json(url)
     if not data:
-        return None
+        return False
 
     teams_box = data.get("boxscore", {}).get("teams", [])
     if len(teams_box) != 2:
-        return None
+        return False
 
     parsed = {}
     for entry in teams_box:
@@ -166,7 +220,7 @@ def extract_boxscore_stats(slug, event_id):
 
         corners = stats_map.get("woncorners")
         if corners is None:
-            return None  # Corner stat မပါသောပွဲ ကျော်မည်
+            return False
 
         parsed[tid] = {
             "corners": corners,
@@ -188,44 +242,22 @@ def extract_boxscore_stats(slug, event_id):
     return parsed
 
 
-def build_team_averages(slug, target_team_ids, cache):
-    now = datetime.now(timezone.utc)
-    start = (now - timedelta(days=38)).strftime("%Y%m%d")
-    end = now.strftime("%Y%m%d")
-    url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard?dates={start}-{end}"
-    board = fetch_json(url)
-    if not board:
-        return {}
-
-    team_event_ids = {tid: [] for tid in target_team_ids}
-    for ev in reversed(board.get("events", [])):
-        comp = (ev.get("competitions") or [{}])[0]
-        if not comp.get("status", {}).get("type", {}).get("completed"):
-            continue
-        ev_id = str(ev.get("id"))
-        for c in comp.get("competitors", []):
-            tid = str(c.get("team", {}).get("id", ""))
-            if tid in team_event_ids and len(team_event_ids[tid]) < 5:
-                team_event_ids[tid].append(ev_id)
-
-    needed_events = set()
-    for ev_list in team_event_ids.values():
-        for eid in ev_list:
-            if eid not in cache:
-                needed_events.add(eid)
-
-    if needed_events:
-        with ThreadPoolExecutor(max_workers=6) as ex:
-            futs = {ex.submit(extract_boxscore_stats, slug, eid): eid for eid in needed_events}
-            for fut in as_completed(futs):
-                eid = futs[fut]
-                res = fut.result()
-                if res:
-                    cache[eid] = res
-
+def compute_team_averages(team_ids, team_history_events, cache):
     averages = {}
-    for tid, ev_list in team_event_ids.items():
-        rows = [cache[eid][tid] for eid in ev_list if eid in cache and tid in cache[eid]]
+    for tid in team_ids:
+        ev_refs = sorted(team_history_events.get(tid, []), key=lambda x: x[0], reverse=True)
+        rows = []
+        seen_eids = set()
+        for _, eid, _ in ev_refs:
+            if eid in seen_eids:
+                continue
+            seen_eids.add(eid)
+            entry = cache.get(eid)
+            if isinstance(entry, dict) and tid in entry:
+                rows.append(entry[tid])
+            if len(rows) >= MAX_SAMPLES_PER_TEAM:
+                break
+
         if not rows:
             averages[tid] = {
                 "avg_corners": 5.0,
@@ -267,10 +299,11 @@ def send_push_alerts(hot_matches):
     tg_token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     tg_chat = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
-    for m in hot_matches:
+    for m in hot_matches[:15]:
         title = f"JAVIS +EV RADAR | {m['leagueCode']} (λ {m['totalLambda']})"
         body = (
             f"{m['home']} vs {m['away']}\n"
+            f"League: {m['leagueName']}\n"
             f"Kickoff (MMT): {m['kickoffMMT']}\n"
             f"Exp Corners: {m['expHome']} - {m['expAway']} (Total λ: {m['totalLambda']})\n"
             f"Target: Over {m['target']['line']} ({m['target']['overProb']}%)\n"
@@ -278,7 +311,6 @@ def send_push_alerts(hot_matches):
             f"Stake: 1% - 2% Flat"
         )
 
-        # 1) Send via ntfy (Zero-config Android Push Noti)
         if ntfy_topic:
             try:
                 SESSION.post(
@@ -290,7 +322,6 @@ def send_push_alerts(hot_matches):
             except Exception as e:
                 print("ntfy error:", e)
 
-        # 2) Send via Telegram Bot (Optional)
         if tg_token and tg_chat:
             try:
                 SESSION.post(
@@ -305,91 +336,145 @@ def send_push_alerts(hot_matches):
 # ==========================================
 # 5. MAIN EXECUTION
 # ==========================================
+def load_json_safe(path, default):
+    try:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+    except Exception:
+        pass
+    return default
+
+
 def main():
     os.makedirs("data", exist_ok=True)
     cache_path = "data/event_cache.json"
     notified_path = "data/notified.json"
 
-    cache = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
-    notified = set(json.load(open(notified_path))) if os.path.exists(notified_path) else set()
+    cache = load_json_safe(cache_path, {})
+    notified = set(load_json_safe(notified_path, []))
 
     model = PureCornerModel(use_home_adv=True)
     now_utc = datetime.now(timezone.utc)
-    date_range = f"{now_utc.strftime('%Y%m%d')}-{(now_utc + timedelta(days=2)).strftime('%Y%m%d')}"
 
+    upcoming_items = []
+    seen_upcoming_ids = set()
+    active_team_ids = set()
+    team_history_events = {}
+
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        futs = [ex.submit(fetch_league_boards, lg, now_utc) for lg in LEAGUES]
+        for fut in as_completed(futs):
+            lg, up_board, past_board = fut.result()
+            slug = lg["slug"]
+
+            if up_board:
+                for ev in up_board.get("events", []):
+                    ev_id = str(ev.get("id", ""))
+                    if not ev_id or ev_id in seen_upcoming_ids:
+                        continue
+                    comp = (ev.get("competitions") or [{}])[0]
+                    state = comp.get("status", {}).get("type", {}).get("state", "")
+                    if state == "post":
+                        continue
+                    competitors = comp.get("competitors", [])
+                    home_c = next((c for c in competitors if c.get("homeAway") == "home"), None)
+                    away_c = next((c for c in competitors if c.get("homeAway") == "away"), None)
+                    if not home_c or not away_c:
+                        continue
+                    hid = str(home_c["team"]["id"])
+                    aid = str(away_c["team"]["id"])
+                    seen_upcoming_ids.add(ev_id)
+                    active_team_ids.update([hid, aid])
+                    upcoming_items.append((lg, ev, home_c, away_c, hid, aid))
+
+            if past_board:
+                for ev in past_board.get("events", []):
+                    comp = (ev.get("competitions") or [{}])[0]
+                    if not comp.get("status", {}).get("type", {}).get("completed"):
+                        continue
+                    ev_id = str(ev.get("id", ""))
+                    ev_date = ev.get("date", "")
+                    for c in comp.get("competitors", []):
+                        tid = str(c.get("team", {}).get("id", ""))
+                        if tid:
+                            team_history_events.setdefault(tid, []).append((ev_date, ev_id, slug))
+
+    needed_boxscores = {}
+    for tid in active_team_ids:
+        ev_refs = sorted(team_history_events.get(tid, []), key=lambda x: x[0], reverse=True)
+        picked = 0
+        seen_eids = set()
+        for _, eid, slug in ev_refs:
+            if eid in seen_eids:
+                continue
+            seen_eids.add(eid)
+            if eid not in cache:
+                needed_boxscores[eid] = slug
+            picked += 1
+            if picked >= MAX_SAMPLES_PER_TEAM + 1:
+                break
+
+    if needed_boxscores:
+        with ThreadPoolExecutor(max_workers=12) as ex:
+            futs = {
+                ex.submit(extract_boxscore_stats, slug, eid): eid
+                for eid, slug in needed_boxscores.items()
+            }
+            for fut in as_completed(futs):
+                eid = futs[fut]
+                cache[eid] = fut.result()
+
+    team_avgs = compute_team_averages(active_team_ids, team_history_events, cache)
     all_matches = []
     hot_alerts = []
 
-    for lg in LEAGUES:
-        url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{lg['slug']}/scoreboard?dates={date_range}"
-        board = fetch_json(url)
-        if not board:
+    for lg, ev, home_c, away_c, hid, aid in upcoming_items:
+        ev_id = str(ev["id"])
+        h_stats = team_avgs[hid]
+        a_stats = team_avgs[aid]
+
+        if h_stats["sample_size"] == 0 and a_stats["sample_size"] == 0:
             continue
 
-        upcoming = []
-        team_ids = set()
-        for ev in board.get("events", []):
-            comp = (ev.get("competitions") or [{}])[0]
-            state = comp.get("status", {}).get("type", {}).get("state", "")
-            if state == "post":
-                continue
-            competitors = comp.get("competitors", [])
-            home_c = next((c for c in competitors if c.get("homeAway") == "home"), None)
-            away_c = next((c for c in competitors if c.get("homeAway") == "away"), None)
-            if not home_c or not away_c:
-                continue
-            hid = str(home_c["team"]["id"])
-            aid = str(away_c["team"]["id"])
-            team_ids.update([hid, aid])
-            upcoming.append((ev, home_c, away_c, hid, aid))
+        exp_h, exp_a, total_lam, mode = model.get_expected_corners(h_stats, a_stats)
+        target = model.suggest_target_line(total_lam)
 
-        if not upcoming:
-            continue
+        dt_utc = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
+        dt_mmt = dt_utc.astimezone(MMT)
+        has_solid_data = h_stats["sample_size"] >= 2 and a_stats["sample_size"] >= 2
+        is_hot = total_lam >= ALERT_MIN_LAMBDA and has_solid_data
 
-        team_avgs = build_team_averages(lg["slug"], team_ids, cache)
+        match_obj = {
+            "id": ev_id,
+            "leagueCode": lg["code"],
+            "leagueName": lg["name"],
+            "leagueGroup": lg["group"],
+            "home": home_c["team"]["displayName"],
+            "away": away_c["team"]["displayName"],
+            "kickoffUTC": ev["date"],
+            "kickoffMMT": dt_mmt.strftime("%d %b, %I:%M %p"),
+            "modelMode": mode,
+            "expHome": exp_h,
+            "expAway": exp_a,
+            "totalLambda": total_lam,
+            "target": target,
+            "homeStats": h_stats,
+            "awayStats": a_stats,
+            "isHotSignal": is_hot,
+        }
+        all_matches.append(match_obj)
 
-        for ev, home_c, away_c, hid, aid in upcoming:
-            ev_id = str(ev["id"])
-            h_stats = team_avgs.get(hid, {"avg_corners": 5.0, "shots_on_target": 4.2, "corners_conceded": 5.0, "sample_size": 0})
-            a_stats = team_avgs.get(aid, {"avg_corners": 5.0, "shots_on_target": 4.2, "corners_conceded": 5.0, "sample_size": 0})
+        if is_hot and ev_id not in notified:
+            hot_alerts.append(match_obj)
+            notified.add(ev_id)
 
-            exp_h, exp_a, total_lam, mode = model.get_expected_corners(h_stats, a_stats)
-            target = model.suggest_target_line(total_lam)
-
-            dt_utc = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
-            dt_mmt = dt_utc.astimezone(MMT)
-            is_hot = total_lam >= ALERT_MIN_LAMBDA and h_stats.get("sample_size", 0) >= 2 and a_stats.get("sample_size", 0) >= 2
-
-            match_obj = {
-                "id": ev_id,
-                "leagueCode": lg["code"],
-                "leagueName": lg["name"],
-                "leagueGroup": lg["group"],
-                "home": home_c["team"]["displayName"],
-                "away": away_c["team"]["displayName"],
-                "kickoffUTC": ev["date"],
-                "kickoffMMT": dt_mmt.strftime("%d %b, %I:%M %p"),
-                "modelMode": mode,
-                "expHome": exp_h,
-                "expAway": exp_a,
-                "totalLambda": total_lam,
-                "target": target,
-                "homeStats": h_stats,
-                "awayStats": a_stats,
-                "isHotSignal": is_hot,
-            }
-            all_matches.append(match_obj)
-
-            if is_hot and ev_id not in notified:
-                hot_alerts.append(match_obj)
-                notified.add(ev_id)
-
-    # Sort highest expected corners first
     all_matches.sort(key=lambda x: x["totalLambda"], reverse=True)
 
     output = {
         "updatedAtUTC": now_utc.isoformat(),
         "updatedAtMMT": now_utc.astimezone(MMT).strftime("%d %b %Y, %I:%M %p"),
+        "leagueCount": len(LEAGUES),
         "matchCount": len(all_matches),
         "matches": all_matches,
     }
@@ -397,17 +482,16 @@ def main():
     with open("matches.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    # Keep cache compact (last 600 events)
-    if len(cache) > 600:
-        cache = dict(list(cache.items())[-600:])
+    if len(cache) > 2500:
+        cache = dict(list(cache.items())[-2500:])
     with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f)
 
     with open(notified_path, "w", encoding="utf-8") as f:
-        json.dump(list(notified)[-300:], f)
+        json.dump(list(notified)[-500:], f)
 
     send_push_alerts(hot_alerts)
-    print(f"Javis Scan Complete: {len(all_matches)} matches, {len(hot_alerts)} new alerts sent.")
+    print(f"Javis Global Scan Complete: {len(all_matches)} matches across {len(LEAGUES)} competitions, {len(hot_alerts)} alerts.")
 
 
 if __name__ == "__main__":
