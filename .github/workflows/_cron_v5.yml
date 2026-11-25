@@ -1,0 +1,38 @@
+name: Javis v5 Corner Engine
+
+on:
+  schedule:
+    # Runs every 2 hours at minute 15 (zero collision with v4.2 workflow)
+    - cron: '15 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-javis-v5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Javis v5 Engine
+        run: python3 javis_engine_v5.py
+
+      - name: Commit and push v5 JSON feeds
+        run: |
+          git config user.name "javis-v5-bot"
+          git config user.email "actions@github.com"
+          git add matches_v5.json history_v5.json
+          if git diff --cached --quiet; then
+            echo "No v5 data changes to commit."
+          else
+            git commit -m "chore(v5): update corner signals & history"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push
+          fi
