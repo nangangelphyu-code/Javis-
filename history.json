@@ -1,10 +1,10 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
-  "updatedAtMMT": "25 Nov 2026, 05:23 AM",
+  "updatedAtMMT": "25 Nov 2026, 07:31 AM",
   "summary": {
     "standardLine": 9.5,
-    "totalGraded": 29,
-    "pendingCount": 60,
+    "totalGraded": 30,
+    "pendingCount": 59,
     "picksSummary": {
       "hits": 5,
       "misses": 7,
@@ -12,10 +12,10 @@
       "hitRate": 41.7
     },
     "allSummary": {
-      "hits": 17,
+      "hits": 18,
       "misses": 12,
-      "total": 29,
-      "hitRate": 58.6
+      "total": 30,
+      "hitRate": 60.0
     },
     "byTier": {
       "GOLDEN": {
@@ -31,10 +31,10 @@
         "hitRate": 36.4
       },
       "RISKY": {
-        "hits": 11,
+        "hits": 12,
         "misses": 3,
-        "total": 14,
-        "hitRate": 78.6
+        "total": 15,
+        "hitRate": 80.0
       },
       "NO_BET": {
         "hits": 1,
@@ -1899,12 +1899,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 5,
+      "actualAwayCorners": 10,
+      "actualTotal": 15,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "25 Nov, 07:31 AM"
     },
     {
       "id": "401915299",
