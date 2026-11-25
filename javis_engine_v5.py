@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Javis v5.0 — Automated Corner Analytics & Hybrid Backtesting Engine
-- Zero external dependencies (Python 3 standard library only)
-- Safe isolated v5 outputs: matches_v5.json & history_v5.json (never modifies v4.2 files)
-- Strict separation of Club (45d lookback) and Official Senior Men's International (120d lookback)
-- Pre-match Snapshot Lock + Auto-Grading (2.2h post-kickoff) + Hybrid 3,000-record Archive
+- Uses proven browser headers & universal ESPN soccer/all endpoints (matching v4.1 reliability)
+- Warm-reads data/event_cache.json and migrates existing history.json records cleanly
+- Strict separation of Club (28 competitions) and Official Senior Men's International (11 competitions, 120d lookback)
+- Outputs isolated matches_v5.json & history_v5.json without touching v4.2 files
 """
 
 import json
@@ -15,77 +15,104 @@ import urllib.error
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
+try:
+    import requests
+except ImportError:
+    requests = None
+
 # ==============================================================================
-# CONFIGURATION
+# 1. CONFIGURATION & COMPETITIONS
 # ==============================================================================
 OUTPUT_MATCHES = "matches_v5.json"
 OUTPUT_HISTORY = "history_v5.json"
 LEGACY_HISTORY = "history.json"
+SHARED_CACHE_PATH = "data/event_cache.json"
+V5_CACHE_PATH = "data/event_cache_v5.json"
 
+ENGINE_VERSION = "5.0"
+CACHE_SCHEMA_VERSION = "4.1"
+STANDARD_LINE = 9.5
+UPCOMING_DAYS = int(os.getenv("UPCOMING_DAYS", "7"))
+MIN_SAMPLES_REQUIRED = 2
+L3_WINDOW = 3
 MAX_HISTORY_RECORDS = 3000
-UPCOMING_DAYS = 7
-CLUB_LOOKBACK_DAYS = 45
-INTL_LOOKBACK_DAYS = 120
 GRADE_DELAY_HOURS = 2.2
 VOID_EXPIRE_DAYS = 5
-DEFAULT_TARGET_LINE = 9.5
-MAX_WORKERS = 8
-HTTP_TIMEOUT = 12
+INTL_LOOKBACK_DAYS = 120
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; JavisCornerEngine/5.0)",
-    "Accept": "application/json",
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
 }
 
-# Club Leagues & Cups (28 Competitions — 45-day lookback)
+if requests is not None:
+    SESSION = requests.Session()
+    SESSION.headers.update(BROWSER_HEADERS)
+else:
+    SESSION = None
+
+# 28 Proven Club Leagues & Cups
 CLUB_LEAGUES = [
-    ("eng.1", "Premier League", "EPL"),
-    ("eng.2", "Championship", "EFL"),
-    ("eng.fa", "FA Cup", "FAC"),
-    ("eng.league_cup", "Carabao Cup", "CAR"),
-    ("esp.1", "La Liga", "LAL"),
-    ("esp.2", "La Liga 2", "LA2"),
-    ("esp.copa_del_rey", "Copa del Rey", "CDR"),
-    ("ger.1", "Bundesliga", "BUN"),
-    ("ger.2", "2. Bundesliga", "BL2"),
-    ("ger.dfb_pokal", "DFB-Pokal", "DFB"),
-    ("ita.1", "Serie A", "SEA"),
-    ("ita.2", "Serie B", "SEB"),
-    ("ita.coppa_italia", "Coppa Italia", "COP"),
-    ("fra.1", "Ligue 1", "L1"),
-    ("fra.2", "Ligue 2", "L2"),
-    ("fra.coupe_de_france", "Coupe de France", "CDF"),
-    ("ned.1", "Eredivisie", "ERE"),
-    ("por.1", "Primeira Liga", "POR"),
-    ("bel.1", "Belgian Pro League", "BEL"),
-    ("tur.1", "Süper Lig", "TUR"),
-    ("sco.1", "Scottish Premiership", "SCO"),
-    ("uefa.champions", "Champions League", "UCL"),
-    ("uefa.europa", "Europa League", "UEL"),
-    ("uefa.europa.conf", "Conference League", "UECL"),
-    ("usa.1", "USA MLS", "MLS"),
-    ("mex.1", "Liga MX", "LMX"),
-    ("bra.1", "Brasileirão", "BRA"),
-    ("arg.1", "Liga Profesional", "ARG"),
+    {"slug": "uefa.champions", "code": "UCL", "name": "Champions League", "lookback": 100},
+    {"slug": "uefa.europa", "code": "UEL", "name": "Europa League", "lookback": 100},
+    {"slug": "uefa.europa.conf", "code": "UECL", "name": "Conference League", "lookback": 100},
+    {"slug": "eng.fa", "code": "FAC", "name": "FA Cup", "lookback": 90},
+    {"slug": "eng.league_cup", "code": "EFL", "name": "Carabao Cup", "lookback": 90},
+    {"slug": "eng.1", "code": "EPL", "name": "Premier League", "lookback": 70},
+    {"slug": "esp.1", "code": "LAL", "name": "La Liga", "lookback": 70},
+    {"slug": "ita.1", "code": "SER", "name": "Serie A", "lookback": 70},
+    {"slug": "ger.1", "code": "BUN", "name": "Bundesliga", "lookback": 70},
+    {"slug": "fra.1", "code": "LG1", "name": "Ligue 1", "lookback": 70},
+    {"slug": "usa.1", "code": "MLS", "name": "USA MLS", "lookback": 70},
+    {"slug": "eng.2", "code": "CHP", "name": "Championship", "lookback": 70},
+    {"slug": "aus.1", "code": "ALE", "name": "A-League", "lookback": 70},
+    {"slug": "bra.2", "code": "BRB", "name": "Brazil Serie B", "lookback": 70},
+    {"slug": "ned.1", "code": "ERE", "name": "Eredivisie", "lookback": 70},
+    {"slug": "eng.3", "code": "EFL1", "name": "England League One", "lookback": 70},
+    {"slug": "por.1", "code": "POR", "name": "Primeira Liga", "lookback": 70},
+    {"slug": "bel.1", "code": "BEL", "name": "Belgian Pro League", "lookback": 70},
+    {"slug": "tur.1", "code": "TUR", "name": "Turkish Super Lig", "lookback": 70},
+    {"slug": "sco.1", "code": "SCO", "name": "Scottish Premiership", "lookback": 70},
+    {"slug": "bra.1", "code": "BRA", "name": "Brazil Serie A", "lookback": 70},
+    {"slug": "arg.1", "code": "ARG", "name": "Argentina Liga", "lookback": 70},
+    {"slug": "mex.1", "code": "LMX", "name": "Liga MX", "lookback": 70},
+    {"slug": "ger.2", "code": "BL2", "name": "2. Bundesliga", "lookback": 70},
+    {"slug": "esp.2", "code": "LL2", "name": "La Liga 2", "lookback": 70},
+    {"slug": "ita.2", "code": "SRB", "name": "Serie B", "lookback": 70},
+    {"slug": "aut.1", "code": "AUT", "name": "Austrian Bundesliga", "lookback": 70},
+    {"slug": "den.1", "code": "DEN", "name": "Danish Superliga", "lookback": 70},
 ]
 
-# Official Senior Men's International Competitions (120-day lookback — NO friendlies/youth/women)
+# 11 Official Senior Men's International Competitions (120-day lookback — NO friendlies/youth/women)
 INTL_LEAGUES = [
-    ("uefa.nations", "UEFA Nations League", "UNL"),
-    ("fifa.worldq.uefa", "World Cup Qualifiers (UEFA)", "WCQ"),
-    ("fifa.worldq.conmebol", "World Cup Qualifiers (CONMEBOL)", "WCQ"),
-    ("fifa.worldq.afc", "World Cup Qualifiers (AFC)", "WCQ"),
-    ("fifa.worldq.concacaf", "World Cup Qualifiers (CONCACAF)", "WCQ"),
-    ("fifa.worldq.caf", "World Cup Qualifiers (CAF)", "WCQ"),
-    ("fifa.world", "FIFA World Cup", "WC"),
-    ("uefa.euro", "UEFA Euro", "EURO"),
-    ("conmebol.america", "Copa América", "COPA"),
-    ("afc.asian.cup", "AFC Asian Cup", "AFC"),
-    ("caf.nations", "AFCON", "AFCON"),
+    {"slug": "uefa.nations", "code": "UNL", "name": "UEFA Nations League", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "fifa.worldq.uefa", "code": "WCQ", "name": "World Cup Qualifiers (UEFA)", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "fifa.worldq.conmebol", "code": "WCQ", "name": "World Cup Qualifiers (CONMEBOL)", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "fifa.worldq.afc", "code": "WCQ", "name": "World Cup Qualifiers (AFC)", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "fifa.worldq.concacaf", "code": "WCQ", "name": "World Cup Qualifiers (CONCACAF)", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "fifa.worldq.caf", "code": "WCQ", "name": "World Cup Qualifiers (CAF)", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "fifa.world", "code": "WC", "name": "FIFA World Cup", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "uefa.euro", "code": "EURO", "name": "UEFA Euro", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "conmebol.america", "code": "COPA", "name": "Copa América", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "afc.asian.cup", "code": "AFC", "name": "AFC Asian Cup", "lookback": INTL_LOOKBACK_DAYS},
+    {"slug": "caf.nations", "code": "AFCON", "name": "AFCON", "lookback": INTL_LOOKBACK_DAYS},
 ]
+
+INTL_SLUGS = {lg["slug"] for lg in INTL_LEAGUES}
+SLUG_TO_CODE = {lg["slug"]: lg["code"] for lg in CLUB_LEAGUES + INTL_LEAGUES}
+SLUG_TO_CODE.update({
+    "esp.copa_del_rey": "CDR",
+    "ita.coppa_italia": "CIT",
+    "ger.dfb_pokal": "DFB",
+    "fra.coupe_de_france": "CDF",
+})
+
+MMT = timezone(timedelta(hours=6, minutes=30))
+
 
 # ==============================================================================
-# HELPERS
+# 2. HTTP & PARSING HELPERS
 # ==============================================================================
 def utc_now():
     return datetime.now(timezone.utc)
@@ -95,199 +122,319 @@ def iso_utc(dt):
     return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def parse_iso_utc(raw):
-    if not raw or not isinstance(raw, str):
+def parse_utc(iso_str):
+    if not iso_str:
         return None
-    s = raw.strip()
-    if s.endswith("Z"):
-        s = s[:-1] + "+00:00"
-    # Handle timestamps missing seconds like 2026-11-25T19:45+00:00
+    s = str(iso_str).strip().replace("Z", "+00:00")
     if len(s) == 22 and s[16] in "+-":
         s = s[:16] + ":00" + s[16:]
     try:
         dt = datetime.fromisoformat(s)
         return dt.astimezone(timezone.utc) if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
-    except ValueError:
+    except Exception:
         return None
 
 
-def parse_float(val):
-    if val is None:
-        return None
-    s = str(val).strip().replace("%", "")
-    if not s or s in ("-", "--", "N/A", "null", "None"):
-        return None
+def safe_float(val):
     try:
-        return float(s)
+        if val is None or val == "" or val == "--":
+            return None
+        return float(str(val).replace("%", "").strip())
     except ValueError:
         return None
 
 
-def fetch_json(url, retries=2):
-    for attempt in range(retries + 1):
-        try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
-                return json.loads(resp.read().decode("utf-8"))
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
-            if attempt < retries:
-                time.sleep(0.6 * (attempt + 1))
+def pick_stat(stats_map, *keys):
+    for k in keys:
+        if stats_map.get(k) is not None:
+            return stats_map[k]
     return None
 
 
-def date_chunks(start_dt, end_dt, step_days):
-    chunks = []
-    cur = start_dt
-    while cur <= end_dt:
-        nxt = min(cur + timedelta(days=step_days - 1), end_dt)
-        chunks.append((cur.strftime("%Y%m%d"), nxt.strftime("%Y%m%d")))
-        cur = nxt + timedelta(days=1)
-    return chunks
+def fetch_json(url, timeout=15, retries=2):
+    for attempt in range(retries):
+        try:
+            if SESSION is not None:
+                r = SESSION.get(url, timeout=timeout)
+                if r.status_code == 200:
+                    return r.json()
+                if r.status_code in (429, 500, 502, 503, 504):
+                    time.sleep(0.6 * (attempt + 1))
+                    continue
+                return None
+            else:
+                req = urllib.request.Request(url, headers=BROWSER_HEADERS)
+                with urllib.request.urlopen(req, timeout=timeout) as resp:
+                    return json.loads(resp.read().decode("utf-8"))
+        except Exception:
+            time.sleep(0.4 * (attempt + 1))
+    return None
+
+
+def load_json_safe(path, default):
+    try:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+    except Exception:
+        pass
+    return default
 
 
 # ==============================================================================
-# ESPN FETCHING & BOXSCORE EXTRACTION
+# 3. ESPN SCOREBOARD, SCHEDULE & BOXSCORE EXTRACTION
 # ==============================================================================
-def fetch_scoreboard_events(slug, start_str, end_str):
-    url = (
-        f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
-        f"?dates={start_str}-{end_str}&limit=300"
-    )
-    data = fetch_json(url)
-    if not data or "events" not in data:
-        return []
-    return data.get("events", [])
+def fetch_league_boards(lg, comp_type, now_utc):
+    slug = lg["slug"]
+    base = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
+    up_range = f"{now_utc.strftime('%Y%m%d')}-{(now_utc + timedelta(days=UPCOMING_DAYS)).strftime('%Y%m%d')}"
+    past_start = (now_utc - timedelta(days=lg.get("lookback", 70))).strftime("%Y%m%d")
+    past_end = now_utc.strftime("%Y%m%d")
+
+    default_board = fetch_json(base)
+    up_board = fetch_json(f"{base}?dates={up_range}")
+    past_board = fetch_json(f"{base}?dates={past_start}-{past_end}")
+    return lg, comp_type, default_board, up_board, past_board
 
 
-def parse_event_meta(ev, slug, league_name, comp_code, comp_type):
-    event_id = str(ev.get("id", "")).strip()
-    if not event_id:
-        return None
-    comps = ev.get("competitions") or []
-    if not comps:
-        return None
-    comp = comps[0]
-    competitors = comp.get("competitors") or []
-    if len(competitors) < 2:
-        return None
+def fetch_team_completed_events(tid, candidate_slugs, comp_type, now_utc):
+    """
+    Fetch completed matches for a team strictly isolated by comp_type:
+    - 'club': all club competitions (excludes INTL_SLUGS & friendlies)
+    - 'intl': strictly official INTL_SLUGS within 120 days (excludes club, friendlies, youth/women)
+    """
+    found = {}
+    lookback_days = INTL_LOOKBACK_DAYS if comp_type == "intl" else 100
+    cutoff_dt = now_utc - timedelta(days=lookback_days)
 
-    home = next((c for c in competitors if c.get("homeAway") == "home"), None)
-    away = next((c for c in competitors if c.get("homeAway") == "away"), None)
-    if not home or not away:
-        return None
+    urls = []
+    if comp_type == "club":
+        urls.append(f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/teams/{tid}/schedule")
+    for slug in candidate_slugs:
+        if slug:
+            urls.append(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/teams/{tid}/schedule")
 
-    home_team = home.get("team") or {}
-    away_team = away.get("team") or {}
-    home_id = str(home_team.get("id", "")).strip()
-    away_id = str(away_team.get("id", "")).strip()
-    if not home_id or not away_id:
-        return None
-
-    dt = parse_iso_utc(ev.get("date") or comp.get("date"))
-    if not dt:
-        return None
-
-    status_obj = (comp.get("status") or ev.get("status") or {}).get("type") or {}
-    state = status_obj.get("state", "")  # 'pre', 'in', 'post'
-    status_name = status_obj.get("name", "")
-
-    return {
-        "id": event_id,
-        "slug": slug,
-        "league": league_name,
-        "comp_code": comp_code,
-        "comp_type": comp_type,
-        "kickoff_dt": dt,
-        "kickoff_utc": iso_utc(dt),
-        "home_id": home_id,
-        "away_id": away_id,
-        "home_team": home_team.get("displayName") or home_team.get("shortDisplayName") or "Home",
-        "away_team": away_team.get("displayName") or away_team.get("shortDisplayName") or "Away",
-        "home_short": home_team.get("shortDisplayName") or home_team.get("displayName") or "Home",
-        "away_short": away_team.get("shortDisplayName") or away_team.get("displayName") or "Away",
-        "state": state,
-        "status_name": status_name,
-    }
-
-
-def extract_team_stats(stats_list):
-    """Extract corners, SOT, blockedShots, totalShots from ESPN statistics array."""
-    out = {"corners": None, "sot": None, "blocked": None, "shots": None}
-    for st in stats_list or []:
-        name = (st.get("name") or "").lower()
-        label = (st.get("label") or "").lower()
-        val = parse_float(st.get("displayValue"))
-        if val is None:
+    for url in urls:
+        data = fetch_json(url)
+        if not data:
             continue
-        if name == "woncorners" or ("corner" in name and "conceded" not in name) or label == "corners":
-            out["corners"] = val
-        elif name in ("shotsontarget", "shotsongoal") or label == "shots on target":
-            out["sot"] = val
-        elif name in ("blockedshots", "shotsblocked") or "blocked" in name:
-            out["blocked"] = val
-        elif name in ("totalshots", "shots") or label in ("shots", "total shots"):
-            out["shots"] = val
-    return out
+        default_slug = data.get("league", {}).get("slug", "")
+        for ev in data.get("events", []):
+            comp = (ev.get("competitions") or [{}])[0]
+            st_type = comp.get("status", {}).get("type", {})
+            if not st_type.get("completed") and st_type.get("state") != "post":
+                continue
+            eid = str(ev.get("id", ""))
+            edate = comp.get("date") or ev.get("date") or ""
+            dt = parse_utc(edate)
+            if not eid or not dt or dt >= now_utc or dt < cutoff_dt:
+                continue
+
+            ev_slug = (ev.get("league") or {}).get("slug") or default_slug or (candidate_slugs[0] if candidate_slugs else "")
+            ev_slug_low = ev_slug.lower()
+
+            # Never include friendlies, youth, or women's matches
+            if "friendly" in ev_slug_low or "women" in ev_slug_low or "u21" in ev_slug_low or "u23" in ev_slug_low:
+                continue
+
+            if comp_type == "intl":
+                if ev_slug not in INTL_SLUGS:
+                    continue
+            else:
+                if ev_slug in INTL_SLUGS:
+                    continue
+
+            found[eid] = (dt.timestamp(), edate, eid, ev_slug or "all")
+        if comp_type == "club" and len(found) >= 8 and "soccer/all/" in url:
+            break
+
+    return list(found.values())
 
 
-def fetch_boxscore_summary(slug, event_id, home_id=None, away_id=None):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/summary?event={event_id}"
-    data = fetch_json(url)
+def extract_boxscore_stats(slug, event_id):
+    urls = [f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event={event_id}"]
+    if slug and slug != "all":
+        urls.append(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/summary?event={event_id}")
+
+    data = None
+    for u in urls:
+        cand = fetch_json(u)
+        if cand and cand.get("boxscore", {}).get("teams"):
+            data = cand
+            break
     if not data:
         return None
 
-    # Determine status & extra time
-    header = data.get("header") or {}
-    h_comps = header.get("competitions") or []
-    h_comp = h_comps[0] if h_comps else {}
-    status_type = (h_comp.get("status") or {}).get("type") or {}
+    header = data.get("header", {})
+    header_comp = (header.get("competitions") or [{}])[0]
+    status_obj = header_comp.get("status", {})
+    status_type = status_obj.get("type", {})
     state = status_type.get("state", "")
-    status_name = status_type.get("name", "")
-    extra_time = any(k in status_name.upper() for k in ("AET", "PEN", "EXTRA"))
+    if state and state != "post":
+        return None
 
-    # Resolve home/away IDs from header if not provided
-    if (not home_id or not away_id) and h_comp.get("competitors"):
-        for c in h_comp["competitors"]:
-            tid = str((c.get("team") or {}).get("id", ""))
-            if c.get("homeAway") == "home":
-                home_id = tid
-            elif c.get("homeAway") == "away":
-                away_id = tid
+    status_detail = (status_type.get("shortDetail") or status_type.get("detail") or "").upper()
+    period = status_obj.get("period", 2) or 2
+    is_extra_time = (
+        period > 2
+        or "AET" in status_detail
+        or "ET" in status_detail
+        or "PEN" in status_detail
+        or "EXTRA" in status_detail
+    )
 
-    box_teams = (data.get("boxscore") or {}).get("teams") or []
-    if len(box_teams) < 2:
-        return {"state": state, "extra_time": extra_time, "valid": False}
+    ev_date_iso = header_comp.get("date") or ""
+    dt_utc = parse_utc(ev_date_iso)
+    date_short = dt_utc.astimezone(MMT).strftime("%d %b") if dt_utc else "--"
 
-    stats_by_id = {}
-    for bt in box_teams:
-        tid = str((bt.get("team") or {}).get("id", ""))
-        stats_by_id[tid] = extract_team_stats(bt.get("statistics"))
+    league_obj = header.get("league") or {}
+    ev_slug = league_obj.get("slug") or slug or ""
+    league_code = (
+        SLUG_TO_CODE.get(ev_slug)
+        or (league_obj.get("abbreviation") or "").upper()
+        or "CMP"
+    )
 
-    h_st = stats_by_id.get(str(home_id))
-    a_st = stats_by_id.get(str(away_id))
-    if not h_st or not a_st:
-        # Positional fallback only if IDs unavailable
-        if not home_id or not away_id:
-            h_st = extract_team_stats(box_teams[0].get("statistics"))
-            a_st = extract_team_stats(box_teams[1].get("statistics"))
-        else:
-            return {"state": state, "extra_time": extra_time, "valid": False}
+    comp_meta = {}
+    for c in header_comp.get("competitors", []):
+        ctid = str(c.get("team", {}).get("id", ""))
+        if ctid:
+            comp_meta[ctid] = {
+                "name": c.get("team", {}).get("shortDisplayName") or c.get("team", {}).get("displayName") or "Team",
+                "venue": "H" if c.get("homeAway") == "home" else "A",
+            }
 
-    if h_st["corners"] is None or a_st["corners"] is None:
-        return {"state": state, "extra_time": extra_time, "valid": False}
+    teams_box = data.get("boxscore", {}).get("teams", [])
+    if len(teams_box) != 2:
+        return None
+
+    parsed = {}
+    for entry in teams_box:
+        t_obj = entry.get("team", {})
+        tid = str(t_obj.get("id", ""))
+        if not tid:
+            continue
+        stats_map = {}
+        for st in entry.get("statistics", []):
+            name = (st.get("name") or "").lower().strip()
+            label = (st.get("label") or "").lower().strip()
+            val = safe_float(st.get("displayValue"))
+            if name:
+                stats_map[name] = val
+            if label:
+                stats_map[label] = val
+
+        corners = pick_stat(stats_map, "woncorners", "cornerkicks", "corners", "corner kicks")
+        if corners is None:
+            return None
+
+        meta = comp_meta.get(tid, {})
+        parsed[tid] = {
+            "name": meta.get("name") or t_obj.get("shortDisplayName") or t_obj.get("displayName") or "Team",
+            "venue": meta.get("venue") or "-",
+            "corners": corners,
+            "shots_on_target": pick_stat(stats_map, "shotsontarget", "shots on target", "shotsongoal") or 0.0,
+            "total_shots": pick_stat(stats_map, "totalshots", "total shots", "shots") or 0.0,
+            "blocked_shots": pick_stat(stats_map, "blockedshots", "blocked shots"),
+        }
+
+    tids = [k for k in parsed.keys() if not k.startswith("_")]
+    if len(tids) != 2:
+        return None
+
+    t0, t1 = tids[0], tids[1]
+    parsed[t0]["corners_conceded"] = parsed[t1]["corners"]
+    parsed[t0]["opponent"] = parsed[t1]["name"]
+    parsed[t1]["corners_conceded"] = parsed[t0]["corners"]
+    parsed[t1]["opponent"] = parsed[t0]["name"]
+
+    parsed["_meta"] = {
+        "v": CACHE_SCHEMA_VERSION,
+        "date": date_short,
+        "dateISO": ev_date_iso,
+        "leagueCode": league_code,
+        "totalCorners": parsed[t0]["corners"] + parsed[t1]["corners"],
+        "extraTime": is_extra_time,
+    }
+    return parsed
+
+
+def detect_spike(seq):
+    if len(seq) < 2:
+        return False
+    spread = max(seq) - min(seq)
+    if spread >= 7:
+        return True
+    if len(seq) >= 3:
+        s = sorted(seq)
+        if s[-1] >= 11 and (s[-1] - s[-2]) >= 5:
+            return True
+    return False
+
+
+# ==============================================================================
+# 4. SNAPSHOT BUILDER & CN ULTRA 3-LAYER SCORING
+# ==============================================================================
+def build_team_l3(tid, ev_refs, cache):
+    sorted_refs = sorted(ev_refs, key=lambda x: x[0], reverse=True)
+    rows = []
+    audit = []
+    seen_eids = set()
+
+    for _, edate, eid, _ in sorted_refs:
+        if eid in seen_eids:
+            continue
+        seen_eids.add(eid)
+        entry = cache.get(eid)
+        if isinstance(entry, dict) and tid in entry and isinstance(entry.get("_meta"), dict):
+            t_row = entry[tid]
+            meta = entry["_meta"]
+            rows.append(t_row)
+
+            dt_fb = parse_utc(edate)
+            d_str = meta.get("date") if meta.get("date") and meta.get("date") != "--" else (
+                dt_fb.astimezone(MMT).strftime("%d %b") if dt_fb else "--"
+            )
+            audit.append({
+                "date": d_str,
+                "comp": meta.get("leagueCode", "CMP"),
+                "ha": t_row.get("venue", "-"),
+                "opp": t_row.get("opponent", "Opponent"),
+                "cr": int(round(t_row["corners"])),
+                "con": int(round(t_row.get("corners_conceded", 0))),
+            })
+        if len(rows) >= L3_WINDOW:
+            break
+
+    if len(rows) < MIN_SAMPLES_REQUIRED:
+        return None
+
+    n = len(rows)
+    avg_cr = round(sum(float(r["corners"]) for r in rows) / n, 1)
+    avg_con = round(sum(float(r.get("corners_conceded", 0)) for r in rows) / n, 1)
+
+    has_exact = all(r.get("blocked_shots") is not None for r in rows)
+    if has_exact:
+        avg_chaos = round(
+            sum(float(r.get("shots_on_target", 0)) + float(r["blocked_shots"]) for r in rows) / n,
+            1,
+        )
+    else:
+        # Scaled fallback aligned to v5 frontend thresholds (Total Shots * 0.58)
+        avg_chaos = round(sum(float(r.get("total_shots", 0)) * 0.58 for r in rows) / n, 1)
+
+    corners_seq = [int(round(r["corners"])) for r in rows]
 
     return {
-        "state": state,
-        "extra_time": extra_time,
-        "valid": True,
-        "home": h_st,
-        "away": a_st,
+        "avg_cr": avg_cr,
+        "avg_con": avg_con,
+        "avg_chaos": avg_chaos,
+        "exact": has_exact,
+        "spike": detect_spike(corners_seq),
+        "audit": audit,
     }
 
 
-# ==============================================================================
-# CN ULTRA 3-LAYER MODEL & GRADING (MIRRORS javis_v5.html DEFAULT_MODEL)
-# ==============================================================================
 def score_from_snapshot(snap):
     h_cr = snap["home_l3_corners"]
     a_cr = snap["away_l3_corners"]
@@ -334,89 +481,15 @@ def classify_tier(score):
     return "under"
 
 
-def grade_match(actual_corners, score, line=DEFAULT_TARGET_LINE):
+def grade_match(actual_corners, score, line=STANDARD_LINE):
     tier = classify_tier(score)
     if tier == "under":
         return "WIN" if actual_corners < line else "LOSE"
     return "WIN" if actual_corners > line else "LOSE"
 
 
-def build_team_l3(team_id, completed_games, summary_cache):
-    """Build up to 3 most recent valid games with corners for team_id."""
-    audit = []
-    cr_list, con_list = [], []
-    exact_chaos_list, fallback_chaos_list = [], []
-    all_exact = True
-    spike_flag = False
-
-    for g in completed_games:
-        if len(audit) >= 3:
-            break
-        ev_id = g["id"]
-        if ev_id not in summary_cache:
-            summary_cache[ev_id] = fetch_boxscore_summary(
-                g["slug"], ev_id, g["home_id"], g["away_id"]
-            )
-        box = summary_cache[ev_id]
-        if not box or not box.get("valid"):
-            continue
-
-        is_home = (g["home_id"] == team_id)
-        my_st = box["home"] if is_home else box["away"]
-        opp_st = box["away"] if is_home else box["home"]
-        opp_name = g["away_short"] if is_home else g["home_short"]
-
-        my_cr = int(round(my_st["corners"]))
-        my_con = int(round(opp_st["corners"]))
-        if my_cr >= 11:
-            spike_flag = True
-
-        cr_list.append(my_cr)
-        con_list.append(my_con)
-
-        # Layer 2: Exact (SOT + Blocked) vs Scaled Fallback (Total Shots * 0.62)
-        if my_st["sot"] is not None and my_st["blocked"] is not None:
-            exact_chaos_list.append(my_st["sot"] + my_st["blocked"])
-            fallback_chaos_list.append(my_st["sot"] + my_st["blocked"])
-        else:
-            all_exact = False
-            if my_st["shots"] is not None:
-                fallback_chaos_list.append(my_st["shots"] * 0.62)
-            elif my_st["sot"] is not None:
-                fallback_chaos_list.append(my_st["sot"] * 1.75)
-            else:
-                fallback_chaos_list.append(0.0)
-
-        audit.append({
-            "date": g["kickoff_dt"].strftime("%d %b"),
-            "comp": g["comp_code"],
-            "ha": "H" if is_home else "A",
-            "opp": opp_name,
-            "cr": my_cr,
-            "con": my_con,
-        })
-
-    if len(audit) < 2:
-        return None
-
-    n = len(audit)
-    avg_cr = round(sum(cr_list) / n, 1)
-    avg_con = round(sum(con_list) / n, 1)
-    chaos_vals = exact_chaos_list if all_exact else fallback_chaos_list
-    avg_chaos = round(sum(chaos_vals) / n, 1)
-
-    return {
-        "avg_cr": avg_cr,
-        "avg_con": avg_con,
-        "avg_chaos": avg_chaos,
-        "exact": all_exact,
-        "spike": spike_flag,
-        "audit": audit,
-    }
-
-
 # ==============================================================================
-# HYBRID HISTORY MANAGEMENT & ONE-TIME LEGACY MIGRATION
+# 5. HYBRID HISTORY & LEGACY MIGRATION
 # ==============================================================================
 def empty_archived():
     return {
@@ -437,79 +510,80 @@ def empty_archived():
 
 
 def load_or_migrate_history():
+    existing_records = []
+    archived = empty_archived()
     if os.path.exists(OUTPUT_HISTORY):
-        try:
-            with open(OUTPUT_HISTORY, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            records = data.get("records", []) if isinstance(data, dict) else []
+        data = load_json_safe(OUTPUT_HISTORY, {})
+        if isinstance(data, dict):
+            existing_records = data.get("records", [])
             archived = data.get("all_time_archived") or empty_archived()
-            return records, archived
-        except Exception:
-            return [], empty_archived()
 
-    # One-time read-only migration from v4.2 history.json (if present)
+    if existing_records:
+        return existing_records, archived
+
+    # Migrate from v4.1/v4.2 history.json when history_v5.json is missing or empty
     migrated = []
     if os.path.exists(LEGACY_HISTORY):
-        try:
-            with open(LEGACY_HISTORY, "r", encoding="utf-8") as f:
-                raw = json.load(f)
-            items = raw if isinstance(raw, list) else (raw.get("records") or raw.get("matches") or [])
-            for item in items:
-                ev_id = str(item.get("id") or item.get("event_id") or "").strip()
-                if not ev_id:
-                    continue
-                actual = parse_float(item.get("actual_corners"))
-                raw_status = str(item.get("status") or "").upper()
-                if raw_status == "VOID":
-                    continue
-                score = parse_float(item.get("score")) or 0.0
-                if actual is not None:
-                    actual_int = int(round(actual))
-                    status = grade_match(actual_int, score)
-                else:
-                    actual_int = None
-                    status = "WIN" if raw_status in ("HIT", "WIN") else ("LOSE" if raw_status in ("MISS", "LOSE") else "PENDING")
+        raw = load_json_safe(LEGACY_HISTORY, {"records": []})
+        items = raw if isinstance(raw, list) else (raw.get("records") or [])
+        for item in items:
+            ev_id = str(item.get("id") or "").strip()
+            if not ev_id:
+                continue
+            raw_status = str(item.get("status") or "").upper()
+            if raw_status == "VOID":
+                continue
 
-                migrated.append({
-                    "id": ev_id,
-                    "league": item.get("league") or "Club Competition",
-                    "league_slug": item.get("league_slug") or item.get("slug") or "eng.1",
-                    "comp_type": "club",
-                    "kickoff_utc": item.get("kickoff_utc") or item.get("date") or iso_utc(utc_now()),
-                    "home_team": item.get("home_team") or item.get("home") or "Home",
-                    "away_team": item.get("away_team") or item.get("away") or "Away",
-                    "home_id": str(item.get("home_id") or ""),
-                    "away_id": str(item.get("away_id") or ""),
-                    "score": round(score, 1),
-                    "ref_exp": parse_float(item.get("ref_exp") or item.get("ref_total")),
-                    "actual_home_corners": item.get("actual_home_corners"),
-                    "actual_away_corners": item.get("actual_away_corners"),
-                    "actual_corners": actual_int,
-                    "status": status,
-                    "extra_time": bool(item.get("extra_time", False)),
-                    "snapshot": None,  # Pre-v5 record
-                })
-            print(f"[Migrate] Imported {len(migrated)} legacy records from {LEGACY_HISTORY}")
-        except Exception as e:
-            print(f"[Migrate] Skipped legacy import due to error: {e}")
+            score = safe_float(item.get("score")) or 0.0
+            actual = safe_float(item.get("actualTotal") if item.get("actualTotal") is not None else item.get("actual_corners"))
+            raw_grade = str(item.get("grade") or "").upper()
 
-    return migrated, empty_archived()
+            if actual is not None:
+                actual_int = int(round(actual))
+                status = grade_match(actual_int, score)
+            elif raw_status in ("GRADED", "WIN", "LOSE", "HIT", "MISS"):
+                actual_int = None
+                status = "WIN" if raw_grade in ("HIT", "WIN") or raw_status in ("HIT", "WIN") else "LOSE"
+            else:
+                actual_int = None
+                status = "PENDING"
+
+            migrated.append({
+                "id": ev_id,
+                "league": item.get("leagueName") or item.get("league") or "Club Competition",
+                "league_slug": item.get("leagueSlug") or item.get("league_slug") or "eng.1",
+                "comp_type": "intl" if (item.get("leagueSlug") in INTL_SLUGS) else "club",
+                "kickoff_utc": item.get("kickoffUTC") or item.get("kickoff_utc") or iso_utc(utc_now()),
+                "home_team": item.get("home") or item.get("home_team") or "Home",
+                "away_team": item.get("away") or item.get("away_team") or "Away",
+                "home_id": str(item.get("homeId") or item.get("home_id") or ""),
+                "away_id": str(item.get("awayId") or item.get("away_id") or ""),
+                "score": round(score, 1),
+                "ref_exp": safe_float(item.get("refTotal") or item.get("ref_exp")),
+                "actual_home_corners": item.get("actualHomeCorners"),
+                "actual_away_corners": item.get("actualAwayCorners"),
+                "actual_corners": actual_int,
+                "status": status,
+                "extra_time": bool(item.get("isExtraTime") or item.get("extra_time", False)),
+                "snapshot": item.get("snapshot"),
+            })
+        print(f"[Migrate] Imported {len(migrated)} legacy records from {LEGACY_HISTORY}")
+
+    return migrated, archived
 
 
 def prune_and_archive(records, archived):
-    """Keep newest MAX_HISTORY_RECORDS; fold older graded records into all_time_archived."""
     if len(records) <= MAX_HISTORY_RECORDS:
         return records, archived
 
-    # Sort oldest first to archive only graded items
     records.sort(key=lambda r: r.get("kickoff_utc") or "")
     kept = []
     excess = len(records) - MAX_HISTORY_RECORDS
 
     for rec in records:
         if excess > 0 and rec.get("status") in ("WIN", "LOSE"):
-            is_win = (rec["status"] == "WIN")
-            score = parse_float(rec.get("score")) or 0.0
+            is_win = rec["status"] == "WIN"
+            score = safe_float(rec.get("score")) or 0.0
             tier = classify_tier(score)
             ctype = "intl" if rec.get("comp_type") == "intl" else "club"
 
@@ -531,136 +605,159 @@ def prune_and_archive(records, archived):
 
 
 # ==============================================================================
-# MAIN PIPELINE
+# 6. MAIN PIPELINE
 # ==============================================================================
 def main():
-    now = utc_now()
-    print(f"=== Javis v5.0 Engine Start ({iso_utc(now)}) ===")
+    os.makedirs("data", exist_ok=True)
+    now_utc = utc_now()
+    print(f"=== Javis v5.0 Engine Start ({iso_utc(now_utc)}) ===")
+
+    # Warm-load cache from v4.1 shared cache + v5 cache
+    cache = {}
+    for p in (SHARED_CACHE_PATH, V5_CACHE_PATH):
+        raw_c = load_json_safe(p, {})
+        if isinstance(raw_c, dict):
+            for k, v in raw_c.items():
+                if isinstance(v, dict) and v.get("_meta", {}).get("v") == CACHE_SCHEMA_VERSION:
+                    cache[k] = v
 
     records, archived = load_or_migrate_history()
     records_by_id = {str(r["id"]): r for r in records}
-    summary_cache = {}
 
-    # ------------------------------------------------------------------
-    # PHASE 1: Scan Upcoming Fixtures (Next 7 Days)
-    # ------------------------------------------------------------------
-    start_up = (now - timedelta(hours=3)).strftime("%Y%m%d")
-    end_up = (now + timedelta(days=UPCOMING_DAYS)).strftime("%Y%m%d")
+    # Step 1: Fetch scoreboards for 28 Club + 11 Official International competitions
+    league_jobs = [(lg, "club") for lg in CLUB_LEAGUES] + [(lg, "intl") for lg in INTL_LEAGUES]
+    upcoming_items = []
+    seen_upcoming_ids = set()
 
-    all_league_specs = [
-        (slug, name, code, "club") for slug, name, code in CLUB_LEAGUES
-    ] + [
-        (slug, name, code, "intl") for slug, name, code in INTL_LEAGUES
-    ]
+    active_club_ids = set()
+    active_intl_ids = set()
+    team_slugs = {"club": {}, "intl": {}}
+    team_history_events = {"club": {}, "intl": {}}
 
-    upcoming_events = []
-    seen_up_ids = set()
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        futs = [ex.submit(fetch_league_boards, lg, ctype, now_utc) for lg, ctype in league_jobs]
+        for fut in as_completed(futs):
+            lg, ctype, default_board, up_board, past_board = fut.result()
+            slug = lg["slug"]
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        fut_map = {
-            ex.submit(fetch_scoreboard_events, slug, start_up, end_up): (slug, name, code, ctype)
-            for slug, name, code, ctype in all_league_specs
-        }
-        for fut in as_completed(fut_map):
-            slug, name, code, ctype = fut_map[fut]
-            for ev in fut.result() or []:
-                meta = parse_event_meta(ev, slug, name, code, ctype)
-                if not meta or meta["id"] in seen_up_ids:
+            for board in (default_board, up_board):
+                if not board:
                     continue
-                if meta["state"] in ("pre", "in"):
-                    seen_up_ids.add(meta["id"])
-                    upcoming_events.append(meta)
+                for ev in board.get("events", []):
+                    ev_id = str(ev.get("id", ""))
+                    if not ev_id or ev_id in seen_upcoming_ids:
+                        continue
+                    comp = (ev.get("competitions") or [{}])[0]
+                    state = comp.get("status", {}).get("type", {}).get("state", "")
+                    if state not in ("pre", "in"):
+                        continue
+                    competitors = comp.get("competitors", [])
+                    home_c = next((c for c in competitors if c.get("homeAway") == "home"), None)
+                    away_c = next((c for c in competitors if c.get("homeAway") == "away"), None)
+                    if not home_c or not away_c:
+                        continue
+                    hid = str(home_c["team"]["id"])
+                    aid = str(away_c["team"]["id"])
+                    seen_upcoming_ids.add(ev_id)
 
-    club_teams_needed = set()
-    intl_teams_needed = set()
-    for m in upcoming_events:
-        if m["comp_type"] == "club":
-            club_teams_needed.add(m["home_id"])
-            club_teams_needed.add(m["away_id"])
-        else:
-            intl_teams_needed.add(m["home_id"])
-            intl_teams_needed.add(m["away_id"])
+                    if ctype == "club":
+                        active_club_ids.update([hid, aid])
+                    else:
+                        active_intl_ids.update([hid, aid])
+
+                    team_slugs[ctype].setdefault(hid, []).append(slug)
+                    team_slugs[ctype].setdefault(aid, []).append(slug)
+                    upcoming_items.append((lg, ctype, ev, home_c, away_c, hid, aid))
+
+            for board in (default_board, past_board):
+                if not board:
+                    continue
+                for ev in board.get("events", []):
+                    comp = (ev.get("competitions") or [{}])[0]
+                    st_type = comp.get("status", {}).get("type", {})
+                    if not st_type.get("completed") and st_type.get("state") != "post":
+                        continue
+                    ev_id = str(ev.get("id", ""))
+                    ev_date = comp.get("date") or ev.get("date") or ""
+                    dt = parse_utc(ev_date)
+                    if not ev_id or not dt or dt >= now_utc:
+                        continue
+                    for c in comp.get("competitors", []):
+                        tid = str(c.get("team", {}).get("id", ""))
+                        if tid:
+                            team_history_events[ctype].setdefault(tid, []).append((dt.timestamp(), ev_date, ev_id, slug))
 
     print(
-        f"[Phase 1] Upcoming: {len(upcoming_events)} matches "
-        f"(Club teams: {len(club_teams_needed)}, Intl teams: {len(intl_teams_needed)})"
+        f"[Step 1] Found {len(upcoming_items)} upcoming fixtures "
+        f"(Club teams: {len(active_club_ids)}, Intl teams: {len(active_intl_ids)})"
     )
 
-    # ------------------------------------------------------------------
-    # PHASE 2: Build Isolated Completed Match Pools (Club 45d | Intl 120d)
-    # ------------------------------------------------------------------
-    club_pool = {}  # team_id -> list of completed event metas
-    intl_pool = {}  # team_id -> list of completed event metas
+    # Step 2: Fetch full multi-competition schedules for active teams (isolated by Club vs Intl)
+    schedule_tasks = []
+    for tid in active_club_ids:
+        schedule_tasks.append((tid, list(dict.fromkeys(team_slugs["club"].get(tid, []))), "club"))
+    for tid in active_intl_ids:
+        schedule_tasks.append((tid, list(dict.fromkeys(team_slugs["intl"].get(tid, []))), "intl"))
 
-    scan_tasks = []
-    if club_teams_needed:
-        club_chunks = date_chunks(now - timedelta(days=CLUB_LOOKBACK_DAYS), now, 15)
-        for slug, name, code in CLUB_LEAGUES:
-            for c_start, c_end in club_chunks:
-                scan_tasks.append((slug, name, code, "club", c_start, c_end))
+    if schedule_tasks:
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            futs = {
+                ex.submit(fetch_team_completed_events, tid, slugs, ctype, now_utc): (tid, ctype)
+                for tid, slugs, ctype in schedule_tasks
+            }
+            for fut in as_completed(futs):
+                tid, ctype = futs[fut]
+                for item in fut.result():
+                    team_history_events[ctype].setdefault(tid, []).append(item)
 
-    if intl_teams_needed:
-        intl_chunks = date_chunks(now - timedelta(days=INTL_LOOKBACK_DAYS), now, 30)
-        for slug, name, code in INTL_LEAGUES:
-            for c_start, c_end in intl_chunks:
-                scan_tasks.append((slug, name, code, "intl", c_start, c_end))
-
-    seen_comp_ids = {"club": set(), "intl": set()}
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        fut_map = {
-            ex.submit(fetch_scoreboard_events, slug, cs, ce): (slug, name, code, ctype)
-            for slug, name, code, ctype, cs, ce in scan_tasks
-        }
-        for fut in as_completed(fut_map):
-            slug, name, code, ctype = fut_map[fut]
-            needed = club_teams_needed if ctype == "club" else intl_teams_needed
-            pool = club_pool if ctype == "club" else intl_pool
-            for ev in fut.result() or []:
-                meta = parse_event_meta(ev, slug, name, code, ctype)
-                if not meta or meta["state"] != "post":
+    # Step 3: Fetch missing boxscores for true Last 3 completed matches
+    needed_boxscores = {}
+    for ctype, team_set in (("club", active_club_ids), ("intl", active_intl_ids)):
+        for tid in team_set:
+            ev_refs = sorted(team_history_events[ctype].get(tid, []), key=lambda x: x[0], reverse=True)
+            picked = 0
+            seen_eids = set()
+            for _, _, eid, slug in ev_refs:
+                if eid in seen_eids:
                     continue
-                if meta["id"] in seen_comp_ids[ctype]:
-                    continue
-                seen_comp_ids[ctype].add(meta["id"])
-                if meta["home_id"] in needed:
-                    pool.setdefault(meta["home_id"], []).append(meta)
-                if meta["away_id"] in needed:
-                    pool.setdefault(meta["away_id"], []).append(meta)
+                seen_eids.add(eid)
+                if eid not in cache:
+                    needed_boxscores[eid] = slug
+                picked += 1
+                if picked >= L3_WINDOW + 3:
+                    break
 
-    for pool in (club_pool, intl_pool):
-        for tid in pool:
-            pool[tid].sort(key=lambda x: x["kickoff_dt"], reverse=True)
+    if needed_boxscores:
+        print(f"[Step 3] Fetching {len(needed_boxscores)} boxscores...")
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            futs = {
+                ex.submit(extract_boxscore_stats, slug, eid): eid
+                for eid, slug in needed_boxscores.items()
+            }
+            for fut in as_completed(futs):
+                eid = futs[fut]
+                res = fut.result()
+                if isinstance(res, dict):
+                    cache[eid] = res
 
-    # ------------------------------------------------------------------
-    # PHASE 3: Prefetch Candidate Boxscore Summaries Concurrently
-    # ------------------------------------------------------------------
-    candidate_summaries = {}
-    for tid in club_teams_needed:
-        for g in club_pool.get(tid, [])[:5]:
-            candidate_summaries[g["id"]] = g
-    for tid in intl_teams_needed:
-        for g in intl_pool.get(tid, [])[:5]:
-            candidate_summaries[g["id"]] = g
-
-    print(f"[Phase 3] Fetching {len(candidate_summaries)} recent boxscores...")
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        fut_map = {
-            ex.submit(fetch_boxscore_summary, g["slug"], g["id"], g["home_id"], g["away_id"]): ev_id
-            for ev_id, g in candidate_summaries.items()
-        }
-        for fut in as_completed(fut_map):
-            summary_cache[fut_map[fut]] = fut.result()
-
-    # ------------------------------------------------------------------
-    # PHASE 4: Compute v5 Signals & Pre-Match Lock into history_v5.json
-    # ------------------------------------------------------------------
+    # Step 4: Build Snapshots & Pre-Match Lock into history_v5.json
     matches_v5 = []
-    for m in upcoming_events:
-        pool = club_pool if m["comp_type"] == "club" else intl_pool
-        h_l3 = build_team_l3(m["home_id"], pool.get(m["home_id"], []), summary_cache)
-        a_l3 = build_team_l3(m["away_id"], pool.get(m["away_id"], []), summary_cache)
+    for lg, ctype, ev, home_c, away_c, hid, aid in upcoming_items:
+        ev_id = str(ev["id"])
+        dt_utc = parse_utc(ev.get("date", ""))
+        if not dt_utc:
+            continue
+        hours_to_ko = (dt_utc - now_utc).total_seconds() / 3600.0
+        if hours_to_ko < -2.0:
+            continue
+
+        h_l3 = build_team_l3(hid, team_history_events[ctype].get(hid, []), cache)
+        a_l3 = build_team_l3(aid, team_history_events[ctype].get(aid, []), cache)
         if not h_l3 or not a_l3:
             continue
+
+        home_name = home_c["team"]["displayName"]
+        away_name = away_c["team"]["displayName"]
 
         snapshot = {
             "home_l3_corners": h_l3["avg_cr"],
@@ -676,30 +773,31 @@ def main():
         }
 
         score, ref_exp = score_from_snapshot(snapshot)
-        match_obj = {
-            "id": m["id"],
-            "league": m["league"],
-            "league_slug": m["slug"],
-            "comp_type": m["comp_type"],
-            "kickoff_utc": m["kickoff_utc"],
-            "home_team": m["home_team"],
-            "away_team": m["away_team"],
+        ko_iso = iso_utc(dt_utc)
+
+        matches_v5.append({
+            "id": ev_id,
+            "league": lg["name"],
+            "league_slug": lg["slug"],
+            "comp_type": ctype,
+            "kickoff_utc": ko_iso,
+            "home_team": home_name,
+            "away_team": away_name,
             "snapshot": snapshot,
-        }
-        matches_v5.append(match_obj)
+        })
 
         # Pre-Match Lock: Insert once; never overwrite locked pre-match snapshot
-        if m["id"] not in records_by_id:
-            records_by_id[m["id"]] = {
-                "id": m["id"],
-                "league": m["league"],
-                "league_slug": m["slug"],
-                "comp_type": m["comp_type"],
-                "kickoff_utc": m["kickoff_utc"],
-                "home_team": m["home_team"],
-                "away_team": m["away_team"],
-                "home_id": m["home_id"],
-                "away_id": m["away_id"],
+        if ev_id not in records_by_id:
+            records_by_id[ev_id] = {
+                "id": ev_id,
+                "league": lg["name"],
+                "league_slug": lg["slug"],
+                "comp_type": ctype,
+                "kickoff_utc": ko_iso,
+                "home_team": home_name,
+                "away_team": away_name,
+                "home_id": hid,
+                "away_id": aid,
                 "score": score,
                 "ref_exp": ref_exp,
                 "actual_home_corners": None,
@@ -709,58 +807,75 @@ def main():
                 "extra_time": False,
                 "snapshot": snapshot,
             }
+        elif records_by_id[ev_id].get("status") == "PENDING" and records_by_id[ev_id].get("snapshot") is None:
+            # Backfill snapshot if migrated from v4.1 while still PENDING
+            records_by_id[ev_id]["snapshot"] = snapshot
+            records_by_id[ev_id]["score"] = score
+            records_by_id[ev_id]["ref_exp"] = ref_exp
 
     matches_v5.sort(key=lambda x: x["kickoff_utc"])
 
-    # ------------------------------------------------------------------
-    # PHASE 5: Auto-Grade Pending History Records (>= 2.2h post-kickoff)
-    # ------------------------------------------------------------------
+    # Step 5: Auto-Grade Pending History Records (>= 2.2h post-kickoff)
     to_grade = []
-    void_ids = []
     for ev_id, rec in records_by_id.items():
         if rec.get("status") != "PENDING":
             continue
-        kdt = parse_iso_utc(rec.get("kickoff_utc"))
-        if not kdt:
-            continue
-        elapsed_h = (now - kdt).total_seconds() / 3600.0
-        if elapsed_h >= GRADE_DELAY_HOURS:
-            to_grade.append((ev_id, rec, elapsed_h))
+        kdt = parse_utc(rec.get("kickoff_utc"))
+        if kdt and (now_utc - kdt).total_seconds() >= GRADE_DELAY_HOURS * 3600:
+            to_grade.append(rec)
+
+    if to_grade:
+        with ThreadPoolExecutor(max_workers=5) as ex:
+            futs = {}
+            for rec in to_grade[:45]:
+                eid = str(rec["id"])
+                if eid in cache:
+                    continue
+                futs[ex.submit(extract_boxscore_stats, rec.get("league_slug", ""), eid)] = eid
+            for fut in as_completed(futs):
+                eid = futs[fut]
+                res = fut.result()
+                if isinstance(res, dict):
+                    cache[eid] = res
 
     graded_count = 0
-    if to_grade:
-        print(f"[Phase 5] Checking {len(to_grade)} pending matches for grading...")
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-            fut_map = {
-                ex.submit(
-                    fetch_boxscore_summary,
-                    rec.get("league_slug") or "eng.1",
-                    ev_id,
-                    rec.get("home_id") or None,
-                    rec.get("away_id") or None,
-                ): (ev_id, rec, elapsed_h)
-                for ev_id, rec, elapsed_h in to_grade
-            }
-            for fut in as_completed(fut_map):
-                ev_id, rec, elapsed_h = fut_map[fut]
-                box = fut.result()
-                if box and box.get("valid") and box.get("state") == "post":
-                    act_h = int(round(box["home"]["corners"]))
-                    act_a = int(round(box["away"]["corners"]))
-                    act_tot = act_h + act_a
-                    score = parse_float(rec.get("score"))
-                    if score is None and rec.get("snapshot"):
-                        score, _ = score_from_snapshot(rec["snapshot"])
-                    score = score or 0.0
+    void_ids = []
+    for rec in to_grade:
+        eid = str(rec["id"])
+        box = cache.get(eid)
+        if not isinstance(box, dict):
+            kdt = parse_utc(rec.get("kickoff_utc"))
+            if kdt and (now_utc - kdt).days >= VOID_EXPIRE_DAYS:
+                void_ids.append(eid)
+            continue
 
-                    rec["actual_home_corners"] = act_h
-                    rec["actual_away_corners"] = act_a
-                    rec["actual_corners"] = act_tot
-                    rec["status"] = grade_match(act_tot, score, DEFAULT_TARGET_LINE)
-                    rec["extra_time"] = bool(box.get("extra_time", False))
-                    graded_count += 1
-                elif elapsed_h >= VOID_EXPIRE_DAYS * 24:
-                    void_ids.append(ev_id)
+        hid = str(rec.get("home_id") or "")
+        aid = str(rec.get("away_id") or "")
+        tids = [k for k in box.keys() if not k.startswith("_")]
+
+        if hid in box and aid in box:
+            h_box, a_box = box[hid], box[aid]
+        elif len(tids) == 2:
+            # Fallback match by venue ('H' / 'A') if team IDs missing in migrated record
+            h_box = next((box[t] for t in tids if box[t].get("venue") == "H"), box[tids[0]])
+            a_box = next((box[t] for t in tids if box[t].get("venue") == "A"), box[tids[1]])
+        else:
+            continue
+
+        act_h = int(round(h_box["corners"]))
+        act_a = int(round(a_box["corners"]))
+        act_tot = act_h + act_a
+        score = safe_float(rec.get("score"))
+        if score is None and rec.get("snapshot"):
+            score, _ = score_from_snapshot(rec["snapshot"])
+        score = score or 0.0
+
+        rec["actual_home_corners"] = act_h
+        rec["actual_away_corners"] = act_a
+        rec["actual_corners"] = act_tot
+        rec["status"] = grade_match(act_tot, score, STANDARD_LINE)
+        rec["extra_time"] = bool(box.get("_meta", {}).get("extraTime", False))
+        graded_count += 1
 
     for vid in void_ids:
         records_by_id.pop(vid, None)
@@ -769,16 +884,14 @@ def main():
     final_records.sort(key=lambda r: r.get("kickoff_utc") or "", reverse=True)
     final_records, archived = prune_and_archive(final_records, archived)
 
-    # ------------------------------------------------------------------
-    # PHASE 6: Write v5 Outputs (matches_v5.json & history_v5.json)
-    # ------------------------------------------------------------------
+    # Step 6: Save v5 JSON Feeds & Cache
     generated_at = iso_utc(utc_now())
 
     with open(OUTPUT_MATCHES, "w", encoding="utf-8") as f:
         json.dump(
             {
                 "generated_at": generated_at,
-                "engine_version": "5.0",
+                "engine_version": ENGINE_VERSION,
                 "matches": matches_v5,
             },
             f,
@@ -790,7 +903,7 @@ def main():
         json.dump(
             {
                 "generated_at": generated_at,
-                "engine_version": "5.0",
+                "engine_version": ENGINE_VERSION,
                 "max_records": MAX_HISTORY_RECORDS,
                 "all_time_archived": archived,
                 "records": final_records,
@@ -799,6 +912,11 @@ def main():
             ensure_ascii=False,
             indent=2,
         )
+
+    if len(cache) > 3500:
+        cache = dict(list(cache.items())[-3500:])
+    with open(V5_CACHE_PATH, "w", encoding="utf-8") as f:
+        json.dump(cache, f)
 
     print(
         f"=== Done! Signals: {len(matches_v5)} | History: {len(final_records)} "
