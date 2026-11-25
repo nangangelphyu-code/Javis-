@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T09:23:29Z",
-  "engine_version": "5.0",
+  "generated_at": "2026-11-25T09:47:25Z",
+  "engine_version": "5.0-v42sync",
   "matches": [
     {
       "id": "401915378",
@@ -11,13 +11,17 @@
       "home_team": "Sabah FK",
       "away_team": "Barcelona",
       "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 5.3,
-        "home_l3_chaos": 8.3,
-        "away_l3_chaos": 12.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 8.34,
+        "away_l3_chaos": 12.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 8.3,
+        "home_l3_conceded": 8.33,
         "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -82,13 +86,17 @@
       "home_team": "Slavia Prague",
       "away_team": "Villarreal",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 5.0,
-        "away_l3_corners": 4.3,
-        "home_l3_chaos": 11.7,
-        "away_l3_chaos": 8.7,
+        "away_l3_corners": 4.33,
+        "home_l3_chaos": 11.67,
+        "away_l3_chaos": 8.67,
         "chaos_mode": "exact",
         "home_l3_conceded": 3.0,
-        "away_l3_conceded": 7.3,
+        "away_l3_conceded": 7.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -153,13 +161,17 @@
       "home_team": "Cremonese",
       "away_team": "US Avellino",
       "snapshot": {
-        "home_l3_corners": 3.3,
-        "away_l3_corners": 5.3,
-        "home_l3_chaos": 7.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 7.67,
         "away_l3_chaos": 10.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 5.0,
-        "away_l3_conceded": 6.7,
+        "away_l3_conceded": 6.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -224,13 +236,17 @@
       "home_team": "Mantova",
       "away_team": "Arezzo",
       "snapshot": {
-        "home_l3_corners": 5.7,
-        "away_l3_corners": 4.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 4.67,
         "home_l3_chaos": 9.0,
-        "away_l3_chaos": 5.7,
+        "away_l3_chaos": 5.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 2.7,
+        "home_l3_conceded": 2.67,
         "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -295,13 +311,17 @@
       "home_team": "Padova",
       "away_team": "Sampdoria",
       "snapshot": {
-        "home_l3_corners": 5.3,
-        "away_l3_corners": 2.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 2.67,
         "home_l3_chaos": 6.0,
-        "away_l3_chaos": 2.3,
+        "away_l3_chaos": 2.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 6.7,
-        "away_l3_conceded": 5.7,
+        "home_l3_conceded": 6.67,
+        "away_l3_conceded": 5.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -366,13 +386,17 @@
       "home_team": "Pisa",
       "away_team": "Modena",
       "snapshot": {
-        "home_l3_corners": 7.7,
-        "away_l3_corners": 3.3,
-        "home_l3_chaos": 9.3,
-        "away_l3_chaos": 9.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.67,
+        "away_l3_corners": 3.33,
+        "home_l3_chaos": 9.33,
+        "away_l3_chaos": 9.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.7,
+        "home_l3_conceded": 5.67,
         "away_l3_conceded": 4.0,
+        "home_spike": true,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -437,13 +461,17 @@
       "home_team": "Bolton Wanderers",
       "away_team": "West Bromwich Albion",
       "snapshot": {
-        "home_l3_corners": 5.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
         "away_l3_corners": 6.0,
-        "home_l3_chaos": 9.3,
-        "away_l3_chaos": 11.7,
+        "home_l3_chaos": 9.33,
+        "away_l3_chaos": 11.66,
         "chaos_mode": "exact",
         "home_l3_conceded": 4.0,
-        "away_l3_conceded": 3.3,
+        "away_l3_conceded": 3.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -508,13 +536,17 @@
       "home_team": "Burnley",
       "away_team": "Birmingham City",
       "snapshot": {
-        "home_l3_corners": 3.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
         "away_l3_corners": 6.0,
-        "home_l3_chaos": 7.3,
+        "home_l3_chaos": 7.33,
         "away_l3_chaos": 11.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 5.0,
-        "away_l3_conceded": 4.7,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -579,13 +611,17 @@
       "home_team": "Watford",
       "away_team": "Blackburn Rovers",
       "snapshot": {
-        "home_l3_corners": 4.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
         "away_l3_corners": 4.0,
         "home_l3_chaos": 6.0,
         "away_l3_chaos": 5.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 5.0,
         "away_l3_conceded": 6.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -650,13 +686,17 @@
       "home_team": "Atlético Madrid",
       "away_team": "Viking FK",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 5.0,
-        "away_l3_corners": 7.7,
-        "home_l3_chaos": 7.7,
-        "away_l3_chaos": 9.7,
+        "away_l3_corners": 7.67,
+        "home_l3_chaos": 7.67,
+        "away_l3_chaos": 9.66,
         "chaos_mode": "exact",
-        "home_l3_conceded": 2.7,
-        "away_l3_conceded": 9.7,
+        "home_l3_conceded": 2.67,
+        "away_l3_conceded": 9.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -721,13 +761,17 @@
       "home_team": "Club Brugge",
       "away_team": "Liverpool",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 7.0,
-        "away_l3_corners": 11.3,
+        "away_l3_corners": 11.33,
         "home_l3_chaos": 12.0,
-        "away_l3_chaos": 14.7,
+        "away_l3_chaos": 14.66,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
-        "away_l3_conceded": 4.3,
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -792,13 +836,17 @@
       "home_team": "Internazionale",
       "away_team": "VfB Stuttgart",
       "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 4.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 4.33,
         "home_l3_chaos": 9.0,
         "away_l3_chaos": 8.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 4.0,
-        "away_l3_conceded": 4.7,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -863,13 +911,17 @@
       "home_team": "Lille",
       "away_team": "Bayern Munich",
       "snapshot": {
-        "home_l3_corners": 4.3,
-        "away_l3_corners": 7.3,
-        "home_l3_chaos": 5.3,
-        "away_l3_chaos": 13.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 7.33,
+        "home_l3_chaos": 5.33,
+        "away_l3_chaos": 13.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.7,
-        "away_l3_conceded": 5.3,
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -934,13 +986,17 @@
       "home_team": "Paris Saint-Germain",
       "away_team": "AS Roma",
       "snapshot": {
-        "home_l3_corners": 6.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
         "away_l3_corners": 7.0,
-        "home_l3_chaos": 11.7,
-        "away_l3_chaos": 12.3,
+        "home_l3_chaos": 11.67,
+        "away_l3_chaos": 12.33,
         "chaos_mode": "exact",
         "home_l3_conceded": 2.0,
-        "away_l3_conceded": 2.3,
+        "away_l3_conceded": 2.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -1005,13 +1061,17 @@
       "home_team": "Shakhtar Donetsk",
       "away_team": "Fenerbahce",
       "snapshot": {
-        "home_l3_corners": 5.3,
-        "away_l3_corners": 3.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 3.33,
         "home_l3_chaos": 8.0,
         "away_l3_chaos": 9.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 3.0,
-        "away_l3_conceded": 7.7,
+        "away_l3_conceded": 7.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -1076,13 +1136,17 @@
       "home_team": "Sporting CP",
       "away_team": "Manchester United",
       "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 5.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 5.33,
         "home_l3_chaos": 10.0,
-        "away_l3_chaos": 10.3,
+        "away_l3_chaos": 10.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
-        "away_l3_conceded": 5.7,
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 5.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -1147,13 +1211,17 @@
       "home_team": "Stoke City",
       "away_team": "Millwall",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 4.0,
         "away_l3_corners": 3.0,
-        "home_l3_chaos": 6.3,
-        "away_l3_chaos": 4.3,
+        "home_l3_chaos": 6.34,
+        "away_l3_chaos": 4.34,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.7,
-        "away_l3_conceded": 8.3,
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 8.33,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -1218,13 +1286,17 @@
       "home_team": "Atlético-MG",
       "away_team": "Corinthians",
       "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 4.7,
-        "home_l3_chaos": 7.3,
-        "away_l3_chaos": 11.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 11.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 3.3,
-        "away_l3_conceded": 3.3,
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 3.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -1289,13 +1361,17 @@
       "home_team": "Boca Juniors",
       "away_team": "Independiente Rivadavia",
       "snapshot": {
-        "home_l3_corners": 7.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.67,
         "away_l3_corners": 4.0,
         "home_l3_chaos": 9.0,
-        "away_l3_chaos": 5.7,
+        "away_l3_chaos": 5.66,
         "chaos_mode": "exact",
-        "home_l3_conceded": 2.7,
-        "away_l3_conceded": 4.7,
+        "home_l3_conceded": 2.67,
+        "away_l3_conceded": 4.67,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -1360,13 +1436,17 @@
       "home_team": "Toluca",
       "away_team": "Atlas",
       "snapshot": {
-        "home_l3_corners": 4.3,
-        "away_l3_corners": 6.7,
-        "home_l3_chaos": 9.7,
-        "away_l3_chaos": 8.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 9.67,
+        "away_l3_chaos": 8.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.7,
+        "home_l3_conceded": 5.67,
         "away_l3_conceded": 7.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -1431,13 +1511,17 @@
       "home_team": "Monterrey",
       "away_team": "América",
       "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 4.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 4.33,
         "home_l3_chaos": 6.0,
-        "away_l3_chaos": 6.3,
+        "away_l3_chaos": 6.34,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
+        "home_l3_conceded": 5.33,
         "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -1502,13 +1586,17 @@
       "home_team": "Kairat Almaty",
       "away_team": "Mjällby AIF",
       "snapshot": {
-        "home_l3_corners": 3.3,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 6.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 6.67,
         "away_l3_chaos": 6.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 5.0,
         "away_l3_conceded": 8.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -1565,574 +1653,6 @@
       }
     },
     {
-      "id": "401915506",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "Besiktas",
-      "away_team": "Hapoel Be'er",
-      "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 1.7,
-        "home_l3_chaos": 12.0,
-        "away_l3_chaos": 6.3,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 2.7,
-        "away_l3_conceded": 3.7,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "TUR",
-            "ha": "A",
-            "opp": "Konyaspor",
-            "cr": 3,
-            "con": 2
-          },
-          {
-            "date": "09 Nov",
-            "comp": "TUR",
-            "ha": "H",
-            "opp": "Genclerbirli",
-            "cr": 4,
-            "con": 1
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Celtic",
-            "cr": 7,
-            "con": 5
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "OFI Crete",
-            "cr": 4,
-            "con": 2
-          },
-          {
-            "date": "22 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Union SG",
-            "cr": 0,
-            "con": 4
-          },
-          {
-            "date": "15 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "AZ Alkmaar",
-            "cr": 1,
-            "con": 5
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915519",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "Celta Vigo",
-      "away_team": "AFC Bournemouth",
-      "snapshot": {
-        "home_l3_corners": 4.3,
-        "away_l3_corners": 7.7,
-        "home_l3_chaos": 10.7,
-        "away_l3_chaos": 11.7,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 3.7,
-        "away_l3_conceded": 3.0,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LAL",
-            "ha": "A",
-            "opp": "Real Madrid",
-            "cr": 3,
-            "con": 8
-          },
-          {
-            "date": "14 Nov",
-            "comp": "CDR",
-            "ha": "A",
-            "opp": "Salamanca UDS",
-            "cr": 4,
-            "con": 2
-          },
-          {
-            "date": "09 Nov",
-            "comp": "LAL",
-            "ha": "H",
-            "opp": "Levante",
-            "cr": 6,
-            "con": 1
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "EPL",
-            "ha": "H",
-            "opp": "Nottm Forest",
-            "cr": 6,
-            "con": 4
-          },
-          {
-            "date": "08 Nov",
-            "comp": "EPL",
-            "ha": "A",
-            "opp": "Ipswich",
-            "cr": 7,
-            "con": 2
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Sparta",
-            "cr": 10,
-            "con": 3
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915517",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "Dinamo Zagreb",
-      "away_team": "Bayer Leverkusen",
-      "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 6.7,
-        "home_l3_chaos": 7.3,
-        "away_l3_chaos": 8.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 3.0,
-        "away_l3_conceded": 2.3,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Sunderland",
-            "cr": 3,
-            "con": 5
-          },
-          {
-            "date": "22 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "NEC",
-            "cr": 5,
-            "con": 2
-          },
-          {
-            "date": "16 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Anderlecht",
-            "cr": 6,
-            "con": 2
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Paderborn",
-            "cr": 8,
-            "con": 3
-          },
-          {
-            "date": "08 Nov",
-            "comp": "BUN",
-            "ha": "A",
-            "opp": "Cologne",
-            "cr": 6,
-            "con": 2
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Marseille",
-            "cr": 6,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915507",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "Marseille",
-      "away_team": "Levski Sofia",
-      "snapshot": {
-        "home_l3_corners": 3.3,
-        "away_l3_corners": 2.0,
-        "home_l3_chaos": 6.0,
-        "away_l3_chaos": 6.3,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.0,
-        "away_l3_conceded": 5.0,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "23 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Le Mans",
-            "cr": 2,
-            "con": 5
-          },
-          {
-            "date": "09 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Lens",
-            "cr": 6,
-            "con": 4
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Leverkusen",
-            "cr": 2,
-            "con": 6
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Jagiellonia ",
-            "cr": 4,
-            "con": 5
-          },
-          {
-            "date": "23 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Viktoria Plzen",
-            "cr": 1,
-            "con": 4
-          },
-          {
-            "date": "16 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "NEC",
-            "cr": 1,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915521",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "Olympiacos",
-      "away_team": "AC Milan",
-      "snapshot": {
-        "home_l3_corners": 5.7,
-        "away_l3_corners": 1.3,
-        "home_l3_chaos": 8.3,
-        "away_l3_chaos": 6.3,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 2.3,
-        "away_l3_conceded": 5.3,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "GREEK SUPER LEAGUE",
-            "ha": "H",
-            "opp": "Iraklis",
-            "cr": 9,
-            "con": 0
-          },
-          {
-            "date": "09 Nov",
-            "comp": "GREEK SUPER LEAGUE",
-            "ha": "H",
-            "opp": "PAOK",
-            "cr": 5,
-            "con": 4
-          },
-          {
-            "date": "04 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Rennes",
-            "cr": 3,
-            "con": 3
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Frosinone",
-            "cr": 2,
-            "con": 9
-          },
-          {
-            "date": "08 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Genoa",
-            "cr": 0,
-            "con": 3
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Ferencvaros",
-            "cr": 2,
-            "con": 4
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915520",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "RB Salzburg",
-      "away_team": "Ararat-Armenia",
-      "snapshot": {
-        "home_l3_corners": 1.3,
-        "away_l3_corners": 4.7,
-        "home_l3_chaos": 1.7,
-        "away_l3_chaos": 9.7,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 1.7,
-        "away_l3_conceded": 4.0,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "AUT",
-            "ha": "A",
-            "opp": "Vienna",
-            "cr": 0,
-            "con": 0
-          },
-          {
-            "date": "08 Nov",
-            "comp": "AUT",
-            "ha": "A",
-            "opp": "Sturm Graz",
-            "cr": 0,
-            "con": 0
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Anderlecht",
-            "cr": 4,
-            "con": 5
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Torreense",
-            "cr": 6,
-            "con": 4
-          },
-          {
-            "date": "22 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "AZ Alkmaar",
-            "cr": 5,
-            "con": 6
-          },
-          {
-            "date": "16 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Jagiellonia ",
-            "cr": 3,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915508",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "Union St.-Gilloise",
-      "away_team": "Lech Poznan",
-      "snapshot": {
-        "home_l3_corners": 5.7,
-        "away_l3_corners": 3.3,
-        "home_l3_chaos": 10.3,
-        "away_l3_chaos": 6.3,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.7,
-        "away_l3_conceded": 5.7,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "KV Kortrijk",
-            "cr": 6,
-            "con": 3
-          },
-          {
-            "date": "09 Nov",
-            "comp": "BEL",
-            "ha": "H",
-            "opp": "Genk",
-            "cr": 10,
-            "con": 3
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Celta Vigo",
-            "cr": 1,
-            "con": 11
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Benfica",
-            "cr": 3,
-            "con": 6
-          },
-          {
-            "date": "22 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Sunderland",
-            "cr": 3,
-            "con": 6
-          },
-          {
-            "date": "15 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Leverkusen",
-            "cr": 4,
-            "con": 5
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915518",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T17:45:00Z",
-      "home_team": "Viktoria Plzen",
-      "away_team": "Benfica",
-      "snapshot": {
-        "home_l3_corners": 4.3,
-        "away_l3_corners": 5.3,
-        "home_l3_chaos": 10.3,
-        "away_l3_chaos": 7.7,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 3.7,
-        "away_l3_conceded": 1.3,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Lillestrom",
-            "cr": 6,
-            "con": 3
-          },
-          {
-            "date": "23 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Levski Sofia",
-            "cr": 4,
-            "con": 1
-          },
-          {
-            "date": "16 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Ferencvaros",
-            "cr": 3,
-            "con": 7
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "23 Nov",
-            "comp": "TACA DE PORTUGAL",
-            "ha": "A",
-            "opp": "Torreense",
-            "cr": 0,
-            "con": 0
-          },
-          {
-            "date": "09 Nov",
-            "comp": "POR",
-            "ha": "A",
-            "opp": "Estrela",
-            "cr": 10,
-            "con": 1
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Lech Poznan",
-            "cr": 6,
-            "con": 3
-          }
-        ]
-      }
-    },
-    {
       "id": "401915815",
       "league": "Conference League",
       "league_slug": "uefa.europa.conf",
@@ -2141,13 +1661,17 @@
       "home_team": "Ajax Amsterdam",
       "away_team": "FC Thun",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 7.0,
-        "away_l3_corners": 2.3,
+        "away_l3_corners": 2.33,
         "home_l3_chaos": 12.0,
-        "away_l3_chaos": 7.3,
+        "away_l3_chaos": 7.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
-        "away_l3_conceded": 4.7,
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2212,13 +1736,17 @@
       "home_team": "Brighton & Hove Albion",
       "away_team": "CSU Craiova",
       "snapshot": {
-        "home_l3_corners": 5.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
         "away_l3_corners": 5.0,
         "home_l3_chaos": 9.0,
-        "away_l3_chaos": 8.7,
+        "away_l3_chaos": 8.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 3.7,
-        "away_l3_conceded": 4.3,
+        "home_l3_conceded": 3.67,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2283,13 +1811,17 @@
       "home_team": "Egnatia",
       "away_team": "Lincoln Red Imps",
       "snapshot": {
-        "home_l3_corners": 4.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
         "away_l3_corners": 1.0,
-        "home_l3_chaos": 6.3,
-        "away_l3_chaos": 2.7,
+        "home_l3_chaos": 6.33,
+        "away_l3_chaos": 2.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
-        "away_l3_conceded": 10.3,
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 10.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2354,13 +1886,17 @@
       "home_team": "Heart of Midlothian",
       "away_team": "AS Monaco",
       "snapshot": {
-        "home_l3_corners": 5.7,
-        "away_l3_corners": 4.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 4.67,
         "home_l3_chaos": 16.0,
-        "away_l3_chaos": 5.3,
+        "away_l3_chaos": 5.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 3.3,
-        "away_l3_conceded": 3.7,
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2425,13 +1961,17 @@
       "home_team": "Iberia 1999",
       "away_team": "Getafe",
       "snapshot": {
-        "home_l3_corners": 1.3,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 1.7,
-        "away_l3_chaos": 3.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 1.66,
+        "away_l3_chaos": 3.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
+        "home_l3_conceded": 4.67,
         "away_l3_conceded": 7.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2496,13 +2036,17 @@
       "home_team": "Jablonec",
       "away_team": "FC Lugano",
       "snapshot": {
-        "home_l3_corners": 2.7,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 4.3,
-        "away_l3_chaos": 8.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 2.67,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 4.33,
+        "away_l3_chaos": 8.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.7,
-        "away_l3_conceded": 6.7,
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 6.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2567,13 +2111,17 @@
       "home_team": "Kauno Zalgiris",
       "away_team": "Riga FC",
       "snapshot": {
-        "home_l3_corners": 1.3,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 3.7,
-        "away_l3_chaos": 8.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 3.66,
+        "away_l3_chaos": 8.33,
         "chaos_mode": "exact",
         "home_l3_conceded": 7.0,
         "away_l3_conceded": 6.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2638,13 +2186,17 @@
       "home_team": "Pafos",
       "away_team": "FC Midtjylland",
       "snapshot": {
-        "home_l3_corners": 4.3,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 5.7,
-        "away_l3_chaos": 8.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 5.66,
+        "away_l3_chaos": 8.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 7.3,
-        "away_l3_conceded": 6.7,
+        "home_l3_conceded": 7.33,
+        "away_l3_conceded": 6.67,
+        "home_spike": true,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -2709,13 +2261,17 @@
       "home_team": "SK Brann",
       "away_team": "AGF",
       "snapshot": {
-        "home_l3_corners": 6.3,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 7.7,
-        "away_l3_chaos": 11.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 7.67,
+        "away_l3_chaos": 11.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 3.3,
+        "home_l3_conceded": 3.33,
         "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -2772,711 +2328,601 @@
       }
     },
     {
-      "id": "401915504",
+      "id": "401915506",
       "league": "Europa League",
       "league_slug": "uefa.europa",
       "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "Crystal Palace",
-      "away_team": "Real Sociedad",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "Besiktas",
+      "away_team": "Hapoel Be'er",
       "snapshot": {
-        "home_l3_corners": 5.0,
-        "away_l3_corners": 8.7,
-        "home_l3_chaos": 9.7,
-        "away_l3_chaos": 12.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 1.67,
+        "home_l3_chaos": 12.0,
+        "away_l3_chaos": 6.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
-        "away_l3_conceded": 6.3,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "EPL",
-            "ha": "A",
-            "opp": "Coventry",
-            "cr": 6,
-            "con": 4
-          },
-          {
-            "date": "08 Nov",
-            "comp": "EPL",
-            "ha": "H",
-            "opp": "Liverpool",
-            "cr": 4,
-            "con": 7
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Hoffenheim",
-            "cr": 5,
-            "con": 5
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LAL",
-            "ha": "A",
-            "opp": "Racing",
-            "cr": 14,
-            "con": 7
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LAL",
-            "ha": "H",
-            "opp": "Rayo",
-            "cr": 7,
-            "con": 6
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Lyon",
-            "cr": 5,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915516",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "Ferencvaros",
-      "away_team": "NK Celje",
-      "snapshot": {
-        "home_l3_corners": 6.0,
-        "away_l3_corners": 2.3,
-        "home_l3_chaos": 8.3,
-        "away_l3_chaos": 5.7,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 3.0,
-        "away_l3_conceded": 7.0,
+        "home_l3_conceded": 2.67,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Milan",
-            "cr": 4,
-            "con": 2
-          },
-          {
-            "date": "22 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Torreense",
-            "cr": 7,
-            "con": 4
-          },
-          {
-            "date": "16 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Viktoria Plzen",
-            "cr": 7,
-            "con": 3
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Sturm Graz",
-            "cr": 2,
-            "con": 12
-          },
-          {
-            "date": "23 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "RB Salzburg",
-            "cr": 2,
-            "con": 3
-          },
-          {
-            "date": "15 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Omonia",
-            "cr": 3,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915502",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "Juventus",
-      "away_team": "Omonia Nicosia",
-      "snapshot": {
-        "home_l3_corners": 6.3,
-        "away_l3_corners": 4.0,
-        "home_l3_chaos": 9.3,
-        "away_l3_chaos": 5.7,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 3.7,
-        "away_l3_conceded": 4.3,
-        "spike_flag": true,
-        "home_audit": [
-          {
             "date": "22 Nov",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Venezia",
-            "cr": 5,
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Konyaspor",
+            "cr": 3,
             "con": 2
           },
           {
             "date": "09 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Fiorentina",
-            "cr": 12,
-            "con": 5
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "AZ Alkmaar",
-            "cr": 2,
-            "con": 4
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "NEC",
-            "cr": 2,
-            "con": 5
-          },
-          {
-            "date": "23 Oct",
-            "comp": "UEL",
+            "comp": "TUR",
             "ha": "H",
-            "opp": "Benfica",
+            "opp": "Genclerbirli",
             "cr": 4,
-            "con": 5
-          },
-          {
-            "date": "15 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "NK Celje",
-            "cr": 6,
-            "con": 3
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915501",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "Lyon",
-      "away_team": "Lillestrom",
-      "snapshot": {
-        "home_l3_corners": 7.0,
-        "away_l3_corners": 6.7,
-        "home_l3_chaos": 7.3,
-        "away_l3_chaos": 9.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 4.3,
-        "away_l3_conceded": 6.3,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Lille",
-            "cr": 7,
-            "con": 7
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Brest",
-            "cr": 8,
             "con": 1
           },
           {
             "date": "06 Nov",
             "comp": "UEL",
             "ha": "A",
-            "opp": "Real Sociedad",
-            "cr": 6,
+            "opp": "Celtic",
+            "cr": 7,
             "con": 5
           }
         ],
         "away_audit": [
           {
-            "date": "23 Nov",
-            "comp": "NORWEGIAN ELITESERIEN",
-            "ha": "A",
-            "opp": "Sarpsborg FK",
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "OFI Crete",
             "cr": 4,
-            "con": 10
+            "con": 2
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Union SG",
+            "cr": 0,
+            "con": 4
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "AZ Alkmaar",
+            "cr": 1,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915519",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "Celta Vigo",
+      "away_team": "AFC Bournemouth",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 7.67,
+        "home_l3_chaos": 10.67,
+        "away_l3_chaos": 11.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.67,
+        "away_l3_conceded": 3.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Real Madrid",
+            "cr": 3,
+            "con": 8
+          },
+          {
+            "date": "14 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "Salamanca UDS",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Levante",
+            "cr": 6,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Nottm Forest",
+            "cr": 6,
+            "con": 4
           },
           {
             "date": "08 Nov",
-            "comp": "NORWEGIAN ELITESERIEN",
-            "ha": "H",
-            "opp": "Aalesund",
-            "cr": 13,
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Ipswich",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Sparta",
+            "cr": 10,
             "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915517",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "Dinamo Zagreb",
+      "away_team": "Bayer Leverkusen",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 7.34,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 2.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Sunderland",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "NEC",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Anderlecht",
+            "cr": 6,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Paderborn",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Cologne",
+            "cr": 6,
+            "con": 2
           },
           {
             "date": "06 Nov",
             "comp": "UEL",
             "ha": "H",
+            "opp": "Marseille",
+            "cr": 6,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915507",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "Marseille",
+      "away_team": "Levski Sofia",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 2.0,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 6.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Le Mans",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lens",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Leverkusen",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Jagiellonia ",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "A",
             "opp": "Viktoria Plzen",
-            "cr": 3,
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "NEC",
+            "cr": 1,
             "con": 6
           }
         ]
       }
     },
     {
-      "id": "401915505",
+      "id": "401915521",
       "league": "Europa League",
       "league_slug": "uefa.europa",
       "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "NEC Nijmegen",
-      "away_team": "Stade Rennais",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "Olympiacos",
+      "away_team": "AC Milan",
       "snapshot": {
-        "home_l3_corners": 6.0,
-        "away_l3_corners": 5.0,
-        "home_l3_chaos": 9.7,
-        "away_l3_chaos": 6.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 1.33,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 6.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 2.7,
-        "away_l3_conceded": 4.0,
+        "home_l3_conceded": 2.33,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
-            "date": "21 Nov",
-            "comp": "ERE",
+            "date": "22 Nov",
+            "comp": "GREEK SUPER LEAGUE",
             "ha": "H",
-            "opp": "PSV",
-            "cr": 5,
-            "con": 3
+            "opp": "Iraklis",
+            "cr": 9,
+            "con": 0
           },
           {
             "date": "09 Nov",
-            "comp": "ERE",
-            "ha": "A",
-            "opp": "FC Utrecht",
-            "cr": 8,
-            "con": 3
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
+            "comp": "GREEK SUPER LEAGUE",
             "ha": "H",
-            "opp": "Omonia",
+            "opp": "PAOK",
             "cr": 5,
-            "con": 2
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Lorient",
-            "cr": 5,
-            "con": 7
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Lille",
-            "cr": 7,
-            "con": 2
+            "con": 4
           },
           {
             "date": "04 Nov",
             "comp": "UEL",
-            "ha": "H",
-            "opp": "Olympiacos",
+            "ha": "A",
+            "opp": "Rennes",
             "cr": 3,
             "con": 3
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915503",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "OFI Crete",
-      "away_team": "Anderlecht",
-      "snapshot": {
-        "home_l3_corners": 4.7,
-        "away_l3_corners": 4.0,
-        "home_l3_chaos": 4.3,
-        "away_l3_chaos": 8.3,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 4.3,
-        "away_l3_conceded": 5.7,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "GREEK SUPER LEAGUE",
-            "ha": "A",
-            "opp": "Panathinaikos",
-            "cr": 3,
-            "con": 4
-          },
-          {
-            "date": "08 Nov",
-            "comp": "GREEK SUPER LEAGUE",
-            "ha": "H",
-            "opp": "Atromitos",
-            "cr": 9,
-            "con": 5
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Hapoel Be'er",
-            "cr": 2,
-            "con": 4
           }
         ],
         "away_audit": [
           {
-            "date": "23 Nov",
-            "comp": "BEL",
+            "date": "22 Nov",
+            "comp": "SER",
             "ha": "H",
-            "opp": "OH Leuven",
-            "cr": 6,
-            "con": 4
-          },
-          {
-            "date": "08 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "Club Brugge",
-            "cr": 1,
+            "opp": "Frosinone",
+            "cr": 2,
             "con": 9
           },
           {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Genoa",
+            "cr": 0,
+            "con": 3
+          },
+          {
             "date": "06 Nov",
             "comp": "UEL",
             "ha": "H",
-            "opp": "RB Salzburg",
-            "cr": 5,
+            "opp": "Ferencvaros",
+            "cr": 2,
             "con": 4
           }
         ]
       }
     },
     {
-      "id": "401915514",
+      "id": "401915520",
       "league": "Europa League",
       "league_slug": "uefa.europa",
       "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "Sparta Prague",
-      "away_team": "AZ Alkmaar",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "RB Salzburg",
+      "away_team": "Ararat-Armenia",
       "snapshot": {
-        "home_l3_corners": 4.0,
-        "away_l3_corners": 5.0,
-        "home_l3_chaos": 8.3,
-        "away_l3_chaos": 11.0,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.33,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 1.67,
+        "away_l3_chaos": 9.66,
         "chaos_mode": "exact",
-        "home_l3_conceded": 8.3,
-        "away_l3_conceded": 2.3,
+        "home_l3_conceded": 1.67,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Bournemouth",
-            "cr": 3,
-            "con": 10
-          },
-          {
-            "date": "23 Oct",
-            "comp": "UEL",
-            "ha": "A",
-            "opp": "Olympiacos",
-            "cr": 3,
-            "con": 14
-          },
-          {
-            "date": "15 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Lillestrom",
-            "cr": 6,
-            "con": 1
-          }
-        ],
-        "away_audit": [
-          {
             "date": "22 Nov",
-            "comp": "ERE",
+            "comp": "AUT",
             "ha": "A",
-            "opp": "Sparta",
-            "cr": 4,
-            "con": 5
-          },
-          {
-            "date": "08 Nov",
-            "comp": "ERE",
-            "ha": "H",
-            "opp": "FC Groningen",
-            "cr": 7,
+            "opp": "Vienna",
+            "cr": 0,
             "con": 0
           },
           {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Juventus",
-            "cr": 4,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915513",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "Sunderland",
-      "away_team": "Jagiellonia Bialystok",
-      "snapshot": {
-        "home_l3_corners": 3.0,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 6.3,
-        "away_l3_chaos": 5.7,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 4.0,
-        "away_l3_conceded": 3.7,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "EPL",
-            "ha": "A",
-            "opp": "Aston Villa",
-            "cr": 2,
-            "con": 7
-          },
-          {
             "date": "08 Nov",
-            "comp": "EPL",
-            "ha": "H",
-            "opp": "Chelsea",
-            "cr": 2,
-            "con": 2
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Dinamo Zagreb",
-            "cr": 5,
-            "con": 3
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "06 Nov",
-            "comp": "UEL",
+            "comp": "AUT",
             "ha": "A",
-            "opp": "Levski Sofia",
-            "cr": 5,
-            "con": 4
-          },
-          {
-            "date": "23 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Anderlecht",
-            "cr": 4,
-            "con": 4
-          },
-          {
-            "date": "16 Oct",
-            "comp": "UEL",
-            "ha": "H",
-            "opp": "Ararat-Armenia",
-            "cr": 2,
-            "con": 3
-          }
-        ]
-      }
-    },
-    {
-      "id": "401915512",
-      "league": "Europa League",
-      "league_slug": "uefa.europa",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "Torreense",
-      "away_team": "Celtic",
-      "snapshot": {
-        "home_l3_corners": 2.7,
-        "away_l3_corners": 5.7,
-        "home_l3_chaos": 3.7,
-        "away_l3_chaos": 10.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 4.3,
-        "away_l3_conceded": 5.0,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "23 Nov",
-            "comp": "TACA DE PORTUGAL",
-            "ha": "H",
-            "opp": "Benfica",
+            "opp": "Sturm Graz",
             "cr": 0,
             "con": 0
           },
           {
             "date": "06 Nov",
             "comp": "UEL",
-            "ha": "H",
-            "opp": "Ararat-Armenia",
+            "ha": "A",
+            "opp": "Anderlecht",
             "cr": 4,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Torreense",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "AZ Alkmaar",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Jagiellonia ",
+            "cr": 3,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915508",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "Union St.-Gilloise",
+      "away_team": "Lech Poznan",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 3.33,
+        "home_l3_chaos": 10.33,
+        "away_l3_chaos": 6.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 5.67,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "KV Kortrijk",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Genk",
+            "cr": 10,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Celta Vigo",
+            "cr": 1,
+            "con": 11
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Benfica",
+            "cr": 3,
             "con": 6
           },
           {
             "date": "22 Oct",
             "comp": "UEL",
-            "ha": "A",
-            "opp": "Ferencvaros",
-            "cr": 4,
-            "con": 7
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "SCO",
             "ha": "H",
-            "opp": "St Mirren",
-            "cr": 4,
-            "con": 5
+            "opp": "Sunderland",
+            "cr": 3,
+            "con": 6
           },
           {
-            "date": "08 Nov",
-            "comp": "SCO",
-            "ha": "H",
-            "opp": "Kilmarnock",
-            "cr": 8,
-            "con": 3
-          },
-          {
-            "date": "06 Nov",
+            "date": "15 Oct",
             "comp": "UEL",
             "ha": "H",
-            "opp": "Besiktas",
-            "cr": 5,
-            "con": 7
+            "opp": "Leverkusen",
+            "cr": 4,
+            "con": 5
           }
         ]
       }
     },
     {
-      "id": "401915515",
+      "id": "401915518",
       "league": "Europa League",
       "league_slug": "uefa.europa",
       "comp_type": "club",
-      "kickoff_utc": "2026-11-26T20:00:00Z",
-      "home_team": "TSG Hoffenheim",
-      "away_team": "SK Sturm Graz",
+      "kickoff_utc": "2026-11-26T17:45:00Z",
+      "home_team": "Viktoria Plzen",
+      "away_team": "Benfica",
       "snapshot": {
-        "home_l3_corners": 5.3,
-        "away_l3_corners": 4.0,
-        "home_l3_chaos": 9.7,
-        "away_l3_chaos": 6.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 10.34,
+        "away_l3_chaos": 7.66,
         "chaos_mode": "exact",
-        "home_l3_conceded": 6.0,
-        "away_l3_conceded": 0.7,
+        "home_l3_conceded": 3.67,
+        "away_l3_conceded": 1.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "BUN",
-            "ha": "A",
-            "opp": "Frankfurt",
-            "cr": 5,
-            "con": 9
-          },
-          {
-            "date": "09 Nov",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Schalke",
-            "cr": 6,
-            "con": 4
-          },
           {
             "date": "06 Nov",
             "comp": "UEL",
             "ha": "A",
-            "opp": "C Palace",
-            "cr": 5,
-            "con": 5
+            "opp": "Lillestrom",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Levski Sofia",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Ferencvaros",
+            "cr": 3,
+            "con": 7
           }
         ],
         "away_audit": [
           {
-            "date": "22 Nov",
-            "comp": "AUT",
+            "date": "23 Nov",
+            "comp": "TACA DE PORTUGAL",
             "ha": "A",
-            "opp": "SC Rheindorf",
+            "opp": "Torreense",
             "cr": 0,
             "con": 0
           },
           {
-            "date": "08 Nov",
-            "comp": "AUT",
-            "ha": "H",
-            "opp": "RB Salzburg",
-            "cr": 0,
-            "con": 0
+            "date": "09 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Estrela",
+            "cr": 10,
+            "con": 1
           },
           {
             "date": "06 Nov",
             "comp": "UEL",
             "ha": "H",
-            "opp": "NK Celje",
-            "cr": 12,
-            "con": 2
+            "opp": "Lech Poznan",
+            "cr": 6,
+            "con": 3
           }
         ]
       }
@@ -3490,13 +2936,17 @@
       "home_team": "Borac Banja Luka",
       "away_team": "Atalanta",
       "snapshot": {
-        "home_l3_corners": 5.3,
-        "away_l3_corners": 5.3,
-        "home_l3_chaos": 8.3,
-        "away_l3_chaos": 10.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 10.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.7,
+        "home_l3_conceded": 5.67,
         "away_l3_conceded": 5.0,
+        "home_spike": true,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -3561,13 +3011,17 @@
       "home_team": "Braga",
       "away_team": "KuPS Kuopio",
       "snapshot": {
-        "home_l3_corners": 7.3,
-        "away_l3_corners": 4.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.33,
+        "away_l3_corners": 4.67,
         "home_l3_chaos": 9.0,
-        "away_l3_chaos": 6.3,
+        "away_l3_chaos": 6.33,
         "chaos_mode": "exact",
         "home_l3_conceded": 1.0,
-        "away_l3_conceded": 7.7,
+        "away_l3_conceded": 7.67,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -3632,13 +3086,17 @@
       "home_team": "CSKA Sofia",
       "away_team": "Trabzonspor",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 6.0,
-        "away_l3_corners": 7.3,
+        "away_l3_corners": 6.33,
         "home_l3_chaos": 10.0,
-        "away_l3_chaos": 10.0,
+        "away_l3_chaos": 8.33,
         "chaos_mode": "exact",
         "home_l3_conceded": 6.0,
-        "away_l3_conceded": 4.3,
+        "away_l3_conceded": 5.0,
+        "home_spike": true,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -3676,20 +3134,20 @@
             "con": 4
           },
           {
+            "date": "15 Nov",
+            "comp": "CLUB FRIENDLY",
+            "ha": "A",
+            "opp": "Zenit",
+            "cr": 4,
+            "con": 6
+          },
+          {
             "date": "08 Nov",
             "comp": "TUR",
             "ha": "A",
             "opp": "Alanyaspor",
             "cr": 4,
             "con": 5
-          },
-          {
-            "date": "06 Nov",
-            "comp": "UECL",
-            "ha": "H",
-            "opp": "Freiburg",
-            "cr": 7,
-            "con": 4
           }
         ]
       }
@@ -3703,13 +3161,17 @@
       "home_team": "FC Nordsjælland",
       "away_team": "Panathinaikos",
       "snapshot": {
-        "home_l3_corners": 2.7,
-        "away_l3_corners": 6.7,
-        "home_l3_chaos": 6.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 2.67,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 6.67,
         "away_l3_chaos": 10.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 3.0,
-        "away_l3_conceded": 2.7,
+        "away_l3_conceded": 2.67,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -3774,13 +3236,17 @@
       "home_team": "Hajduk Split",
       "away_team": "Sint-Truidense",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 5.0,
-        "away_l3_corners": 5.3,
+        "away_l3_corners": 5.33,
         "home_l3_chaos": 7.0,
         "away_l3_chaos": 12.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 2.3,
+        "home_l3_conceded": 2.33,
         "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -3845,13 +3311,17 @@
       "home_team": "Inter D'Escaldes",
       "away_team": "F.C. København",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 3.0,
-        "away_l3_corners": 4.7,
+        "away_l3_corners": 4.67,
         "home_l3_chaos": 4.0,
         "away_l3_chaos": 6.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 6.0,
-        "away_l3_conceded": 2.7,
+        "away_l3_conceded": 2.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -3916,13 +3386,17 @@
       "home_team": "KAA Gent",
       "away_team": "Red Star Belgrade",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 7.0,
-        "away_l3_corners": 4.3,
+        "away_l3_corners": 4.33,
         "home_l3_chaos": 6.0,
         "away_l3_chaos": 10.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
-        "away_l3_conceded": 4.7,
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -3987,13 +3461,17 @@
       "home_team": "SC Freiburg",
       "away_team": "FC Twente",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 4.0,
         "away_l3_corners": 9.0,
         "home_l3_chaos": 9.0,
         "away_l3_chaos": 16.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.3,
+        "home_l3_conceded": 4.33,
         "away_l3_conceded": 1.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -4050,6 +3528,756 @@
       }
     },
     {
+      "id": "401915504",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "Crystal Palace",
+      "away_team": "Real Sociedad",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 8.67,
+        "home_l3_chaos": 9.67,
+        "away_l3_chaos": 12.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 6.33,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Coventry",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Liverpool",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Hoffenheim",
+            "cr": 5,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Racing",
+            "cr": 14,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Rayo",
+            "cr": 7,
+            "con": 6
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Lyon",
+            "cr": 5,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915516",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "Ferencvaros",
+      "away_team": "NK Celje",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 2.33,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 5.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 7.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Milan",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Torreense",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Viktoria Plzen",
+            "cr": 7,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Sturm Graz",
+            "cr": 2,
+            "con": 12
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "RB Salzburg",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Omonia",
+            "cr": 3,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915502",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "Juventus",
+      "away_team": "Omonia Nicosia",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 9.34,
+        "away_l3_chaos": 5.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.67,
+        "away_l3_conceded": 4.33,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Venezia",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "09 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Fiorentina",
+            "cr": 12,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "AZ Alkmaar",
+            "cr": 2,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "NEC",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Benfica",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "NK Celje",
+            "cr": 6,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915501",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "Lyon",
+      "away_team": "Lillestrom",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 6.33,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lille",
+            "cr": 7,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Brest",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Real Sociedad",
+            "cr": 6,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "NORWEGIAN ELITESERIEN",
+            "ha": "A",
+            "opp": "Sarpsborg FK",
+            "cr": 4,
+            "con": 10
+          },
+          {
+            "date": "08 Nov",
+            "comp": "NORWEGIAN ELITESERIEN",
+            "ha": "H",
+            "opp": "Aalesund",
+            "cr": 13,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Viktoria Plzen",
+            "cr": 3,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915505",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "NEC Nijmegen",
+      "away_team": "Stade Rennais",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 9.67,
+        "away_l3_chaos": 6.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.67,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "PSV",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "FC Utrecht",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Omonia",
+            "cr": 5,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lorient",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lille",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Olympiacos",
+            "cr": 3,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915503",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "OFI Crete",
+      "away_team": "Anderlecht",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 4.33,
+        "away_l3_chaos": 8.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 5.67,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "A",
+            "opp": "Panathinaikos",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "H",
+            "opp": "Atromitos",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Hapoel Be'er",
+            "cr": 2,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "OH Leuven",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Club Brugge",
+            "cr": 1,
+            "con": 9
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "RB Salzburg",
+            "cr": 5,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915514",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "Sparta Prague",
+      "away_team": "AZ Alkmaar",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.33,
+        "away_l3_conceded": 2.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Bournemouth",
+            "cr": 3,
+            "con": 10
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Olympiacos",
+            "cr": 3,
+            "con": 14
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Lillestrom",
+            "cr": 6,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Sparta",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "FC Groningen",
+            "cr": 7,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Juventus",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915513",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "Sunderland",
+      "away_team": "Jagiellonia Bialystok",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 6.33,
+        "away_l3_chaos": 5.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Aston Villa",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Chelsea",
+            "cr": 2,
+            "con": 2
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Dinamo Zagreb",
+            "cr": 5,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Levski Sofia",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Anderlecht",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Ararat-Armenia",
+            "cr": 2,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915512",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "Torreense",
+      "away_team": "Celtic",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 2.67,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 3.67,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "TACA DE PORTUGAL",
+            "ha": "H",
+            "opp": "Benfica",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Ararat-Armenia",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Ferencvaros",
+            "cr": 4,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "St Mirren",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Kilmarnock",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Besiktas",
+            "cr": 5,
+            "con": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "401915515",
+      "league": "Europa League",
+      "league_slug": "uefa.europa",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T20:00:00Z",
+      "home_team": "TSG Hoffenheim",
+      "away_team": "SK Sturm Graz",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 9.66,
+        "away_l3_chaos": 6.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 0.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Frankfurt",
+            "cr": 5,
+            "con": 9
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Schalke",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "C Palace",
+            "cr": 5,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "SC Rheindorf",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "RB Salzburg",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "NK Celje",
+            "cr": 12,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
       "id": "401880728",
       "league": "England League One",
       "league_slug": "eng.3",
@@ -4058,13 +4286,17 @@
       "home_team": "Doncaster Rovers",
       "away_team": "Huddersfield Town",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 4.0,
-        "away_l3_corners": 7.3,
-        "home_l3_chaos": 6.3,
-        "away_l3_chaos": 7.7,
+        "away_l3_corners": 7.33,
+        "home_l3_chaos": 6.33,
+        "away_l3_chaos": 7.66,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
-        "away_l3_conceded": 3.3,
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 3.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -4129,13 +4361,17 @@
       "home_team": "Macarthur FC",
       "away_team": "Melbourne City FC",
       "snapshot": {
-        "home_l3_corners": 3.7,
-        "away_l3_corners": 2.3,
-        "home_l3_chaos": 5.7,
-        "away_l3_chaos": 4.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
+        "away_l3_corners": 2.33,
+        "home_l3_chaos": 5.67,
+        "away_l3_chaos": 4.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
-        "away_l3_conceded": 6.3,
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 6.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -4200,13 +4436,17 @@
       "home_team": "Alanyaspor",
       "away_team": "Konyaspor",
       "snapshot": {
-        "home_l3_corners": 2.3,
-        "away_l3_corners": 2.7,
-        "home_l3_chaos": 4.3,
-        "away_l3_chaos": 3.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 2.33,
+        "away_l3_corners": 2.67,
+        "home_l3_chaos": 4.33,
+        "away_l3_chaos": 3.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 3.7,
-        "away_l3_conceded": 4.7,
+        "home_l3_conceded": 3.67,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -4271,13 +4511,17 @@
       "home_team": "Caykur Rizespor",
       "away_team": "Kasimpasa",
       "snapshot": {
-        "home_l3_corners": 5.3,
-        "away_l3_corners": 3.7,
-        "home_l3_chaos": 9.3,
-        "away_l3_chaos": 8.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 9.33,
+        "away_l3_chaos": 8.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
-        "away_l3_conceded": 3.3,
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 3.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -4342,13 +4586,17 @@
       "home_team": "1. FC Heidenheim 1846",
       "away_team": "1. FC Nürnberg",
       "snapshot": {
-        "home_l3_corners": 5.7,
-        "away_l3_corners": 6.3,
-        "home_l3_chaos": 9.7,
-        "away_l3_chaos": 12.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 9.67,
+        "away_l3_chaos": 12.33,
         "chaos_mode": "exact",
         "home_l3_conceded": 6.0,
         "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -4413,13 +4661,17 @@
       "home_team": "VfL Bochum",
       "away_team": "SV Darmstadt 98",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 3.0,
         "away_l3_corners": 5.0,
-        "home_l3_chaos": 12.3,
+        "home_l3_chaos": 12.33,
         "away_l3_chaos": 6.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
-        "away_l3_conceded": 6.3,
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 6.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -4484,13 +4736,17 @@
       "home_team": "Sønderjyske Fodbold",
       "away_team": "Brøndby IF",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 4.0,
         "away_l3_corners": 6.0,
-        "home_l3_chaos": 4.3,
-        "away_l3_chaos": 4.7,
+        "home_l3_chaos": 4.33,
+        "away_l3_chaos": 4.67,
         "chaos_mode": "exact",
         "home_l3_conceded": 7.0,
-        "away_l3_conceded": 4.3,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -4555,6 +4811,8 @@
       "home_team": "Grazer AK",
       "away_team": "SC Rheindorf Altach",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 0.0,
         "away_l3_corners": 0.0,
         "home_l3_chaos": 0.0,
@@ -4562,6 +4820,8 @@
         "chaos_mode": "exact",
         "home_l3_conceded": 0.0,
         "away_l3_conceded": 0.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -4626,13 +4886,17 @@
       "home_team": "FC Groningen",
       "away_team": "Willem II",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 2.0,
         "away_l3_corners": 1.0,
         "home_l3_chaos": 10.0,
-        "away_l3_chaos": 3.7,
+        "away_l3_chaos": 3.66,
         "chaos_mode": "exact",
         "home_l3_conceded": 6.0,
         "away_l3_conceded": 8.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -4697,13 +4961,17 @@
       "home_team": "Werder Bremen",
       "away_team": "Borussia Mönchengladbach",
       "snapshot": {
-        "home_l3_corners": 4.3,
-        "away_l3_corners": 4.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 4.67,
         "home_l3_chaos": 11.0,
-        "away_l3_chaos": 6.3,
+        "away_l3_chaos": 6.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
-        "away_l3_conceded": 6.3,
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 6.33,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -4768,13 +5036,17 @@
       "home_team": "Leganés",
       "away_team": "CD Sabadell",
       "snapshot": {
-        "home_l3_corners": 1.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.67,
         "away_l3_corners": 4.0,
-        "home_l3_chaos": 3.7,
-        "away_l3_chaos": 3.7,
+        "home_l3_chaos": 3.66,
+        "away_l3_chaos": 3.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
+        "home_l3_conceded": 5.33,
         "away_l3_conceded": 1.0,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -4839,13 +5111,17 @@
       "home_team": "Venezia",
       "away_team": "Bologna",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 2.0,
-        "away_l3_corners": 9.3,
-        "home_l3_chaos": 6.7,
-        "away_l3_chaos": 13.3,
+        "away_l3_corners": 9.33,
+        "home_l3_chaos": 6.67,
+        "away_l3_chaos": 13.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 6.7,
-        "away_l3_conceded": 2.3,
+        "home_l3_conceded": 6.67,
+        "away_l3_conceded": 2.33,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -4910,13 +5186,17 @@
       "home_team": "Brest",
       "away_team": "Paris FC",
       "snapshot": {
-        "home_l3_corners": 1.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.33,
         "away_l3_corners": 6.0,
         "home_l3_chaos": 9.0,
         "away_l3_chaos": 11.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 8.0,
-        "away_l3_conceded": 1.7,
+        "away_l3_conceded": 1.67,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -4981,13 +5261,17 @@
       "home_team": "OH Leuven",
       "away_team": "KV Kortrijk",
       "snapshot": {
-        "home_l3_corners": 6.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
         "away_l3_corners": 2.0,
         "home_l3_chaos": 11.0,
-        "away_l3_chaos": 6.7,
+        "away_l3_chaos": 6.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 12.3,
-        "away_l3_conceded": 4.7,
+        "home_l3_conceded": 12.33,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -5052,13 +5336,17 @@
       "home_team": "Nottingham Forest",
       "away_team": "Chelsea",
       "snapshot": {
-        "home_l3_corners": 3.7,
-        "away_l3_corners": 4.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
+        "away_l3_corners": 4.33,
         "home_l3_chaos": 8.0,
-        "away_l3_chaos": 8.3,
+        "away_l3_chaos": 8.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 5.3,
-        "away_l3_conceded": 3.7,
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -5123,13 +5411,17 @@
       "home_team": "Levante",
       "away_team": "Racing Santander",
       "snapshot": {
-        "home_l3_corners": 6.7,
-        "away_l3_corners": 4.7,
-        "home_l3_chaos": 9.3,
-        "away_l3_chaos": 9.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.67,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 9.34,
+        "away_l3_chaos": 9.66,
         "chaos_mode": "exact",
-        "home_l3_conceded": 3.3,
-        "away_l3_conceded": 8.7,
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 8.67,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -5194,13 +5486,17 @@
       "home_team": "Maritimo",
       "away_team": "C.D. Nacional",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 4.0,
         "away_l3_corners": 4.0,
-        "home_l3_chaos": 5.7,
+        "home_l3_chaos": 5.67,
         "away_l3_chaos": 7.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
+        "home_l3_conceded": 4.67,
         "away_l3_conceded": 6.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -5265,13 +5561,17 @@
       "home_team": "Vila Nova",
       "away_team": "Atlético Goianiense",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 5.0,
-        "away_l3_corners": 6.7,
-        "home_l3_chaos": 6.3,
-        "away_l3_chaos": 5.7,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 6.34,
+        "away_l3_chaos": 5.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 3.3,
-        "away_l3_conceded": 1.3,
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 1.33,
+        "home_spike": true,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -5336,13 +5636,17 @@
       "home_team": "Columbus Crew",
       "away_team": "Inter Miami CF",
       "snapshot": {
-        "home_l3_corners": 3.3,
-        "away_l3_corners": 3.3,
-        "home_l3_chaos": 8.3,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 3.33,
+        "home_l3_chaos": 8.33,
         "away_l3_chaos": 7.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.3,
+        "home_l3_conceded": 4.33,
         "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -5407,13 +5711,17 @@
       "home_team": "Real Salt Lake",
       "away_team": "Vancouver Whitecaps",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 5.0,
-        "away_l3_corners": 4.7,
-        "home_l3_chaos": 9.7,
-        "away_l3_chaos": 11.3,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 9.66,
+        "away_l3_chaos": 11.33,
         "chaos_mode": "exact",
-        "home_l3_conceded": 7.7,
+        "home_l3_conceded": 7.67,
         "away_l3_conceded": 6.0,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -5478,13 +5786,17 @@
       "home_team": "Aberdeen",
       "away_team": "Dundee",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 4.0,
         "away_l3_corners": 3.0,
         "home_l3_chaos": 9.0,
-        "away_l3_chaos": 3.7,
+        "away_l3_chaos": 3.67,
         "chaos_mode": "exact",
-        "home_l3_conceded": 7.7,
-        "away_l3_conceded": 5.7,
+        "home_l3_conceded": 7.67,
+        "away_l3_conceded": 5.67,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -5549,13 +5861,17 @@
       "home_team": "Dundee United",
       "away_team": "St Johnstone",
       "snapshot": {
-        "home_l3_corners": 7.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.67,
         "away_l3_corners": 4.0,
-        "home_l3_chaos": 11.7,
+        "home_l3_chaos": 11.66,
         "away_l3_chaos": 7.0,
         "chaos_mode": "exact",
         "home_l3_conceded": 8.0,
         "away_l3_conceded": 6.0,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -5620,13 +5936,17 @@
       "home_team": "Rangers",
       "away_team": "Falkirk",
       "snapshot": {
-        "home_l3_corners": 6.7,
-        "away_l3_corners": 2.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.67,
+        "away_l3_corners": 2.67,
         "home_l3_chaos": 13.0,
         "away_l3_chaos": 8.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
+        "home_l3_conceded": 4.67,
         "away_l3_conceded": 8.0,
+        "home_spike": true,
+        "away_spike": false,
         "spike_flag": true,
         "home_audit": [
           {
@@ -5691,13 +6011,17 @@
       "home_team": "St Mirren",
       "away_team": "Kilmarnock",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 5.0,
         "away_l3_corners": 9.0,
-        "home_l3_chaos": 6.3,
-        "away_l3_chaos": 9.3,
+        "home_l3_chaos": 6.33,
+        "away_l3_chaos": 9.34,
         "chaos_mode": "exact",
-        "home_l3_conceded": 4.7,
-        "away_l3_conceded": 3.7,
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": true,
         "spike_flag": true,
         "home_audit": [
           {
@@ -5762,13 +6086,17 @@
       "home_team": "Motherwell",
       "away_team": "Hibernian",
       "snapshot": {
-        "home_l3_corners": 5.7,
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
         "away_l3_corners": 5.0,
-        "home_l3_chaos": 7.3,
+        "home_l3_chaos": 7.33,
         "away_l3_chaos": 11.0,
         "chaos_mode": "exact",
-        "home_l3_conceded": 9.7,
-        "away_l3_conceded": 5.3,
+        "home_l3_conceded": 9.67,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -5833,13 +6161,17 @@
       "home_team": "Wycombe Wanderers",
       "away_team": "Milton Keynes Dons",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 5.0,
         "away_l3_corners": 5.0,
         "home_l3_chaos": 4.0,
-        "away_l3_chaos": 9.3,
+        "away_l3_chaos": 9.33,
         "chaos_mode": "exact",
         "home_l3_conceded": 6.0,
-        "away_l3_conceded": 5.3,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
@@ -5904,13 +6236,17 @@
       "home_team": "Manchester City",
       "away_team": "Bradford City",
       "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
         "home_l3_corners": 8.0,
         "away_l3_corners": 6.0,
-        "home_l3_chaos": 10.7,
-        "away_l3_chaos": 9.7,
+        "home_l3_chaos": 10.67,
+        "away_l3_chaos": 9.66,
         "chaos_mode": "exact",
         "home_l3_conceded": 4.0,
-        "away_l3_conceded": 3.7,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
         "spike_flag": false,
         "home_audit": [
           {
