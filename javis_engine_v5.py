@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
 Javis v5.0 — Automated Corner Analytics & Hybrid Backtesting Engine
-- Uses proven browser headers & universal ESPN soccer/all endpoints (matching v4.1 reliability)
-- Warm-reads data/event_cache.json and migrates existing history.json records cleanly
-- Strict separation of Club (28 competitions) and Official Senior Men's International (11 competitions, 120d lookback)
-- Outputs isolated matches_v5.json & history_v5.json without touching v4.2 files
+- 100% Exact Parity with v4.2 CN Ultra 3-Layer Scoring, Rounding & Alerts
+- Isolated v5 outputs: matches_v5.json & history_v5.json (never modifies v4.2 files)
+- 28 Club Competitions + 11 Official Senior Men's International Competitions (120d lookback)
 """
 
 import json
@@ -29,7 +28,8 @@ LEGACY_HISTORY = "history.json"
 SHARED_CACHE_PATH = "data/event_cache.json"
 V5_CACHE_PATH = "data/event_cache_v5.json"
 
-ENGINE_VERSION = "5.0"
+ENGINE_VERSION = "5.0-v42sync"
+FORMULA_VERSION = "v4.2"
 CACHE_SCHEMA_VERSION = "4.1"
 STANDARD_LINE = 9.5
 UPCOMING_DAYS = int(os.getenv("UPCOMING_DAYS", "7"))
@@ -52,7 +52,7 @@ if requests is not None:
 else:
     SESSION = None
 
-# 28 Proven Club Leagues & Cups
+# Exact 28 Club Leagues & Cups from v4.2
 CLUB_LEAGUES = [
     {"slug": "uefa.champions", "code": "UCL", "name": "Champions League", "lookback": 100},
     {"slug": "uefa.europa", "code": "UEL", "name": "Europa League", "lookback": 100},
@@ -199,13 +199,11 @@ def fetch_league_boards(lg, comp_type, now_utc):
 
 def fetch_team_completed_events(tid, candidate_slugs, comp_type, now_utc):
     """
-    Fetch completed matches for a team strictly isolated by comp_type:
-    - 'club': all club competitions (excludes INTL_SLUGS & friendlies)
-    - 'intl': strictly official INTL_SLUGS within 120 days (excludes club, friendlies, youth/women)
+    - 'club': mirrors v4.2 multi-competition schedule fetch exactly so club L3 matches are 100% identical
+    - 'intl': strictly official senior men's INTL_SLUGS within 120 days (no friendlies/youth/women)
     """
     found = {}
-    lookback_days = INTL_LOOKBACK_DAYS if comp_type == "intl" else 100
-    cutoff_dt = now_utc - timedelta(days=lookback_days)
+    intl_cutoff = now_utc - timedelta(days=INTL_LOOKBACK_DAYS)
 
     urls = []
     if comp_type == "club":
@@ -227,24 +225,18 @@ def fetch_team_completed_events(tid, candidate_slugs, comp_type, now_utc):
             eid = str(ev.get("id", ""))
             edate = comp.get("date") or ev.get("date") or ""
             dt = parse_utc(edate)
-            if not eid or not dt or dt >= now_utc or dt < cutoff_dt:
+            if not eid or not dt or dt >= now_utc:
                 continue
 
-            ev_slug = (ev.get("league") or {}).get("slug") or default_slug or (candidate_slugs[0] if candidate_slugs else "")
-            ev_slug_low = ev_slug.lower()
-
-            # Never include friendlies, youth, or women's matches
-            if "friendly" in ev_slug_low or "women" in ev_slug_low or "u21" in ev_slug_low or "u23" in ev_slug_low:
-                continue
-
+            ev_slug = (ev.get("league") or {}).get("slug") or default_slug or (candidate_slugs[0] if candidate_slugs else "all")
             if comp_type == "intl":
-                if ev_slug not in INTL_SLUGS:
+                ev_low = ev_slug.lower()
+                if dt < intl_cutoff or ev_slug not in INTL_SLUGS:
                     continue
-            else:
-                if ev_slug in INTL_SLUGS:
+                if "friendly" in ev_low or "women" in ev_low or "u21" in ev_low or "u23" in ev_low:
                     continue
 
-            found[eid] = (dt.timestamp(), edate, eid, ev_slug or "all")
+            found[eid] = (dt.timestamp(), edate, eid, ev_slug)
         if comp_type == "club" and len(found) >= 8 and "soccer/all/" in url:
             break
 
@@ -360,6 +352,7 @@ def extract_boxscore_stats(slug, event_id):
 
 
 def detect_spike(seq):
+    """Exact v4.2 spike rule."""
     if len(seq) < 2:
         return False
     spread = max(seq) - min(seq)
@@ -373,7 +366,7 @@ def detect_spike(seq):
 
 
 # ==============================================================================
-# 4. SNAPSHOT BUILDER & CN ULTRA 3-LAYER SCORING
+# 4. SNAPSHOT BUILDER & EXACT v4.2 CN ULTRA 3-LAYER SCORING
 # ==============================================================================
 def build_team_l3(tid, ev_refs, cache):
     sorted_refs = sorted(ev_refs, key=lambda x: x[0], reverse=True)
@@ -409,62 +402,104 @@ def build_team_l3(tid, ev_refs, cache):
     if len(rows) < MIN_SAMPLES_REQUIRED:
         return None
 
-    n = len(rows)
-    avg_cr = round(sum(float(r["corners"]) for r in rows) / n, 1)
-    avg_con = round(sum(float(r.get("corners_conceded", 0)) for r in rows) / n, 1)
+    def avg_required(k):
+        vals = [float(r[k]) for r in rows if r.get(k) is not None]
+        return round(sum(vals) / len(vals), 2) if vals else 0.0
 
-    has_exact = all(r.get("blocked_shots") is not None for r in rows)
-    if has_exact:
-        avg_chaos = round(
-            sum(float(r.get("shots_on_target", 0)) + float(r["blocked_shots"]) for r in rows) / n,
-            1,
-        )
-    else:
-        # Scaled fallback aligned to v5 frontend thresholds (Total Shots * 0.58)
-        avg_chaos = round(sum(float(r.get("total_shots", 0)) * 0.58 for r in rows) / n, 1)
+    def avg_optional(k):
+        vals = [float(r[k]) for r in rows if r.get(k) is not None]
+        if len(vals) == len(rows):
+            return round(sum(vals) / len(vals), 2)
+        return None
 
     corners_seq = [int(round(r["corners"])) for r in rows]
 
     return {
-        "avg_cr": avg_cr,
-        "avg_con": avg_con,
-        "avg_chaos": avg_chaos,
-        "exact": has_exact,
+        "sample_size": len(rows),
+        "l3_corners": avg_required("corners"),
+        "l3_conceded": avg_required("corners_conceded"),
+        "l3_sot": avg_required("shots_on_target"),
+        "l3_total_shots": avg_required("total_shots"),
+        "l3_blocked": avg_optional("blocked_shots"),
         "spike": detect_spike(corners_seq),
         "audit": audit,
     }
 
 
+def make_match_snapshot(h_l3, a_l3):
+    """Build match-level snapshot using exact v4.2 mode detection & 2-decimal precision."""
+    has_exact = (h_l3["l3_blocked"] is not None and a_l3["l3_blocked"] is not None)
+    if has_exact:
+        chaos_mode = "exact"
+        h_ch = round(float(h_l3["l3_sot"]) + float(h_l3["l3_blocked"]), 2)
+        a_ch = round(float(a_l3["l3_sot"]) + float(a_l3["l3_blocked"]), 2)
+    else:
+        chaos_mode = "fallback"
+        h_ch = round(float(h_l3["l3_total_shots"]), 2)
+        a_ch = round(float(a_l3["l3_total_shots"]), 2)
+
+    return {
+        "home_samples": h_l3["sample_size"],
+        "away_samples": a_l3["sample_size"],
+        "home_l3_corners": h_l3["l3_corners"],
+        "away_l3_corners": a_l3["l3_corners"],
+        "home_l3_chaos": h_ch,
+        "away_l3_chaos": a_ch,
+        "chaos_mode": chaos_mode,
+        "home_l3_conceded": h_l3["l3_conceded"],
+        "away_l3_conceded": a_l3["l3_conceded"],
+        "home_spike": bool(h_l3["spike"]),
+        "away_spike": bool(a_l3["spike"]),
+        "spike_flag": bool(h_l3["spike"] or a_l3["spike"]),
+        "home_audit": h_l3["audit"],
+        "away_audit": a_l3["audit"],
+    }
+
+
 def score_from_snapshot(snap):
-    h_cr = snap["home_l3_corners"]
-    a_cr = snap["away_l3_corners"]
-    l1_total = round(h_cr + a_cr, 2)
-    if l1_total >= 12.0:
+    """Exact v4.2 CN Ultra 3-Layer Scoring Formula."""
+    h_cr = float(snap["home_l3_corners"])
+    a_cr = float(snap["away_l3_corners"])
+    total_cr = round(h_cr + a_cr, 2)
+    if total_cr > 12.0:
         l1 = 3.0
-    elif l1_total >= 10.5:
+    elif total_cr >= 10.0:
         l1 = 2.0
-    elif l1_total >= 9.0:
+    elif total_cr >= 8.0:
         l1 = 1.0
     else:
         l1 = 0.0
 
-    l2_total = round(snap["home_l3_chaos"] + snap["away_l3_chaos"], 2)
-    if l2_total >= 16.5:
-        l2 = 2.0
-    elif l2_total >= 13.5:
-        l2 = 1.0
-    elif l2_total >= 11.5:
-        l2 = 0.5
+    h_ch = float(snap["home_l3_chaos"])
+    a_ch = float(snap["away_l3_chaos"])
+    total_ch = round(h_ch + a_ch, 2)
+    if snap.get("chaos_mode", "exact") == "exact":
+        if total_ch > 15.0:
+            l2 = 2.0
+        elif total_ch >= 10.0:
+            l2 = 1.0
+        else:
+            l2 = 0.0
     else:
-        l2 = 0.0
+        if total_ch > 26.0:
+            l2 = 2.0
+        elif total_ch >= 19.0:
+            l2 = 1.0
+        else:
+            l2 = 0.0
 
-    h_con = snap["home_l3_conceded"]
-    a_con = snap["away_l3_conceded"]
-    h_pts = 1.0 if h_con >= 5.0 else (0.5 if h_con >= 4.2 else 0.0)
-    a_pts = 1.0 if a_con >= 5.0 else (0.5 if a_con >= 4.2 else 0.0)
-    l3 = round(h_pts + a_pts, 1)
+    def conceded_pts(val):
+        if val > 5.0:
+            return 1.0
+        if val >= 4.0:
+            return 0.5
+        return -0.5
 
-    total_score = round(min(7.0, l1 + l2 + l3), 1)
+    h_con = float(snap["home_l3_conceded"])
+    a_con = float(snap["away_l3_conceded"])
+    l3 = round(conceded_pts(h_con) + conceded_pts(a_con), 1)
+
+    total_score = round(l1 + l2 + l3, 1)
     ref_home = round((h_cr + a_con) / 2.0, 1)
     ref_away = round((a_cr + h_con) / 2.0, 1)
     ref_exp = round(ref_home + ref_away, 1)
@@ -521,7 +556,6 @@ def load_or_migrate_history():
     if existing_records:
         return existing_records, archived
 
-    # Migrate from v4.1/v4.2 history.json when history_v5.json is missing or empty
     migrated = []
     if os.path.exists(LEGACY_HISTORY):
         raw = load_json_safe(LEGACY_HISTORY, {"records": []})
@@ -550,6 +584,7 @@ def load_or_migrate_history():
 
             migrated.append({
                 "id": ev_id,
+                "formula_ver": FORMULA_VERSION,
                 "league": item.get("leagueName") or item.get("league") or "Club Competition",
                 "league_slug": item.get("leagueSlug") or item.get("league_slug") or "eng.1",
                 "comp_type": "intl" if (item.get("leagueSlug") in INTL_SLUGS) else "club",
@@ -610,9 +645,8 @@ def prune_and_archive(records, archived):
 def main():
     os.makedirs("data", exist_ok=True)
     now_utc = utc_now()
-    print(f"=== Javis v5.0 Engine Start ({iso_utc(now_utc)}) ===")
+    print(f"=== Javis {ENGINE_VERSION} Engine Start ({iso_utc(now_utc)}) ===")
 
-    # Warm-load cache from v4.1 shared cache + v5 cache
     cache = {}
     for p in (SHARED_CACHE_PATH, V5_CACHE_PATH):
         raw_c = load_json_safe(p, {})
@@ -649,7 +683,7 @@ def main():
                         continue
                     comp = (ev.get("competitions") or [{}])[0]
                     state = comp.get("status", {}).get("type", {}).get("state", "")
-                    if state not in ("pre", "in"):
+                    if state != "pre":
                         continue
                     competitors = comp.get("competitors", [])
                     home_c = next((c for c in competitors if c.get("homeAway") == "home"), None)
@@ -687,12 +721,7 @@ def main():
                         if tid:
                             team_history_events[ctype].setdefault(tid, []).append((dt.timestamp(), ev_date, ev_id, slug))
 
-    print(
-        f"[Step 1] Found {len(upcoming_items)} upcoming fixtures "
-        f"(Club teams: {len(active_club_ids)}, Intl teams: {len(active_intl_ids)})"
-    )
-
-    # Step 2: Fetch full multi-competition schedules for active teams (isolated by Club vs Intl)
+    # Step 2: Fetch multi-competition schedules for active teams
     schedule_tasks = []
     for tid in active_club_ids:
         schedule_tasks.append((tid, list(dict.fromkeys(team_slugs["club"].get(tid, []))), "club"))
@@ -728,7 +757,6 @@ def main():
                     break
 
     if needed_boxscores:
-        print(f"[Step 3] Fetching {len(needed_boxscores)} boxscores...")
         with ThreadPoolExecutor(max_workers=6) as ex:
             futs = {
                 ex.submit(extract_boxscore_stats, slug, eid): eid
@@ -748,7 +776,7 @@ def main():
         if not dt_utc:
             continue
         hours_to_ko = (dt_utc - now_utc).total_seconds() / 3600.0
-        if hours_to_ko < -2.0:
+        if hours_to_ko < -0.1:
             continue
 
         h_l3 = build_team_l3(hid, team_history_events[ctype].get(hid, []), cache)
@@ -759,19 +787,7 @@ def main():
         home_name = home_c["team"]["displayName"]
         away_name = away_c["team"]["displayName"]
 
-        snapshot = {
-            "home_l3_corners": h_l3["avg_cr"],
-            "away_l3_corners": a_l3["avg_cr"],
-            "home_l3_chaos": h_l3["avg_chaos"],
-            "away_l3_chaos": a_l3["avg_chaos"],
-            "chaos_mode": "exact" if (h_l3["exact"] and a_l3["exact"]) else "fallback",
-            "home_l3_conceded": h_l3["avg_con"],
-            "away_l3_conceded": a_l3["avg_con"],
-            "spike_flag": bool(h_l3["spike"] or a_l3["spike"]),
-            "home_audit": h_l3["audit"],
-            "away_audit": a_l3["audit"],
-        }
-
+        snapshot = make_match_snapshot(h_l3, a_l3)
         score, ref_exp = score_from_snapshot(snapshot)
         ko_iso = iso_utc(dt_utc)
 
@@ -786,10 +802,11 @@ def main():
             "snapshot": snapshot,
         })
 
-        # Pre-Match Lock: Insert once; never overwrite locked pre-match snapshot
+        # Pre-Match Lock: Insert once; refresh PENDING records if created under old formula
         if ev_id not in records_by_id:
             records_by_id[ev_id] = {
                 "id": ev_id,
+                "formula_ver": FORMULA_VERSION,
                 "league": lg["name"],
                 "league_slug": lg["slug"],
                 "comp_type": ctype,
@@ -807,8 +824,15 @@ def main():
                 "extra_time": False,
                 "snapshot": snapshot,
             }
-        elif records_by_id[ev_id].get("status") == "PENDING" and records_by_id[ev_id].get("snapshot") is None:
-            # Backfill snapshot if migrated from v4.1 while still PENDING
+        elif (
+            records_by_id[ev_id].get("status") == "PENDING"
+            and (
+                records_by_id[ev_id].get("snapshot") is None
+                or records_by_id[ev_id].get("formula_ver") != FORMULA_VERSION
+            )
+            and hours_to_ko > 0
+        ):
+            records_by_id[ev_id]["formula_ver"] = FORMULA_VERSION
             records_by_id[ev_id]["snapshot"] = snapshot
             records_by_id[ev_id]["score"] = score
             records_by_id[ev_id]["ref_exp"] = ref_exp
@@ -856,7 +880,6 @@ def main():
         if hid in box and aid in box:
             h_box, a_box = box[hid], box[aid]
         elif len(tids) == 2:
-            # Fallback match by venue ('H' / 'A') if team IDs missing in migrated record
             h_box = next((box[t] for t in tids if box[t].get("venue") == "H"), box[tids[0]])
             a_box = next((box[t] for t in tids if box[t].get("venue") == "A"), box[tids[1]])
         else:
@@ -918,9 +941,13 @@ def main():
     with open(V5_CACHE_PATH, "w", encoding="utf-8") as f:
         json.dump(cache, f)
 
+    g_cnt = sum(1 for m in matches_v5 if score_from_snapshot(m["snapshot"])[0] >= 6.0)
+    v_cnt = sum(1 for m in matches_v5 if 4.5 <= score_from_snapshot(m["snapshot"])[0] < 6.0)
+    n_cnt = sum(1 for m in matches_v5 if 3.0 <= score_from_snapshot(m["snapshot"])[0] < 4.5)
+    u_cnt = sum(1 for m in matches_v5 if score_from_snapshot(m["snapshot"])[0] < 3.0)
     print(
-        f"=== Done! Signals: {len(matches_v5)} | History: {len(final_records)} "
-        f"| Graded: {graded_count} | Pruned Void: {len(void_ids)} ==="
+        f"=== Done! Total: {len(matches_v5)} (Golden={g_cnt}, Value={v_cnt}, Normal={n_cnt}, Under={u_cnt}) "
+        f"| History: {len(final_records)} | Graded: {graded_count} ==="
     )
 
 
