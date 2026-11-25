@@ -1,27 +1,27 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
-  "updatedAtMMT": "25 Nov 2026, 11:32 AM",
+  "updatedAtMMT": "25 Nov 2026, 01:40 PM",
   "summary": {
     "standardLine": 9.5,
-    "totalGraded": 30,
-    "pendingCount": 64,
+    "totalGraded": 31,
+    "pendingCount": 66,
     "picksSummary": {
-      "hits": 5,
+      "hits": 6,
       "misses": 7,
-      "total": 12,
-      "hitRate": 41.7
+      "total": 13,
+      "hitRate": 46.2
     },
     "allSummary": {
-      "hits": 18,
+      "hits": 19,
       "misses": 12,
-      "total": 30,
-      "hitRate": 60.0
+      "total": 31,
+      "hitRate": 61.3
     },
     "byTier": {
       "GOLDEN": {
-        "hits": 1,
+        "hits": 2,
         "misses": 0,
-        "total": 1,
+        "total": 2,
         "hitRate": 100.0
       },
       "VALUE": {
@@ -44,10 +44,10 @@
       }
     },
     "exactMode": {
-      "hits": 5,
+      "hits": 6,
       "misses": 7,
-      "total": 12,
-      "hitRate": 41.7
+      "total": 13,
+      "hitRate": 46.2
     },
     "fallbackMode": {
       "hits": 0,
@@ -56,6 +56,14 @@
       "hitRate": 0.0
     },
     "byLeague": [
+      {
+        "code": "MLS",
+        "name": "USA MLS",
+        "hits": 1,
+        "misses": 0,
+        "total": 1,
+        "hitRate": 100.0
+      },
       {
         "code": "EFL1",
         "name": "England League One",
@@ -281,6 +289,60 @@
       "targetLine": 9.5,
       "dominanceSide": "AWAY",
       "hasSpike": true,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
+      "id": "401933725",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "usa.1",
+      "leagueCode": "MLS",
+      "leagueName": "USA MLS",
+      "homeId": "4771",
+      "awayId": "9727",
+      "home": "Real Salt Lake",
+      "away": "Vancouver Whitecaps",
+      "kickoffUTC": "2026-11-28T03:00Z",
+      "kickoffMMT": "28 Nov, 09:30 AM",
+      "score": 5.0,
+      "tier": "VALUE",
+      "verdict": "VALUE BET",
+      "l2Mode": "exact",
+      "refTotal": 11.7,
+      "targetLine": 9.5,
+      "dominanceSide": null,
+      "hasSpike": true,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
+      "id": "401933727",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "usa.1",
+      "leagueCode": "MLS",
+      "leagueName": "USA MLS",
+      "homeId": "183",
+      "awayId": "20232",
+      "home": "Columbus Crew",
+      "away": "Inter Miami CF",
+      "kickoffUTC": "2026-11-28T01:00Z",
+      "kickoffMMT": "28 Nov, 07:30 AM",
+      "score": 3.0,
+      "tier": "RISKY",
+      "verdict": "RISKY",
+      "l2Mode": "exact",
+      "refTotal": 7.5,
+      "targetLine": 9.5,
+      "dominanceSide": null,
+      "hasSpike": false,
       "status": "PENDING",
       "actualHomeCorners": null,
       "actualAwayCorners": null,
@@ -1355,6 +1417,33 @@
       "isExtraTime": false
     },
     {
+      "id": "401880728",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "homeId": "279",
+      "awayId": "335",
+      "home": "Doncaster Rovers",
+      "away": "Huddersfield Town",
+      "kickoffUTC": "2026-11-26T20:00Z",
+      "kickoffMMT": "27 Nov, 02:30 AM",
+      "score": 3.0,
+      "tier": "RISKY",
+      "verdict": "RISKY",
+      "l2Mode": "exact",
+      "refTotal": 9.7,
+      "targetLine": 9.5,
+      "dominanceSide": "AWAY",
+      "hasSpike": true,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
       "id": "401915506",
       "leagueSlug": "uefa.europa",
       "leagueCode": "UEL",
@@ -1998,11 +2087,11 @@
       "fairOdds": 1.49,
       "minValueOdds": 1.58,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 7,
+      "actualAwayCorners": 5,
+      "actualTotal": 12,
+      "grade": "HIT",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -2012,7 +2101,9 @@
       "l2Mode": "exact",
       "refTotal": 11.9,
       "dominanceSide": null,
-      "hasSpike": true
+      "hasSpike": true,
+      "isExtraTime": false,
+      "gradedAtMMT": "25 Nov, 01:40 PM"
     },
     {
       "id": "401841335",
