@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T09:16:57Z",
+  "generated_at": "2026-11-25T09:23:29Z",
   "engine_version": "5.0",
   "max_records": 3000,
   "all_time_archived": {
@@ -47,13 +47,74 @@
       "home_id": "",
       "away_id": "",
       "score": 5.0,
-      "ref_exp": null,
+      "ref_exp": 10.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 8.0,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 10.7,
+        "away_l3_chaos": 9.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 3.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Napoli",
+            "cr": 9,
+            "con": 3
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Fulham",
+            "cr": 8,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Nottm Forest",
+            "cr": 7,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Barnsley",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Doncaster",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "York City",
+            "cr": 7,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401933818",
@@ -65,14 +126,75 @@
       "away_team": "Milton Keynes Dons",
       "home_id": "",
       "away_id": "",
-      "score": 5.0,
-      "ref_exp": null,
+      "score": 3.5,
+      "ref_exp": 10.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 4.0,
+        "away_l3_chaos": 9.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 5.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Bromley",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Oxford Utd",
+            "cr": 4,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "A",
+            "opp": "Accrington",
+            "cr": 7,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Mansfield",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Burton Albion",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Bromley",
+            "cr": 6,
+            "con": 10
+          }
+        ]
+      }
     },
     {
       "id": "401878329",
@@ -85,13 +207,74 @@
       "home_id": "",
       "away_id": "",
       "score": 6.0,
-      "ref_exp": null,
+      "ref_exp": 12.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.7,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 7.3,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 9.7,
+        "away_l3_conceded": 5.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Rangers",
+            "cr": 4,
+            "con": 13
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Dundee Utd",
+            "cr": 7,
+            "con": 13
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "St Mirren",
+            "cr": 6,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Dundee",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Dundee Utd",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Aberdeen",
+            "cr": 6,
+            "con": 8
+          }
+        ]
+      }
     },
     {
       "id": "401878332",
@@ -103,14 +286,75 @@
       "away_team": "Dundee",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 10.1,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 3.0,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 3.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.7,
+        "away_l3_conceded": 5.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Rangers",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Kilmarnock",
+            "cr": 1,
+            "con": 14
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Hibernian",
+            "cr": 8,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Hibernian",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "22 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Hearts",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "St Johnstone",
+            "cr": 5,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401878331",
@@ -123,13 +367,74 @@
       "home_id": "",
       "away_id": "",
       "score": 6.0,
-      "ref_exp": null,
+      "ref_exp": 12.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.7,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 11.7,
+        "away_l3_chaos": 7.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.0,
+        "away_l3_conceded": 6.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Hibernian",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Motherwell",
+            "cr": 13,
+            "con": 7
+          },
+          {
+            "date": "29 Oct",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Celtic",
+            "cr": 5,
+            "con": 13
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Falkirk",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Dundee",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Kilmarnock",
+            "cr": 2,
+            "con": 10
+          }
+        ]
+      }
     },
     {
       "id": "401878328",
@@ -142,13 +447,74 @@
       "home_id": "",
       "away_id": "",
       "score": 4.5,
-      "ref_exp": null,
+      "ref_exp": 11.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.7,
+        "away_l3_corners": 2.7,
+        "home_l3_chaos": 13.0,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 8.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Aberdeen",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "22 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Motherwell",
+            "cr": 13,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "St Mirren",
+            "cr": 4,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "St Johnstone",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Hearts",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Celtic",
+            "cr": 0,
+            "con": 14
+          }
+        ]
+      }
     },
     {
       "id": "401878327",
@@ -160,14 +526,75 @@
       "away_team": "Kilmarnock",
       "home_id": "",
       "away_id": "",
-      "score": 5.0,
-      "ref_exp": null,
+      "score": 4.5,
+      "ref_exp": 11.1,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 9.0,
+        "home_l3_chaos": 6.3,
+        "away_l3_chaos": 9.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 3.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Celtic",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Rangers",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Motherwell",
+            "cr": 3,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Aberdeen",
+            "cr": 14,
+            "con": 1
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Celtic",
+            "cr": 3,
+            "con": 8
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "St Johnstone",
+            "cr": 10,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401933725",
@@ -180,13 +607,74 @@
       "home_id": "",
       "away_id": "",
       "score": 5.0,
-      "ref_exp": null,
+      "ref_exp": 11.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 9.7,
+        "away_l3_chaos": 11.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.7,
+        "away_l3_conceded": 6.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Vancouver",
+            "cr": 8,
+            "con": 7
+          },
+          {
+            "date": "20 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Seattle",
+            "cr": 1,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "LA Galaxy",
+            "cr": 6,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Salt Lake",
+            "cr": 7,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "CF Montréal",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "02 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Seattle",
+            "cr": 2,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401933727",
@@ -198,14 +686,75 @@
       "away_team": "Inter Miami CF",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 1.5,
+      "ref_exp": 7.4,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.3,
+        "away_l3_corners": 3.3,
+        "home_l3_chaos": 8.3,
+        "away_l3_chaos": 7.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.3,
+        "away_l3_conceded": 4.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Miami",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Chicago",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "D.C. United",
+            "cr": 3,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Columbus",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Charlotte",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "02 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "New England",
+            "cr": 1,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401912683",
@@ -217,14 +766,75 @@
       "away_team": "Atlético Goianiense",
       "home_id": "",
       "away_id": "",
-      "score": 2.0,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 8.1,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 6.7,
+        "home_l3_chaos": 6.3,
+        "away_l3_chaos": 5.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.3,
+        "away_l3_conceded": 1.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BRB",
+            "ha": "A",
+            "opp": "Atlético-GO",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "15 Nov",
+            "comp": "BRB",
+            "ha": "A",
+            "opp": "Fortaleza",
+            "cr": 7,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BRB",
+            "ha": "H",
+            "opp": "Criciúma",
+            "cr": 8,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BRB",
+            "ha": "H",
+            "opp": "Vila Nova",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "15 Nov",
+            "comp": "BRB",
+            "ha": "H",
+            "opp": "Cuiabá",
+            "cr": 8,
+            "con": 4
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BRB",
+            "ha": "A",
+            "opp": "Athletic",
+            "cr": 12,
+            "con": 0
+          }
+        ]
+      }
     },
     {
       "id": "401885389",
@@ -236,14 +846,75 @@
       "away_team": "C.D. Nacional",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 9.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 5.7,
+        "away_l3_chaos": 7.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 6.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "02 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Santa Clara",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "24 Oct",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Vitória ",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "10 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "FC Porto",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "08 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Académico",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Arouca",
+            "cr": 2,
+            "con": 8
+          },
+          {
+            "date": "26 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Braga",
+            "cr": 4,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401879225",
@@ -255,14 +926,75 @@
       "away_team": "Chelsea",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 8.5,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.7,
+        "away_l3_corners": 4.3,
+        "home_l3_chaos": 8.0,
+        "away_l3_chaos": 8.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 3.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Bournemouth",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Man City",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "31 Oct",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Brentford",
+            "cr": 4,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Leeds",
+            "cr": 3,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Sunderland",
+            "cr": 2,
+            "con": 2
+          },
+          {
+            "date": "31 Oct",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Man Utd",
+            "cr": 8,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401882791",
@@ -274,14 +1006,75 @@
       "away_team": "Racing Santander",
       "home_id": "",
       "away_id": "",
-      "score": 4.5,
-      "ref_exp": null,
+      "score": 5.0,
+      "ref_exp": 11.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.7,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 9.3,
+        "away_l3_chaos": 9.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.3,
+        "away_l3_conceded": 8.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Elche",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "13 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "CD Tarancon",
+            "cr": 14,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Celta Vigo",
+            "cr": 1,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Real Sociedad",
+            "cr": 7,
+            "con": 14
+          },
+          {
+            "date": "07 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Málaga",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Real Madrid",
+            "cr": 4,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401876392",
@@ -293,14 +1086,75 @@
       "away_team": "Paris FC",
       "home_id": "",
       "away_id": "",
-      "score": 2.5,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 8.5,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 1.3,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.0,
+        "away_l3_conceded": 1.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Strasbourg",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lyon",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "03 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lorient",
+            "cr": 2,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Angers",
+            "cr": 10,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Auxerre",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Monaco",
+            "cr": 3,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401875004",
@@ -312,14 +1166,75 @@
       "away_team": "Bologna",
       "home_id": "",
       "away_id": "",
-      "score": 4.5,
-      "ref_exp": null,
+      "score": 5.0,
+      "ref_exp": 10.1,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 2.0,
+        "away_l3_corners": 9.3,
+        "home_l3_chaos": 6.7,
+        "away_l3_chaos": 13.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.7,
+        "away_l3_conceded": 2.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Juventus",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Udinese",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Como",
+            "cr": 1,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Udinese",
+            "cr": 8,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Parma",
+            "cr": 15,
+            "con": 1
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Monza",
+            "cr": 5,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401878930",
@@ -331,14 +1246,75 @@
       "away_team": "KV Kortrijk",
       "home_id": "",
       "away_id": "",
-      "score": 4.5,
-      "ref_exp": null,
+      "score": 3.5,
+      "ref_exp": 12.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.3,
+        "away_l3_corners": 2.0,
+        "home_l3_chaos": 11.0,
+        "away_l3_chaos": 6.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 12.3,
+        "away_l3_conceded": 4.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Anderlecht",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "KV Mechelen",
+            "cr": 6,
+            "con": 16
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Sint-Truidense",
+            "cr": 9,
+            "con": 15
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Union SG",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "KAA Gent",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "05 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "KV Mechelen",
+            "cr": 2,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401884720",
@@ -351,13 +1327,74 @@
       "home_id": "",
       "away_id": "",
       "score": 5.0,
-      "ref_exp": null,
+      "ref_exp": 10.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 11.0,
+        "away_l3_chaos": 6.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 6.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Hamburg",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Stuttgart",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Hoffenheim",
+            "cr": 8,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Dortmund",
+            "cr": 7,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Hamburg",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Paderborn",
+            "cr": 4,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401883102",
@@ -369,14 +1406,75 @@
       "away_team": "CD Sabadell",
       "home_id": "",
       "away_id": "",
-      "score": 0.5,
-      "ref_exp": null,
+      "score": 1.0,
+      "ref_exp": 6.1,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 1.7,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 3.7,
+        "away_l3_chaos": 3.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 1.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "FC Andorra",
+            "cr": 1,
+            "con": 7
+          },
+          {
+            "date": "14 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Burgos",
+            "cr": 4,
+            "con": 9
+          },
+          {
+            "date": "11 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "Trival Valde",
+            "cr": 0,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Granada",
+            "cr": 10,
+            "con": 2
+          },
+          {
+            "date": "19 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "Utebo",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "16 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Eldense",
+            "cr": 2,
+            "con": 1
+          }
+        ]
+      }
     },
     {
       "id": "401875536",
@@ -389,13 +1487,74 @@
       "home_id": "",
       "away_id": "",
       "score": 3.0,
-      "ref_exp": null,
+      "ref_exp": 8.5,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 2.0,
+        "away_l3_corners": 1.0,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 3.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 8.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Heerenveen",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "AZ Alkmaar",
+            "cr": 0,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Sparta",
+            "cr": 2,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "FC Twente",
+            "cr": 0,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "PEC Zwolle",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "PSV",
+            "cr": 1,
+            "con": 11
+          }
+        ]
+      }
     },
     {
       "id": "401881739",
@@ -407,14 +1566,75 @@
       "away_team": "SC Rheindorf Altach",
       "home_id": "",
       "away_id": "",
-      "score": -1.0,
-      "ref_exp": null,
+      "score": 0.0,
+      "ref_exp": 0.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 0.0,
+        "away_l3_corners": 0.0,
+        "home_l3_chaos": 0.0,
+        "away_l3_chaos": 0.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 0.0,
+        "away_l3_conceded": 0.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "Rapid Vienna",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "07 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Austria Lustenau",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "31 Oct",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "TSV Hartberg",
+            "cr": 0,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "Sturm Graz",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "TSV Hartberg",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "31 Oct",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "SV Josko Ried",
+            "cr": 0,
+            "con": 0
+          }
+        ]
+      }
     },
     {
       "id": "401874563",
@@ -426,14 +1646,75 @@
       "away_team": "Brøndby IF",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 10.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 4.3,
+        "away_l3_chaos": 4.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 4.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "Odense",
+            "cr": 6,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "DEN",
+            "ha": "A",
+            "opp": "Midtjylland",
+            "cr": 5,
+            "con": 9
+          },
+          {
+            "date": "03 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "København",
+            "cr": 1,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "Midtjylland",
+            "cr": 7,
+            "con": 1
+          },
+          {
+            "date": "08 Nov",
+            "comp": "DEN",
+            "ha": "A",
+            "opp": "København",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "AGF",
+            "cr": 9,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401885045",
@@ -445,14 +1726,75 @@
       "away_team": "SV Darmstadt 98",
       "home_id": "",
       "away_id": "",
-      "score": 5.0,
-      "ref_exp": null,
+      "score": 4.0,
+      "ref_exp": 9.9,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 12.3,
+        "away_l3_chaos": 6.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 6.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "St. Pauli",
+            "cr": 1,
+            "con": 10
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Karlsruher",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Cottbus",
+            "cr": 4,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Heidenheim",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "1. FC Nürnberg",
+            "cr": 3,
+            "con": 10
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Magdeburg",
+            "cr": 7,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401885047",
@@ -464,14 +1806,75 @@
       "away_team": "1. FC Nürnberg",
       "home_id": "",
       "away_id": "",
-      "score": 5.5,
-      "ref_exp": null,
+      "score": 6.0,
+      "ref_exp": 11.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.7,
+        "away_l3_corners": 6.3,
+        "home_l3_chaos": 9.7,
+        "away_l3_chaos": 12.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 4.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Darmstadt",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Hannover",
+            "cr": 7,
+            "con": 9
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Karlsruher",
+            "cr": 6,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "E Braunschweig",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Darmstadt",
+            "cr": 10,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "St. Pauli",
+            "cr": 2,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401888240",
@@ -483,14 +1886,75 @@
       "away_team": "Kasimpasa",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 4.0,
+      "ref_exp": 8.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.3,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 9.3,
+        "away_l3_chaos": 8.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 3.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Amed SFK",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Erzurum",
+            "cr": 8,
+            "con": 2
+          },
+          {
+            "date": "31 Oct",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Kocaelispor",
+            "cr": 4,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Alanyaspor",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Gaziantep",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Besiktas",
+            "cr": 5,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401888241",
@@ -502,14 +1966,75 @@
       "away_team": "Konyaspor",
       "home_id": "",
       "away_id": "",
-      "score": 0.0,
-      "ref_exp": null,
+      "score": 0.5,
+      "ref_exp": 6.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 2.3,
+        "away_l3_corners": 2.7,
+        "home_l3_chaos": 4.3,
+        "away_l3_chaos": 3.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.7,
+        "away_l3_conceded": 4.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Kasimpasa",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Trabzonspor",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "02 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Genclerbirli",
+            "cr": 1,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Besiktas",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Samsunspor",
+            "cr": 3,
+            "con": 2
+          },
+          {
+            "date": "30 Oct",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Galatasaray",
+            "cr": 3,
+            "con": 9
+          }
+        ]
+      }
     },
     {
       "id": "401892133",
@@ -521,14 +2046,75 @@
       "away_team": "Melbourne City FC",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 8.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.7,
+        "away_l3_corners": 2.3,
+        "home_l3_chaos": 5.7,
+        "away_l3_chaos": 4.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 6.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ALE",
+            "ha": "A",
+            "opp": "Wellington",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ALE",
+            "ha": "H",
+            "opp": "Brisbane",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "31 Oct",
+            "comp": "ALE",
+            "ha": "H",
+            "opp": "Western Sydney",
+            "cr": 6,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "07 Nov",
+            "comp": "ALE",
+            "ha": "H",
+            "opp": "Western Sydney",
+            "cr": 3,
+            "con": 12
+          },
+          {
+            "date": "31 Oct",
+            "comp": "ALE",
+            "ha": "H",
+            "opp": "Sydney FC",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "24 Oct",
+            "comp": "ALE",
+            "ha": "A",
+            "opp": "Melbourne V",
+            "cr": 2,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915502",
@@ -540,14 +2126,75 @@
       "away_team": "Omonia Nicosia",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 9.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.3,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 9.3,
+        "away_l3_chaos": 5.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.7,
+        "away_l3_conceded": 4.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Venezia",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "09 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Fiorentina",
+            "cr": 12,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "AZ Alkmaar",
+            "cr": 2,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "NEC",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Benfica",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "NK Celje",
+            "cr": 6,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915501",
@@ -559,14 +2206,75 @@
       "away_team": "Lillestrom",
       "home_id": "",
       "away_id": "",
-      "score": 6.5,
-      "ref_exp": null,
+      "score": 5.5,
+      "ref_exp": 12.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 6.7,
+        "home_l3_chaos": 7.3,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.3,
+        "away_l3_conceded": 6.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lille",
+            "cr": 7,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Brest",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Real Sociedad",
+            "cr": 6,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "NORWEGIAN ELITESERIEN",
+            "ha": "A",
+            "opp": "Sarpsborg FK",
+            "cr": 4,
+            "con": 10
+          },
+          {
+            "date": "08 Nov",
+            "comp": "NORWEGIAN ELITESERIEN",
+            "ha": "H",
+            "opp": "Aalesund",
+            "cr": 13,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Viktoria Plzen",
+            "cr": 3,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401915803",
@@ -579,13 +2287,74 @@
       "home_id": "",
       "away_id": "",
       "score": 6.5,
-      "ref_exp": null,
+      "ref_exp": 11.9,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 7.3,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 4.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Panathinaikos",
+            "cr": 4,
+            "con": 12
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Nordsjælland",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Monaco",
+            "cr": 12,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Eyupspor",
+            "cr": 11,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Alanyaspor",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Freiburg",
+            "cr": 7,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915503",
@@ -597,14 +2366,75 @@
       "away_team": "Anderlecht",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 9.4,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 4.3,
+        "away_l3_chaos": 8.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.3,
+        "away_l3_conceded": 5.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "A",
+            "opp": "Panathinaikos",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "H",
+            "opp": "Atromitos",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Hapoel Be'er",
+            "cr": 2,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "OH Leuven",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Club Brugge",
+            "cr": 1,
+            "con": 9
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "RB Salzburg",
+            "cr": 5,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915805",
@@ -617,13 +2447,74 @@
       "home_id": "",
       "away_id": "",
       "score": 4.0,
-      "ref_exp": null,
+      "ref_exp": 8.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 5.3,
+        "home_l3_chaos": 7.0,
+        "away_l3_chaos": 12.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.3,
+        "away_l3_conceded": 5.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Red Imps",
+            "cr": 8,
+            "con": 0
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "FC Thun",
+            "cr": 3,
+            "con": 2
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Ajax",
+            "cr": 4,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Royal Charleroi",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Zulte-Waregem",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "SK Brann",
+            "cr": 4,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401915801",
@@ -635,14 +2526,75 @@
       "away_team": "FC Twente",
       "home_id": "",
       "away_id": "",
-      "score": 5.0,
-      "ref_exp": null,
+      "score": 5.5,
+      "ref_exp": 9.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 9.0,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 16.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.3,
+        "away_l3_conceded": 1.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Elversberg",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Union Berlin",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Trabzonspor",
+            "cr": 4,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Willem II",
+            "cr": 6,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Ajax",
+            "cr": 9,
+            "con": 2
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Pafos",
+            "cr": 12,
+            "con": 1
+          }
+        ]
+      }
     },
     {
       "id": "401915515",
@@ -654,14 +2606,75 @@
       "away_team": "SK Sturm Graz",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 8.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.3,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 9.7,
+        "away_l3_chaos": 6.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 0.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Frankfurt",
+            "cr": 5,
+            "con": 9
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Schalke",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "C Palace",
+            "cr": 5,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "SC Rheindorf",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "RB Salzburg",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "NK Celje",
+            "cr": 12,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401915504",
@@ -674,13 +2687,74 @@
       "home_id": "",
       "away_id": "",
       "score": 7.0,
-      "ref_exp": null,
+      "ref_exp": 12.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 8.7,
+        "home_l3_chaos": 9.7,
+        "away_l3_chaos": 12.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 6.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Coventry",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Liverpool",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Hoffenheim",
+            "cr": 5,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Racing",
+            "cr": 14,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Rayo",
+            "cr": 7,
+            "con": 6
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Lyon",
+            "cr": 5,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401915516",
@@ -692,14 +2766,75 @@
       "away_team": "NK Celje",
       "home_id": "",
       "away_id": "",
-      "score": 2.5,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 9.1,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 2.3,
+        "home_l3_chaos": 8.3,
+        "away_l3_chaos": 5.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 7.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Milan",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Torreense",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Viktoria Plzen",
+            "cr": 7,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Sturm Graz",
+            "cr": 2,
+            "con": 12
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "RB Salzburg",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Omonia",
+            "cr": 3,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401915505",
@@ -711,14 +2846,75 @@
       "away_team": "Stade Rennais",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 8.9,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 9.7,
+        "away_l3_chaos": 6.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.7,
+        "away_l3_conceded": 4.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "PSV",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "FC Utrecht",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Omonia",
+            "cr": 5,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lorient",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lille",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Olympiacos",
+            "cr": 3,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915514",
@@ -730,14 +2926,75 @@
       "away_team": "AZ Alkmaar",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 4.0,
+      "ref_exp": 9.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 8.3,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.3,
+        "away_l3_conceded": 2.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Bournemouth",
+            "cr": 3,
+            "con": 10
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Olympiacos",
+            "cr": 3,
+            "con": 14
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Lillestrom",
+            "cr": 6,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Sparta",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "FC Groningen",
+            "cr": 7,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Juventus",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401915513",
@@ -749,14 +3006,75 @@
       "away_team": "Jagiellonia Bialystok",
       "home_id": "",
       "away_id": "",
-      "score": 1.0,
-      "ref_exp": null,
+      "score": 0.5,
+      "ref_exp": 7.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 6.3,
+        "away_l3_chaos": 5.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 3.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Aston Villa",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Chelsea",
+            "cr": 2,
+            "con": 2
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Dinamo Zagreb",
+            "cr": 5,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Levski Sofia",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Anderlecht",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Ararat-Armenia",
+            "cr": 2,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915512",
@@ -768,14 +3086,75 @@
       "away_team": "Celtic",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 8.9,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 2.7,
+        "away_l3_corners": 5.7,
+        "home_l3_chaos": 3.7,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.3,
+        "away_l3_conceded": 5.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "TACA DE PORTUGAL",
+            "ha": "H",
+            "opp": "Benfica",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Ararat-Armenia",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Ferencvaros",
+            "cr": 4,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "St Mirren",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Kilmarnock",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Besiktas",
+            "cr": 5,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401915806",
@@ -787,14 +3166,75 @@
       "away_team": "Atalanta",
       "home_id": "",
       "away_id": "",
-      "score": 5.5,
-      "ref_exp": null,
+      "score": 6.0,
+      "ref_exp": 10.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.3,
+        "away_l3_corners": 5.3,
+        "home_l3_chaos": 8.3,
+        "away_l3_chaos": 10.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.7,
+        "away_l3_conceded": 5.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Mjällby",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "KuPS Kuopio",
+            "cr": 10,
+            "con": 2
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Panathinaikos",
+            "cr": 0,
+            "con": 11
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Inter Milan",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Monza",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Kairat Almaty",
+            "cr": 9,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401915802",
@@ -806,14 +3246,75 @@
       "away_team": "KuPS Kuopio",
       "home_id": "",
       "away_id": "",
-      "score": 4.5,
-      "ref_exp": null,
+      "score": 5.0,
+      "ref_exp": 10.4,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.3,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 6.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 1.0,
+        "away_l3_conceded": 7.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "09 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Rio Ave",
+            "cr": 8,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "AGF",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "02 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "FC Famalicao",
+            "cr": 7,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "KAA Gent",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Borac",
+            "cr": 2,
+            "con": 10
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Trabzonspor",
+            "cr": 9,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401915807",
@@ -825,14 +3326,75 @@
       "away_team": "Panathinaikos",
       "home_id": "",
       "away_id": "",
-      "score": 2.0,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 7.5,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 2.7,
+        "away_l3_corners": 6.7,
+        "home_l3_chaos": 6.7,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 2.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "København",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "DEN",
+            "ha": "A",
+            "opp": "Randers",
+            "cr": 1,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Monaco",
+            "cr": 3,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "H",
+            "opp": "OFI Crete",
+            "cr": 4,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "A",
+            "opp": "Iraklis",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "CSKA Sofia",
+            "cr": 12,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915738",
@@ -844,14 +3406,75 @@
       "away_team": "F.C. København",
       "home_id": "",
       "away_id": "",
-      "score": 1.5,
-      "ref_exp": null,
+      "score": 1.0,
+      "ref_exp": 8.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 4.0,
+        "away_l3_chaos": 6.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 2.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Red Star",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "CSU Craiova",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Mjällby",
+            "cr": 3,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "DEN",
+            "ha": "A",
+            "opp": "Nordsjælland",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "Brøndby",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Iberia 1999",
+            "cr": 3,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401915804",
@@ -863,14 +3486,75 @@
       "away_team": "Red Star Belgrade",
       "home_id": "",
       "away_id": "",
-      "score": 5.0,
-      "ref_exp": null,
+      "score": 4.0,
+      "ref_exp": 10.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 4.3,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 4.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Waasland-Beveren",
+            "cr": 10,
+            "con": 10
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "KV Kortrijk",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "KuPS Kuopio",
+            "cr": 7,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Inter D'Escaldes",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "København",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "FC Lugano",
+            "cr": 3,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401880728",
@@ -882,14 +3566,75 @@
       "away_team": "Huddersfield Town",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 3.5,
+      "ref_exp": 9.6,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 7.3,
+        "home_l3_chaos": 6.3,
+        "away_l3_chaos": 7.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 3.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Bradford",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "A",
+            "opp": "Kid'minster",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "04 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Rochdale",
+            "cr": 5,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Leicester",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Liverpool U21",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "H",
+            "opp": "Exeter",
+            "cr": 11,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915506",
@@ -901,14 +3646,75 @@
       "away_team": "Hapoel Be'er",
       "home_id": "",
       "away_id": "",
-      "score": 1.0,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 6.4,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 1.7,
+        "home_l3_chaos": 12.0,
+        "away_l3_chaos": 6.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.7,
+        "away_l3_conceded": 3.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Konyaspor",
+            "cr": 3,
+            "con": 2
+          },
+          {
+            "date": "09 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Genclerbirli",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Celtic",
+            "cr": 7,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "OFI Crete",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Union SG",
+            "cr": 0,
+            "con": 4
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "AZ Alkmaar",
+            "cr": 1,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401915517",
@@ -921,13 +3727,74 @@
       "home_id": "",
       "away_id": "",
       "score": 3.0,
-      "ref_exp": null,
+      "ref_exp": 8.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 6.7,
+        "home_l3_chaos": 7.3,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 2.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Sunderland",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "NEC",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Anderlecht",
+            "cr": 6,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Paderborn",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Cologne",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Marseille",
+            "cr": 6,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401915521",
@@ -939,14 +3806,75 @@
       "away_team": "AC Milan",
       "home_id": "",
       "away_id": "",
-      "score": 1.5,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 7.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.7,
+        "away_l3_corners": 1.3,
+        "home_l3_chaos": 8.3,
+        "away_l3_chaos": 6.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.3,
+        "away_l3_conceded": 5.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "H",
+            "opp": "Iraklis",
+            "cr": 9,
+            "con": 0
+          },
+          {
+            "date": "09 Nov",
+            "comp": "GREEK SUPER LEAGUE",
+            "ha": "H",
+            "opp": "PAOK",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Rennes",
+            "cr": 3,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Frosinone",
+            "cr": 2,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Genoa",
+            "cr": 0,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Ferencvaros",
+            "cr": 2,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915811",
@@ -959,13 +3887,74 @@
       "home_id": "",
       "away_id": "",
       "score": 3.0,
-      "ref_exp": null,
+      "ref_exp": 8.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.7,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 16.0,
+        "away_l3_chaos": 5.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.3,
+        "away_l3_conceded": 3.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SCO",
+            "ha": "A",
+            "opp": "Dundee",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SCO",
+            "ha": "H",
+            "opp": "Falkirk",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "FC Thun",
+            "cr": 5,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Auxerre",
+            "cr": 3,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Le Mans",
+            "cr": 7,
+            "con": 8
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Nordsjælland",
+            "cr": 4,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915520",
@@ -977,14 +3966,75 @@
       "away_team": "Ararat-Armenia",
       "home_id": "",
       "away_id": "",
-      "score": 1.0,
-      "ref_exp": null,
+      "score": 0.0,
+      "ref_exp": 5.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 1.3,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 1.7,
+        "away_l3_chaos": 9.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 1.7,
+        "away_l3_conceded": 4.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Vienna",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Sturm Graz",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Anderlecht",
+            "cr": 4,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Torreense",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "AZ Alkmaar",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Jagiellonia ",
+            "cr": 3,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401915739",
@@ -996,14 +4046,75 @@
       "away_team": "Riga FC",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 8.9,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 1.3,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 3.7,
+        "away_l3_chaos": 8.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 6.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "FC Lugano",
+            "cr": 2,
+            "con": 4
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "SK Brann",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Brighton",
+            "cr": 1,
+            "con": 13
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Jablonec",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Pafos",
+            "cr": 4,
+            "con": 10
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Kairat Almaty",
+            "cr": 2,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915519",
@@ -1015,14 +4126,75 @@
       "away_team": "AFC Bournemouth",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 5.0,
+      "ref_exp": 9.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 7.7,
+        "home_l3_chaos": 10.7,
+        "away_l3_chaos": 11.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.7,
+        "away_l3_conceded": 3.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Real Madrid",
+            "cr": 3,
+            "con": 8
+          },
+          {
+            "date": "14 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "Salamanca UDS",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Levante",
+            "cr": 6,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Nottm Forest",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Ipswich",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Sparta",
+            "cr": 10,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915507",
@@ -1034,14 +4206,75 @@
       "away_team": "Levski Sofia",
       "home_id": "",
       "away_id": "",
-      "score": 2.0,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 7.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.3,
+        "away_l3_corners": 2.0,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 6.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 5.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Le Mans",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lens",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Leverkusen",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Jagiellonia ",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Viktoria Plzen",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "NEC",
+            "cr": 1,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401915508",
@@ -1054,13 +4287,74 @@
       "home_id": "",
       "away_id": "",
       "score": 5.0,
-      "ref_exp": null,
+      "ref_exp": 10.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.7,
+        "away_l3_corners": 3.3,
+        "home_l3_chaos": 10.3,
+        "away_l3_chaos": 6.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.7,
+        "away_l3_conceded": 5.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "KV Kortrijk",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Genk",
+            "cr": 10,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Celta Vigo",
+            "cr": 1,
+            "con": 11
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Benfica",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Sunderland",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Leverkusen",
+            "cr": 4,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401915518",
@@ -1072,14 +4366,75 @@
       "away_team": "Benfica",
       "home_id": "",
       "away_id": "",
-      "score": 2.0,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 7.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 5.3,
+        "home_l3_chaos": 10.3,
+        "away_l3_chaos": 7.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.7,
+        "away_l3_conceded": 1.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Lillestrom",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Levski Sofia",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UEL",
+            "ha": "A",
+            "opp": "Ferencvaros",
+            "cr": 3,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "TACA DE PORTUGAL",
+            "ha": "A",
+            "opp": "Torreense",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "09 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Estrela",
+            "cr": 10,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UEL",
+            "ha": "H",
+            "opp": "Lech Poznan",
+            "cr": 6,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915815",
@@ -1092,13 +4447,74 @@
       "home_id": "",
       "away_id": "",
       "score": 4.0,
-      "ref_exp": null,
+      "ref_exp": 9.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 2.3,
+        "home_l3_chaos": 12.0,
+        "away_l3_chaos": 7.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 4.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Midtjylland",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Atalanta",
+            "cr": 8,
+            "con": 9
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Hajduk Split",
+            "cr": 5,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Hearts",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Hajduk Split",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "FC Twente",
+            "cr": 1,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401915814",
@@ -1110,14 +4526,75 @@
       "away_team": "CSU Craiova",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 4.5,
+      "ref_exp": 9.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.7,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 8.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.7,
+        "away_l3_conceded": 4.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Hull",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Brentford",
+            "cr": 7,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Getafe",
+            "cr": 5,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Egnatia",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Inter D'Escaldes",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Getafe",
+            "cr": 4,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915810",
@@ -1130,13 +4607,74 @@
       "home_id": "",
       "away_id": "",
       "score": 2.0,
-      "ref_exp": null,
+      "ref_exp": 10.4,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 1.0,
+        "home_l3_chaos": 6.3,
+        "away_l3_chaos": 2.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 10.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "CSU Craiova",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "AGF",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Midtjylland",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Hajduk Split",
+            "cr": 0,
+            "con": 8
+          },
+          {
+            "date": "23 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "FC Twente",
+            "cr": 1,
+            "con": 6
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "SK Brann",
+            "cr": 2,
+            "con": 17
+          }
+        ]
+      }
     },
     {
       "id": "401915813",
@@ -1149,13 +4687,74 @@
       "home_id": "",
       "away_id": "",
       "score": 1.5,
-      "ref_exp": null,
+      "ref_exp": 8.4,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 1.3,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 1.7,
+        "away_l3_chaos": 3.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 7.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "København",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Mjällby",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Sint-Truidense",
+            "cr": 0,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Atlético",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Villarreal",
+            "cr": 4,
+            "con": 9
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Brighton",
+            "cr": 5,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401915812",
@@ -1167,14 +4766,75 @@
       "away_team": "FC Lugano",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 2.5,
+      "ref_exp": 9.4,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 2.7,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 4.3,
+        "away_l3_chaos": 8.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.7,
+        "away_l3_conceded": 6.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Riga FC",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Brighton",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Freiburg",
+            "cr": 1,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Kauno Zalgiris",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Getafe",
+            "cr": 2,
+            "con": 15
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Red Star",
+            "cr": 5,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915809",
@@ -1186,14 +4846,75 @@
       "away_team": "FC Midtjylland",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 11.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 5.7,
+        "away_l3_chaos": 8.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.3,
+        "away_l3_conceded": 6.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "FC Twente",
+            "cr": 1,
+            "con": 12
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Riga FC",
+            "cr": 10,
+            "con": 4
+          },
+          {
+            "date": "16 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Atalanta",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "DEN",
+            "ha": "A",
+            "opp": "Brøndby",
+            "cr": 1,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "Sønderjyske",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Ajax",
+            "cr": 1,
+            "con": 8
+          }
+        ]
+      }
     },
     {
       "id": "401915808",
@@ -1205,14 +4926,75 @@
       "away_team": "AGF",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 8.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.3,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 7.7,
+        "away_l3_chaos": 11.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.3,
+        "away_l3_conceded": 4.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "NORWEGIAN ELITESERIEN",
+            "ha": "A",
+            "opp": "KFUM",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "NORWEGIAN ELITESERIEN",
+            "ha": "A",
+            "opp": "Fredrikstad",
+            "cr": 9,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Sint-Truidense",
+            "cr": 7,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "Lyngby",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "DEN",
+            "ha": "H",
+            "opp": "AC Horsens",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Braga",
+            "cr": 2,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401915816",
@@ -1225,13 +5007,74 @@
       "home_id": "",
       "away_id": "",
       "score": 2.5,
-      "ref_exp": null,
+      "ref_exp": 10.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.3,
+        "away_l3_corners": 3.7,
+        "home_l3_chaos": 6.7,
+        "away_l3_chaos": 6.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 8.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Atalanta",
+            "cr": 2,
+            "con": 9
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Panathinaikos",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UECL",
+            "ha": "A",
+            "opp": "Riga FC",
+            "cr": 3,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SWEDISH ALLSVENSKAN",
+            "ha": "H",
+            "opp": "Malmö",
+            "cr": 4,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SWEDISH ALLSVENSKAN",
+            "ha": "A",
+            "opp": "Brommapojkar",
+            "cr": 3,
+            "con": 10
+          },
+          {
+            "date": "06 Nov",
+            "comp": "UECL",
+            "ha": "H",
+            "opp": "Borac",
+            "cr": 4,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401931998",
@@ -1244,13 +5087,74 @@
       "home_id": "",
       "away_id": "",
       "score": 3.5,
-      "ref_exp": null,
+      "ref_exp": 9.6,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 4.3,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 6.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.3,
+        "away_l3_conceded": 5.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "UNAM",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "15 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Queretaro",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Toluca",
+            "cr": 6,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Tigres",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "UNAM",
+            "cr": 2,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Toluca",
+            "cr": 6,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401931986",
@@ -1263,13 +5167,74 @@
       "home_id": "",
       "away_id": "",
       "score": 6.0,
-      "ref_exp": null,
+      "ref_exp": 11.9,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 6.7,
+        "home_l3_chaos": 9.7,
+        "away_l3_chaos": 8.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.7,
+        "away_l3_conceded": 7.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Pachuca",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Monterrey",
+            "cr": 6,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "América",
+            "cr": 5,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Juárez",
+            "cr": 9,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Pachuca",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "31 Oct",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Atl. San Luis",
+            "cr": 4,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401933757",
@@ -1281,14 +5246,75 @@
       "away_team": "Independiente Rivadavia",
       "home_id": "",
       "away_id": "",
-      "score": 2.0,
-      "ref_exp": null,
+      "score": 3.5,
+      "ref_exp": 9.6,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.7,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 5.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.7,
+        "away_l3_conceded": 4.7,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "08 Nov",
+            "comp": "ARG",
+            "ha": "H",
+            "opp": "Def. y Jus.",
+            "cr": 10,
+            "con": 2
+          },
+          {
+            "date": "02 Nov",
+            "comp": "ARG",
+            "ha": "H",
+            "opp": "River Plate",
+            "cr": 10,
+            "con": 2
+          },
+          {
+            "date": "26 Oct",
+            "comp": "ARG",
+            "ha": "A",
+            "opp": "Independiente",
+            "cr": 3,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "13 Nov",
+            "comp": "ARGENTINE SUPERCOPA",
+            "ha": "A",
+            "opp": "Estudiantes",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ARG",
+            "ha": "A",
+            "opp": "Gimnasia (M)",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "03 Nov",
+            "comp": "ARG",
+            "ha": "H",
+            "opp": "Banfield",
+            "cr": 6,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401841319",
@@ -1300,14 +5326,75 @@
       "away_team": "Corinthians",
       "home_id": "",
       "away_id": "",
-      "score": 2.0,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 8.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 7.3,
+        "away_l3_chaos": 11.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.3,
+        "away_l3_conceded": 3.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "15 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Mirassol",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "05 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Botafogo",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "30 Oct",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Cruzeiro",
+            "cr": 7,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "19 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Botafogo",
+            "cr": 2,
+            "con": 2
+          },
+          {
+            "date": "05 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "São Paulo",
+            "cr": 8,
+            "con": 6
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Mirassol",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401915291",
@@ -1319,14 +5406,75 @@
       "away_team": "Viking FK",
       "home_id": "",
       "away_id": "",
-      "score": 5.5,
-      "ref_exp": null,
+      "score": 6.0,
+      "ref_exp": 12.5,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 7.7,
+        "home_l3_chaos": 7.7,
+        "away_l3_chaos": 9.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.7,
+        "away_l3_conceded": 9.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Getafe",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Barcelona",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Bayern",
+            "cr": 4,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "05 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Sabah",
+            "cr": 10,
+            "con": 6
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Aston Villa",
+            "cr": 6,
+            "con": 8
+          },
+          {
+            "date": "14 Oct",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Bayern",
+            "cr": 7,
+            "con": 15
+          }
+        ]
+      }
     },
     {
       "id": "401915292",
@@ -1339,13 +5487,74 @@
       "home_id": "",
       "away_id": "",
       "score": 6.0,
-      "ref_exp": null,
+      "ref_exp": 13.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 11.3,
+        "home_l3_chaos": 12.0,
+        "away_l3_chaos": 14.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 4.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "KV Mechelen",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Anderlecht",
+            "cr": 9,
+            "con": 1
+          },
+          {
+            "date": "05 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "PSV",
+            "cr": 5,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Man Utd",
+            "cr": 15,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "C Palace",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "05 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Fenerbahce",
+            "cr": 12,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915376",
@@ -1357,14 +5566,75 @@
       "away_team": "VfB Stuttgart",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 3.5,
+      "ref_exp": 8.9,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 4.3,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 4.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Atalanta",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Como",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Feyenoord",
+            "cr": 4,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Schalke",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Bremen",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Galatasaray",
+            "cr": 4,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401915377",
@@ -1377,13 +5647,74 @@
       "home_id": "",
       "away_id": "",
       "score": 6.0,
-      "ref_exp": null,
+      "ref_exp": 11.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 7.3,
+        "home_l3_chaos": 5.3,
+        "away_l3_chaos": 13.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.7,
+        "away_l3_conceded": 5.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lyon",
+            "cr": 7,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Rennes",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Bodo/Glimt",
+            "cr": 4,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Atlético",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Arsenal",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "14 Oct",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Viking FK",
+            "cr": 15,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401915374",
@@ -1395,14 +5726,75 @@
       "away_team": "AS Roma",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 5.0,
+      "ref_exp": 8.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 6.3,
+        "away_l3_corners": 7.0,
+        "home_l3_chaos": 11.7,
+        "away_l3_chaos": 12.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.0,
+        "away_l3_conceded": 2.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Nice",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Troyes",
+            "cr": 6,
+            "con": 1
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Villarreal",
+            "cr": 8,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Parma",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Sassuolo",
+            "cr": 12,
+            "con": 1
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Man Utd",
+            "cr": 1,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401915375",
@@ -1414,14 +5806,75 @@
       "away_team": "Fenerbahce",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 3.0,
+      "ref_exp": 9.6,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.3,
+        "away_l3_corners": 3.3,
+        "home_l3_chaos": 8.0,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 7.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Sporting",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "22 Oct",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Inter Milan",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "15 Oct",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "AEK Athens",
+            "cr": 5,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Kocaelispor",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Çorum FK",
+            "cr": 1,
+            "con": 7
+          },
+          {
+            "date": "05 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Liverpool",
+            "cr": 4,
+            "con": 12
+          }
+        ]
+      }
     },
     {
       "id": "401915373",
@@ -1433,14 +5886,75 @@
       "away_team": "Manchester United",
       "home_id": "",
       "away_id": "",
-      "score": 5.5,
-      "ref_exp": null,
+      "score": 4.5,
+      "ref_exp": 10.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 5.3,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 10.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.7,
+        "away_l3_conceded": 5.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "08 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Moreirense",
+            "cr": 8,
+            "con": 4
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Shakhtar",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "31 Oct",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Casa Pia",
+            "cr": 4,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Liverpool",
+            "cr": 5,
+            "con": 15
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Aston Villa",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "AS Roma",
+            "cr": 3,
+            "con": 1
+          }
+        ]
+      }
     },
     {
       "id": "401880138",
@@ -1452,14 +5966,75 @@
       "away_team": "Millwall",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 10.5,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 3.0,
+        "home_l3_chaos": 6.3,
+        "away_l3_chaos": 4.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.7,
+        "away_l3_conceded": 8.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Birmingham",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Portsmouth",
+            "cr": 0,
+            "con": 7
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Blackburn",
+            "cr": 5,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "QPR",
+            "cr": 3,
+            "con": 12
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "West Brom",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Birmingham",
+            "cr": 2,
+            "con": 6
+          }
+        ]
+      }
     },
     {
       "id": "401880140",
@@ -1472,13 +6047,74 @@
       "home_id": "",
       "away_id": "",
       "score": 4.0,
-      "ref_exp": null,
+      "ref_exp": 9.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.3,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 9.3,
+        "away_l3_chaos": 11.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 3.3,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Portsmouth",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Derby",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Charlton",
+            "cr": 3,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Swansea",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Millwall",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Southampton",
+            "cr": 3,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401880139",
@@ -1490,14 +6126,75 @@
       "away_team": "Birmingham City",
       "home_id": "",
       "away_id": "",
-      "score": 4.0,
-      "ref_exp": null,
+      "score": 4.5,
+      "ref_exp": 9.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.7,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 7.3,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 4.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Blackburn",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Cardiff",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "QPR",
+            "cr": 1,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Stoke",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Swansea",
+            "cr": 8,
+            "con": 5
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Millwall",
+            "cr": 6,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401880137",
@@ -1509,14 +6206,75 @@
       "away_team": "Blackburn Rovers",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 9.7,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.3,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 5.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 6.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Sheffield Utd",
+            "cr": 1,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Boro",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Lincoln City",
+            "cr": 7,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Burnley",
+            "cr": 2,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "West Ham",
+            "cr": 4,
+            "con": 9
+          },
+          {
+            "date": "04 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Stoke",
+            "cr": 6,
+            "con": 5
+          }
+        ]
+      }
     },
     {
       "id": "401899534",
@@ -1529,13 +6287,74 @@
       "home_id": "",
       "away_id": "",
       "score": 3.0,
-      "ref_exp": null,
+      "ref_exp": 9.0,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.7,
+        "away_l3_corners": 4.7,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 5.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.7,
+        "away_l3_conceded": 5.0,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Avellino",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Verona",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Modena",
+            "cr": 7,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Padova",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Juve Stabia",
+            "cr": 8,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Ascoli",
+            "cr": 3,
+            "con": 3
+          }
+        ]
+      }
     },
     {
       "id": "401899533",
@@ -1547,14 +6366,75 @@
       "away_team": "Sampdoria",
       "home_id": "",
       "away_id": "",
-      "score": 3.0,
-      "ref_exp": null,
+      "score": 2.0,
+      "ref_exp": 10.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.3,
+        "away_l3_corners": 2.7,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 2.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.7,
+        "away_l3_conceded": 5.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Arezzo",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Empoli",
+            "cr": 8,
+            "con": 6
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Catanzaro",
+            "cr": 2,
+            "con": 11
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Benevento",
+            "cr": 2,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Carrarese",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Virtus Entella",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
     },
     {
       "id": "401899531",
@@ -1566,14 +6446,75 @@
       "away_team": "Modena",
       "home_id": "",
       "away_id": "",
-      "score": 5.5,
-      "ref_exp": null,
+      "score": 5.0,
+      "ref_exp": 10.3,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 7.7,
+        "away_l3_corners": 3.3,
+        "home_l3_chaos": 9.3,
+        "away_l3_chaos": 9.3,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.7,
+        "away_l3_conceded": 4.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Empoli",
+            "cr": 11,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Sudtirol",
+            "cr": 8,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Avellino",
+            "cr": 4,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Juve Stabia",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Virtus Entella",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Mantova",
+            "cr": 0,
+            "con": 7
+          }
+        ]
+      }
     },
     {
       "id": "401899537",
@@ -1585,14 +6526,75 @@
       "away_team": "US Avellino",
       "home_id": "",
       "away_id": "",
-      "score": 4.5,
-      "ref_exp": null,
+      "score": 4.0,
+      "ref_exp": 10.2,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 3.3,
+        "away_l3_corners": 5.3,
+        "home_l3_chaos": 7.7,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 6.7,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Sudtirol",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "09 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Vicenza",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Benevento",
+            "cr": 1,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Mantova",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SRB",
+            "ha": "A",
+            "opp": "Benevento",
+            "cr": 3,
+            "con": 9
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SRB",
+            "ha": "H",
+            "opp": "Pisa",
+            "cr": 8,
+            "con": 4
+          }
+        ]
+      }
     },
     {
       "id": "401915378",
@@ -1604,14 +6606,75 @@
       "away_team": "Barcelona",
       "home_id": "",
       "away_id": "",
-      "score": 5.5,
-      "ref_exp": null,
+      "score": 4.0,
+      "ref_exp": 11.1,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 4.7,
+        "away_l3_corners": 5.3,
+        "home_l3_chaos": 8.3,
+        "away_l3_chaos": 12.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.3,
+        "away_l3_conceded": 4.0,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "05 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Viking FK",
+            "cr": 6,
+            "con": 10
+          },
+          {
+            "date": "20 Oct",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Dortmund",
+            "cr": 4,
+            "con": 9
+          },
+          {
+            "date": "13 Oct",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Slavia Prague",
+            "cr": 4,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Villarreal",
+            "cr": 10,
+            "con": 0
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Atlético",
+            "cr": 2,
+            "con": 4
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Aston Villa",
+            "cr": 4,
+            "con": 8
+          }
+        ]
+      }
     },
     {
       "id": "401915293",
@@ -1623,14 +6686,75 @@
       "away_team": "Villarreal",
       "home_id": "",
       "away_id": "",
-      "score": 3.5,
-      "ref_exp": null,
+      "score": 4.0,
+      "ref_exp": 9.8,
       "actual_home_corners": null,
       "actual_away_corners": null,
       "actual_corners": null,
       "status": "PENDING",
       "extra_time": false,
-      "snapshot": null
+      "snapshot": {
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 4.3,
+        "home_l3_chaos": 11.7,
+        "away_l3_chaos": 8.7,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 7.3,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "05 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Arsenal",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "20 Oct",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Fenerbahce",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "13 Oct",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Sabah",
+            "cr": 6,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Barcelona",
+            "cr": 0,
+            "con": 10
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Getafe",
+            "cr": 9,
+            "con": 4
+          },
+          {
+            "date": "04 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "PSG",
+            "cr": 4,
+            "con": 8
+          }
+        ]
+      }
     },
     {
       "id": "401933738",
