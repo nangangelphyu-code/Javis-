@@ -4,6 +4,7 @@ Javis v5.0 — Automated Corner Analytics & Hybrid Backtesting Engine
 - 100% Exact Parity with v4.2 CN Ultra 3-Layer Scoring, Rounding & Alerts
 - Isolated v5 outputs: matches_v5.json & history_v5.json (never modifies v4.2 files)
 - 28 Club Competitions + 11 Official Senior Men's International Competitions (120d lookback)
+- Enhanced Multi-Competition Schedule Reliability (Retries + Domestic League Auto-Link + Euro-Only Guard)
 """
 
 import json
@@ -35,6 +36,7 @@ STANDARD_LINE = 9.5
 UPCOMING_DAYS = int(os.getenv("UPCOMING_DAYS", "7"))
 MIN_SAMPLES_REQUIRED = 2
 L3_WINDOW = 3
+BOXSCORE_SCAN_BUFFER = 5
 MAX_HISTORY_RECORDS = 3000
 GRADE_DELAY_HOURS = 2.2
 VOID_EXPIRE_DAYS = 5
@@ -99,6 +101,7 @@ INTL_LEAGUES = [
     {"slug": "caf.nations", "code": "AFCON", "name": "AFCON", "lookback": INTL_LOOKBACK_DAYS},
 ]
 
+EURO_CUP_SLUGS = {"uefa.champions", "uefa.europa", "uefa.europa.conf"}
 INTL_SLUGS = {lg["slug"] for lg in INTL_LEAGUES}
 SLUG_TO_CODE = {lg["slug"]: lg["code"] for lg in CLUB_LEAGUES + INTL_LEAGUES}
 SLUG_TO_CODE.update({
@@ -151,7 +154,7 @@ def pick_stat(stats_map, *keys):
     return None
 
 
-def fetch_json(url, timeout=15, retries=2):
+def fetch_json(url, timeout=15, retries=4):
     for attempt in range(retries):
         try:
             if SESSION is not None:
@@ -167,7 +170,7 @@ def fetch_json(url, timeout=15, retries=2):
                 with urllib.request.urlopen(req, timeout=timeout) as resp:
                     return json.loads(resp.read().decode("utf-8"))
         except Exception:
-            time.sleep(0.4 * (attempt + 1))
+            time.sleep(0.5 * (attempt + 1))
     return None
 
 
@@ -191,54 +194,104 @@ def fetch_league_boards(lg, comp_type, now_utc):
     past_start = (now_utc - timedelta(days=lg.get("lookback", 70))).strftime("%Y%m%d")
     past_end = now_utc.strftime("%Y%m%d")
 
-    default_board = fetch_json(base)
-    up_board = fetch_json(f"{base}?dates={up_range}")
-    past_board = fetch_json(f"{base}?dates={past_start}-{past_end}")
+    default_board = fetch_json(base, retries=3)
+    up_board = fetch_json(f"{base}?dates={up_range}", retries=3)
+    past_board = fetch_json(f"{base}?dates={past_start}-{past_end}", retries=3)
     return lg, comp_type, default_board, up_board, past_board
+
+
+def _extract_schedule_events(data, fallback_slug, comp_type, now_utc, intl_cutoff):
+    items = {}
+    if not data:
+        return items
+    default_slug = (data.get("league") or {}).get("slug", "")
+    for ev in data.get("events", []):
+        comp = (ev.get("competitions") or [{}])[0]
+        st_type = comp.get("status", {}).get("type", {})
+        if not st_type.get("completed") and st_type.get("state") != "post":
+            continue
+        eid = str(ev.get("id", ""))
+        edate = comp.get("date") or ev.get("date") or ""
+        dt = parse_utc(edate)
+        if not eid or not dt or dt >= now_utc:
+            continue
+
+        ev_slug = (ev.get("league") or {}).get("slug") or default_slug or fallback_slug or "all"
+        if comp_type == "intl":
+            ev_low = ev_slug.lower()
+            if dt < intl_cutoff or ev_slug not in INTL_SLUGS:
+                continue
+            if "friendly" in ev_low or "women" in ev_low or "u21" in ev_low or "u23" in ev_low:
+                continue
+
+        items[eid] = (dt.timestamp(), edate, eid, ev_slug)
+    return items
+
+
+def _has_non_euro_recent(events_map, window=3):
+    """Return True if at least one of the team's top `window` most recent games is non-European (domestic)."""
+    if not events_map:
+        return False
+    recent = sorted(events_map.values(), key=lambda x: x[0], reverse=True)[:window]
+    return any(ev_slug not in EURO_CUP_SLUGS for _, _, _, ev_slug in recent)
+
+
+def fetch_team_default_league_slug(tid):
+    """Query ESPN universal team profile to discover a club's home domestic league slug (e.g. ger.1)."""
+    data = fetch_json(f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/teams/{tid}", retries=3)
+    if not isinstance(data, dict):
+        return None
+    team_obj = data.get("team") or {}
+    default_lg = team_obj.get("defaultLeague") or {}
+    slug = default_lg.get("slug")
+    if slug and slug not in EURO_CUP_SLUGS and slug not in INTL_SLUGS:
+        return slug
+    return None
 
 
 def fetch_team_completed_events(tid, candidate_slugs, comp_type, now_utc):
     """
-    - 'club': mirrors v4.2 multi-competition schedule fetch exactly so club L3 matches are 100% identical
-    - 'intl': strictly official senior men's INTL_SLUGS within 120 days (no friendlies/youth/women)
+    Fetch completed matches for a team:
+    - 'club': fetches all competitions (domestic league + domestic cups + European cups) with 4 retries.
+      Prioritizes domestic league backup slugs and verifies against ESPN team defaultLeague if only
+      European cup matches were returned in the top 3.
+    - 'intl': strictly official senior men's INTL_SLUGS within 120 days (no friendlies/youth/women).
     """
     found = {}
     intl_cutoff = now_utc - timedelta(days=INTL_LOOKBACK_DAYS)
 
+    # Order candidate slugs so domestic leagues are checked before European cups
+    unique_slugs = list(dict.fromkeys(s for s in candidate_slugs if s))
+    ordered_slugs = (
+        [s for s in unique_slugs if s not in EURO_CUP_SLUGS]
+        + [s for s in unique_slugs if s in EURO_CUP_SLUGS]
+    )
+
     urls = []
     if comp_type == "club":
-        urls.append(f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/teams/{tid}/schedule")
-    for slug in candidate_slugs:
-        if slug:
-            urls.append(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/teams/{tid}/schedule")
+        urls.append(("all", f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/teams/{tid}/schedule"))
+    for slug in ordered_slugs:
+        urls.append((slug, f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/teams/{tid}/schedule"))
 
-    for url in urls:
-        data = fetch_json(url)
-        if not data:
-            continue
-        default_slug = data.get("league", {}).get("slug", "")
-        for ev in data.get("events", []):
-            comp = (ev.get("competitions") or [{}])[0]
-            st_type = comp.get("status", {}).get("type", {})
-            if not st_type.get("completed") and st_type.get("state") != "post":
-                continue
-            eid = str(ev.get("id", ""))
-            edate = comp.get("date") or ev.get("date") or ""
-            dt = parse_utc(edate)
-            if not eid or not dt or dt >= now_utc:
-                continue
+    queried_slugs = set()
+    for src_slug, url in urls:
+        queried_slugs.add(src_slug)
+        data = fetch_json(url, retries=4)
+        fallback_slug = ordered_slugs[0] if src_slug == "all" and ordered_slugs else src_slug
+        found.update(_extract_schedule_events(data, fallback_slug, comp_type, now_utc, intl_cutoff))
 
-            ev_slug = (ev.get("league") or {}).get("slug") or default_slug or (candidate_slugs[0] if candidate_slugs else "all")
-            if comp_type == "intl":
-                ev_low = ev_slug.lower()
-                if dt < intl_cutoff or ev_slug not in INTL_SLUGS:
-                    continue
-                if "friendly" in ev_low or "women" in ev_low or "u21" in ev_low or "u23" in ev_low:
-                    continue
-
-            found[eid] = (dt.timestamp(), edate, eid, ev_slug)
-        if comp_type == "club" and len(found) >= 8 and "soccer/all/" in url:
+        # Only stop early after soccer/all if we have >= 8 events AND domestic games are present
+        if comp_type == "club" and src_slug == "all" and len(found) >= 8 and _has_non_euro_recent(found, L3_WINDOW):
             break
+
+    # Euro-Only Guard: If a club team's top 3 recent games are ALL European cups (UCL/UEL/UECL),
+    # explicitly discover and query its home domestic league so league games are never missed.
+    if comp_type == "club" and not _has_non_euro_recent(found, L3_WINDOW):
+        dom_slug = fetch_team_default_league_slug(tid)
+        if dom_slug and dom_slug not in queried_slugs:
+            dom_url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{dom_slug}/teams/{tid}/schedule"
+            dom_data = fetch_json(dom_url, retries=4)
+            found.update(_extract_schedule_events(dom_data, dom_slug, comp_type, now_utc, intl_cutoff))
 
     return list(found.values())
 
@@ -250,7 +303,7 @@ def extract_boxscore_stats(slug, event_id):
 
     data = None
     for u in urls:
-        cand = fetch_json(u)
+        cand = fetch_json(u, retries=3)
         if cand and cand.get("boxscore", {}).get("teams"):
             data = cand
             break
@@ -369,6 +422,11 @@ def detect_spike(seq):
 # 4. SNAPSHOT BUILDER & EXACT v4.2 CN ULTRA 3-LAYER SCORING
 # ==============================================================================
 def build_team_l3(tid, ev_refs, cache):
+    """
+    Strictly sorts completed matches by kickoff timestamp descending (most recent first).
+    - Full-data teams: takes exact Last 3 matches across all competitions.
+    - Partial-data teams: skips matches without valid corner boxscores and takes the 3 most recent matches with data.
+    """
     sorted_refs = sorted(ev_refs, key=lambda x: x[0], reverse=True)
     rows = []
     audit = []
@@ -720,6 +778,8 @@ def main():
                         tid = str(c.get("team", {}).get("id", ""))
                         if tid:
                             team_history_events[ctype].setdefault(tid, []).append((dt.timestamp(), ev_date, ev_id, slug))
+                            # Auto-link team's domestic/league slug from completed boards too
+                            team_slugs[ctype].setdefault(tid, []).append(slug)
 
     # Step 2: Fetch multi-competition schedules for active teams
     schedule_tasks = []
@@ -739,21 +799,27 @@ def main():
                 for item in fut.result():
                     team_history_events[ctype].setdefault(tid, []).append(item)
 
-    # Step 3: Fetch missing boxscores for true Last 3 completed matches
+    # Step 3: Fetch missing boxscores for true Last 3 completed matches (with buffer for partial-data teams)
     needed_boxscores = {}
     for ctype, team_set in (("club", active_club_ids), ("intl", active_intl_ids)):
         for tid in team_set:
             ev_refs = sorted(team_history_events[ctype].get(tid, []), key=lambda x: x[0], reverse=True)
             picked = 0
+            valid_cached = 0
             seen_eids = set()
             for _, _, eid, slug in ev_refs:
                 if eid in seen_eids:
                     continue
                 seen_eids.add(eid)
-                if eid not in cache:
+                entry = cache.get(eid)
+                if isinstance(entry, dict) and tid in entry and isinstance(entry.get("_meta"), dict):
+                    valid_cached += 1
+                    if valid_cached >= L3_WINDOW and picked < L3_WINDOW:
+                        break
+                elif eid not in cache:
                     needed_boxscores[eid] = slug
                 picked += 1
-                if picked >= L3_WINDOW + 3:
+                if picked >= L3_WINDOW + BOXSCORE_SCAN_BUFFER:
                     break
 
     if needed_boxscores:
