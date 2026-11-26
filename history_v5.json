@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:17:27Z",
+  "generated_at": "2026-11-26T19:06:58Z",
   "engine_version": "5.0-v42sync",
   "max_records": 3000,
   "all_time_archived": {
@@ -6338,10 +6338,10 @@
       "away_id": "",
       "score": 2.5,
       "ref_exp": 10.0,
-      "actual_home_corners": null,
-      "actual_away_corners": null,
-      "actual_corners": null,
-      "status": "PENDING",
+      "actual_home_corners": 3,
+      "actual_away_corners": 5,
+      "actual_corners": 8,
+      "status": "WIN",
       "extra_time": false,
       "snapshot": {
         "home_samples": 3,
