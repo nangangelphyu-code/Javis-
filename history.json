@@ -1,53 +1,53 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
-  "updatedAtMMT": "27 Nov 2026, 03:21 AM",
+  "updatedAtMMT": "27 Nov 2026, 05:22 AM",
   "summary": {
     "standardLine": 9.5,
-    "totalGraded": 70,
-    "pendingCount": 57,
+    "totalGraded": 89,
+    "pendingCount": 38,
     "picksSummary": {
-      "hits": 10,
-      "misses": 12,
-      "total": 22,
-      "hitRate": 45.5
+      "hits": 14,
+      "misses": 15,
+      "total": 29,
+      "hitRate": 48.3
     },
     "allSummary": {
-      "hits": 38,
-      "misses": 32,
-      "total": 70,
-      "hitRate": 54.3
+      "hits": 47,
+      "misses": 42,
+      "total": 89,
+      "hitRate": 52.8
     },
     "byTier": {
       "GOLDEN": {
-        "hits": 4,
-        "misses": 1,
-        "total": 5,
-        "hitRate": 80.0
+        "hits": 5,
+        "misses": 3,
+        "total": 8,
+        "hitRate": 62.5
       },
       "VALUE": {
-        "hits": 6,
-        "misses": 11,
-        "total": 17,
-        "hitRate": 35.3
+        "hits": 9,
+        "misses": 12,
+        "total": 21,
+        "hitRate": 42.9
       },
       "RISKY": {
-        "hits": 21,
-        "misses": 14,
-        "total": 35,
-        "hitRate": 60.0
+        "hits": 25,
+        "misses": 18,
+        "total": 43,
+        "hitRate": 58.1
       },
       "NO_BET": {
-        "hits": 7,
-        "misses": 6,
-        "total": 13,
-        "hitRate": 53.8
+        "hits": 8,
+        "misses": 9,
+        "total": 17,
+        "hitRate": 47.1
       }
     },
     "exactMode": {
-      "hits": 10,
-      "misses": 12,
-      "total": 22,
-      "hitRate": 45.5
+      "hits": 14,
+      "misses": 15,
+      "total": 29,
+      "hitRate": 48.3
     },
     "fallbackMode": {
       "hits": 0,
@@ -81,6 +81,14 @@
         "hitRate": 100.0
       },
       {
+        "code": "UECL",
+        "name": "Conference League",
+        "hits": 3,
+        "misses": 2,
+        "total": 5,
+        "hitRate": 60.0
+      },
+      {
         "code": "UCL",
         "name": "Champions League",
         "hits": 5,
@@ -99,10 +107,10 @@
       {
         "code": "UEL",
         "name": "Europa League",
-        "hits": 0,
-        "misses": 1,
-        "total": 1,
-        "hitRate": 0.0
+        "hits": 1,
+        "misses": 2,
+        "total": 3,
+        "hitRate": 33.3
       },
       {
         "code": "SCO",
@@ -1226,11 +1234,11 @@
       "fairOdds": 1.73,
       "minValueOdds": 1.86,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 5,
+      "actualAwayCorners": 3,
+      "actualTotal": 8,
+      "grade": "MISS",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -1240,7 +1248,9 @@
       "l2Mode": "exact",
       "refTotal": 9.1,
       "dominanceSide": null,
-      "hasSpike": true
+      "hasSpike": true,
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915501",
@@ -1264,11 +1274,11 @@
       "fairOdds": 1.71,
       "minValueOdds": 1.84,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 9,
+      "actualAwayCorners": 6,
+      "actualTotal": 15,
+      "grade": "HIT",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -1278,7 +1288,9 @@
       "l2Mode": "exact",
       "refTotal": 12.2,
       "dominanceSide": "HOME",
-      "hasSpike": true
+      "hasSpike": true,
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915803",
@@ -1302,11 +1314,11 @@
       "fairOdds": 1.77,
       "minValueOdds": 1.9,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 4,
+      "actualAwayCorners": 1,
+      "actualTotal": 5,
+      "grade": "MISS",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -1316,7 +1328,9 @@
       "l2Mode": "exact",
       "refTotal": 11.7,
       "dominanceSide": null,
-      "hasSpike": true
+      "hasSpike": true,
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915503",
@@ -1340,11 +1354,11 @@
       "fairOdds": 1.76,
       "minValueOdds": 1.89,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 3,
+      "actualAwayCorners": 7,
+      "actualTotal": 10,
+      "grade": "HIT",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -1354,7 +1368,9 @@
       "l2Mode": "exact",
       "refTotal": 9.4,
       "dominanceSide": null,
-      "hasSpike": true
+      "hasSpike": true,
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915805",
@@ -1378,11 +1394,11 @@
       "fairOdds": 1.87,
       "minValueOdds": 2.02,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 6,
+      "actualAwayCorners": 2,
+      "actualTotal": 8,
+      "grade": "MISS",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -1392,7 +1408,9 @@
       "l2Mode": "exact",
       "refTotal": 8.8,
       "dominanceSide": null,
-      "hasSpike": false
+      "hasSpike": false,
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915801",
@@ -1416,11 +1434,11 @@
       "fairOdds": 1.66,
       "minValueOdds": 1.78,
       "isPrimeSignal": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
+      "status": "GRADED",
+      "actualHomeCorners": 2,
+      "actualAwayCorners": 2,
+      "actualTotal": 4,
+      "grade": "MISS",
       "absError": null,
       "biasError": null,
       "engineVersion": "4.1-cn-ultra-3L",
@@ -1430,7 +1448,9 @@
       "l2Mode": "exact",
       "refTotal": 9.2,
       "dominanceSide": "AWAY",
-      "hasSpike": false
+      "hasSpike": false,
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915515",
@@ -1452,12 +1472,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 10,
+      "actualAwayCorners": 4,
+      "actualTotal": 14,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915504",
@@ -1479,12 +1500,13 @@
       "targetLine": 9.5,
       "dominanceSide": "AWAY",
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 2,
+      "actualAwayCorners": 7,
+      "actualTotal": 9,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915516",
@@ -1506,12 +1528,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 6,
+      "actualAwayCorners": 2,
+      "actualTotal": 8,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915505",
@@ -1533,12 +1556,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 1,
+      "actualAwayCorners": 5,
+      "actualTotal": 6,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915514",
@@ -1560,12 +1584,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 2,
+      "actualAwayCorners": 0,
+      "actualTotal": 2,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915513",
@@ -1587,12 +1612,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 8,
+      "actualAwayCorners": 3,
+      "actualTotal": 11,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915512",
@@ -1614,12 +1640,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 3,
+      "actualAwayCorners": 7,
+      "actualTotal": 10,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915806",
@@ -1641,12 +1668,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 4,
+      "actualAwayCorners": 6,
+      "actualTotal": 10,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915802",
@@ -1668,12 +1696,13 @@
       "targetLine": 9.5,
       "dominanceSide": "HOME",
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 7,
+      "actualAwayCorners": 3,
+      "actualTotal": 10,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915807",
@@ -1695,12 +1724,13 @@
       "targetLine": 9.5,
       "dominanceSide": "AWAY",
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 5,
+      "actualAwayCorners": 3,
+      "actualTotal": 8,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915738",
@@ -1722,12 +1752,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 1,
+      "actualAwayCorners": 5,
+      "actualTotal": 6,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915804",
@@ -1749,12 +1780,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 3,
+      "actualAwayCorners": 10,
+      "actualTotal": 13,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401880728",
@@ -1776,12 +1808,13 @@
       "targetLine": 9.5,
       "dominanceSide": "AWAY",
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 5,
+      "actualAwayCorners": 6,
+      "actualTotal": 11,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "27 Nov, 05:22 AM"
     },
     {
       "id": "401915506",
