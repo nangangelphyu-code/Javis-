@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T07:28:45Z",
+  "generated_at": "2026-11-26T08:15:56Z",
   "engine_version": "5.0-v42sync",
   "max_records": 3000,
   "all_time_archived": {
@@ -796,6 +796,261 @@
             "ha": "A",
             "opp": "Watford",
             "cr": 6,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401931995",
+      "formula_ver": "v4.2",
+      "league": "Liga MX",
+      "league_slug": "mex.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-27T03:10:00Z",
+      "home_team": "León",
+      "away_team": "Cruz Azul",
+      "home_id": "228",
+      "away_id": "218",
+      "score": 4.5,
+      "ref_exp": 9.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 4.33,
+        "home_l3_chaos": 8.34,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 6.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Santos",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Guadalajara",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "02 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Cruz Azul",
+            "cr": 6,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Guadalajara",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Tigres",
+            "cr": 4,
+            "con": 10
+          },
+          {
+            "date": "02 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "León",
+            "cr": 4,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401931982",
+      "formula_ver": "v4.2",
+      "league": "Liga MX",
+      "league_slug": "mex.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-27T01:00:00Z",
+      "home_team": "Pachuca",
+      "away_team": "Guadalajara",
+      "home_id": "234",
+      "away_id": "219",
+      "score": 4.0,
+      "ref_exp": 9.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 11.33,
+        "away_l3_chaos": 10.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Toluca",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Atlas",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Tigres",
+            "cr": 5,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Cruz Azul",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "León",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Atlante",
+            "cr": 6,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401841329",
+      "formula_ver": "v4.2",
+      "league": "Brazil Serie A",
+      "league_slug": "bra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-26T23:00:00Z",
+      "home_team": "São Paulo",
+      "away_team": "Remo",
+      "home_id": "2026",
+      "away_id": "4936",
+      "score": 4.5,
+      "ref_exp": 10.4,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.67,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Botafogo",
+            "cr": 3,
+            "con": 6
+          },
+          {
+            "date": "20 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Fluminense",
+            "cr": 8,
+            "con": 6
+          },
+          {
+            "date": "05 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Corinthians",
+            "cr": 6,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Athletico-PR",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "19 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Chapecoense",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "06 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Palmeiras",
+            "cr": 3,
             "con": 5
           }
         ]
