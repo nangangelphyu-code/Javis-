@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T01:23:55Z",
+  "generated_at": "2026-11-26T03:01:10Z",
   "engine_version": "5.0-v42sync",
   "max_records": 3000,
   "all_time_archived": {
@@ -5573,10 +5573,10 @@
       "away_id": "",
       "score": 3.0,
       "ref_exp": 9.5,
-      "actual_home_corners": null,
-      "actual_away_corners": null,
-      "actual_corners": null,
-      "status": "PENDING",
+      "actual_home_corners": 11,
+      "actual_away_corners": 1,
+      "actual_corners": 12,
+      "status": "WIN",
       "extra_time": false,
       "snapshot": {
         "home_samples": 3,
@@ -5658,10 +5658,10 @@
       "away_id": "",
       "score": 2.0,
       "ref_exp": 8.0,
-      "actual_home_corners": null,
-      "actual_away_corners": null,
-      "actual_corners": null,
-      "status": "PENDING",
+      "actual_home_corners": 14,
+      "actual_away_corners": 0,
+      "actual_corners": 14,
+      "status": "LOSE",
       "extra_time": false,
       "snapshot": {
         "home_samples": 3,
