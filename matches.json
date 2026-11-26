@@ -1,8 +1,8 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
   "standardLine": 9.5,
-  "updatedAtUTC": "2026-11-26T01:01:47.157128+00:00",
-  "updatedAtMMT": "26 Nov 2026, 07:31 AM",
+  "updatedAtUTC": "2026-11-26T02:50:55.310086+00:00",
+  "updatedAtMMT": "26 Nov 2026, 09:20 AM",
   "leagueCount": 28,
   "matchCount": 64,
   "goldenCount": 5,
@@ -7322,157 +7322,6 @@
       }
     },
     {
-      "id": "401876392",
-      "leagueSlug": "fra.1",
-      "leagueCode": "LG1",
-      "leagueName": "Ligue 1",
-      "leagueGroup": "top5",
-      "homeId": "6997",
-      "awayId": "6851",
-      "home": "Brest",
-      "away": "Paris FC",
-      "kickoffUTC": "2026-11-27T19:45Z",
-      "kickoffMMT": "28 Nov, 02:15 AM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 1.33,
-        "l3_conceded": 8.0,
-        "l3_sot": 4.0,
-        "l3_total_shots": 13.67,
-        "l3_blocked": 5.0,
-        "recent_corners": [
-          1,
-          1,
-          2
-        ],
-        "recent_conceded": [
-          8,
-          8,
-          8
-        ],
-        "recent_matches": [
-          {
-            "id": "401876396",
-            "date": "22 Nov",
-            "leagueCode": "LG1",
-            "venue": "A",
-            "opponent": "Strasbourg",
-            "cornersWon": 1,
-            "cornersConceded": 8
-          },
-          {
-            "id": "401876410",
-            "date": "08 Nov",
-            "leagueCode": "LG1",
-            "venue": "H",
-            "opponent": "Lyon",
-            "cornersWon": 1,
-            "cornersConceded": 8
-          },
-          {
-            "id": "401876419",
-            "date": "03 Nov",
-            "leagueCode": "LG1",
-            "venue": "A",
-            "opponent": "Lorient",
-            "cornersWon": 2,
-            "cornersConceded": 8
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 6.0,
-        "l3_conceded": 1.67,
-        "l3_sot": 7.33,
-        "l3_total_shots": 15.67,
-        "l3_blocked": 3.67,
-        "recent_corners": [
-          10,
-          5,
-          3
-        ],
-        "recent_conceded": [
-          2,
-          1,
-          2
-        ],
-        "recent_matches": [
-          {
-            "id": "401876397",
-            "date": "22 Nov",
-            "leagueCode": "LG1",
-            "venue": "H",
-            "opponent": "Angers",
-            "cornersWon": 10,
-            "cornersConceded": 2
-          },
-          {
-            "id": "401876411",
-            "date": "08 Nov",
-            "leagueCode": "LG1",
-            "venue": "A",
-            "opponent": "Auxerre",
-            "cornersWon": 5,
-            "cornersConceded": 1
-          },
-          {
-            "id": "401876415",
-            "date": "01 Nov",
-            "leagueCode": "LG1",
-            "venue": "H",
-            "opponent": "Monaco",
-            "cornersWon": 3,
-            "cornersConceded": 2
-          }
-        ],
-        "has_spike": true
-      },
-      "cn": {
-        "score": 2.5,
-        "maxScore": 7.0,
-        "tier": "NO_BET",
-        "verdict": "NO BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 0.0,
-          "max": 3.0,
-          "home": 1.33,
-          "away": 6.0,
-          "total": 7.33
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 9.0,
-          "away": 11.0,
-          "total": 20.0
-        },
-        "l3": {
-          "pts": 0.5,
-          "max": 2.0,
-          "home": 8.0,
-          "away": 1.67,
-          "homePts": 1.0,
-          "awayPts": -0.5
-        },
-        "refExpHome": 1.5,
-        "refExpAway": 7.0,
-        "refTotal": 8.5,
-        "dominance": null,
-        "hasSpike": true,
-        "spikeNote": "Paris FC ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
-        "summaryText": "စုစုပေါင်း 2.5/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 7.33 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
-          "SOT+Blocked စုစုပေါင်း 20.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (8.0 / 1.67, +0.5)"
-        ]
-      }
-    },
-    {
       "id": "401875004",
       "leagueSlug": "ita.1",
       "leagueCode": "SER",
@@ -7628,6 +7477,157 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 11.33 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
           "SOT+Blocked စုစုပေါင်း 20.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
           "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (6.67 / 2.33, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401876392",
+      "leagueSlug": "fra.1",
+      "leagueCode": "LG1",
+      "leagueName": "Ligue 1",
+      "leagueGroup": "top5",
+      "homeId": "6997",
+      "awayId": "6851",
+      "home": "Brest",
+      "away": "Paris FC",
+      "kickoffUTC": "2026-11-27T19:45Z",
+      "kickoffMMT": "28 Nov, 02:15 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 1.33,
+        "l3_conceded": 8.0,
+        "l3_sot": 4.0,
+        "l3_total_shots": 13.67,
+        "l3_blocked": 5.0,
+        "recent_corners": [
+          1,
+          1,
+          2
+        ],
+        "recent_conceded": [
+          8,
+          8,
+          8
+        ],
+        "recent_matches": [
+          {
+            "id": "401876396",
+            "date": "22 Nov",
+            "leagueCode": "LG1",
+            "venue": "A",
+            "opponent": "Strasbourg",
+            "cornersWon": 1,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401876410",
+            "date": "08 Nov",
+            "leagueCode": "LG1",
+            "venue": "H",
+            "opponent": "Lyon",
+            "cornersWon": 1,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401876419",
+            "date": "03 Nov",
+            "leagueCode": "LG1",
+            "venue": "A",
+            "opponent": "Lorient",
+            "cornersWon": 2,
+            "cornersConceded": 8
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.0,
+        "l3_conceded": 1.67,
+        "l3_sot": 7.33,
+        "l3_total_shots": 15.67,
+        "l3_blocked": 3.67,
+        "recent_corners": [
+          10,
+          5,
+          3
+        ],
+        "recent_conceded": [
+          2,
+          1,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401876397",
+            "date": "22 Nov",
+            "leagueCode": "LG1",
+            "venue": "H",
+            "opponent": "Angers",
+            "cornersWon": 10,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401876411",
+            "date": "08 Nov",
+            "leagueCode": "LG1",
+            "venue": "A",
+            "opponent": "Auxerre",
+            "cornersWon": 5,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401876415",
+            "date": "01 Nov",
+            "leagueCode": "LG1",
+            "venue": "H",
+            "opponent": "Monaco",
+            "cornersWon": 3,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 2.5,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 1.33,
+          "away": 6.0,
+          "total": 7.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.0,
+          "away": 11.0,
+          "total": 20.0
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 8.0,
+          "away": 1.67,
+          "homePts": 1.0,
+          "awayPts": -0.5
+        },
+        "refExpHome": 1.5,
+        "refExpAway": 7.0,
+        "refTotal": 8.5,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Paris FC ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 2.5/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 7.33 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 20.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (8.0 / 1.67, +0.5)"
         ]
       }
     },
