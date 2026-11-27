@@ -1,8 +1,8 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
   "standardLine": 9.5,
-  "updatedAtUTC": "2026-11-27T13:06:29.006097+00:00",
-  "updatedAtMMT": "27 Nov 2026, 07:36 PM",
+  "updatedAtUTC": "2026-11-27T14:50:36.802059+00:00",
+  "updatedAtMMT": "27 Nov 2026, 09:20 PM",
   "leagueCount": 28,
   "matchCount": 47,
   "goldenCount": 5,
@@ -3809,634 +3809,6 @@
       }
     },
     {
-      "id": "401878332",
-      "leagueSlug": "sco.1",
-      "leagueCode": "SCO",
-      "leagueName": "Scottish Premiership",
-      "leagueGroup": "global",
-      "homeId": "263",
-      "awayId": "261",
-      "home": "Aberdeen",
-      "away": "Dundee",
-      "kickoffUTC": "2026-11-28T15:00Z",
-      "kickoffMMT": "28 Nov, 09:30 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 4.0,
-        "l3_conceded": 7.67,
-        "l3_sot": 5.67,
-        "l3_total_shots": 13.33,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          3,
-          1,
-          8
-        ],
-        "recent_conceded": [
-          3,
-          14,
-          6
-        ],
-        "recent_matches": [
-          {
-            "id": "401878345",
-            "date": "25 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Rangers",
-            "cornersWon": 3,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401878334",
-            "date": "21 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Kilmarnock",
-            "cornersWon": 1,
-            "cornersConceded": 14
-          },
-          {
-            "id": "401878344",
-            "date": "08 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Hibernian",
-            "cornersWon": 8,
-            "cornersConceded": 6
-          }
-        ],
-        "has_spike": true
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 3.0,
-        "l3_conceded": 5.67,
-        "l3_sot": 2.0,
-        "l3_total_shots": 8.33,
-        "l3_blocked": 1.67,
-        "recent_corners": [
-          3,
-          1,
-          5
-        ],
-        "recent_conceded": [
-          5,
-          8,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401878348",
-            "date": "25 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Hibernian",
-            "cornersWon": 3,
-            "cornersConceded": 5
-          },
-          {
-            "id": "401878337",
-            "date": "22 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Hearts",
-            "cornersWon": 1,
-            "cornersConceded": 8
-          },
-          {
-            "id": "401878341",
-            "date": "07 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "St Johnstone",
-            "cornersWon": 5,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 3.0,
-        "maxScore": 7.0,
-        "tier": "RISKY",
-        "verdict": "RISKY",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 0.0,
-          "max": 3.0,
-          "home": 4.0,
-          "away": 3.0,
-          "total": 7.0
-        },
-        "l2": {
-          "pts": 1.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 9.0,
-          "away": 3.67,
-          "total": 12.67
-        },
-        "l3": {
-          "pts": 2.0,
-          "max": 2.0,
-          "home": 7.67,
-          "away": 5.67,
-          "homePts": 1.0,
-          "awayPts": 1.0
-        },
-        "refExpHome": 4.8,
-        "refExpAway": 5.3,
-        "refTotal": 10.1,
-        "dominance": null,
-        "hasSpike": true,
-        "spikeNote": "Aberdeen ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
-        "summaryText": "စုစုပေါင်း 3.0/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 7.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
-          "SOT+Blocked စုစုပေါင်း 12.67 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
-          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (7.67 / 5.67, +2)"
-        ]
-      }
-    },
-    {
-      "id": "401878331",
-      "leagueSlug": "sco.1",
-      "leagueCode": "SCO",
-      "leagueName": "Scottish Premiership",
-      "leagueGroup": "global",
-      "homeId": "264",
-      "awayId": "267",
-      "home": "Dundee United",
-      "away": "St Johnstone",
-      "kickoffUTC": "2026-11-28T15:00Z",
-      "kickoffMMT": "28 Nov, 09:30 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 7.67,
-        "l3_conceded": 8.0,
-        "l3_sot": 7.33,
-        "l3_total_shots": 17.33,
-        "l3_blocked": 4.33,
-        "recent_corners": [
-          5,
-          13,
-          5
-        ],
-        "recent_conceded": [
-          4,
-          7,
-          13
-        ],
-        "recent_matches": [
-          {
-            "id": "401878335",
-            "date": "21 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Hibernian",
-            "cornersWon": 5,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401878342",
-            "date": "07 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Motherwell",
-            "cornersWon": 13,
-            "cornersConceded": 7
-          },
-          {
-            "id": "401878355",
-            "date": "29 Oct",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Celtic",
-            "cornersWon": 5,
-            "cornersConceded": 13
-          }
-        ],
-        "has_spike": true
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 4.0,
-        "l3_conceded": 6.0,
-        "l3_sot": 3.67,
-        "l3_total_shots": 11.67,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          6,
-          4,
-          2
-        ],
-        "recent_conceded": [
-          3,
-          5,
-          10
-        ],
-        "recent_matches": [
-          {
-            "id": "401878336",
-            "date": "21 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Falkirk",
-            "cornersWon": 6,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401878341",
-            "date": "07 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Dundee",
-            "cornersWon": 4,
-            "cornersConceded": 5
-          },
-          {
-            "id": "401878347",
-            "date": "31 Oct",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Kilmarnock",
-            "cornersWon": 2,
-            "cornersConceded": 10
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 6.0,
-        "maxScore": 7.0,
-        "tier": "GOLDEN",
-        "verdict": "GOLDEN BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 2.0,
-          "max": 3.0,
-          "home": 7.67,
-          "away": 4.0,
-          "total": 11.67
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 11.66,
-          "away": 7.0,
-          "total": 18.66
-        },
-        "l3": {
-          "pts": 2.0,
-          "max": 2.0,
-          "home": 8.0,
-          "away": 6.0,
-          "homePts": 1.0,
-          "awayPts": 1.0
-        },
-        "refExpHome": 6.8,
-        "refExpAway": 6.0,
-        "refTotal": 12.8,
-        "dominance": {
-          "side": "HOME",
-          "team": "Dundee United",
-          "teamAvg": 7.67,
-          "oppConceded": 6.0,
-          "gap": 3.7,
-          "expTeam": 6.8,
-          "note": "Dundee United တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 7.67 လုံးအထိ အားသာနေပြီး ပြိုင်ဘက်ကလည်း ပျမ်းမျှ 6.0 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Home Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
-        },
-        "hasSpike": true,
-        "spikeNote": "Dundee United ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
-        "summaryText": "အလွှာ ၃ ခုလုံး အားကောင်းပြီး 6.0/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 11.67 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
-          "SOT+Blocked စုစုပေါင်း 18.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (8.0 / 6.0, +2)"
-        ]
-      }
-    },
-    {
-      "id": "401878328",
-      "leagueSlug": "sco.1",
-      "leagueCode": "SCO",
-      "leagueName": "Scottish Premiership",
-      "leagueGroup": "global",
-      "homeId": "257",
-      "awayId": "254",
-      "home": "Rangers",
-      "away": "Falkirk",
-      "kickoffUTC": "2026-11-28T15:00Z",
-      "kickoffMMT": "28 Nov, 09:30 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 6.67,
-        "l3_conceded": 4.67,
-        "l3_sot": 7.67,
-        "l3_total_shots": 22.0,
-        "l3_blocked": 5.33,
-        "recent_corners": [
-          3,
-          13,
-          4
-        ],
-        "recent_conceded": [
-          3,
-          4,
-          7
-        ],
-        "recent_matches": [
-          {
-            "id": "401878345",
-            "date": "25 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Aberdeen",
-            "cornersWon": 3,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401878333",
-            "date": "22 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Motherwell",
-            "cornersWon": 13,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401878340",
-            "date": "08 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "St Mirren",
-            "cornersWon": 4,
-            "cornersConceded": 7
-          }
-        ],
-        "has_spike": true
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 2.67,
-        "l3_conceded": 8.0,
-        "l3_sot": 4.67,
-        "l3_total_shots": 10.67,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          3,
-          5,
-          0
-        ],
-        "recent_conceded": [
-          6,
-          4,
-          14
-        ],
-        "recent_matches": [
-          {
-            "id": "401878336",
-            "date": "21 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "St Johnstone",
-            "cornersWon": 3,
-            "cornersConceded": 6
-          },
-          {
-            "id": "401878339",
-            "date": "08 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Hearts",
-            "cornersWon": 5,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401878349",
-            "date": "01 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Celtic",
-            "cornersWon": 0,
-            "cornersConceded": 14
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 4.5,
-        "maxScore": 7.0,
-        "tier": "VALUE",
-        "verdict": "VALUE BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 1.0,
-          "max": 3.0,
-          "home": 6.67,
-          "away": 2.67,
-          "total": 9.34
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 13.0,
-          "away": 8.0,
-          "total": 21.0
-        },
-        "l3": {
-          "pts": 1.5,
-          "max": 2.0,
-          "home": 4.67,
-          "away": 8.0,
-          "homePts": 0.5,
-          "awayPts": 1.0
-        },
-        "refExpHome": 7.3,
-        "refExpAway": 3.7,
-        "refTotal": 11.0,
-        "dominance": {
-          "side": "HOME",
-          "team": "Rangers",
-          "teamAvg": 6.67,
-          "oppConceded": 8.0,
-          "gap": 4.0,
-          "expTeam": 7.3,
-          "note": "Rangers တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 6.67 လုံးအထိ အားသာနေပြီး ပြိုင်ဘက်ကလည်း ပျမ်းမျှ 8.0 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Home Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
-        },
-        "hasSpike": true,
-        "spikeNote": "Rangers ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
-        "summaryText": "စုစုပေါင်း 4.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 9.34 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
-          "SOT+Blocked စုစုပေါင်း 21.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (4.67 / 8.0, +1.5)"
-        ]
-      }
-    },
-    {
-      "id": "401878327",
-      "leagueSlug": "sco.1",
-      "leagueCode": "SCO",
-      "leagueName": "Scottish Premiership",
-      "leagueGroup": "global",
-      "homeId": "250",
-      "awayId": "260",
-      "home": "St Mirren",
-      "away": "Kilmarnock",
-      "kickoffUTC": "2026-11-28T15:00Z",
-      "kickoffMMT": "28 Nov, 09:30 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 5.0,
-        "l3_conceded": 4.67,
-        "l3_sot": 3.33,
-        "l3_total_shots": 9.67,
-        "l3_blocked": 3.0,
-        "recent_corners": [
-          5,
-          7,
-          3
-        ],
-        "recent_conceded": [
-          4,
-          4,
-          6
-        ],
-        "recent_matches": [
-          {
-            "id": "401878338",
-            "date": "21 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Celtic",
-            "cornersWon": 5,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401878340",
-            "date": "08 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Rangers",
-            "cornersWon": 7,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401878346",
-            "date": "31 Oct",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Motherwell",
-            "cornersWon": 3,
-            "cornersConceded": 6
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 9.0,
-        "l3_conceded": 3.67,
-        "l3_sot": 5.67,
-        "l3_total_shots": 16.67,
-        "l3_blocked": 3.67,
-        "recent_corners": [
-          14,
-          3,
-          10
-        ],
-        "recent_conceded": [
-          1,
-          8,
-          2
-        ],
-        "recent_matches": [
-          {
-            "id": "401878334",
-            "date": "21 Nov",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "Aberdeen",
-            "cornersWon": 14,
-            "cornersConceded": 1
-          },
-          {
-            "id": "401878343",
-            "date": "08 Nov",
-            "leagueCode": "SCO",
-            "venue": "A",
-            "opponent": "Celtic",
-            "cornersWon": 3,
-            "cornersConceded": 8
-          },
-          {
-            "id": "401878347",
-            "date": "31 Oct",
-            "leagueCode": "SCO",
-            "venue": "H",
-            "opponent": "St Johnstone",
-            "cornersWon": 10,
-            "cornersConceded": 2
-          }
-        ],
-        "has_spike": true
-      },
-      "cn": {
-        "score": 5.0,
-        "maxScore": 7.0,
-        "tier": "VALUE",
-        "verdict": "VALUE BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 3.0,
-          "max": 3.0,
-          "home": 5.0,
-          "away": 9.0,
-          "total": 14.0
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 6.33,
-          "away": 9.34,
-          "total": 15.67
-        },
-        "l3": {
-          "pts": 0.0,
-          "max": 2.0,
-          "home": 4.67,
-          "away": 3.67,
-          "homePts": 0.5,
-          "awayPts": -0.5
-        },
-        "refExpHome": 4.3,
-        "refExpAway": 6.8,
-        "refTotal": 11.1,
-        "dominance": {
-          "side": "AWAY",
-          "team": "Kilmarnock",
-          "teamAvg": 9.0,
-          "oppConceded": 4.67,
-          "gap": 4.0,
-          "expTeam": 6.8,
-          "note": "Kilmarnock တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 9.0 လုံးအထိ အားသာနေပြီး အိမ်ရှင်ကလည်း ပျမ်းမျှ 4.67 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Away Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
-        },
-        "hasSpike": true,
-        "spikeNote": "Kilmarnock ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
-        "summaryText": "စုစုပေါင်း 5.0/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 14.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
-          "SOT+Blocked စုစုပေါင်း 15.67 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "Kilmarnock (3.67) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
-        ]
-      }
-    },
-    {
       "id": "401880730",
       "leagueSlug": "eng.3",
       "leagueCode": "EFL1",
@@ -5808,6 +5180,634 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 11.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
           "SOT+Blocked စုစုပေါင်း 13.66 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
           "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (6.0 / 3.67, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401878332",
+      "leagueSlug": "sco.1",
+      "leagueCode": "SCO",
+      "leagueName": "Scottish Premiership",
+      "leagueGroup": "global",
+      "homeId": "263",
+      "awayId": "261",
+      "home": "Aberdeen",
+      "away": "Dundee",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 7.67,
+        "l3_sot": 5.67,
+        "l3_total_shots": 13.33,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          3,
+          1,
+          8
+        ],
+        "recent_conceded": [
+          3,
+          14,
+          6
+        ],
+        "recent_matches": [
+          {
+            "id": "401878345",
+            "date": "25 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Rangers",
+            "cornersWon": 3,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401878334",
+            "date": "21 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Kilmarnock",
+            "cornersWon": 1,
+            "cornersConceded": 14
+          },
+          {
+            "id": "401878344",
+            "date": "08 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Hibernian",
+            "cornersWon": 8,
+            "cornersConceded": 6
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 3.0,
+        "l3_conceded": 5.67,
+        "l3_sot": 2.0,
+        "l3_total_shots": 8.33,
+        "l3_blocked": 1.67,
+        "recent_corners": [
+          3,
+          1,
+          5
+        ],
+        "recent_conceded": [
+          5,
+          8,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401878348",
+            "date": "25 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Hibernian",
+            "cornersWon": 3,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401878337",
+            "date": "22 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Hearts",
+            "cornersWon": 1,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401878341",
+            "date": "07 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "St Johnstone",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 3.0,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 4.0,
+          "away": 3.0,
+          "total": 7.0
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.0,
+          "away": 3.67,
+          "total": 12.67
+        },
+        "l3": {
+          "pts": 2.0,
+          "max": 2.0,
+          "home": 7.67,
+          "away": 5.67,
+          "homePts": 1.0,
+          "awayPts": 1.0
+        },
+        "refExpHome": 4.8,
+        "refExpAway": 5.3,
+        "refTotal": 10.1,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Aberdeen ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 3.0/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 7.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 12.67 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (7.67 / 5.67, +2)"
+        ]
+      }
+    },
+    {
+      "id": "401878331",
+      "leagueSlug": "sco.1",
+      "leagueCode": "SCO",
+      "leagueName": "Scottish Premiership",
+      "leagueGroup": "global",
+      "homeId": "264",
+      "awayId": "267",
+      "home": "Dundee United",
+      "away": "St Johnstone",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 7.67,
+        "l3_conceded": 8.0,
+        "l3_sot": 7.33,
+        "l3_total_shots": 17.33,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          5,
+          13,
+          5
+        ],
+        "recent_conceded": [
+          4,
+          7,
+          13
+        ],
+        "recent_matches": [
+          {
+            "id": "401878335",
+            "date": "21 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Hibernian",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401878342",
+            "date": "07 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Motherwell",
+            "cornersWon": 13,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401878355",
+            "date": "29 Oct",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Celtic",
+            "cornersWon": 5,
+            "cornersConceded": 13
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 6.0,
+        "l3_sot": 3.67,
+        "l3_total_shots": 11.67,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          6,
+          4,
+          2
+        ],
+        "recent_conceded": [
+          3,
+          5,
+          10
+        ],
+        "recent_matches": [
+          {
+            "id": "401878336",
+            "date": "21 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Falkirk",
+            "cornersWon": 6,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401878341",
+            "date": "07 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Dundee",
+            "cornersWon": 4,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401878347",
+            "date": "31 Oct",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Kilmarnock",
+            "cornersWon": 2,
+            "cornersConceded": 10
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 6.0,
+        "maxScore": 7.0,
+        "tier": "GOLDEN",
+        "verdict": "GOLDEN BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 7.67,
+          "away": 4.0,
+          "total": 11.67
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 11.66,
+          "away": 7.0,
+          "total": 18.66
+        },
+        "l3": {
+          "pts": 2.0,
+          "max": 2.0,
+          "home": 8.0,
+          "away": 6.0,
+          "homePts": 1.0,
+          "awayPts": 1.0
+        },
+        "refExpHome": 6.8,
+        "refExpAway": 6.0,
+        "refTotal": 12.8,
+        "dominance": {
+          "side": "HOME",
+          "team": "Dundee United",
+          "teamAvg": 7.67,
+          "oppConceded": 6.0,
+          "gap": 3.7,
+          "expTeam": 6.8,
+          "note": "Dundee United တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 7.67 လုံးအထိ အားသာနေပြီး ပြိုင်ဘက်ကလည်း ပျမ်းမျှ 6.0 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Home Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+        },
+        "hasSpike": true,
+        "spikeNote": "Dundee United ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "အလွှာ ၃ ခုလုံး အားကောင်းပြီး 6.0/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 11.67 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 18.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (8.0 / 6.0, +2)"
+        ]
+      }
+    },
+    {
+      "id": "401878328",
+      "leagueSlug": "sco.1",
+      "leagueCode": "SCO",
+      "leagueName": "Scottish Premiership",
+      "leagueGroup": "global",
+      "homeId": "257",
+      "awayId": "254",
+      "home": "Rangers",
+      "away": "Falkirk",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 6.67,
+        "l3_conceded": 4.67,
+        "l3_sot": 7.67,
+        "l3_total_shots": 22.0,
+        "l3_blocked": 5.33,
+        "recent_corners": [
+          3,
+          13,
+          4
+        ],
+        "recent_conceded": [
+          3,
+          4,
+          7
+        ],
+        "recent_matches": [
+          {
+            "id": "401878345",
+            "date": "25 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Aberdeen",
+            "cornersWon": 3,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401878333",
+            "date": "22 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Motherwell",
+            "cornersWon": 13,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401878340",
+            "date": "08 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "St Mirren",
+            "cornersWon": 4,
+            "cornersConceded": 7
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 2.67,
+        "l3_conceded": 8.0,
+        "l3_sot": 4.67,
+        "l3_total_shots": 10.67,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          3,
+          5,
+          0
+        ],
+        "recent_conceded": [
+          6,
+          4,
+          14
+        ],
+        "recent_matches": [
+          {
+            "id": "401878336",
+            "date": "21 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "St Johnstone",
+            "cornersWon": 3,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401878339",
+            "date": "08 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Hearts",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401878349",
+            "date": "01 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Celtic",
+            "cornersWon": 0,
+            "cornersConceded": 14
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 4.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 6.67,
+          "away": 2.67,
+          "total": 9.34
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 13.0,
+          "away": 8.0,
+          "total": 21.0
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 4.67,
+          "away": 8.0,
+          "homePts": 0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 7.3,
+        "refExpAway": 3.7,
+        "refTotal": 11.0,
+        "dominance": {
+          "side": "HOME",
+          "team": "Rangers",
+          "teamAvg": 6.67,
+          "oppConceded": 8.0,
+          "gap": 4.0,
+          "expTeam": 7.3,
+          "note": "Rangers တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 6.67 လုံးအထိ အားသာနေပြီး ပြိုင်ဘက်ကလည်း ပျမ်းမျှ 8.0 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Home Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+        },
+        "hasSpike": true,
+        "spikeNote": "Rangers ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 4.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.34 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 21.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (4.67 / 8.0, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401878327",
+      "leagueSlug": "sco.1",
+      "leagueCode": "SCO",
+      "leagueName": "Scottish Premiership",
+      "leagueGroup": "global",
+      "homeId": "250",
+      "awayId": "260",
+      "home": "St Mirren",
+      "away": "Kilmarnock",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 4.67,
+        "l3_sot": 3.33,
+        "l3_total_shots": 9.67,
+        "l3_blocked": 3.0,
+        "recent_corners": [
+          5,
+          7,
+          3
+        ],
+        "recent_conceded": [
+          4,
+          4,
+          6
+        ],
+        "recent_matches": [
+          {
+            "id": "401878338",
+            "date": "21 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Celtic",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401878340",
+            "date": "08 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Rangers",
+            "cornersWon": 7,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401878346",
+            "date": "31 Oct",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Motherwell",
+            "cornersWon": 3,
+            "cornersConceded": 6
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 9.0,
+        "l3_conceded": 3.67,
+        "l3_sot": 5.67,
+        "l3_total_shots": 16.67,
+        "l3_blocked": 3.67,
+        "recent_corners": [
+          14,
+          3,
+          10
+        ],
+        "recent_conceded": [
+          1,
+          8,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401878334",
+            "date": "21 Nov",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "Aberdeen",
+            "cornersWon": 14,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401878343",
+            "date": "08 Nov",
+            "leagueCode": "SCO",
+            "venue": "A",
+            "opponent": "Celtic",
+            "cornersWon": 3,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401878347",
+            "date": "31 Oct",
+            "leagueCode": "SCO",
+            "venue": "H",
+            "opponent": "St Johnstone",
+            "cornersWon": 10,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 5.0,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 3.0,
+          "max": 3.0,
+          "home": 5.0,
+          "away": 9.0,
+          "total": 14.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 6.33,
+          "away": 9.34,
+          "total": 15.67
+        },
+        "l3": {
+          "pts": 0.0,
+          "max": 2.0,
+          "home": 4.67,
+          "away": 3.67,
+          "homePts": 0.5,
+          "awayPts": -0.5
+        },
+        "refExpHome": 4.3,
+        "refExpAway": 6.8,
+        "refTotal": 11.1,
+        "dominance": {
+          "side": "AWAY",
+          "team": "Kilmarnock",
+          "teamAvg": 9.0,
+          "oppConceded": 4.67,
+          "gap": 4.0,
+          "expTeam": 6.8,
+          "note": "Kilmarnock တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 9.0 လုံးအထိ အားသာနေပြီး အိမ်ရှင်ကလည်း ပျမ်းမျှ 4.67 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Away Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+        },
+        "hasSpike": true,
+        "spikeNote": "Kilmarnock ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.0/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 14.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
+          "SOT+Blocked စုစုပေါင်း 15.67 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "Kilmarnock (3.67) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
         ]
       }
     },
