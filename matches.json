@@ -1,12 +1,12 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
   "standardLine": 9.5,
-  "updatedAtUTC": "2026-11-27T05:00:37.080452+00:00",
-  "updatedAtMMT": "27 Nov 2026, 11:30 AM",
+  "updatedAtUTC": "2026-11-27T07:09:07.376306+00:00",
+  "updatedAtMMT": "27 Nov 2026, 01:39 PM",
   "leagueCount": 28,
-  "matchCount": 34,
-  "goldenCount": 3,
-  "valueCount": 13,
+  "matchCount": 47,
+  "goldenCount": 4,
+  "valueCount": 21,
   "filteredLowDataCount": 1,
   "matches": [
     {
@@ -3046,6 +3046,308 @@
       }
     },
     {
+      "id": "401880725",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "390",
+      "awayId": "340",
+      "home": "Milton Keynes Dons",
+      "away": "Notts County",
+      "kickoffUTC": "2026-11-28T12:30Z",
+      "kickoffMMT": "28 Nov, 07:00 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 5.33,
+        "l3_sot": 6.33,
+        "l3_total_shots": 15.33,
+        "l3_blocked": 3.0,
+        "recent_corners": [
+          5,
+          4,
+          6
+        ],
+        "recent_conceded": [
+          5,
+          1,
+          10
+        ],
+        "recent_matches": [
+          {
+            "id": "401880735",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Mansfield",
+            "cornersWon": 5,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401880749",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Burton Albion",
+            "cornersWon": 4,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401906327",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "A",
+            "opponent": "Bromley",
+            "cornersWon": 6,
+            "cornersConceded": 10
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.33,
+        "l3_conceded": 4.33,
+        "l3_sot": 6.33,
+        "l3_total_shots": 18.67,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          6,
+          2,
+          11
+        ],
+        "recent_conceded": [
+          5,
+          0,
+          8
+        ],
+        "recent_matches": [
+          {
+            "id": "401880734",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Stevenage",
+            "cornersWon": 6,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401906336",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "A",
+            "opponent": "Burton Albion",
+            "cornersWon": 2,
+            "cornersConceded": 0
+          },
+          {
+            "id": "401931097",
+            "date": "08 Nov",
+            "leagueCode": "FAC",
+            "venue": "A",
+            "opponent": "Altrincham",
+            "cornersWon": 11,
+            "cornersConceded": 8
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 5.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 5.0,
+          "away": 6.33,
+          "total": 11.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.33,
+          "away": 10.66,
+          "total": 19.99
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 5.33,
+          "away": 4.33,
+          "homePts": 1.0,
+          "awayPts": 0.5
+        },
+        "refExpHome": 4.7,
+        "refExpAway": 5.8,
+        "refTotal": 10.5,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Notts County ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 11.33 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 19.99 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.33 / 4.33, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880724",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "342",
+      "awayId": "351",
+      "home": "Peterborough United",
+      "away": "Cambridge United",
+      "kickoffUTC": "2026-11-28T12:30Z",
+      "kickoffMMT": "28 Nov, 07:00 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 3.0,
+        "l3_conceded": 4.67,
+        "l3_sot": 2.33,
+        "l3_total_shots": 9.0,
+        "l3_blocked": 3.0,
+        "recent_corners": [
+          5,
+          3,
+          1
+        ],
+        "recent_conceded": [
+          5,
+          4,
+          5
+        ],
+        "recent_matches": [
+          {
+            "id": "401880732",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Plymouth",
+            "cornersWon": 5,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401906326",
+            "date": "18 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "A",
+            "opponent": "Luton",
+            "cornersWon": 3,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401931104",
+            "date": "08 Nov",
+            "leagueCode": "FAC",
+            "venue": "H",
+            "opponent": "Reading",
+            "cornersWon": 1,
+            "cornersConceded": 5
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.33,
+        "l3_conceded": 4.0,
+        "l3_sot": 4.0,
+        "l3_total_shots": 12.67,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          2,
+          5,
+          12
+        ],
+        "recent_conceded": [
+          6,
+          3,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401880738",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Stockport",
+            "cornersWon": 2,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401931085",
+            "date": "07 Nov",
+            "leagueCode": "FAC",
+            "venue": "A",
+            "opponent": "Bristol Rovers",
+            "cornersWon": 5,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401906342",
+            "date": "04 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Brighton U21",
+            "cornersWon": 12,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 3.0,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 3.0,
+          "away": 6.33,
+          "total": 9.33
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 5.33,
+          "away": 8.33,
+          "total": 13.66
+        },
+        "l3": {
+          "pts": 1.0,
+          "max": 2.0,
+          "home": 4.67,
+          "away": 4.0,
+          "homePts": 0.5,
+          "awayPts": 0.5
+        },
+        "refExpHome": 3.5,
+        "refExpAway": 5.5,
+        "refTotal": 9.0,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Cambridge United ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 3.0/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.33 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 13.66 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (4.67 / 4.0, +1)"
+        ]
+      }
+    },
+    {
       "id": "401899528",
       "leagueSlug": "ita.2",
       "leagueCode": "SRB",
@@ -3503,6 +3805,1381 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 12.66 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
           "SOT+Blocked စုစုပေါင်း 16.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
           "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (7.33 / 3.67, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880730",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "3802",
+      "awayId": "397",
+      "home": "AFC Wimbledon",
+      "away": "Barnsley",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 6.67,
+        "l3_conceded": 4.0,
+        "l3_sot": 2.33,
+        "l3_total_shots": 11.0,
+        "l3_blocked": 2.33,
+        "recent_corners": [
+          7,
+          3,
+          10
+        ],
+        "recent_conceded": [
+          2,
+          7,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401880736",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Leyton Orient",
+            "cornersWon": 7,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401880754",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Blackpool",
+            "cornersWon": 3,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401931120",
+            "date": "07 Nov",
+            "leagueCode": "FAC",
+            "venue": "A",
+            "opponent": "Crewe",
+            "cornersWon": 10,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.33,
+        "l3_conceded": 3.0,
+        "l3_sot": 5.0,
+        "l3_total_shots": 17.67,
+        "l3_blocked": 6.0,
+        "recent_corners": [
+          5,
+          4,
+          10
+        ],
+        "recent_conceded": [
+          5,
+          2,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401880838",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Bradford",
+            "cornersWon": 5,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401880742",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Sheffield Wed",
+            "cornersWon": 4,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401880744",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Wigan",
+            "cornersWon": 10,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 5.0,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 3.0,
+          "max": 3.0,
+          "home": 6.67,
+          "away": 6.33,
+          "total": 13.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 4.66,
+          "away": 11.0,
+          "total": 15.66
+        },
+        "l3": {
+          "pts": 0.0,
+          "max": 2.0,
+          "home": 4.0,
+          "away": 3.0,
+          "homePts": 0.5,
+          "awayPts": -0.5
+        },
+        "refExpHome": 4.8,
+        "refExpAway": 5.2,
+        "refTotal": 10.0,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "AFC Wimbledon ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.0/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 13.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
+          "SOT+Blocked စုစုပေါင်း 15.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "Barnsley (3.0) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
+        ]
+      }
+    },
+    {
+      "id": "401880729",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "3129",
+      "awayId": "2567",
+      "home": "Bromley",
+      "away": "Burton Albion",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 6.0,
+        "l3_conceded": 7.33,
+        "l3_sot": 3.0,
+        "l3_total_shots": 13.0,
+        "l3_blocked": 4.67,
+        "recent_corners": [
+          6,
+          2,
+          10
+        ],
+        "recent_conceded": [
+          4,
+          12,
+          6
+        ],
+        "recent_matches": [
+          {
+            "id": "401880823",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Wycombe",
+            "cornersWon": 6,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401880731",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Reading",
+            "cornersWon": 2,
+            "cornersConceded": 12
+          },
+          {
+            "id": "401906327",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "MK Dons",
+            "cornersWon": 10,
+            "cornersConceded": 6
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 1.0,
+        "l3_conceded": 4.33,
+        "l3_sot": 1.67,
+        "l3_total_shots": 6.67,
+        "l3_blocked": 2.0,
+        "recent_corners": [
+          2,
+          1,
+          0
+        ],
+        "recent_conceded": [
+          7,
+          4,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401880739",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Luton",
+            "cornersWon": 2,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401880749",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "MK Dons",
+            "cornersWon": 1,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401906336",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Notts County",
+            "cornersWon": 0,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 2.5,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 6.0,
+          "away": 1.0,
+          "total": 7.0
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 7.67,
+          "away": 3.67,
+          "total": 11.34
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 7.33,
+          "away": 4.33,
+          "homePts": 1.0,
+          "awayPts": 0.5
+        },
+        "refExpHome": 5.2,
+        "refExpAway": 4.2,
+        "refTotal": 9.4,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Bromley ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 2.5/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 7.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 11.34 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (7.33 / 4.33, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880727",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "375",
+      "awayId": "304",
+      "home": "Leicester City",
+      "away": "Mansfield Town",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 7.67,
+        "l3_conceded": 2.67,
+        "l3_sot": 5.33,
+        "l3_total_shots": 18.0,
+        "l3_blocked": 5.0,
+        "recent_corners": [
+          12,
+          1,
+          10
+        ],
+        "recent_conceded": [
+          1,
+          5,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401880824",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Blackpool",
+            "cornersWon": 12,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401880737",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Huddersfield",
+            "cornersWon": 1,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401906332",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Walsall",
+            "cornersWon": 10,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.0,
+        "l3_conceded": 7.0,
+        "l3_sot": 5.67,
+        "l3_total_shots": 18.33,
+        "l3_blocked": 2.33,
+        "recent_corners": [
+          5,
+          5,
+          8
+        ],
+        "recent_conceded": [
+          5,
+          11,
+          5
+        ],
+        "recent_matches": [
+          {
+            "id": "401880735",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "MK Dons",
+            "cornersWon": 5,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401906338",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Chesterfield",
+            "cornersWon": 5,
+            "cornersConceded": 11
+          },
+          {
+            "id": "401931095",
+            "date": "07 Nov",
+            "leagueCode": "FAC",
+            "venue": "H",
+            "opponent": "Macclesfield",
+            "cornersWon": 8,
+            "cornersConceded": 5
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 5.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 3.0,
+          "max": 3.0,
+          "home": 7.67,
+          "away": 6.0,
+          "total": 13.67
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 10.33,
+          "away": 8.0,
+          "total": 18.33
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 2.67,
+          "away": 7.0,
+          "homePts": -0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 7.3,
+        "refExpAway": 4.3,
+        "refTotal": 11.6,
+        "dominance": {
+          "side": "HOME",
+          "team": "Leicester City",
+          "teamAvg": 7.67,
+          "oppConceded": 7.0,
+          "gap": 1.7,
+          "expTeam": 7.3,
+          "note": "Leicester City တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 7.67 လုံးအထိ အားသာနေပြီး ပြိုင်ဘက်ကလည်း ပျမ်းမျှ 7.0 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Home Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+        },
+        "hasSpike": true,
+        "spikeNote": "Leicester City ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 13.67 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
+          "SOT+Blocked စုစုပေါင်း 18.33 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (2.67 / 7.0, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880726",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "301",
+      "awayId": "311",
+      "home": "Luton Town",
+      "away": "Oxford United",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 5.67,
+        "l3_sot": 3.67,
+        "l3_total_shots": 18.0,
+        "l3_blocked": 6.33,
+        "recent_corners": [
+          7,
+          4,
+          4
+        ],
+        "recent_conceded": [
+          2,
+          3,
+          12
+        ],
+        "recent_matches": [
+          {
+            "id": "401880739",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Burton Albion",
+            "cornersWon": 7,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401906326",
+            "date": "18 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Peterborough",
+            "cornersWon": 4,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401931100",
+            "date": "07 Nov",
+            "leagueCode": "FAC",
+            "venue": "H",
+            "opponent": "Forest Green",
+            "cornersWon": 4,
+            "cornersConceded": 12
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 8.33,
+        "l3_conceded": 3.67,
+        "l3_sot": 8.67,
+        "l3_total_shots": 25.33,
+        "l3_blocked": 7.33,
+        "recent_corners": [
+          4,
+          8,
+          13
+        ],
+        "recent_conceded": [
+          5,
+          4,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401906248",
+            "date": "25 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Spurs U21",
+            "cornersWon": 4,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401880733",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Wycombe",
+            "cornersWon": 8,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401906333",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Cheltenham",
+            "cornersWon": 13,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 5.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 3.0,
+          "max": 3.0,
+          "home": 5.0,
+          "away": 8.33,
+          "total": 13.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 10.0,
+          "away": 16.0,
+          "total": 26.0
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 5.67,
+          "away": 3.67,
+          "homePts": 1.0,
+          "awayPts": -0.5
+        },
+        "refExpHome": 4.3,
+        "refExpAway": 7.0,
+        "refTotal": 11.3,
+        "dominance": {
+          "side": "AWAY",
+          "team": "Oxford United",
+          "teamAvg": 8.33,
+          "oppConceded": 5.67,
+          "gap": 3.3,
+          "expTeam": 7.0,
+          "note": "Oxford United တစ်သင်းတည်း ထောင့်ကန်ဘော ပျမ်းမျှ 8.33 လုံးအထိ အားသာနေပြီး အိမ်ရှင်ကလည်း ပျမ်းမျှ 5.67 လုံး ပြန်ပေးနေရသည်။ Total Over 9.5 အပြင် Away Team Corner Over သို့မဟုတ် Corner Handicap ကိုပါ စဉ်းစားနိုင်သည်။"
+        },
+        "hasSpike": true,
+        "spikeNote": "Oxford United ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 13.33 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
+          "SOT+Blocked စုစုပေါင်း 26.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (5.67 / 3.67, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880723",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "399",
+      "awayId": "338",
+      "home": "Sheffield Wednesday",
+      "away": "Reading",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 4.67,
+        "l3_sot": 4.67,
+        "l3_total_shots": 13.0,
+        "l3_blocked": 4.0,
+        "recent_corners": [
+          7,
+          2,
+          7
+        ],
+        "recent_conceded": [
+          5,
+          4,
+          5
+        ],
+        "recent_matches": [
+          {
+            "id": "401880829",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Stevenage",
+            "cornersWon": 7,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401880742",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Barnsley",
+            "cornersWon": 2,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401880747",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Plymouth",
+            "cornersWon": 7,
+            "cornersConceded": 5
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.67,
+        "l3_conceded": 5.67,
+        "l3_sot": 7.67,
+        "l3_total_shots": 15.67,
+        "l3_blocked": 4.0,
+        "recent_corners": [
+          12,
+          5,
+          3
+        ],
+        "recent_conceded": [
+          2,
+          7,
+          8
+        ],
+        "recent_matches": [
+          {
+            "id": "401880731",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Bromley",
+            "cornersWon": 12,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401880745",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Stockport",
+            "cornersWon": 5,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401906331",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "A",
+            "opponent": "Bristol Rovers",
+            "cornersWon": 3,
+            "cornersConceded": 8
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 5.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 5.33,
+          "away": 6.67,
+          "total": 12.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.67,
+          "away": 11.67,
+          "total": 20.34
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 4.67,
+          "away": 5.67,
+          "homePts": 0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 5.5,
+        "refExpAway": 5.7,
+        "refTotal": 11.2,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Reading ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 12.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 20.34 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (4.67 / 5.67, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880722",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "285",
+      "awayId": "346",
+      "home": "Stevenage",
+      "away": "Blackpool",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 4.33,
+        "l3_conceded": 5.0,
+        "l3_sot": 5.0,
+        "l3_total_shots": 16.67,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          5,
+          5,
+          3
+        ],
+        "recent_conceded": [
+          7,
+          6,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401880829",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Sheffield Wed",
+            "cornersWon": 5,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401880734",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Notts County",
+            "cornersWon": 5,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401906250",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Fulham U21",
+            "cornersWon": 3,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 6.33,
+        "l3_sot": 4.33,
+        "l3_total_shots": 12.33,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          1,
+          7,
+          7
+        ],
+        "recent_conceded": [
+          12,
+          4,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401880824",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Leicester",
+            "cornersWon": 1,
+            "cornersConceded": 12
+          },
+          {
+            "id": "401880741",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Wigan",
+            "cornersWon": 7,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401880754",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Wimbledon",
+            "cornersWon": 7,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 4.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 4.33,
+          "away": 5.0,
+          "total": 9.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.33,
+          "away": 8.66,
+          "total": 17.99
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 5.0,
+          "away": 6.33,
+          "homePts": 0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 5.3,
+        "refExpAway": 5.0,
+        "refTotal": 10.3,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 4.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.33 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 17.99 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.0 / 6.33, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880721",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "400",
+      "awayId": "309",
+      "home": "Stockport County",
+      "away": "Leyton Orient",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 2.33,
+        "l3_sot": 5.0,
+        "l3_total_shots": 13.0,
+        "l3_blocked": 3.67,
+        "recent_corners": [
+          6,
+          7,
+          3
+        ],
+        "recent_conceded": [
+          2,
+          5,
+          0
+        ],
+        "recent_matches": [
+          {
+            "id": "401880738",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Cambridge",
+            "cornersWon": 6,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401880745",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Reading",
+            "cornersWon": 7,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401906337",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Tranmere",
+            "cornersWon": 3,
+            "cornersConceded": 0
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 3.0,
+        "l3_conceded": 6.67,
+        "l3_sot": 4.0,
+        "l3_total_shots": 17.67,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          2,
+          3,
+          4
+        ],
+        "recent_conceded": [
+          7,
+          5,
+          8
+        ],
+        "recent_matches": [
+          {
+            "id": "401880736",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Wimbledon",
+            "cornersWon": 2,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401906329",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "A",
+            "opponent": "Barnet",
+            "cornersWon": 3,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401931110",
+            "date": "07 Nov",
+            "leagueCode": "FAC",
+            "venue": "H",
+            "opponent": "Harborough",
+            "cornersWon": 4,
+            "cornersConceded": 8
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 5.33,
+          "away": 3.0,
+          "total": 8.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.67,
+          "away": 8.33,
+          "total": 17.0
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 2.33,
+          "away": 6.67,
+          "homePts": -0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 6.0,
+        "refExpAway": 2.7,
+        "refTotal": 8.7,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 8.33 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 17.0 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (2.33 / 6.67, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880720",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "350",
+      "awayId": "307",
+      "home": "Wigan Athletic",
+      "away": "Plymouth Argyle",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 6.0,
+        "l3_conceded": 7.67,
+        "l3_sot": 5.33,
+        "l3_total_shots": 15.67,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          4,
+          2,
+          12
+        ],
+        "recent_conceded": [
+          7,
+          10,
+          6
+        ],
+        "recent_matches": [
+          {
+            "id": "401880741",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Blackpool",
+            "cornersWon": 4,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401880744",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Barnsley",
+            "cornersWon": 2,
+            "cornersConceded": 10
+          },
+          {
+            "id": "401906251",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "A",
+            "opponent": "Crewe",
+            "cornersWon": 12,
+            "cornersConceded": 6
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 5.0,
+        "l3_sot": 5.0,
+        "l3_total_shots": 16.0,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          5,
+          5,
+          6
+        ],
+        "recent_conceded": [
+          5,
+          7,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401880732",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Peterborough",
+            "cornersWon": 5,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401880747",
+            "date": "14 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Sheffield Wed",
+            "cornersWon": 5,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401906330",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "Swindon",
+            "cornersWon": 6,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 5.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 6.0,
+          "away": 5.33,
+          "total": 11.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.66,
+          "away": 9.33,
+          "total": 18.99
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 7.67,
+          "away": 5.0,
+          "homePts": 1.0,
+          "awayPts": 0.5
+        },
+        "refExpHome": 5.5,
+        "refExpAway": 6.5,
+        "refTotal": 12.0,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Wigan Athletic ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 11.33 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 18.99 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (7.67 / 5.0, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401880719",
+      "leagueSlug": "eng.3",
+      "leagueCode": "EFL1",
+      "leagueName": "England League One",
+      "leagueGroup": "global",
+      "homeId": "344",
+      "awayId": "387",
+      "home": "Wycombe Wanderers",
+      "away": "Bradford City",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 6.0,
+        "l3_sot": 2.0,
+        "l3_total_shots": 9.67,
+        "l3_blocked": 2.0,
+        "recent_corners": [
+          4,
+          4,
+          7
+        ],
+        "recent_conceded": [
+          6,
+          8,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401880823",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Bromley",
+            "cornersWon": 4,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401880733",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "A",
+            "opponent": "Oxford Utd",
+            "cornersWon": 4,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401931119",
+            "date": "07 Nov",
+            "leagueCode": "FAC",
+            "venue": "A",
+            "opponent": "Accrington",
+            "cornersWon": 7,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.0,
+        "l3_conceded": 3.67,
+        "l3_sot": 5.33,
+        "l3_total_shots": 17.0,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          5,
+          6,
+          7
+        ],
+        "recent_conceded": [
+          5,
+          3,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401880838",
+            "date": "25 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Barnsley",
+            "cornersWon": 5,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401880740",
+            "date": "21 Nov",
+            "leagueCode": "EFL1",
+            "venue": "H",
+            "opponent": "Doncaster",
+            "cornersWon": 6,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401906339",
+            "date": "11 Nov",
+            "leagueCode": "EFL TROPHY",
+            "venue": "H",
+            "opponent": "York City",
+            "cornersWon": 7,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 5.0,
+          "away": 6.0,
+          "total": 11.0
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 4.0,
+          "away": 9.66,
+          "total": 13.66
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 6.0,
+          "away": 3.67,
+          "homePts": 1.0,
+          "awayPts": -0.5
+        },
+        "refExpHome": 4.3,
+        "refExpAway": 6.0,
+        "refTotal": 10.3,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 11.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 13.66 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (6.0 / 3.67, +0.5)"
         ]
       }
     },
@@ -4886,6 +6563,308 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 6.67 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
           "SOT+Blocked စုစုပေါင်း 14.67 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
           "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (4.0 / 5.0, +1)"
+        ]
+      }
+    },
+    {
+      "id": "401931997",
+      "leagueSlug": "mex.1",
+      "leagueCode": "LMX",
+      "leagueName": "Liga MX",
+      "leagueGroup": "global",
+      "homeId": "216",
+      "awayId": "223",
+      "home": "Atlas",
+      "away": "Toluca",
+      "kickoffUTC": "2026-11-29T01:00Z",
+      "kickoffMMT": "29 Nov, 07:30 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 7.0,
+        "l3_conceded": 7.0,
+        "l3_sot": 7.0,
+        "l3_total_shots": 13.33,
+        "l3_blocked": 3.0,
+        "recent_corners": [
+          5,
+          9,
+          7
+        ],
+        "recent_conceded": [
+          7,
+          9,
+          5
+        ],
+        "recent_matches": [
+          {
+            "id": "401931986",
+            "date": "26 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "Toluca",
+            "cornersWon": 5,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401877053",
+            "date": "21 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "Juárez",
+            "cornersWon": 9,
+            "cornersConceded": 9
+          },
+          {
+            "id": "401876907",
+            "date": "08 Nov",
+            "leagueCode": "LMX",
+            "venue": "H",
+            "opponent": "Pachuca",
+            "cornersWon": 7,
+            "cornersConceded": 5
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 5.33,
+        "l3_sot": 5.33,
+        "l3_total_shots": 12.67,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          7,
+          2,
+          6
+        ],
+        "recent_conceded": [
+          5,
+          5,
+          6
+        ],
+        "recent_matches": [
+          {
+            "id": "401931986",
+            "date": "26 Nov",
+            "leagueCode": "LMX",
+            "venue": "H",
+            "opponent": "Atlas",
+            "cornersWon": 7,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401877050",
+            "date": "22 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "Pachuca",
+            "cornersWon": 2,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401876905",
+            "date": "08 Nov",
+            "leagueCode": "LMX",
+            "venue": "H",
+            "opponent": "Monterrey",
+            "cornersWon": 6,
+            "cornersConceded": 6
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 6.0,
+        "maxScore": 7.0,
+        "tier": "GOLDEN",
+        "verdict": "GOLDEN BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 7.0,
+          "away": 5.0,
+          "total": 12.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 10.0,
+          "away": 8.66,
+          "total": 18.66
+        },
+        "l3": {
+          "pts": 2.0,
+          "max": 2.0,
+          "home": 7.0,
+          "away": 5.33,
+          "homePts": 1.0,
+          "awayPts": 1.0
+        },
+        "refExpHome": 6.2,
+        "refExpAway": 6.0,
+        "refTotal": 12.2,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "အလွှာ ၃ ခုလုံး အားကောင်းပြီး 6.0/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 12.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 18.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (7.0 / 5.33, +2)"
+        ]
+      }
+    },
+    {
+      "id": "401931996",
+      "leagueSlug": "mex.1",
+      "leagueCode": "LMX",
+      "leagueName": "Liga MX",
+      "leagueGroup": "global",
+      "homeId": "227",
+      "awayId": "220",
+      "home": "América",
+      "away": "Monterrey",
+      "kickoffUTC": "2026-11-29T03:10Z",
+      "kickoffMMT": "29 Nov, 09:40 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 6.33,
+        "l3_conceded": 4.33,
+        "l3_sot": 4.67,
+        "l3_total_shots": 13.67,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          12,
+          5,
+          2
+        ],
+        "recent_conceded": [
+          3,
+          6,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401931998",
+            "date": "26 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "Monterrey",
+            "cornersWon": 12,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401877048",
+            "date": "22 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "Tigres",
+            "cornersWon": 5,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401876904",
+            "date": "08 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "UNAM",
+            "cornersWon": 2,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 3.67,
+        "l3_conceded": 7.33,
+        "l3_sot": 4.0,
+        "l3_total_shots": 11.67,
+        "l3_blocked": 1.0,
+        "recent_corners": [
+          3,
+          2,
+          6
+        ],
+        "recent_conceded": [
+          12,
+          6,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401931998",
+            "date": "26 Nov",
+            "leagueCode": "LMX",
+            "venue": "H",
+            "opponent": "América",
+            "cornersWon": 3,
+            "cornersConceded": 12
+          },
+          {
+            "id": "401877049",
+            "date": "22 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "UNAM",
+            "cornersWon": 2,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401876988",
+            "date": "15 Nov",
+            "leagueCode": "LMX",
+            "venue": "A",
+            "opponent": "Queretaro",
+            "cornersWon": 6,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 4.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 6.33,
+          "away": 3.67,
+          "total": 10.0
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.0,
+          "away": 5.0,
+          "total": 13.0
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 4.33,
+          "away": 7.33,
+          "homePts": 0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 6.8,
+        "refExpAway": 4.0,
+        "refTotal": 10.8,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "América ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 4.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 10.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 13.0 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (4.33 / 7.33, +1.5)"
         ]
       }
     },
