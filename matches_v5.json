@@ -1,157 +1,7 @@
 {
-  "generated_at": "2026-11-27T15:04:53Z",
+  "generated_at": "2026-11-27T17:17:22Z",
   "engine_version": "5.0-v42sync",
   "matches": [
-    {
-      "id": "401888241",
-      "league": "Turkish Super Lig",
-      "league_slug": "tur.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T17:00:00Z",
-      "home_team": "Alanyaspor",
-      "away_team": "Konyaspor",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 2.33,
-        "away_l3_corners": 2.67,
-        "home_l3_chaos": 4.33,
-        "away_l3_chaos": 3.67,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 3.67,
-        "away_l3_conceded": 4.67,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "TUR",
-            "ha": "A",
-            "opp": "Kasimpasa",
-            "cr": 1,
-            "con": 4
-          },
-          {
-            "date": "08 Nov",
-            "comp": "TUR",
-            "ha": "H",
-            "opp": "Trabzonspor",
-            "cr": 5,
-            "con": 4
-          },
-          {
-            "date": "02 Nov",
-            "comp": "TUR",
-            "ha": "A",
-            "opp": "Genclerbirli",
-            "cr": 1,
-            "con": 3
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "TUR",
-            "ha": "H",
-            "opp": "Besiktas",
-            "cr": 2,
-            "con": 3
-          },
-          {
-            "date": "07 Nov",
-            "comp": "TUR",
-            "ha": "A",
-            "opp": "Samsunspor",
-            "cr": 3,
-            "con": 2
-          },
-          {
-            "date": "30 Oct",
-            "comp": "TUR",
-            "ha": "H",
-            "opp": "Galatasaray",
-            "cr": 3,
-            "con": 9
-          }
-        ]
-      }
-    },
-    {
-      "id": "401888240",
-      "league": "Turkish Super Lig",
-      "league_slug": "tur.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T17:00:00Z",
-      "home_team": "Caykur Rizespor",
-      "away_team": "Kasimpasa",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 5.33,
-        "away_l3_corners": 3.67,
-        "home_l3_chaos": 9.33,
-        "away_l3_chaos": 8.33,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.33,
-        "away_l3_conceded": 3.33,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "TUR",
-            "ha": "A",
-            "opp": "Amed SFK",
-            "cr": 4,
-            "con": 7
-          },
-          {
-            "date": "08 Nov",
-            "comp": "TUR",
-            "ha": "H",
-            "opp": "Erzurum",
-            "cr": 8,
-            "con": 2
-          },
-          {
-            "date": "31 Oct",
-            "comp": "TUR",
-            "ha": "A",
-            "opp": "Kocaelispor",
-            "cr": 4,
-            "con": 7
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "TUR",
-            "ha": "H",
-            "opp": "Alanyaspor",
-            "cr": 4,
-            "con": 1
-          },
-          {
-            "date": "06 Nov",
-            "comp": "TUR",
-            "ha": "A",
-            "opp": "Gaziantep",
-            "cr": 2,
-            "con": 7
-          },
-          {
-            "date": "01 Nov",
-            "comp": "TUR",
-            "ha": "H",
-            "opp": "Besiktas",
-            "cr": 5,
-            "con": 2
-          }
-        ]
-      }
-    },
     {
       "id": "401885047",
       "league": "2. Bundesliga",
@@ -3153,81 +3003,6 @@
       }
     },
     {
-      "id": "401931997",
-      "league": "Liga MX",
-      "league_slug": "mex.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-29T01:00:00Z",
-      "home_team": "Atlas",
-      "away_team": "Toluca",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 7.0,
-        "away_l3_corners": 5.0,
-        "home_l3_chaos": 10.0,
-        "away_l3_chaos": 8.66,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 7.0,
-        "away_l3_conceded": 5.33,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "26 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Toluca",
-            "cr": 5,
-            "con": 7
-          },
-          {
-            "date": "21 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Juárez",
-            "cr": 9,
-            "con": 9
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Pachuca",
-            "cr": 7,
-            "con": 5
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "26 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Atlas",
-            "cr": 7,
-            "con": 5
-          },
-          {
-            "date": "22 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Pachuca",
-            "cr": 2,
-            "con": 5
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Monterrey",
-            "cr": 6,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
       "id": "401936413",
       "league": "Argentina Liga",
       "league_slug": "arg.1",
@@ -3298,6 +3073,81 @@
             "opp": "Boca ",
             "cr": 2,
             "con": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "401931997",
+      "league": "Liga MX",
+      "league_slug": "mex.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T01:00:00Z",
+      "home_team": "Atlas",
+      "away_team": "Toluca",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 8.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Toluca",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "21 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Juárez",
+            "cr": 9,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Pachuca",
+            "cr": 7,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Atlas",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Pachuca",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Monterrey",
+            "cr": 6,
+            "con": 6
           }
         ]
       }
