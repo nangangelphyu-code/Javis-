@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T03:04:52Z",
+  "generated_at": "2026-11-27T05:19:31Z",
   "engine_version": "5.0-v42sync",
   "max_records": 3000,
   "all_time_archived": {
@@ -292,6 +292,176 @@
       }
     },
     {
+      "id": "401931996",
+      "formula_ver": "v4.2",
+      "league": "Liga MX",
+      "league_slug": "mex.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T03:10:00Z",
+      "home_team": "América",
+      "away_team": "Monterrey",
+      "home_id": "227",
+      "away_id": "220",
+      "score": 4.5,
+      "ref_exp": 10.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 8.0,
+        "away_l3_chaos": 5.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 7.33,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Monterrey",
+            "cr": 12,
+            "con": 3
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Tigres",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "UNAM",
+            "cr": 2,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "América",
+            "cr": 3,
+            "con": 12
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "UNAM",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "15 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Queretaro",
+            "cr": 6,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401931997",
+      "formula_ver": "v4.2",
+      "league": "Liga MX",
+      "league_slug": "mex.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T01:00:00Z",
+      "home_team": "Atlas",
+      "away_team": "Toluca",
+      "home_id": "216",
+      "away_id": "223",
+      "score": 6.0,
+      "ref_exp": 12.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 8.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Toluca",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "21 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Juárez",
+            "cr": 9,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Pachuca",
+            "cr": 7,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Atlas",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Pachuca",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Monterrey",
+            "cr": 6,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
       "id": "401899522",
       "formula_ver": "v4.2",
       "league": "Serie B",
@@ -457,6 +627,771 @@
             "opp": "Catanzaro",
             "cr": 3,
             "con": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880730",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "AFC Wimbledon",
+      "away_team": "Barnsley",
+      "home_id": "3802",
+      "away_id": "397",
+      "score": 5.0,
+      "ref_exp": 10.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.67,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 4.66,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 3.0,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Leyton Orient",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Blackpool",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "A",
+            "opp": "Crewe",
+            "cr": 10,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Bradford",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Sheffield Wed",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Wigan",
+            "cr": 10,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880729",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Bromley",
+      "away_team": "Burton Albion",
+      "home_id": "3129",
+      "away_id": "2567",
+      "score": 2.5,
+      "ref_exp": 9.4,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 1.0,
+        "home_l3_chaos": 7.67,
+        "away_l3_chaos": 3.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.33,
+        "away_l3_conceded": 4.33,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Wycombe",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Reading",
+            "cr": 2,
+            "con": 12
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "MK Dons",
+            "cr": 10,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Luton",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "MK Dons",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Notts County",
+            "cr": 0,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880727",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Leicester City",
+      "away_team": "Mansfield Town",
+      "home_id": "375",
+      "away_id": "304",
+      "score": 5.5,
+      "ref_exp": 11.6,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.67,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 10.33,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.67,
+        "away_l3_conceded": 7.0,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Blackpool",
+            "cr": 12,
+            "con": 1
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Huddersfield",
+            "cr": 1,
+            "con": 5
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Walsall",
+            "cr": 10,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "MK Dons",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Chesterfield",
+            "cr": 5,
+            "con": 11
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "H",
+            "opp": "Macclesfield",
+            "cr": 8,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880726",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Luton Town",
+      "away_team": "Oxford United",
+      "home_id": "301",
+      "away_id": "311",
+      "score": 5.5,
+      "ref_exp": 11.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 8.33,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 16.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Burton Albion",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "18 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Peterborough",
+            "cr": 4,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "H",
+            "opp": "Forest Green",
+            "cr": 4,
+            "con": 12
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Spurs U21",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Wycombe",
+            "cr": 8,
+            "con": 4
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Cheltenham",
+            "cr": 13,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880723",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Sheffield Wednesday",
+      "away_team": "Reading",
+      "home_id": "399",
+      "away_id": "338",
+      "score": 5.5,
+      "ref_exp": 11.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 8.67,
+        "away_l3_chaos": 11.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 5.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Stevenage",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Barnsley",
+            "cr": 2,
+            "con": 4
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Plymouth",
+            "cr": 7,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Bromley",
+            "cr": 12,
+            "con": 2
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Stockport",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Bristol Rovers",
+            "cr": 3,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880722",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Stevenage",
+      "away_team": "Blackpool",
+      "home_id": "285",
+      "away_id": "346",
+      "score": 4.5,
+      "ref_exp": 10.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 9.33,
+        "away_l3_chaos": 8.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 6.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Sheffield Wed",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Notts County",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Fulham U21",
+            "cr": 3,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Leicester",
+            "cr": 1,
+            "con": 12
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Wigan",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Wimbledon",
+            "cr": 7,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880721",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Stockport County",
+      "away_team": "Leyton Orient",
+      "home_id": "400",
+      "away_id": "309",
+      "score": 3.5,
+      "ref_exp": 8.7,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 3.0,
+        "home_l3_chaos": 8.67,
+        "away_l3_chaos": 8.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.33,
+        "away_l3_conceded": 6.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Cambridge",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Reading",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Tranmere",
+            "cr": 3,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Wimbledon",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Barnet",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "H",
+            "opp": "Harborough",
+            "cr": 4,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880720",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Wigan Athletic",
+      "away_team": "Plymouth Argyle",
+      "home_id": "350",
+      "away_id": "307",
+      "score": 5.5,
+      "ref_exp": 12.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 9.66,
+        "away_l3_chaos": 9.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.67,
+        "away_l3_conceded": 5.0,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Blackpool",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Barnsley",
+            "cr": 2,
+            "con": 10
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Crewe",
+            "cr": 12,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Peterborough",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Sheffield Wed",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Swindon",
+            "cr": 6,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880719",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Wycombe Wanderers",
+      "away_team": "Bradford City",
+      "home_id": "344",
+      "away_id": "387",
+      "score": 3.5,
+      "ref_exp": 10.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 4.0,
+        "away_l3_chaos": 9.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Bromley",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Oxford Utd",
+            "cr": 4,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "A",
+            "opp": "Accrington",
+            "cr": 7,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Barnsley",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Doncaster",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "York City",
+            "cr": 7,
+            "con": 3
           }
         ]
       }
@@ -717,6 +1652,176 @@
       }
     },
     {
+      "id": "401880725",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:30:00Z",
+      "home_team": "Milton Keynes Dons",
+      "away_team": "Notts County",
+      "home_id": "390",
+      "away_id": "340",
+      "score": 5.5,
+      "ref_exp": 10.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 9.33,
+        "away_l3_chaos": 10.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Mansfield",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "14 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Burton Albion",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Bromley",
+            "cr": 6,
+            "con": 10
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Stevenage",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "11 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Burton Albion",
+            "cr": 2,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "FAC",
+            "ha": "A",
+            "opp": "Altrincham",
+            "cr": 11,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880724",
+      "formula_ver": "v4.2",
+      "league": "England League One",
+      "league_slug": "eng.3",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:30:00Z",
+      "home_team": "Peterborough United",
+      "away_team": "Cambridge United",
+      "home_id": "342",
+      "away_id": "351",
+      "score": 3.0,
+      "ref_exp": 9.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 5.33,
+        "away_l3_chaos": 8.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "A",
+            "opp": "Plymouth",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "18 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "A",
+            "opp": "Luton",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "FAC",
+            "ha": "H",
+            "opp": "Reading",
+            "cr": 1,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EFL1",
+            "ha": "H",
+            "opp": "Stockport",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "FAC",
+            "ha": "A",
+            "opp": "Bristol Rovers",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "04 Nov",
+            "comp": "EFL TROPHY",
+            "ha": "H",
+            "opp": "Brighton U21",
+            "cr": 12,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
       "id": "401880129",
       "formula_ver": "v4.2",
       "league": "Championship",
@@ -899,10 +2004,10 @@
       "away_id": "219",
       "score": 4.0,
       "ref_exp": 9.0,
-      "actual_home_corners": null,
-      "actual_away_corners": null,
-      "actual_corners": null,
-      "status": "PENDING",
+      "actual_home_corners": 6,
+      "actual_away_corners": 1,
+      "actual_corners": 7,
+      "status": "LOSE",
       "extra_time": false,
       "snapshot": {
         "home_samples": 3,
