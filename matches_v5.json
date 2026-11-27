@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T11:00:31Z",
+  "generated_at": "2026-11-27T13:24:24Z",
   "engine_version": "5.0-v42sync",
   "matches": [
     {
@@ -678,81 +678,6 @@
       }
     },
     {
-      "id": "401875004",
-      "league": "Serie A",
-      "league_slug": "ita.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:45:00Z",
-      "home_team": "Venezia",
-      "away_team": "Bologna",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 2.0,
-        "away_l3_corners": 9.33,
-        "home_l3_chaos": 6.67,
-        "away_l3_chaos": 13.33,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 6.67,
-        "away_l3_conceded": 2.33,
-        "home_spike": false,
-        "away_spike": true,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Juventus",
-            "cr": 2,
-            "con": 5
-          },
-          {
-            "date": "07 Nov",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Udinese",
-            "cr": 3,
-            "con": 7
-          },
-          {
-            "date": "01 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Como",
-            "cr": 1,
-            "con": 8
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Udinese",
-            "cr": 8,
-            "con": 4
-          },
-          {
-            "date": "07 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Parma",
-            "cr": 15,
-            "con": 1
-          },
-          {
-            "date": "31 Oct",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Monza",
-            "cr": 5,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
       "id": "401876392",
       "league": "Ligue 1",
       "league_slug": "fra.1",
@@ -822,6 +747,81 @@
             "ha": "H",
             "opp": "Monaco",
             "cr": 3,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401875004",
+      "league": "Serie A",
+      "league_slug": "ita.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-27T19:45:00Z",
+      "home_team": "Venezia",
+      "away_team": "Bologna",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 2.0,
+        "away_l3_corners": 9.33,
+        "home_l3_chaos": 6.67,
+        "away_l3_chaos": 13.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.67,
+        "away_l3_conceded": 2.33,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Juventus",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Udinese",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Como",
+            "cr": 1,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Udinese",
+            "cr": 8,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Parma",
+            "cr": 15,
+            "con": 1
+          },
+          {
+            "date": "31 Oct",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Monza",
+            "cr": 5,
             "con": 2
           }
         ]
