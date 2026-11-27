@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T01:28:10Z",
+  "generated_at": "2026-11-27T03:04:52Z",
   "engine_version": "5.0-v42sync",
   "matches": [
     {
@@ -828,81 +828,6 @@
       }
     },
     {
-      "id": "401876392",
-      "league": "Ligue 1",
-      "league_slug": "fra.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:45:00Z",
-      "home_team": "Brest",
-      "away_team": "Paris FC",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 1.33,
-        "away_l3_corners": 6.0,
-        "home_l3_chaos": 9.0,
-        "away_l3_chaos": 11.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 8.0,
-        "away_l3_conceded": 1.67,
-        "home_spike": false,
-        "away_spike": true,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Strasbourg",
-            "cr": 1,
-            "con": 8
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Lyon",
-            "cr": 1,
-            "con": 8
-          },
-          {
-            "date": "03 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Lorient",
-            "cr": 2,
-            "con": 8
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Angers",
-            "cr": 10,
-            "con": 2
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Auxerre",
-            "cr": 5,
-            "con": 1
-          },
-          {
-            "date": "01 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Monaco",
-            "cr": 3,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
       "id": "401875004",
       "league": "Serie A",
       "league_slug": "ita.1",
@@ -972,6 +897,81 @@
             "ha": "H",
             "opp": "Monza",
             "cr": 5,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401876392",
+      "league": "Ligue 1",
+      "league_slug": "fra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-27T19:45:00Z",
+      "home_team": "Brest",
+      "away_team": "Paris FC",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.33,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.0,
+        "away_l3_conceded": 1.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Strasbourg",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lyon",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "03 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lorient",
+            "cr": 2,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Angers",
+            "cr": 10,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Auxerre",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Monaco",
+            "cr": 3,
             "con": 2
           }
         ]
