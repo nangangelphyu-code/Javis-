@@ -1,82 +1,7 @@
 {
-  "generated_at": "2026-11-27T07:28:26Z",
+  "generated_at": "2026-11-27T09:16:57Z",
   "engine_version": "5.0-v42sync",
   "matches": [
-    {
-      "id": "401892133",
-      "league": "A-League",
-      "league_slug": "aus.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T08:40:00Z",
-      "home_team": "Macarthur FC",
-      "away_team": "Melbourne City FC",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 3.67,
-        "away_l3_corners": 2.33,
-        "home_l3_chaos": 5.67,
-        "away_l3_chaos": 4.67,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.33,
-        "away_l3_conceded": 6.33,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "ALE",
-            "ha": "A",
-            "opp": "Wellington",
-            "cr": 2,
-            "con": 7
-          },
-          {
-            "date": "08 Nov",
-            "comp": "ALE",
-            "ha": "H",
-            "opp": "Brisbane",
-            "cr": 3,
-            "con": 3
-          },
-          {
-            "date": "31 Oct",
-            "comp": "ALE",
-            "ha": "H",
-            "opp": "Western Sydney",
-            "cr": 6,
-            "con": 6
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "07 Nov",
-            "comp": "ALE",
-            "ha": "H",
-            "opp": "Western Sydney",
-            "cr": 3,
-            "con": 12
-          },
-          {
-            "date": "31 Oct",
-            "comp": "ALE",
-            "ha": "H",
-            "opp": "Sydney FC",
-            "cr": 2,
-            "con": 3
-          },
-          {
-            "date": "24 Oct",
-            "comp": "ALE",
-            "ha": "A",
-            "opp": "Melbourne V",
-            "cr": 2,
-            "con": 4
-          }
-        ]
-      }
-    },
     {
       "id": "401888241",
       "league": "Turkish Super Lig",
@@ -753,81 +678,6 @@
       }
     },
     {
-      "id": "401876392",
-      "league": "Ligue 1",
-      "league_slug": "fra.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:45:00Z",
-      "home_team": "Brest",
-      "away_team": "Paris FC",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 1.33,
-        "away_l3_corners": 6.0,
-        "home_l3_chaos": 9.0,
-        "away_l3_chaos": 11.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 8.0,
-        "away_l3_conceded": 1.67,
-        "home_spike": false,
-        "away_spike": true,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Strasbourg",
-            "cr": 1,
-            "con": 8
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Lyon",
-            "cr": 1,
-            "con": 8
-          },
-          {
-            "date": "03 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Lorient",
-            "cr": 2,
-            "con": 8
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Angers",
-            "cr": 10,
-            "con": 2
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Auxerre",
-            "cr": 5,
-            "con": 1
-          },
-          {
-            "date": "01 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Monaco",
-            "cr": 3,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
       "id": "401875004",
       "league": "Serie A",
       "league_slug": "ita.1",
@@ -897,6 +747,81 @@
             "ha": "H",
             "opp": "Monza",
             "cr": 5,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401876392",
+      "league": "Ligue 1",
+      "league_slug": "fra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-27T19:45:00Z",
+      "home_team": "Brest",
+      "away_team": "Paris FC",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.33,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.0,
+        "away_l3_conceded": 1.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Strasbourg",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lyon",
+            "cr": 1,
+            "con": 8
+          },
+          {
+            "date": "03 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lorient",
+            "cr": 2,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Angers",
+            "cr": 10,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Auxerre",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Monaco",
+            "cr": 3,
             "con": 2
           }
         ]
@@ -1348,6 +1273,81 @@
             "opp": "Athletic",
             "cr": 12,
             "con": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "401841337",
+      "league": "Brazil Serie A",
+      "league_slug": "bra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-27T23:00:00Z",
+      "home_team": "Fluminense",
+      "away_team": "Cruzeiro",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.67,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 8.34,
+        "away_l3_chaos": 10.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Mirassol",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "20 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "São Paulo",
+            "cr": 6,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Vitória",
+            "cr": 6,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Chapecoense",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "19 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Palmeiras",
+            "cr": 7,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Bahia",
+            "cr": 5,
+            "con": 7
           }
         ]
       }
@@ -3153,81 +3153,6 @@
       }
     },
     {
-      "id": "401931997",
-      "league": "Liga MX",
-      "league_slug": "mex.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-29T01:00:00Z",
-      "home_team": "Atlas",
-      "away_team": "Toluca",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 7.0,
-        "away_l3_corners": 5.0,
-        "home_l3_chaos": 10.0,
-        "away_l3_chaos": 8.66,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 7.0,
-        "away_l3_conceded": 5.33,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "26 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Toluca",
-            "cr": 5,
-            "con": 7
-          },
-          {
-            "date": "21 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Juárez",
-            "cr": 9,
-            "con": 9
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Pachuca",
-            "cr": 7,
-            "con": 5
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "26 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Atlas",
-            "cr": 7,
-            "con": 5
-          },
-          {
-            "date": "22 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Pachuca",
-            "cr": 2,
-            "con": 5
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Monterrey",
-            "cr": 6,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
       "id": "401936413",
       "league": "Argentina Liga",
       "league_slug": "arg.1",
@@ -3298,6 +3223,81 @@
             "opp": "Boca ",
             "cr": 2,
             "con": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "401931997",
+      "league": "Liga MX",
+      "league_slug": "mex.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T01:00:00Z",
+      "home_team": "Atlas",
+      "away_team": "Toluca",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 8.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Toluca",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "21 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Juárez",
+            "cr": 9,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Pachuca",
+            "cr": 7,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Atlas",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Pachuca",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Monterrey",
+            "cr": 6,
+            "con": 6
           }
         ]
       }

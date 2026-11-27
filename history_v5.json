@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:28:26Z",
+  "generated_at": "2026-11-27T09:16:57Z",
   "engine_version": "5.0-v42sync",
   "max_records": 3000,
   "all_time_archived": {
@@ -1817,6 +1817,91 @@
             "opp": "Brighton U21",
             "cr": 12,
             "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401841337",
+      "formula_ver": "v4.2",
+      "league": "Brazil Serie A",
+      "league_slug": "bra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-27T23:00:00Z",
+      "home_team": "Fluminense",
+      "away_team": "Cruzeiro",
+      "home_id": "3445",
+      "away_id": "2022",
+      "score": 6.5,
+      "ref_exp": 11.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.67,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 8.34,
+        "away_l3_chaos": 10.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Mirassol",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "20 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "São Paulo",
+            "cr": 6,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Vitória",
+            "cr": 6,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Chapecoense",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "19 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Palmeiras",
+            "cr": 7,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Bahia",
+            "cr": 5,
+            "con": 7
           }
         ]
       }
