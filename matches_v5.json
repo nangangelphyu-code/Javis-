@@ -1,682 +1,7 @@
 {
-  "generated_at": "2026-11-27T19:05:03Z",
+  "generated_at": "2026-11-27T21:04:21Z",
   "engine_version": "5.0-v42sync",
   "matches": [
-    {
-      "id": "401884720",
-      "league": "Bundesliga",
-      "league_slug": "ger.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:30:00Z",
-      "home_team": "Werder Bremen",
-      "away_team": "Borussia Mönchengladbach",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 4.33,
-        "away_l3_corners": 4.67,
-        "home_l3_chaos": 11.0,
-        "away_l3_chaos": 6.33,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.33,
-        "away_l3_conceded": 6.33,
-        "home_spike": true,
-        "away_spike": false,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Hamburg",
-            "cr": 1,
-            "con": 8
-          },
-          {
-            "date": "08 Nov",
-            "comp": "BUN",
-            "ha": "A",
-            "opp": "Stuttgart",
-            "cr": 4,
-            "con": 4
-          },
-          {
-            "date": "31 Oct",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Hoffenheim",
-            "cr": 8,
-            "con": 4
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Dortmund",
-            "cr": 7,
-            "con": 7
-          },
-          {
-            "date": "07 Nov",
-            "comp": "BUN",
-            "ha": "A",
-            "opp": "Hamburg",
-            "cr": 3,
-            "con": 5
-          },
-          {
-            "date": "31 Oct",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Paderborn",
-            "cr": 4,
-            "con": 7
-          }
-        ]
-      }
-    },
-    {
-      "id": "401883102",
-      "league": "La Liga 2",
-      "league_slug": "esp.2",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:30:00Z",
-      "home_team": "Leganés",
-      "away_team": "CD Sabadell",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 1.67,
-        "away_l3_corners": 4.0,
-        "home_l3_chaos": 3.66,
-        "away_l3_chaos": 3.67,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.33,
-        "away_l3_conceded": 1.0,
-        "home_spike": false,
-        "away_spike": true,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "LL2",
-            "ha": "A",
-            "opp": "FC Andorra",
-            "cr": 1,
-            "con": 7
-          },
-          {
-            "date": "14 Nov",
-            "comp": "LL2",
-            "ha": "H",
-            "opp": "Burgos",
-            "cr": 4,
-            "con": 9
-          },
-          {
-            "date": "11 Nov",
-            "comp": "CDR",
-            "ha": "A",
-            "opp": "Trival Valde",
-            "cr": 0,
-            "con": 0
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "LL2",
-            "ha": "H",
-            "opp": "Granada",
-            "cr": 10,
-            "con": 2
-          },
-          {
-            "date": "19 Nov",
-            "comp": "CDR",
-            "ha": "A",
-            "opp": "Utebo",
-            "cr": 0,
-            "con": 0
-          },
-          {
-            "date": "16 Nov",
-            "comp": "LL2",
-            "ha": "A",
-            "opp": "Eldense",
-            "cr": 2,
-            "con": 1
-          }
-        ]
-      }
-    },
-    {
-      "id": "401876392",
-      "league": "Ligue 1",
-      "league_slug": "fra.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:45:00Z",
-      "home_team": "Brest",
-      "away_team": "Paris FC",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 1.33,
-        "away_l3_corners": 6.0,
-        "home_l3_chaos": 9.0,
-        "away_l3_chaos": 11.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 8.0,
-        "away_l3_conceded": 1.67,
-        "home_spike": false,
-        "away_spike": true,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Strasbourg",
-            "cr": 1,
-            "con": 8
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Lyon",
-            "cr": 1,
-            "con": 8
-          },
-          {
-            "date": "03 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Lorient",
-            "cr": 2,
-            "con": 8
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Angers",
-            "cr": 10,
-            "con": 2
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LG1",
-            "ha": "A",
-            "opp": "Auxerre",
-            "cr": 5,
-            "con": 1
-          },
-          {
-            "date": "01 Nov",
-            "comp": "LG1",
-            "ha": "H",
-            "opp": "Monaco",
-            "cr": 3,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
-      "id": "401875004",
-      "league": "Serie A",
-      "league_slug": "ita.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:45:00Z",
-      "home_team": "Venezia",
-      "away_team": "Bologna",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 2.0,
-        "away_l3_corners": 9.33,
-        "home_l3_chaos": 6.67,
-        "away_l3_chaos": 13.33,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 6.67,
-        "away_l3_conceded": 2.33,
-        "home_spike": false,
-        "away_spike": true,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Juventus",
-            "cr": 2,
-            "con": 5
-          },
-          {
-            "date": "07 Nov",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Udinese",
-            "cr": 3,
-            "con": 7
-          },
-          {
-            "date": "01 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Como",
-            "cr": 1,
-            "con": 8
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Udinese",
-            "cr": 8,
-            "con": 4
-          },
-          {
-            "date": "07 Nov",
-            "comp": "SER",
-            "ha": "A",
-            "opp": "Parma",
-            "cr": 15,
-            "con": 1
-          },
-          {
-            "date": "31 Oct",
-            "comp": "SER",
-            "ha": "H",
-            "opp": "Monza",
-            "cr": 5,
-            "con": 2
-          }
-        ]
-      }
-    },
-    {
-      "id": "401878930",
-      "league": "Belgian Pro League",
-      "league_slug": "bel.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T19:45:00Z",
-      "home_team": "OH Leuven",
-      "away_team": "KV Kortrijk",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 6.33,
-        "away_l3_corners": 2.0,
-        "home_l3_chaos": 11.0,
-        "away_l3_chaos": 6.67,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 12.33,
-        "away_l3_conceded": 4.67,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "23 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "Anderlecht",
-            "cr": 4,
-            "con": 6
-          },
-          {
-            "date": "07 Nov",
-            "comp": "BEL",
-            "ha": "H",
-            "opp": "KV Mechelen",
-            "cr": 6,
-            "con": 16
-          },
-          {
-            "date": "01 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "Sint-Truidense",
-            "cr": 9,
-            "con": 15
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "BEL",
-            "ha": "H",
-            "opp": "Union SG",
-            "cr": 3,
-            "con": 6
-          },
-          {
-            "date": "08 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "KAA Gent",
-            "cr": 1,
-            "con": 4
-          },
-          {
-            "date": "05 Nov",
-            "comp": "BEL",
-            "ha": "H",
-            "opp": "KV Mechelen",
-            "cr": 2,
-            "con": 4
-          }
-        ]
-      }
-    },
-    {
-      "id": "401879225",
-      "league": "Premier League",
-      "league_slug": "eng.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T20:00:00Z",
-      "home_team": "Nottingham Forest",
-      "away_team": "Chelsea",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 3.67,
-        "away_l3_corners": 4.33,
-        "home_l3_chaos": 8.0,
-        "away_l3_chaos": 8.33,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.33,
-        "away_l3_conceded": 3.67,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "EPL",
-            "ha": "A",
-            "opp": "Bournemouth",
-            "cr": 4,
-            "con": 6
-          },
-          {
-            "date": "08 Nov",
-            "comp": "EPL",
-            "ha": "H",
-            "opp": "Man City",
-            "cr": 3,
-            "con": 7
-          },
-          {
-            "date": "31 Oct",
-            "comp": "EPL",
-            "ha": "A",
-            "opp": "Brentford",
-            "cr": 4,
-            "con": 3
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "EPL",
-            "ha": "H",
-            "opp": "Leeds",
-            "cr": 3,
-            "con": 2
-          },
-          {
-            "date": "08 Nov",
-            "comp": "EPL",
-            "ha": "A",
-            "opp": "Sunderland",
-            "cr": 2,
-            "con": 2
-          },
-          {
-            "date": "31 Oct",
-            "comp": "EPL",
-            "ha": "H",
-            "opp": "Man Utd",
-            "cr": 8,
-            "con": 7
-          }
-        ]
-      }
-    },
-    {
-      "id": "401882791",
-      "league": "La Liga",
-      "league_slug": "esp.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T20:00:00Z",
-      "home_team": "Levante",
-      "away_team": "Racing Santander",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 6.67,
-        "away_l3_corners": 4.67,
-        "home_l3_chaos": 9.34,
-        "away_l3_chaos": 9.66,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 3.33,
-        "away_l3_conceded": 8.67,
-        "home_spike": true,
-        "away_spike": false,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "24 Nov",
-            "comp": "LAL",
-            "ha": "H",
-            "opp": "Elche",
-            "cr": 5,
-            "con": 1
-          },
-          {
-            "date": "13 Nov",
-            "comp": "CDR",
-            "ha": "A",
-            "opp": "CD Tarancon",
-            "cr": 14,
-            "con": 3
-          },
-          {
-            "date": "09 Nov",
-            "comp": "LAL",
-            "ha": "A",
-            "opp": "Celta Vigo",
-            "cr": 1,
-            "con": 6
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "LAL",
-            "ha": "H",
-            "opp": "Real Sociedad",
-            "cr": 7,
-            "con": 14
-          },
-          {
-            "date": "07 Nov",
-            "comp": "LAL",
-            "ha": "A",
-            "opp": "Málaga",
-            "cr": 3,
-            "con": 6
-          },
-          {
-            "date": "01 Nov",
-            "comp": "LAL",
-            "ha": "H",
-            "opp": "Real Madrid",
-            "cr": 4,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
-      "id": "401880129",
-      "league": "Championship",
-      "league_slug": "eng.2",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T20:00:00Z",
-      "home_team": "Southampton",
-      "away_team": "Middlesbrough",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 8.33,
-        "away_l3_corners": 5.67,
-        "home_l3_chaos": 12.33,
-        "away_l3_chaos": 8.67,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.33,
-        "away_l3_conceded": 4.0,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "25 Nov",
-            "comp": "CHP",
-            "ha": "A",
-            "opp": "Sheffield Utd",
-            "cr": 6,
-            "con": 9
-          },
-          {
-            "date": "21 Nov",
-            "comp": "CHP",
-            "ha": "H",
-            "opp": "Derby",
-            "cr": 10,
-            "con": 4
-          },
-          {
-            "date": "07 Nov",
-            "comp": "CHP",
-            "ha": "A",
-            "opp": "Preston",
-            "cr": 9,
-            "con": 3
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "25 Nov",
-            "comp": "CHP",
-            "ha": "H",
-            "opp": "Swansea",
-            "cr": 3,
-            "con": 2
-          },
-          {
-            "date": "21 Nov",
-            "comp": "CHP",
-            "ha": "H",
-            "opp": "Bristol City",
-            "cr": 8,
-            "con": 5
-          },
-          {
-            "date": "07 Nov",
-            "comp": "CHP",
-            "ha": "A",
-            "opp": "Watford",
-            "cr": 6,
-            "con": 5
-          }
-        ]
-      }
-    },
-    {
-      "id": "401885389",
-      "league": "Primeira Liga",
-      "league_slug": "por.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-27T20:15:00Z",
-      "home_team": "Maritimo",
-      "away_team": "C.D. Nacional",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 4.0,
-        "away_l3_corners": 4.0,
-        "home_l3_chaos": 5.67,
-        "away_l3_chaos": 7.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 4.67,
-        "away_l3_conceded": 6.0,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "02 Nov",
-            "comp": "POR",
-            "ha": "H",
-            "opp": "Santa Clara",
-            "cr": 5,
-            "con": 2
-          },
-          {
-            "date": "24 Oct",
-            "comp": "POR",
-            "ha": "A",
-            "opp": "Vitória ",
-            "cr": 5,
-            "con": 6
-          },
-          {
-            "date": "10 Oct",
-            "comp": "POR",
-            "ha": "H",
-            "opp": "FC Porto",
-            "cr": 2,
-            "con": 6
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "08 Nov",
-            "comp": "POR",
-            "ha": "H",
-            "opp": "Académico",
-            "cr": 6,
-            "con": 4
-          },
-          {
-            "date": "01 Nov",
-            "comp": "POR",
-            "ha": "A",
-            "opp": "Arouca",
-            "cr": 2,
-            "con": 8
-          },
-          {
-            "date": "26 Oct",
-            "comp": "POR",
-            "ha": "H",
-            "opp": "Braga",
-            "cr": 4,
-            "con": 6
-          }
-        ]
-      }
-    },
     {
       "id": "401912683",
       "league": "Brazil Serie B",
@@ -2628,81 +1953,6 @@
       }
     },
     {
-      "id": "401931997",
-      "league": "Liga MX",
-      "league_slug": "mex.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-29T01:00:00Z",
-      "home_team": "Atlas",
-      "away_team": "Toluca",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 7.0,
-        "away_l3_corners": 5.0,
-        "home_l3_chaos": 10.0,
-        "away_l3_chaos": 8.66,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 7.0,
-        "away_l3_conceded": 5.33,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "26 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Toluca",
-            "cr": 5,
-            "con": 7
-          },
-          {
-            "date": "21 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Juárez",
-            "cr": 9,
-            "con": 9
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Pachuca",
-            "cr": 7,
-            "con": 5
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "26 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Atlas",
-            "cr": 7,
-            "con": 5
-          },
-          {
-            "date": "22 Nov",
-            "comp": "LMX",
-            "ha": "A",
-            "opp": "Pachuca",
-            "cr": 2,
-            "con": 5
-          },
-          {
-            "date": "08 Nov",
-            "comp": "LMX",
-            "ha": "H",
-            "opp": "Monterrey",
-            "cr": 6,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
       "id": "401936413",
       "league": "Argentina Liga",
       "league_slug": "arg.1",
@@ -2773,6 +2023,81 @@
             "opp": "Boca ",
             "cr": 2,
             "con": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "401931997",
+      "league": "Liga MX",
+      "league_slug": "mex.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T01:00:00Z",
+      "home_team": "Atlas",
+      "away_team": "Toluca",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 8.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Toluca",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "21 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Juárez",
+            "cr": 9,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Pachuca",
+            "cr": 7,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Atlas",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LMX",
+            "ha": "A",
+            "opp": "Pachuca",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LMX",
+            "ha": "H",
+            "opp": "Monterrey",
+            "cr": 6,
+            "con": 6
           }
         ]
       }
