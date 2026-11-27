@@ -1,165 +1,14 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
   "standardLine": 9.5,
-  "updatedAtUTC": "2026-11-27T07:09:07.376306+00:00",
-  "updatedAtMMT": "27 Nov 2026, 01:39 PM",
+  "updatedAtUTC": "2026-11-27T08:58:48.626124+00:00",
+  "updatedAtMMT": "27 Nov 2026, 03:28 PM",
   "leagueCount": 28,
   "matchCount": 47,
-  "goldenCount": 4,
+  "goldenCount": 5,
   "valueCount": 21,
   "filteredLowDataCount": 1,
   "matches": [
-    {
-      "id": "401892133",
-      "leagueSlug": "aus.1",
-      "leagueCode": "ALE",
-      "leagueName": "A-League",
-      "leagueGroup": "high5",
-      "homeId": "19340",
-      "awayId": "11143",
-      "home": "Macarthur FC",
-      "away": "Melbourne City FC",
-      "kickoffUTC": "2026-11-27T08:40Z",
-      "kickoffMMT": "27 Nov, 03:10 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 3.67,
-        "l3_conceded": 5.33,
-        "l3_sot": 3.67,
-        "l3_total_shots": 8.0,
-        "l3_blocked": 2.0,
-        "recent_corners": [
-          2,
-          3,
-          6
-        ],
-        "recent_conceded": [
-          7,
-          3,
-          6
-        ],
-        "recent_matches": [
-          {
-            "id": "401892134",
-            "date": "22 Nov",
-            "leagueCode": "ALE",
-            "venue": "A",
-            "opponent": "Wellington",
-            "cornersWon": 2,
-            "cornersConceded": 7
-          },
-          {
-            "id": "401892140",
-            "date": "08 Nov",
-            "leagueCode": "ALE",
-            "venue": "H",
-            "opponent": "Brisbane",
-            "cornersWon": 3,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401892147",
-            "date": "31 Oct",
-            "leagueCode": "ALE",
-            "venue": "H",
-            "opponent": "Western Sydney",
-            "cornersWon": 6,
-            "cornersConceded": 6
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 2.33,
-        "l3_conceded": 6.33,
-        "l3_sot": 4.0,
-        "l3_total_shots": 13.33,
-        "l3_blocked": 0.67,
-        "recent_corners": [
-          3,
-          2,
-          2
-        ],
-        "recent_conceded": [
-          12,
-          3,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401892142",
-            "date": "07 Nov",
-            "leagueCode": "ALE",
-            "venue": "H",
-            "opponent": "Western Sydney",
-            "cornersWon": 3,
-            "cornersConceded": 12
-          },
-          {
-            "id": "401892148",
-            "date": "31 Oct",
-            "leagueCode": "ALE",
-            "venue": "H",
-            "opponent": "Sydney FC",
-            "cornersWon": 2,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401892153",
-            "date": "24 Oct",
-            "leagueCode": "ALE",
-            "venue": "A",
-            "opponent": "Melbourne V",
-            "cornersWon": 2,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 3.0,
-        "maxScore": 7.0,
-        "tier": "RISKY",
-        "verdict": "RISKY",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 0.0,
-          "max": 3.0,
-          "home": 3.67,
-          "away": 2.33,
-          "total": 6.0
-        },
-        "l2": {
-          "pts": 1.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 5.67,
-          "away": 4.67,
-          "total": 10.34
-        },
-        "l3": {
-          "pts": 2.0,
-          "max": 2.0,
-          "home": 5.33,
-          "away": 6.33,
-          "homePts": 1.0,
-          "awayPts": 1.0
-        },
-        "refExpHome": 5.0,
-        "refExpAway": 3.8,
-        "refTotal": 8.8,
-        "dominance": null,
-        "hasSpike": false,
-        "spikeNote": null,
-        "summaryText": "စုစုပေါင်း 3.0/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 6.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
-          "SOT+Blocked စုစုပေါင်း 10.34 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
-          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.33 / 6.33, +2)"
-        ]
-      }
-    },
     {
       "id": "401888241",
       "leagueSlug": "tur.1",
@@ -2740,6 +2589,157 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 11.67 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
           "SOT+Blocked စုစုပေါင်း 12.01 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
           "Vila Nova (3.33) နှင့် Atlético Goianiense (1.33) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (-1)"
+        ]
+      }
+    },
+    {
+      "id": "401841337",
+      "leagueSlug": "bra.1",
+      "leagueCode": "BRA",
+      "leagueName": "Brazil Serie A",
+      "leagueGroup": "global",
+      "homeId": "3445",
+      "awayId": "2022",
+      "home": "Fluminense",
+      "away": "Cruzeiro",
+      "kickoffUTC": "2026-11-27T23:00Z",
+      "kickoffMMT": "28 Nov, 05:30 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 6.67,
+        "l3_conceded": 6.0,
+        "l3_sot": 6.67,
+        "l3_total_shots": 13.67,
+        "l3_blocked": 1.67,
+        "recent_corners": [
+          8,
+          6,
+          6
+        ],
+        "recent_conceded": [
+          1,
+          8,
+          9
+        ],
+        "recent_matches": [
+          {
+            "id": "401841324",
+            "date": "23 Nov",
+            "leagueCode": "BRA",
+            "venue": "H",
+            "opponent": "Mirassol",
+            "cornersWon": 8,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401841309",
+            "date": "20 Nov",
+            "leagueCode": "BRA",
+            "venue": "A",
+            "opponent": "São Paulo",
+            "cornersWon": 6,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401841302",
+            "date": "07 Nov",
+            "leagueCode": "BRA",
+            "venue": "A",
+            "opponent": "Vitória",
+            "cornersWon": 6,
+            "cornersConceded": 9
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.33,
+        "l3_conceded": 4.0,
+        "l3_sot": 7.33,
+        "l3_total_shots": 19.33,
+        "l3_blocked": 3.0,
+        "recent_corners": [
+          7,
+          7,
+          5
+        ],
+        "recent_conceded": [
+          4,
+          1,
+          7
+        ],
+        "recent_matches": [
+          {
+            "id": "401841325",
+            "date": "22 Nov",
+            "leagueCode": "BRA",
+            "venue": "A",
+            "opponent": "Chapecoense",
+            "cornersWon": 7,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401841314",
+            "date": "19 Nov",
+            "leagueCode": "BRA",
+            "venue": "H",
+            "opponent": "Palmeiras",
+            "cornersWon": 7,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401841303",
+            "date": "06 Nov",
+            "leagueCode": "BRA",
+            "venue": "H",
+            "opponent": "Bahia",
+            "cornersWon": 5,
+            "cornersConceded": 7
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 6.5,
+        "maxScore": 7.0,
+        "tier": "GOLDEN",
+        "verdict": "GOLDEN BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 3.0,
+          "max": 3.0,
+          "home": 6.67,
+          "away": 6.33,
+          "total": 13.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.34,
+          "away": 10.33,
+          "total": 18.67
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 6.0,
+          "away": 4.0,
+          "homePts": 1.0,
+          "awayPts": 0.5
+        },
+        "refExpHome": 5.3,
+        "refExpAway": 6.2,
+        "refTotal": 11.5,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "အလွှာ ၃ ခုလုံး အားကောင်းပြီး 6.5/7.0 ရရှိထားသဖြင့် Over 9.5 အတွက် အခိုင်မာဆုံး Golden Pick ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 13.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+3)",
+          "SOT+Blocked စုစုပေါင်း 18.67 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (6.0 / 4.0, +1.5)"
         ]
       }
     },
