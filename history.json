@@ -1,21 +1,21 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
-  "updatedAtMMT": "28 Nov 2026, 11:25 AM",
+  "updatedAtMMT": "28 Nov 2026, 01:32 PM",
   "summary": {
     "standardLine": 9.5,
-    "totalGraded": 112,
-    "pendingCount": 29,
+    "totalGraded": 113,
+    "pendingCount": 33,
     "picksSummary": {
-      "hits": 19,
+      "hits": 20,
       "misses": 20,
-      "total": 39,
-      "hitRate": 48.7
+      "total": 40,
+      "hitRate": 50.0
     },
     "allSummary": {
-      "hits": 57,
+      "hits": 58,
       "misses": 55,
-      "total": 112,
-      "hitRate": 50.9
+      "total": 113,
+      "hitRate": 51.3
     },
     "byTier": {
       "GOLDEN": {
@@ -25,10 +25,10 @@
         "hitRate": 60.0
       },
       "VALUE": {
-        "hits": 13,
+        "hits": 14,
         "misses": 16,
-        "total": 29,
-        "hitRate": 44.8
+        "total": 30,
+        "hitRate": 46.7
       },
       "RISKY": {
         "hits": 28,
@@ -44,10 +44,10 @@
       }
     },
     "exactMode": {
-      "hits": 19,
+      "hits": 20,
       "misses": 20,
-      "total": 39,
-      "hitRate": 48.7
+      "total": 40,
+      "hitRate": 50.0
     },
     "fallbackMode": {
       "hits": 0,
@@ -56,6 +56,14 @@
       "hitRate": 0.0
     },
     "byLeague": [
+      {
+        "code": "MLS",
+        "name": "USA MLS",
+        "hits": 2,
+        "misses": 0,
+        "total": 2,
+        "hitRate": 100.0
+      },
       {
         "code": "LAL",
         "name": "La Liga",
@@ -75,14 +83,6 @@
       {
         "code": "BUN",
         "name": "Bundesliga",
-        "hits": 1,
-        "misses": 0,
-        "total": 1,
-        "hitRate": 100.0
-      },
-      {
-        "code": "MLS",
-        "name": "USA MLS",
         "hits": 1,
         "misses": 0,
         "total": 1,
@@ -307,6 +307,114 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
+      "id": "401874727",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "homeId": "607",
+      "awayId": "7853",
+      "home": "Silkeborg IF",
+      "away": "AGF",
+      "kickoffUTC": "2026-11-29T17:00Z",
+      "kickoffMMT": "29 Nov, 11:30 PM",
+      "score": 2.0,
+      "tier": "NO_BET",
+      "verdict": "NO BET",
+      "l2Mode": "exact",
+      "refTotal": 6.8,
+      "targetLine": 9.5,
+      "dominanceSide": null,
+      "hasSpike": false,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
+      "id": "401874552",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "homeId": "909",
+      "awayId": "572",
+      "home": "F.C. København",
+      "away": "FC Midtjylland",
+      "kickoffUTC": "2026-11-29T15:00Z",
+      "kickoffMMT": "29 Nov, 09:30 PM",
+      "score": 3.5,
+      "tier": "RISKY",
+      "verdict": "RISKY",
+      "l2Mode": "exact",
+      "refTotal": 9.2,
+      "targetLine": 9.5,
+      "dominanceSide": null,
+      "hasSpike": true,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
+      "id": "401874500",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "homeId": "7860",
+      "awayId": "3153",
+      "home": "Lyngby Boldklub",
+      "away": "Viborg FF",
+      "kickoffUTC": "2026-11-29T13:00Z",
+      "kickoffMMT": "29 Nov, 07:30 PM",
+      "score": 2.0,
+      "tier": "NO_BET",
+      "verdict": "NO BET",
+      "l2Mode": "exact",
+      "refTotal": 7.0,
+      "targetLine": 9.5,
+      "dominanceSide": null,
+      "hasSpike": true,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
+      "id": "401874725",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "homeId": "3132",
+      "awayId": "3585",
+      "home": "Randers FC",
+      "away": "AC Horsens",
+      "kickoffUTC": "2026-11-29T13:00Z",
+      "kickoffMMT": "29 Nov, 07:30 PM",
+      "score": 1.5,
+      "tier": "NO_BET",
+      "verdict": "NO BET",
+      "l2Mode": "exact",
+      "refTotal": 6.2,
+      "targetLine": 9.5,
+      "dominanceSide": null,
+      "hasSpike": false,
       "status": "PENDING",
       "actualHomeCorners": null,
       "actualAwayCorners": null,
@@ -936,6 +1044,33 @@
       "isExtraTime": false
     },
     {
+      "id": "401892132",
+      "engineVersion": "4.1-cn-ultra-3L",
+      "leagueSlug": "aus.1",
+      "leagueCode": "ALE",
+      "leagueName": "A-League",
+      "homeId": "5325",
+      "awayId": "22344",
+      "home": "Central Coast Mariners FC",
+      "away": "Auckland FC",
+      "kickoffUTC": "2026-11-28T08:40Z",
+      "kickoffMMT": "28 Nov, 03:10 PM",
+      "score": 3.5,
+      "tier": "RISKY",
+      "verdict": "RISKY",
+      "l2Mode": "exact",
+      "refTotal": 10.0,
+      "targetLine": 9.5,
+      "dominanceSide": null,
+      "hasSpike": false,
+      "status": "PENDING",
+      "actualHomeCorners": null,
+      "actualAwayCorners": null,
+      "actualTotal": null,
+      "grade": null,
+      "isExtraTime": false
+    },
+    {
       "id": "401933725",
       "engineVersion": "4.1-cn-ultra-3L",
       "leagueSlug": "usa.1",
@@ -955,12 +1090,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 5,
+      "actualAwayCorners": 6,
+      "actualTotal": 11,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "28 Nov, 01:32 PM"
     },
     {
       "id": "401933727",

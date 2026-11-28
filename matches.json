@@ -1,14 +1,165 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
   "standardLine": 9.5,
-  "updatedAtUTC": "2026-11-28T04:55:35.863036+00:00",
-  "updatedAtMMT": "28 Nov 2026, 11:25 AM",
+  "updatedAtUTC": "2026-11-28T07:02:31.117111+00:00",
+  "updatedAtMMT": "28 Nov 2026, 01:32 PM",
   "leagueCount": 28,
-  "matchCount": 27,
+  "matchCount": 32,
   "goldenCount": 3,
   "valueCount": 14,
   "filteredLowDataCount": 1,
   "matches": [
+    {
+      "id": "401892132",
+      "leagueSlug": "aus.1",
+      "leagueCode": "ALE",
+      "leagueName": "A-League",
+      "leagueGroup": "high5",
+      "homeId": "5325",
+      "awayId": "22344",
+      "home": "Central Coast Mariners FC",
+      "away": "Auckland FC",
+      "kickoffUTC": "2026-11-28T08:40Z",
+      "kickoffMMT": "28 Nov, 03:10 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 5.67,
+        "l3_sot": 5.0,
+        "l3_total_shots": 13.67,
+        "l3_blocked": 1.0,
+        "recent_corners": [
+          3,
+          7,
+          2
+        ],
+        "recent_conceded": [
+          7,
+          4,
+          6
+        ],
+        "recent_matches": [
+          {
+            "id": "401892136",
+            "date": "21 Nov",
+            "leagueCode": "ALE",
+            "venue": "H",
+            "opponent": "Perth Glory",
+            "cornersWon": 3,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401892144",
+            "date": "06 Nov",
+            "leagueCode": "ALE",
+            "venue": "A",
+            "opponent": "Sydney FC",
+            "cornersWon": 7,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401892146",
+            "date": "01 Nov",
+            "leagueCode": "ALE",
+            "venue": "A",
+            "opponent": "Melbourne V",
+            "cornersWon": 2,
+            "cornersConceded": 6
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 5.0,
+        "l3_sot": 2.67,
+        "l3_total_shots": 14.67,
+        "l3_blocked": 5.33,
+        "recent_corners": [
+          6,
+          7,
+          3
+        ],
+        "recent_conceded": [
+          0,
+          3,
+          12
+        ],
+        "recent_matches": [
+          {
+            "id": "401892137",
+            "date": "21 Nov",
+            "leagueCode": "ALE",
+            "venue": "H",
+            "opponent": "Melbourne V",
+            "cornersWon": 6,
+            "cornersConceded": 0
+          },
+          {
+            "id": "401892143",
+            "date": "07 Nov",
+            "leagueCode": "ALE",
+            "venue": "H",
+            "opponent": "Wellington",
+            "cornersWon": 7,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401892150",
+            "date": "30 Oct",
+            "leagueCode": "ALE",
+            "venue": "A",
+            "opponent": "Brisbane",
+            "cornersWon": 3,
+            "cornersConceded": 12
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 4.0,
+          "away": 5.33,
+          "total": 9.33
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 6.0,
+          "away": 8.0,
+          "total": 14.0
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 5.67,
+          "away": 5.0,
+          "homePts": 1.0,
+          "awayPts": 0.5
+        },
+        "refExpHome": 4.5,
+        "refExpAway": 5.5,
+        "refTotal": 10.0,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.33 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 14.0 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.67 / 5.0, +1.5)"
+        ]
+      }
+    },
     {
       "id": "401880725",
       "leagueSlug": "eng.3",
@@ -3380,157 +3531,6 @@
       }
     },
     {
-      "id": "401936413",
-      "leagueSlug": "arg.1",
-      "leagueCode": "ARG",
-      "leagueName": "Argentina Liga",
-      "leagueGroup": "global",
-      "homeId": "2975",
-      "awayId": "16",
-      "home": "Instituto (Córdoba)",
-      "away": "River Plate",
-      "kickoffUTC": "2026-11-29T01:00Z",
-      "kickoffMMT": "29 Nov, 07:30 AM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 1.67,
-        "l3_conceded": 4.0,
-        "l3_sot": 3.67,
-        "l3_total_shots": 10.33,
-        "l3_blocked": 2.0,
-        "recent_corners": [
-          2,
-          1,
-          2
-        ],
-        "recent_conceded": [
-          3,
-          3,
-          6
-        ],
-        "recent_matches": [
-          {
-            "id": "401933762",
-            "date": "23 Nov",
-            "leagueCode": "ARG",
-            "venue": "H",
-            "opponent": "Huracán ",
-            "cornersWon": 2,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401841664",
-            "date": "08 Nov",
-            "leagueCode": "ARG",
-            "venue": "H",
-            "opponent": "Newell's",
-            "cornersWon": 1,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401841654",
-            "date": "01 Nov",
-            "leagueCode": "ARG",
-            "venue": "A",
-            "opponent": "Estudiantes",
-            "cornersWon": 2,
-            "cornersConceded": 6
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 5.0,
-        "l3_conceded": 5.0,
-        "l3_sot": 5.33,
-        "l3_total_shots": 15.67,
-        "l3_blocked": 3.67,
-        "recent_corners": [
-          5,
-          8,
-          2
-        ],
-        "recent_conceded": [
-          4,
-          1,
-          10
-        ],
-        "recent_matches": [
-          {
-            "id": "401933761",
-            "date": "23 Nov",
-            "leagueCode": "ARG",
-            "venue": "H",
-            "opponent": "Lanús ",
-            "cornersWon": 5,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401841659",
-            "date": "06 Nov",
-            "leagueCode": "ARG",
-            "venue": "A",
-            "opponent": "Aldosivi",
-            "cornersWon": 8,
-            "cornersConceded": 1
-          },
-          {
-            "id": "401841658",
-            "date": "02 Nov",
-            "leagueCode": "ARG",
-            "venue": "A",
-            "opponent": "Boca ",
-            "cornersWon": 2,
-            "cornersConceded": 10
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 2.0,
-        "maxScore": 7.0,
-        "tier": "NO_BET",
-        "verdict": "NO BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 0.0,
-          "max": 3.0,
-          "home": 1.67,
-          "away": 5.0,
-          "total": 6.67
-        },
-        "l2": {
-          "pts": 1.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 5.67,
-          "away": 9.0,
-          "total": 14.67
-        },
-        "l3": {
-          "pts": 1.0,
-          "max": 2.0,
-          "home": 4.0,
-          "away": 5.0,
-          "homePts": 0.5,
-          "awayPts": 0.5
-        },
-        "refExpHome": 3.3,
-        "refExpAway": 4.5,
-        "refTotal": 7.8,
-        "dominance": null,
-        "hasSpike": false,
-        "spikeNote": null,
-        "summaryText": "စုစုပေါင်း 2.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 6.67 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
-          "SOT+Blocked စုစုပေါင်း 14.67 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
-          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (4.0 / 5.0, +1)"
-        ]
-      }
-    },
-    {
       "id": "401931997",
       "leagueSlug": "mex.1",
       "leagueCode": "LMX",
@@ -3682,6 +3682,157 @@
       }
     },
     {
+      "id": "401936413",
+      "leagueSlug": "arg.1",
+      "leagueCode": "ARG",
+      "leagueName": "Argentina Liga",
+      "leagueGroup": "global",
+      "homeId": "2975",
+      "awayId": "16",
+      "home": "Instituto (Córdoba)",
+      "away": "River Plate",
+      "kickoffUTC": "2026-11-29T01:00Z",
+      "kickoffMMT": "29 Nov, 07:30 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 1.67,
+        "l3_conceded": 4.0,
+        "l3_sot": 3.67,
+        "l3_total_shots": 10.33,
+        "l3_blocked": 2.0,
+        "recent_corners": [
+          2,
+          1,
+          2
+        ],
+        "recent_conceded": [
+          3,
+          3,
+          6
+        ],
+        "recent_matches": [
+          {
+            "id": "401933762",
+            "date": "23 Nov",
+            "leagueCode": "ARG",
+            "venue": "H",
+            "opponent": "Huracán ",
+            "cornersWon": 2,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401841664",
+            "date": "08 Nov",
+            "leagueCode": "ARG",
+            "venue": "H",
+            "opponent": "Newell's",
+            "cornersWon": 1,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401841654",
+            "date": "01 Nov",
+            "leagueCode": "ARG",
+            "venue": "A",
+            "opponent": "Estudiantes",
+            "cornersWon": 2,
+            "cornersConceded": 6
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 5.0,
+        "l3_sot": 5.33,
+        "l3_total_shots": 15.67,
+        "l3_blocked": 3.67,
+        "recent_corners": [
+          5,
+          8,
+          2
+        ],
+        "recent_conceded": [
+          4,
+          1,
+          10
+        ],
+        "recent_matches": [
+          {
+            "id": "401933761",
+            "date": "23 Nov",
+            "leagueCode": "ARG",
+            "venue": "H",
+            "opponent": "Lanús ",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401841659",
+            "date": "06 Nov",
+            "leagueCode": "ARG",
+            "venue": "A",
+            "opponent": "Aldosivi",
+            "cornersWon": 8,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401841658",
+            "date": "02 Nov",
+            "leagueCode": "ARG",
+            "venue": "A",
+            "opponent": "Boca ",
+            "cornersWon": 2,
+            "cornersConceded": 10
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 2.0,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 1.67,
+          "away": 5.0,
+          "total": 6.67
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 5.67,
+          "away": 9.0,
+          "total": 14.67
+        },
+        "l3": {
+          "pts": 1.0,
+          "max": 2.0,
+          "home": 4.0,
+          "away": 5.0,
+          "homePts": 0.5,
+          "awayPts": 0.5
+        },
+        "refExpHome": 3.3,
+        "refExpAway": 4.5,
+        "refTotal": 7.8,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 2.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 6.67 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 14.67 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (4.0 / 5.0, +1)"
+        ]
+      }
+    },
+    {
       "id": "401931996",
       "leagueSlug": "mex.1",
       "leagueCode": "LMX",
@@ -3829,6 +3980,610 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 10.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
           "SOT+Blocked စုစုပေါင်း 13.0 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
           "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (4.33 / 7.33, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401874500",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "leagueGroup": "global",
+      "homeId": "7860",
+      "awayId": "3153",
+      "home": "Lyngby Boldklub",
+      "away": "Viborg FF",
+      "kickoffUTC": "2026-11-29T13:00Z",
+      "kickoffMMT": "29 Nov, 07:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 2.0,
+        "l3_conceded": 2.67,
+        "l3_sot": 5.0,
+        "l3_total_shots": 10.33,
+        "l3_blocked": 1.33,
+        "recent_corners": [
+          2,
+          1,
+          3
+        ],
+        "recent_conceded": [
+          4,
+          0,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401874492",
+            "date": "21 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "AGF",
+            "cornersWon": 2,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401874537",
+            "date": "07 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Silkeborg",
+            "cornersWon": 1,
+            "cornersConceded": 0
+          },
+          {
+            "id": "401874738",
+            "date": "31 Oct",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Randers",
+            "cornersWon": 3,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.33,
+        "l3_conceded": 3.0,
+        "l3_sot": 6.33,
+        "l3_total_shots": 17.0,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          2,
+          7,
+          10
+        ],
+        "recent_conceded": [
+          4,
+          2,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401874558",
+            "date": "22 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Randers",
+            "cornersWon": 2,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401874499",
+            "date": "07 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Odense",
+            "cornersWon": 7,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401874491",
+            "date": "01 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "AC Horsens",
+            "cornersWon": 10,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 2.0,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 2.0,
+          "away": 6.33,
+          "total": 8.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 6.33,
+          "away": 9.66,
+          "total": 15.99
+        },
+        "l3": {
+          "pts": -1.0,
+          "max": 2.0,
+          "home": 2.67,
+          "away": 3.0,
+          "homePts": -0.5,
+          "awayPts": -0.5
+        },
+        "refExpHome": 2.5,
+        "refExpAway": 4.5,
+        "refTotal": 7.0,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Viborg FF ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 2.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 8.33 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 15.99 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "Lyngby Boldklub (2.67) နှင့် Viborg FF (3.0) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (-1)"
+        ]
+      }
+    },
+    {
+      "id": "401874725",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "leagueGroup": "global",
+      "homeId": "3132",
+      "awayId": "3585",
+      "home": "Randers FC",
+      "away": "AC Horsens",
+      "kickoffUTC": "2026-11-29T13:00Z",
+      "kickoffMMT": "29 Nov, 07:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 2.67,
+        "l3_conceded": 2.0,
+        "l3_sot": 3.33,
+        "l3_total_shots": 11.0,
+        "l3_blocked": 2.0,
+        "recent_corners": [
+          4,
+          0,
+          4
+        ],
+        "recent_conceded": [
+          2,
+          1,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401874558",
+            "date": "22 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Viborg",
+            "cornersWon": 4,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401874562",
+            "date": "08 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Nordsjælland",
+            "cornersWon": 0,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401874738",
+            "date": "31 Oct",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Lyngby",
+            "cornersWon": 4,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 2.33,
+        "l3_conceded": 5.33,
+        "l3_sot": 5.0,
+        "l3_total_shots": 15.33,
+        "l3_blocked": 2.67,
+        "recent_corners": [
+          1,
+          3,
+          3
+        ],
+        "recent_conceded": [
+          1,
+          5,
+          10
+        ],
+        "recent_matches": [
+          {
+            "id": "401874575",
+            "date": "22 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Silkeborg",
+            "cornersWon": 1,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401874570",
+            "date": "08 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "AGF",
+            "cornersWon": 3,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401874491",
+            "date": "01 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Viborg",
+            "cornersWon": 3,
+            "cornersConceded": 10
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 1.5,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 2.67,
+          "away": 2.33,
+          "total": 5.0
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 5.33,
+          "away": 7.67,
+          "total": 13.0
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 2.0,
+          "away": 5.33,
+          "homePts": -0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 4.0,
+        "refExpAway": 2.2,
+        "refTotal": 6.2,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 1.5/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 5.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 13.0 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (2.0 / 5.33, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401874552",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "leagueGroup": "global",
+      "homeId": "909",
+      "awayId": "572",
+      "home": "F.C. København",
+      "away": "FC Midtjylland",
+      "kickoffUTC": "2026-11-29T15:00Z",
+      "kickoffMMT": "29 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 2.33,
+        "l3_sot": 2.67,
+        "l3_total_shots": 10.0,
+        "l3_blocked": 2.0,
+        "recent_corners": [
+          5,
+          5,
+          6
+        ],
+        "recent_conceded": [
+          1,
+          4,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401915738",
+            "date": "27 Nov",
+            "leagueCode": "UECL",
+            "venue": "A",
+            "opponent": "Inter D'Escaldes",
+            "cornersWon": 5,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401874493",
+            "date": "22 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Nordsjælland",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401874488",
+            "date": "08 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Brøndby",
+            "cornersWon": 6,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 5.67,
+        "l3_sot": 6.0,
+        "l3_total_shots": 15.33,
+        "l3_blocked": 2.67,
+        "recent_corners": [
+          5,
+          1,
+          9
+        ],
+        "recent_conceded": [
+          5,
+          7,
+          5
+        ],
+        "recent_matches": [
+          {
+            "id": "401915809",
+            "date": "27 Nov",
+            "leagueCode": "UECL",
+            "venue": "A",
+            "opponent": "Pafos",
+            "cornersWon": 5,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401874538",
+            "date": "24 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Brøndby",
+            "cornersWon": 1,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401874556",
+            "date": "08 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Sønderjyske",
+            "cornersWon": 9,
+            "cornersConceded": 5
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 5.33,
+          "away": 5.0,
+          "total": 10.33
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 4.67,
+          "away": 8.67,
+          "total": 13.34
+        },
+        "l3": {
+          "pts": 0.5,
+          "max": 2.0,
+          "home": 2.33,
+          "away": 5.67,
+          "homePts": -0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 5.5,
+        "refExpAway": 3.7,
+        "refTotal": 9.2,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "FC Midtjylland ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 10.33 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 13.34 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "ခံစစ်ပြန်ပေးရမှု သင့်တင့်သည် (2.33 / 5.67, +0.5)"
+        ]
+      }
+    },
+    {
+      "id": "401874727",
+      "leagueSlug": "den.1",
+      "leagueCode": "DEN",
+      "leagueName": "Danish Superliga",
+      "leagueGroup": "global",
+      "homeId": "607",
+      "awayId": "7853",
+      "home": "Silkeborg IF",
+      "away": "AGF",
+      "kickoffUTC": "2026-11-29T17:00Z",
+      "kickoffMMT": "29 Nov, 11:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 2.33,
+        "l3_conceded": 4.0,
+        "l3_sot": 2.0,
+        "l3_total_shots": 8.67,
+        "l3_blocked": 4.0,
+        "recent_corners": [
+          1,
+          0,
+          6
+        ],
+        "recent_conceded": [
+          1,
+          1,
+          10
+        ],
+        "recent_matches": [
+          {
+            "id": "401874575",
+            "date": "22 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "AC Horsens",
+            "cornersWon": 1,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401874537",
+            "date": "07 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Lyngby",
+            "cornersWon": 0,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401874571",
+            "date": "01 Nov",
+            "leagueCode": "DEN",
+            "venue": "A",
+            "opponent": "Odense",
+            "cornersWon": 6,
+            "cornersConceded": 10
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 4.67,
+        "l3_conceded": 2.67,
+        "l3_sot": 6.67,
+        "l3_total_shots": 16.67,
+        "l3_blocked": 3.67,
+        "recent_corners": [
+          5,
+          4,
+          5
+        ],
+        "recent_conceded": [
+          3,
+          2,
+          3
+        ],
+        "recent_matches": [
+          {
+            "id": "401915808",
+            "date": "27 Nov",
+            "leagueCode": "UECL",
+            "venue": "A",
+            "opponent": "SK Brann",
+            "cornersWon": 5,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401874492",
+            "date": "21 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "Lyngby",
+            "cornersWon": 4,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401874570",
+            "date": "08 Nov",
+            "leagueCode": "DEN",
+            "venue": "H",
+            "opponent": "AC Horsens",
+            "cornersWon": 5,
+            "cornersConceded": 3
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 2.0,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 2.33,
+          "away": 4.67,
+          "total": 7.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 6.0,
+          "away": 10.34,
+          "total": 16.34
+        },
+        "l3": {
+          "pts": 0.0,
+          "max": 2.0,
+          "home": 4.0,
+          "away": 2.67,
+          "homePts": 0.5,
+          "awayPts": -0.5
+        },
+        "refExpHome": 2.5,
+        "refExpAway": 4.3,
+        "refTotal": 6.8,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 2.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 7.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 16.34 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "AGF (2.67) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
         ]
       }
     },
