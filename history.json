@@ -1,28 +1,28 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
-  "updatedAtMMT": "28 Nov 2026, 07:31 AM",
+  "updatedAtMMT": "28 Nov 2026, 09:18 AM",
   "summary": {
     "standardLine": 9.5,
-    "totalGraded": 109,
-    "pendingCount": 32,
+    "totalGraded": 111,
+    "pendingCount": 30,
     "picksSummary": {
       "hits": 19,
-      "misses": 19,
-      "total": 38,
-      "hitRate": 50.0
+      "misses": 20,
+      "total": 39,
+      "hitRate": 48.7
     },
     "allSummary": {
-      "hits": 55,
-      "misses": 54,
-      "total": 109,
+      "hits": 56,
+      "misses": 55,
+      "total": 111,
       "hitRate": 50.5
     },
     "byTier": {
       "GOLDEN": {
         "hits": 6,
-        "misses": 3,
-        "total": 9,
-        "hitRate": 66.7
+        "misses": 4,
+        "total": 10,
+        "hitRate": 60.0
       },
       "VALUE": {
         "hits": 13,
@@ -37,17 +37,17 @@
         "hitRate": 54.0
       },
       "NO_BET": {
-        "hits": 9,
+        "hits": 10,
         "misses": 12,
-        "total": 21,
-        "hitRate": 42.9
+        "total": 22,
+        "hitRate": 45.5
       }
     },
     "exactMode": {
       "hits": 19,
-      "misses": 19,
-      "total": 38,
-      "hitRate": 50.0
+      "misses": 20,
+      "total": 39,
+      "hitRate": 48.7
     },
     "fallbackMode": {
       "hits": 0,
@@ -153,16 +153,16 @@
         "hitRate": 33.3
       },
       {
-        "code": "SER",
-        "name": "Serie A",
+        "code": "BRA",
+        "name": "Brazil Serie A",
         "hits": 0,
-        "misses": 1,
-        "total": 1,
+        "misses": 2,
+        "total": 2,
         "hitRate": 0.0
       },
       {
-        "code": "BRA",
-        "name": "Brazil Serie A",
+        "code": "SER",
+        "name": "Serie A",
         "hits": 0,
         "misses": 1,
         "total": 1,
@@ -1009,12 +1009,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": true,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 3,
+      "actualAwayCorners": 7,
+      "actualTotal": 10,
+      "grade": "HIT",
+      "isExtraTime": false,
+      "gradedAtMMT": "28 Nov, 09:18 AM"
     },
     {
       "id": "401841337",
@@ -1036,12 +1037,13 @@
       "targetLine": 9.5,
       "dominanceSide": null,
       "hasSpike": false,
-      "status": "PENDING",
-      "actualHomeCorners": null,
-      "actualAwayCorners": null,
-      "actualTotal": null,
-      "grade": null,
-      "isExtraTime": false
+      "status": "GRADED",
+      "actualHomeCorners": 4,
+      "actualAwayCorners": 5,
+      "actualTotal": 9,
+      "grade": "MISS",
+      "isExtraTime": false,
+      "gradedAtMMT": "28 Nov, 09:18 AM"
     },
     {
       "id": "401885389",
