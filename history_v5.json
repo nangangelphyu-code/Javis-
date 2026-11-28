@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T07:22:05Z",
+  "generated_at": "2026-11-28T08:58:46Z",
   "engine_version": "5.0-v42sync",
   "max_records": 3000,
   "all_time_archived": {
@@ -632,6 +632,91 @@
       }
     },
     {
+      "id": "401933721",
+      "formula_ver": "v4.2",
+      "league": "USA MLS",
+      "league_slug": "usa.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T03:30:00Z",
+      "home_team": "Portland Timbers",
+      "away_team": "FC Dallas",
+      "home_id": "9723",
+      "away_id": "185",
+      "score": 5.5,
+      "ref_exp": 11.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 7.0,
+        "away_l3_chaos": 12.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Dallas",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Austin",
+            "cr": 5,
+            "con": 5
+          },
+          {
+            "date": "02 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Houston",
+            "cr": 6,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Portland",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Colorado",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Kansas City",
+            "cr": 7,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
       "id": "401931996",
       "formula_ver": "v4.2",
       "league": "Liga MX",
@@ -711,6 +796,91 @@
             "ha": "A",
             "opp": "Queretaro",
             "cr": 6,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401933726",
+      "formula_ver": "v4.2",
+      "league": "USA MLS",
+      "league_slug": "usa.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T01:30:00Z",
+      "home_team": "LAFC",
+      "away_team": "St. Louis CITY SC",
+      "home_id": "18966",
+      "away_id": "21812",
+      "score": 4.0,
+      "ref_exp": 10.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.33,
+        "away_l3_corners": 4.33,
+        "home_l3_chaos": 14.33,
+        "away_l3_chaos": 8.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 5.0,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "St. Louis",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Seattle",
+            "cr": 12,
+            "con": 2
+          },
+          {
+            "date": "02 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Minnesota",
+            "cr": 8,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "LAFC",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Houston",
+            "cr": 3,
+            "con": 9
+          },
+          {
+            "date": "01 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "San Diego",
+            "cr": 3,
             "con": 4
           }
         ]
@@ -802,6 +972,1451 @@
       }
     },
     {
+      "id": "401841336",
+      "formula_ver": "v4.2",
+      "league": "Brazil Serie A",
+      "league_slug": "bra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-29T00:00:00Z",
+      "home_team": "Botafogo",
+      "away_team": "Bahia",
+      "home_id": "6086",
+      "away_id": "9967",
+      "score": 3.5,
+      "ref_exp": 10.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 5.33,
+        "away_l3_chaos": 8.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 7.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "São Paulo",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "19 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Corinthians",
+            "cr": 2,
+            "con": 2
+          },
+          {
+            "date": "05 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Atlético-MG",
+            "cr": 4,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BRA",
+            "ha": "H",
+            "opp": "Coritiba",
+            "cr": 8,
+            "con": 9
+          },
+          {
+            "date": "19 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Grêmio",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "06 Nov",
+            "comp": "BRA",
+            "ha": "A",
+            "opp": "Cruzeiro",
+            "cr": 7,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401933722",
+      "formula_ver": "v4.2",
+      "league": "USA MLS",
+      "league_slug": "usa.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T23:30:00Z",
+      "home_team": "FC Cincinnati",
+      "away_team": "Nashville SC",
+      "home_id": "18267",
+      "away_id": "18986",
+      "score": 4.0,
+      "ref_exp": 10.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 7.67,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 11.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Nashville",
+            "cr": 2,
+            "con": 9
+          },
+          {
+            "date": "20 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Orlando",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Nashville",
+            "cr": 6,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Cincinnati",
+            "cr": 9,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Cincinnati",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "02 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Red Bull NY",
+            "cr": 12,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401912709",
+      "formula_ver": "v4.2",
+      "league": "Brazil Serie B",
+      "league_slug": "bra.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T23:00:00Z",
+      "home_team": "Fortaleza",
+      "away_team": "Criciúma",
+      "home_id": "6272",
+      "away_id": "9971",
+      "score": 1.0,
+      "ref_exp": 6.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.67,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 2.67,
+        "away_l3_chaos": 2.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BRB",
+            "ha": "A",
+            "opp": "Criciúma",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "15 Nov",
+            "comp": "BRB",
+            "ha": "H",
+            "opp": "Vila Nova",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BRB",
+            "ha": "A",
+            "opp": "Novorizontino",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BRB",
+            "ha": "H",
+            "opp": "Fortaleza",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "15 Nov",
+            "comp": "BRB",
+            "ha": "H",
+            "opp": "Novorizontino",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BRB",
+            "ha": "A",
+            "opp": "Vila Nova",
+            "cr": 7,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401933723",
+      "formula_ver": "v4.2",
+      "league": "USA MLS",
+      "league_slug": "usa.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T21:30:00Z",
+      "home_team": "Philadelphia Union",
+      "away_team": "New England Revolution",
+      "home_id": "10739",
+      "away_id": "189",
+      "score": 5.0,
+      "ref_exp": 11.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 9.0,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 9.67,
+        "away_l3_chaos": 7.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "New England",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Toronto",
+            "cr": 6,
+            "con": 1
+          },
+          {
+            "date": "01 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Cincinnati",
+            "cr": 12,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Philadelphia",
+            "cr": 5,
+            "con": 9
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Orlando",
+            "cr": 8,
+            "con": 5
+          },
+          {
+            "date": "02 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Miami",
+            "cr": 7,
+            "con": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885385",
+      "formula_ver": "v4.2",
+      "league": "Primeira Liga",
+      "league_slug": "por.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T20:30:00Z",
+      "home_team": "Vitória de Guimaraes",
+      "away_team": "Estrela",
+      "home_id": "5309",
+      "away_id": "21610",
+      "score": 4.5,
+      "ref_exp": 9.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 7.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 6.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "09 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "FC Porto",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "03 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Gil Vicente",
+            "cr": 3,
+            "con": 2
+          },
+          {
+            "date": "24 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Maritimo",
+            "cr": 6,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "09 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Benfica",
+            "cr": 1,
+            "con": 10
+          },
+          {
+            "date": "31 Oct",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Moreirense",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "24 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Casa Pia",
+            "cr": 7,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401882789",
+      "formula_ver": "v4.2",
+      "league": "La Liga",
+      "league_slug": "esp.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T20:00:00Z",
+      "home_team": "Real Madrid",
+      "away_team": "Alavés",
+      "home_id": "86",
+      "away_id": "96",
+      "score": 3.0,
+      "ref_exp": 8.1,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 15.0,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.0,
+        "away_l3_conceded": 3.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "PSV",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Celta Vigo",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Valencia",
+            "cr": 5,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Deportivo",
+            "cr": 8,
+            "con": 2
+          },
+          {
+            "date": "11 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "Anaitasuna",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "07 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Sevilla",
+            "cr": 4,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401875530",
+      "formula_ver": "v4.2",
+      "league": "Eredivisie",
+      "league_slug": "ned.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T20:00:00Z",
+      "home_team": "SC Cambuur",
+      "away_team": "Sparta Rotterdam",
+      "home_id": "3736",
+      "away_id": "151",
+      "score": 2.0,
+      "ref_exp": 8.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
+        "away_l3_corners": 7.0,
+        "home_l3_chaos": 8.67,
+        "away_l3_chaos": 6.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.0,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "FC Utrecht",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "PSV",
+            "cr": 1,
+            "con": 1
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Go Ahead Eagles",
+            "cr": 7,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "AZ Alkmaar",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "ADO Den Haag",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "FC Groningen",
+            "cr": 7,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401883100",
+      "formula_ver": "v4.2",
+      "league": "La Liga 2",
+      "league_slug": "esp.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T20:00:00Z",
+      "home_team": "Real Valladolid",
+      "away_team": "Real Sociedad II",
+      "home_id": "95",
+      "away_id": "20983",
+      "score": 4.5,
+      "ref_exp": 11.1,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 7.67,
+        "away_l3_chaos": 5.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.33,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Celta Fortuna",
+            "cr": 8,
+            "con": 4
+          },
+          {
+            "date": "14 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Castellón",
+            "cr": 3,
+            "con": 9
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Gijón",
+            "cr": 6,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Cádiz",
+            "cr": 7,
+            "con": 1
+          },
+          {
+            "date": "14 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Gijón",
+            "cr": 6,
+            "con": 6
+          },
+          {
+            "date": "10 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "CD Sabadell",
+            "cr": 3,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401874977",
+      "formula_ver": "v4.2",
+      "league": "Serie A",
+      "league_slug": "ita.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:45:00Z",
+      "home_team": "Internazionale",
+      "away_team": "Genoa",
+      "home_id": "110",
+      "away_id": "3263",
+      "score": 4.0,
+      "ref_exp": 9.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 3.0,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 3.67,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Stuttgart",
+            "cr": 11,
+            "con": 6
+          },
+          {
+            "date": "23 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Atalanta",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Como",
+            "cr": 4,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Sassuolo",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Milan",
+            "cr": 3,
+            "con": 0
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Lecce",
+            "cr": 3,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401876391",
+      "formula_ver": "v4.2",
+      "league": "Ligue 1",
+      "league_slug": "fra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:45:00Z",
+      "home_team": "Le Havre AC",
+      "away_team": "Strasbourg",
+      "home_id": "3236",
+      "away_id": "180",
+      "score": 2.0,
+      "ref_exp": 7.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 9.33,
+        "away_l3_chaos": 9.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 2.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Troyes",
+            "cr": 0,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lorient",
+            "cr": 5,
+            "con": 0
+          },
+          {
+            "date": "31 Oct",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "PSG",
+            "cr": 5,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Brest",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "07 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Toulouse",
+            "cr": 1,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Auxerre",
+            "cr": 5,
+            "con": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "401876390",
+      "formula_ver": "v4.2",
+      "league": "Ligue 1",
+      "league_slug": "fra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:45:00Z",
+      "home_team": "Le Mans",
+      "away_team": "Lille",
+      "home_id": "2697",
+      "away_id": "166",
+      "score": 4.5,
+      "ref_exp": 9.7,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 7.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 6.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Marseille",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Monaco",
+            "cr": 8,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Troyes",
+            "cr": 2,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Bayern",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Lyon",
+            "cr": 7,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Rennes",
+            "cr": 2,
+            "con": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "401876388",
+      "formula_ver": "v4.2",
+      "league": "Ligue 1",
+      "league_slug": "fra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:45:00Z",
+      "home_team": "Nice",
+      "away_team": "Troyes",
+      "home_id": "2502",
+      "away_id": "170",
+      "score": 2.5,
+      "ref_exp": 7.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 8.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 2.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "PSG",
+            "cr": 1,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Angers",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "31 Oct",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Rennes",
+            "cr": 4,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Le Havre AC",
+            "cr": 7,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "PSG",
+            "cr": 1,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Le Mans",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401876387",
+      "formula_ver": "v4.2",
+      "league": "Ligue 1",
+      "league_slug": "fra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:45:00Z",
+      "home_team": "Paris Saint-Germain",
+      "away_team": "Lorient",
+      "home_id": "160",
+      "away_id": "273",
+      "score": 2.0,
+      "ref_exp": 7.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 5.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "AS Roma",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Nice",
+            "cr": 5,
+            "con": 1
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Troyes",
+            "cr": 6,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Rennes",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Le Havre AC",
+            "cr": 0,
+            "con": 5
+          },
+          {
+            "date": "03 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Brest",
+            "cr": 8,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401878931",
+      "formula_ver": "v4.2",
+      "league": "Belgian Pro League",
+      "league_slug": "bel.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:45:00Z",
+      "home_team": "Lommel SK",
+      "away_team": "Zulte-Waregem",
+      "home_id": "22269",
+      "away_id": "4691",
+      "score": 5.0,
+      "ref_exp": 11.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 7.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Standard Liege",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Antwerp",
+            "cr": 8,
+            "con": 9
+          },
+          {
+            "date": "02 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "KAA Gent",
+            "cr": 3,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Antwerp",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Sint-Truidense",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Club Brugge",
+            "cr": 2,
+            "con": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "401878933",
+      "formula_ver": "v4.2",
+      "league": "Belgian Pro League",
+      "league_slug": "bel.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:45:00Z",
+      "home_team": "Royal Charleroi SC",
+      "away_team": "Waasland-Beveren",
+      "home_id": "3616",
+      "away_id": "13450",
+      "score": 5.5,
+      "ref_exp": 10.7,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 7.0,
+        "home_l3_chaos": 9.67,
+        "away_l3_chaos": 7.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Sint-Truidense",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Westerlo",
+            "cr": 6,
+            "con": 1
+          },
+          {
+            "date": "02 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "La Louvière",
+            "cr": 4,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "KAA Gent",
+            "cr": 10,
+            "con": 10
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Standard Liege",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Union SG",
+            "cr": 6,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401933724",
+      "formula_ver": "v4.2",
+      "league": "USA MLS",
+      "league_slug": "usa.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:30:00Z",
+      "home_team": "Houston Dynamo FC",
+      "away_team": "San Jose Earthquakes",
+      "home_id": "6077",
+      "away_id": "191",
+      "score": 6.0,
+      "ref_exp": 11.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.67,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 8.33,
+        "away_l3_chaos": 8.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 6.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "San Jose",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "St. Louis",
+            "cr": 9,
+            "con": 3
+          },
+          {
+            "date": "02 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Portland",
+            "cr": 6,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Houston",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Minnesota",
+            "cr": 2,
+            "con": 8
+          },
+          {
+            "date": "01 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Salt Lake",
+            "cr": 5,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885039",
+      "formula_ver": "v4.2",
+      "league": "2. Bundesliga",
+      "league_slug": "ger.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T19:30:00Z",
+      "home_team": "VfL Osnabruck",
+      "away_team": "Hannover 96",
+      "home_id": "7013",
+      "away_id": "2428",
+      "score": 6.0,
+      "ref_exp": 11.4,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 7.66,
+        "away_l3_chaos": 9.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Karlsruher",
+            "cr": 4,
+            "con": 9
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Kaiserslautern",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Wolfsburg",
+            "cr": 3,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Greuther Furth",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Heidenheim",
+            "cr": 9,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "D Dresden",
+            "cr": 6,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
       "id": "401899522",
       "formula_ver": "v4.2",
       "league": "Serie B",
@@ -887,6 +2502,856 @@
       }
     },
     {
+      "id": "401881738",
+      "formula_ver": "v4.2",
+      "league": "Austrian Bundesliga",
+      "league_slug": "aut.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T18:30:00Z",
+      "home_team": "Austria Lustenau",
+      "away_team": "Rapid Vienna",
+      "home_id": "21540",
+      "away_id": "519",
+      "score": -1.0,
+      "ref_exp": 0.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 0.0,
+        "away_l3_corners": 0.0,
+        "home_l3_chaos": 0.0,
+        "away_l3_chaos": 0.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 0.0,
+        "away_l3_conceded": 0.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Swarovski Tirol",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "07 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "Grazer",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "01 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "RB Salzburg",
+            "cr": 0,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Grazer",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "07 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "Wolfsberger",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "01 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Vienna",
+            "cr": 0,
+            "con": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885393",
+      "formula_ver": "v4.2",
+      "league": "Primeira Liga",
+      "league_slug": "por.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T18:00:00Z",
+      "home_team": "Académico de Viseu",
+      "away_team": "Alverca",
+      "home_id": "21607",
+      "away_id": "21613",
+      "score": 3.5,
+      "ref_exp": 10.4,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 6.34,
+        "away_l3_chaos": 6.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.67,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "08 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Nacional",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "02 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Rio Ave",
+            "cr": 5,
+            "con": 6
+          },
+          {
+            "date": "26 Oct",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Sporting",
+            "cr": 0,
+            "con": 11
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "08 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Casa Pia",
+            "cr": 9,
+            "con": 2
+          },
+          {
+            "date": "03 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Benfica",
+            "cr": 5,
+            "con": 8
+          },
+          {
+            "date": "24 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Arouca",
+            "cr": 3,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401875531",
+      "formula_ver": "v4.2",
+      "league": "Eredivisie",
+      "league_slug": "ned.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:45:00Z",
+      "home_team": "PSV Eindhoven",
+      "away_team": "Go Ahead Eagles",
+      "home_id": "148",
+      "away_id": "3706",
+      "score": 1.0,
+      "ref_exp": 7.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.67,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 6.67,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Real Madrid",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "NEC",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Cambuur",
+            "cr": 1,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Fortuna",
+            "cr": 13,
+            "con": 1
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Excelsior",
+            "cr": 0,
+            "con": 7
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Cambuur",
+            "cr": 2,
+            "con": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "401878752",
+      "formula_ver": "v4.2",
+      "league": "Premier League",
+      "league_slug": "eng.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "home_team": "Ipswich Town",
+      "away_team": "Aston Villa",
+      "home_id": "373",
+      "away_id": "362",
+      "score": 2.5,
+      "ref_exp": 9.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
+        "away_l3_corners": 3.0,
+        "home_l3_chaos": 8.34,
+        "away_l3_chaos": 6.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Spurs",
+            "cr": 6,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Bournemouth",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "31 Oct",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Hull",
+            "cr": 3,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Galatasaray",
+            "cr": 1,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Sunderland",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Man Utd",
+            "cr": 1,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401933737",
+      "formula_ver": "v4.2",
+      "league": "USA MLS",
+      "league_slug": "usa.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "home_team": "Charlotte FC",
+      "away_team": "Chicago Fire FC",
+      "home_id": "21300",
+      "away_id": "182",
+      "score": 5.5,
+      "ref_exp": 10.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.67,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 9.0,
+        "away_l3_chaos": 9.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 5.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Chicago",
+            "cr": 8,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Miami",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "31 Oct",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Orlando",
+            "cr": 4,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Charlotte",
+            "cr": 5,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "MLS",
+            "ha": "H",
+            "opp": "Columbus",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "MLS",
+            "ha": "A",
+            "opp": "Colorado",
+            "cr": 6,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401884726",
+      "formula_ver": "v4.2",
+      "league": "Bundesliga",
+      "league_slug": "ger.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "home_team": "VfB Stuttgart",
+      "away_team": "Eintracht Frankfurt",
+      "home_id": "134",
+      "away_id": "125",
+      "score": 5.5,
+      "ref_exp": 11.4,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 7.0,
+        "home_l3_chaos": 8.0,
+        "away_l3_chaos": 10.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.33,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Inter Milan",
+            "cr": 6,
+            "con": 11
+          },
+          {
+            "date": "22 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Schalke",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Bremen",
+            "cr": 4,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Hoffenheim",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Paderborn",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Hamburg",
+            "cr": 6,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401882793",
+      "formula_ver": "v4.2",
+      "league": "La Liga",
+      "league_slug": "esp.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "home_team": "Elche",
+      "away_team": "Atlético Madrid",
+      "home_id": "3751",
+      "away_id": "1068",
+      "score": 4.0,
+      "ref_exp": 8.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 4.67,
+        "away_l3_chaos": 11.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.0,
+        "away_l3_conceded": 1.67,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Levante",
+            "cr": 1,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Betis",
+            "cr": 9,
+            "con": 8
+          },
+          {
+            "date": "02 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Valencia",
+            "cr": 6,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "H",
+            "opp": "Viking FK",
+            "cr": 6,
+            "con": 1
+          },
+          {
+            "date": "23 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Getafe",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Barcelona",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401883104",
+      "formula_ver": "v4.2",
+      "league": "La Liga 2",
+      "league_slug": "esp.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "home_team": "Eibar",
+      "away_team": "Burgos",
+      "home_id": "3752",
+      "away_id": "12597",
+      "score": 2.0,
+      "ref_exp": 7.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.67,
+        "away_l3_corners": 7.67,
+        "home_l3_chaos": 5.66,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 1.33,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Girona",
+            "cr": 1,
+            "con": 2
+          },
+          {
+            "date": "16 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Cádiz",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "11 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "CD Pamplona",
+            "cr": 0,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Albacete",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "14 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Leganés",
+            "cr": 9,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Celta Fortuna",
+            "cr": 10,
+            "con": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "401878932",
+      "formula_ver": "v4.2",
+      "league": "Belgian Pro League",
+      "league_slug": "bel.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:15:00Z",
+      "home_team": "Cercle Brugge KSV",
+      "away_team": "KV Mechelen",
+      "home_id": "3610",
+      "away_id": "7879",
+      "score": 4.0,
+      "ref_exp": 10.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 2.67,
+        "away_l3_corners": 8.33,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 7.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Westerlo",
+            "cr": 2,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "La Louvière",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Antwerp",
+            "cr": 4,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Club Brugge",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "OH Leuven",
+            "cr": 16,
+            "con": 6
+          },
+          {
+            "date": "05 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "KV Kortrijk",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401874826",
+      "formula_ver": "v4.2",
+      "league": "Serie A",
+      "league_slug": "ita.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:00:00Z",
+      "home_team": "Torino",
+      "away_team": "Lazio",
+      "home_id": "239",
+      "away_id": "112",
+      "score": 3.5,
+      "ref_exp": 10.7,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 5.66,
+        "away_l3_chaos": 7.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.67,
+        "away_l3_conceded": 3.67,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Napoli",
+            "cr": 5,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Lecce",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Frosinone",
+            "cr": 7,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Lecce",
+            "cr": 9,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Napoli",
+            "cr": 6,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Cagliari",
+            "cr": 2,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
       "id": "401899524",
       "formula_ver": "v4.2",
       "league": "Serie B",
@@ -967,6 +3432,771 @@
             "opp": "Catanzaro",
             "cr": 3,
             "con": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "401876394",
+      "formula_ver": "v4.2",
+      "league": "Ligue 1",
+      "league_slug": "fra.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T16:15:00Z",
+      "home_team": "Angers",
+      "away_team": "Lens",
+      "home_id": "7868",
+      "away_id": "175",
+      "score": 4.0,
+      "ref_exp": 11.1,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 3.66,
+        "away_l3_chaos": 8.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 7.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Paris FC",
+            "cr": 2,
+            "con": 10
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Nice",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LG1",
+            "ha": "A",
+            "opp": "Lyon",
+            "cr": 3,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "RB Leipzig",
+            "cr": 4,
+            "con": 10
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Toulouse",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "09 Nov",
+            "comp": "LG1",
+            "ha": "H",
+            "opp": "Marseille",
+            "cr": 4,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401888368",
+      "formula_ver": "v4.2",
+      "league": "Turkish Super Lig",
+      "league_slug": "tur.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T16:00:00Z",
+      "home_team": "Gaziantep FK",
+      "away_team": "Amed SFK",
+      "home_id": "20070",
+      "away_id": "132335",
+      "score": 3.0,
+      "ref_exp": 8.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 6.67,
+        "home_l3_chaos": 6.33,
+        "away_l3_chaos": 12.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.33,
+        "away_l3_conceded": 3.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Genclerbirli",
+            "cr": 3,
+            "con": 1
+          },
+          {
+            "date": "06 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Kasimpasa",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "01 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Trabzonspor",
+            "cr": 2,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Caykur Rizespor",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Galatasaray",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Eyupspor",
+            "cr": 7,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401881740",
+      "formula_ver": "v4.2",
+      "league": "Austrian Bundesliga",
+      "league_slug": "aut.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T16:00:00Z",
+      "home_team": "Austria Vienna",
+      "away_team": "Wolfsberger",
+      "home_id": "1382",
+      "away_id": "13294",
+      "score": -1.0,
+      "ref_exp": 0.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 0.0,
+        "away_l3_corners": 0.0,
+        "home_l3_chaos": 0.0,
+        "away_l3_chaos": 0.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 0.0,
+        "away_l3_conceded": 0.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "RB Salzburg",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "08 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Swarovski Tirol",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "01 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "Rapid Vienna",
+            "cr": 0,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "SV Josko Ried",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "07 Nov",
+            "comp": "AUT",
+            "ha": "A",
+            "opp": "Rapid Vienna",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "01 Nov",
+            "comp": "AUT",
+            "ha": "H",
+            "opp": "Sturm Graz",
+            "cr": 0,
+            "con": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "401875537",
+      "formula_ver": "v4.2",
+      "league": "Eredivisie",
+      "league_slug": "ned.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:30:00Z",
+      "home_team": "Excelsior",
+      "away_team": "Telstar",
+      "home_id": "2566",
+      "away_id": "3735",
+      "score": 5.0,
+      "ref_exp": 10.9,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 5.0,
+        "away_l3_chaos": 10.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 6.67,
+        "home_spike": true,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Feyenoord",
+            "cr": 4,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Go Ahead Eagles",
+            "cr": 7,
+            "con": 0
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "FC Twente",
+            "cr": 0,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "PEC Zwolle",
+            "cr": 11,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Fortuna",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "FC Utrecht",
+            "cr": 3,
+            "con": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885392",
+      "formula_ver": "v4.2",
+      "league": "Primeira Liga",
+      "league_slug": "por.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:30:00Z",
+      "home_team": "Arouca",
+      "away_team": "Rio Ave",
+      "home_id": "15784",
+      "away_id": "3822",
+      "score": 2.0,
+      "ref_exp": 8.7,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 3.33,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 4.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.67,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "07 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "FC Famalicao",
+            "cr": 2,
+            "con": 9
+          },
+          {
+            "date": "01 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Nacional",
+            "cr": 8,
+            "con": 2
+          },
+          {
+            "date": "24 Oct",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Alverca",
+            "cr": 3,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "09 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Braga",
+            "cr": 0,
+            "con": 8
+          },
+          {
+            "date": "02 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Académico",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "26 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "FC Famalicao",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885388",
+      "formula_ver": "v4.2",
+      "league": "Primeira Liga",
+      "league_slug": "por.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:30:00Z",
+      "home_team": "Moreirense",
+      "away_team": "Santa Clara",
+      "home_id": "3696",
+      "away_id": "12215",
+      "score": 3.0,
+      "ref_exp": 8.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 1.67,
+        "home_l3_chaos": 6.33,
+        "away_l3_chaos": 6.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 5.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "08 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Sporting",
+            "cr": 4,
+            "con": 8
+          },
+          {
+            "date": "31 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Estrela",
+            "cr": 3,
+            "con": 3
+          },
+          {
+            "date": "25 Oct",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Estoril",
+            "cr": 3,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "08 Nov",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Gil Vicente",
+            "cr": 1,
+            "con": 9
+          },
+          {
+            "date": "02 Nov",
+            "comp": "POR",
+            "ha": "A",
+            "opp": "Maritimo",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "27 Oct",
+            "comp": "POR",
+            "ha": "H",
+            "opp": "Benfica",
+            "cr": 2,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401882790",
+      "formula_ver": "v4.2",
+      "league": "La Liga",
+      "league_slug": "esp.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:15:00Z",
+      "home_team": "Málaga",
+      "away_team": "Athletic Club",
+      "home_id": "99",
+      "away_id": "93",
+      "score": 4.0,
+      "ref_exp": 10.1,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 5.33,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Osasuna",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Racing",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Betis",
+            "cr": 3,
+            "con": 10
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Espanyol",
+            "cr": 9,
+            "con": 2
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Osasuna",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "02 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Real Sociedad",
+            "cr": 5,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401882297",
+      "formula_ver": "v4.2",
+      "league": "La Liga 2",
+      "league_slug": "esp.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:15:00Z",
+      "home_team": "Albacete",
+      "away_team": "Tenerife",
+      "home_id": "2737",
+      "away_id": "245",
+      "score": 2.0,
+      "ref_exp": 8.4,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 4.33,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 4.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": true,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Burgos",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "17 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Celta Fortuna",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "13 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "CS Puerto",
+            "cr": 0,
+            "con": 0
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Mallorca",
+            "cr": 8,
+            "con": 5
+          },
+          {
+            "date": "19 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "Badajoz",
+            "cr": 0,
+            "con": 0
+          },
+          {
+            "date": "15 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Ceuta",
+            "cr": 5,
+            "con": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "401882296",
+      "formula_ver": "v4.2",
+      "league": "La Liga 2",
+      "league_slug": "esp.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:15:00Z",
+      "home_team": "Eldense",
+      "away_team": "Girona",
+      "home_id": "7320",
+      "away_id": "9812",
+      "score": 1.5,
+      "ref_exp": 7.4,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 1.33,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 4.67,
+        "away_l3_chaos": 9.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 3.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Castellón",
+            "cr": 1,
+            "con": 9
+          },
+          {
+            "date": "16 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "CD Sabadell",
+            "cr": 1,
+            "con": 2
+          },
+          {
+            "date": "10 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Las Palmas",
+            "cr": 2,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "23 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Eibar",
+            "cr": 2,
+            "con": 1
+          },
+          {
+            "date": "15 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Real Oviedo",
+            "cr": 6,
+            "con": 6
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Almería",
+            "cr": 7,
+            "con": 2
           }
         ]
       }
@@ -1737,6 +4967,1196 @@
       }
     },
     {
+      "id": "401879227",
+      "formula_ver": "v4.2",
+      "league": "Premier League",
+      "league_slug": "eng.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Leeds United",
+      "away_team": "Coventry City",
+      "home_id": "357",
+      "away_id": "388",
+      "score": 2.0,
+      "ref_exp": 7.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 3.33,
+        "home_l3_chaos": 7.66,
+        "away_l3_chaos": 8.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.67,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Chelsea",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Spurs",
+            "cr": 6,
+            "con": 4
+          },
+          {
+            "date": "31 Oct",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Bournemouth",
+            "cr": 4,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "C Palace",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Everton",
+            "cr": 2,
+            "con": 2
+          },
+          {
+            "date": "31 Oct",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Sunderland",
+            "cr": 4,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401879226",
+      "formula_ver": "v4.2",
+      "league": "Premier League",
+      "league_slug": "eng.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Manchester United",
+      "away_team": "Brentford",
+      "home_id": "360",
+      "away_id": "337",
+      "score": 3.5,
+      "ref_exp": 10.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 8.0,
+        "away_l3_chaos": 7.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.33,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Sporting",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "22 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Liverpool",
+            "cr": 5,
+            "con": 15
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Aston Villa",
+            "cr": 8,
+            "con": 1
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "24 Nov",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Everton",
+            "cr": 6,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "EPL",
+            "ha": "A",
+            "opp": "Brighton",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "31 Oct",
+            "comp": "EPL",
+            "ha": "H",
+            "opp": "Nottm Forest",
+            "cr": 3,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880136",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Birmingham City",
+      "away_team": "Bolton Wanderers",
+      "home_id": "392",
+      "away_id": "358",
+      "score": 5.5,
+      "ref_exp": 11.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 10.34,
+        "away_l3_chaos": 8.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Burnley",
+            "cr": 7,
+            "con": 9
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Stoke",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Swansea",
+            "cr": 8,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "West Brom",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Portsmouth",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Derby",
+            "cr": 6,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880134",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Derby County",
+      "away_team": "Watford",
+      "home_id": "374",
+      "away_id": "395",
+      "score": 2.5,
+      "ref_exp": 10.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.0,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 4.67,
+        "away_l3_chaos": 5.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 9.0,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Wolves",
+            "cr": 1,
+            "con": 11
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Southampton",
+            "cr": 4,
+            "con": 10
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Bolton",
+            "cr": 4,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Blackburn",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Sheffield Utd",
+            "cr": 1,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Boro",
+            "cr": 5,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880132",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Millwall",
+      "away_team": "Burnley",
+      "home_id": "391",
+      "away_id": "379",
+      "score": 4.5,
+      "ref_exp": 11.0,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 6.33,
+        "home_l3_chaos": 5.33,
+        "away_l3_chaos": 8.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Stoke",
+            "cr": 5,
+            "con": 2
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "QPR",
+            "cr": 3,
+            "con": 12
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "West Brom",
+            "cr": 4,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Birmingham",
+            "cr": 9,
+            "con": 7
+          },
+          {
+            "date": "22 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Blackburn",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Cardiff",
+            "cr": 6,
+            "con": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880130",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Queens Park Rangers",
+      "away_team": "Sheffield United",
+      "home_id": "334",
+      "away_id": "398",
+      "score": 4.0,
+      "ref_exp": 9.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 7.0,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 10.33,
+        "away_l3_chaos": 12.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 2.67,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Norwich City",
+            "cr": 3,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Millwall",
+            "cr": 12,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Lincoln City",
+            "cr": 6,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Southampton",
+            "cr": 9,
+            "con": 6
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Watford",
+            "cr": 3,
+            "con": 1
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Charlton",
+            "cr": 6,
+            "con": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880127",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "West Bromwich Albion",
+      "away_team": "Bristol City",
+      "home_id": "383",
+      "away_id": "333",
+      "score": 4.5,
+      "ref_exp": 10.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 11.33,
+        "away_l3_chaos": 5.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.0,
+        "away_l3_conceded": 6.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Bolton",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Swansea",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Millwall",
+            "cr": 7,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Wrexham",
+            "cr": 4,
+            "con": 9
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Boro",
+            "cr": 5,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Norwich City",
+            "cr": 8,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880126",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "West Ham United",
+      "away_team": "Stoke City",
+      "home_id": "371",
+      "away_id": "336",
+      "score": 5.5,
+      "ref_exp": 10.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 9.33,
+        "away_l3_corners": 3.0,
+        "home_l3_chaos": 13.33,
+        "away_l3_chaos": 8.34,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 5.33,
+        "home_spike": true,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Portsmouth",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Preston",
+            "cr": 14,
+            "con": 2
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Blackburn",
+            "cr": 9,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Millwall",
+            "cr": 2,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Birmingham",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Portsmouth",
+            "cr": 0,
+            "con": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880125",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "Wrexham",
+      "away_team": "Portsmouth",
+      "home_id": "352",
+      "away_id": "385",
+      "score": 3.5,
+      "ref_exp": 10.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.33,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 5.0,
+        "away_l3_chaos": 4.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Bristol City",
+            "cr": 9,
+            "con": 4
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Lincoln City",
+            "cr": 5,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Wolves",
+            "cr": 2,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "West Ham",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Bolton",
+            "cr": 4,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Stoke",
+            "cr": 7,
+            "con": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "401878929",
+      "formula_ver": "v4.2",
+      "league": "Belgian Pro League",
+      "league_slug": "bel.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "KVC Westerlo",
+      "away_team": "RAAL La Louvière",
+      "home_id": "606",
+      "away_id": "131235",
+      "score": 1.0,
+      "ref_exp": 7.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 6.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 3.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Cercle Brugge",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Royal Charleroi",
+            "cr": 1,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Anderlecht",
+            "cr": 5,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Genk",
+            "cr": 1,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Cercle Brugge",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "02 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Royal Charleroi",
+            "cr": 5,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "401884721",
+      "formula_ver": "v4.2",
+      "league": "Bundesliga",
+      "league_slug": "ger.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T14:30:00Z",
+      "home_team": "FC Cologne",
+      "away_team": "SV Elversberg",
+      "home_id": "122",
+      "away_id": "10388",
+      "score": 4.5,
+      "ref_exp": 9.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 2.67,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 7.0,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.33,
+        "away_l3_conceded": 6.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Bayern",
+            "cr": 0,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Leverkusen",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Union Berlin",
+            "cr": 6,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Freiburg",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Dortmund",
+            "cr": 6,
+            "con": 6
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Mainz",
+            "cr": 5,
+            "con": 11
+          }
+        ]
+      }
+    },
+    {
+      "id": "401884722",
+      "formula_ver": "v4.2",
+      "league": "Bundesliga",
+      "league_slug": "ger.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T14:30:00Z",
+      "home_team": "Hamburg SV",
+      "away_team": "Bayern Munich",
+      "home_id": "127",
+      "away_id": "132",
+      "score": 3.0,
+      "ref_exp": 9.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 9.34,
+        "away_l3_chaos": 10.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.33,
+        "away_l3_conceded": 3.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Bremen",
+            "cr": 8,
+            "con": 1
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Gladbach",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Frankfurt",
+            "cr": 6,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Lille",
+            "cr": 4,
+            "con": 3
+          },
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Cologne",
+            "cr": 5,
+            "con": 0
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Mainz",
+            "cr": 8,
+            "con": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "401884723",
+      "formula_ver": "v4.2",
+      "league": "Bundesliga",
+      "league_slug": "ger.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T14:30:00Z",
+      "home_team": "Mainz",
+      "away_team": "1. FC Union Berlin",
+      "home_id": "2950",
+      "away_id": "598",
+      "score": 3.0,
+      "ref_exp": 10.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.0,
+        "away_l3_corners": 2.33,
+        "home_l3_chaos": 4.33,
+        "away_l3_chaos": 4.66,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.33,
+        "away_l3_conceded": 6.33,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Augsburg",
+            "cr": 0,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Bayern",
+            "cr": 7,
+            "con": 8
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Elversberg",
+            "cr": 11,
+            "con": 5
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "RB Leipzig",
+            "cr": 4,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Freiburg",
+            "cr": 1,
+            "con": 5
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Cologne",
+            "cr": 2,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401884719",
+      "formula_ver": "v4.2",
+      "league": "Bundesliga",
+      "league_slug": "ger.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T14:30:00Z",
+      "home_team": "SC Paderborn 07",
+      "away_team": "Schalke 04",
+      "home_id": "3307",
+      "away_id": "133",
+      "score": 4.0,
+      "ref_exp": 9.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 5.34,
+        "away_l3_chaos": 11.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 6.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Leverkusen",
+            "cr": 3,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Frankfurt",
+            "cr": 2,
+            "con": 6
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Gladbach",
+            "cr": 7,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Stuttgart",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "09 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Hoffenheim",
+            "cr": 4,
+            "con": 6
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "RB Leipzig",
+            "cr": 3,
+            "con": 7
+          }
+        ]
+      }
+    },
+    {
       "id": "401899528",
       "formula_ver": "v4.2",
       "league": "Serie B",
@@ -1992,6 +6412,346 @@
       }
     },
     {
+      "id": "401875081",
+      "formula_ver": "v4.2",
+      "league": "Serie A",
+      "league_slug": "ita.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T14:00:00Z",
+      "home_team": "Frosinone",
+      "away_team": "Parma",
+      "home_id": "4057",
+      "away_id": "115",
+      "score": 6.5,
+      "ref_exp": 13.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 9.67,
+        "away_l3_corners": 3.0,
+        "home_l3_chaos": 12.0,
+        "away_l3_chaos": 6.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 10.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Milan",
+            "cr": 9,
+            "con": 2
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Cagliari",
+            "cr": 13,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Torino",
+            "cr": 7,
+            "con": 7
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "AS Roma",
+            "cr": 3,
+            "con": 8
+          },
+          {
+            "date": "07 Nov",
+            "comp": "SER",
+            "ha": "H",
+            "opp": "Bologna",
+            "cr": 1,
+            "con": 15
+          },
+          {
+            "date": "03 Nov",
+            "comp": "SER",
+            "ha": "A",
+            "opp": "Atalanta",
+            "cr": 5,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401882796",
+      "formula_ver": "v4.2",
+      "league": "La Liga",
+      "league_slug": "esp.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T13:00:00Z",
+      "home_team": "Real Betis",
+      "away_team": "Rayo Vallecano",
+      "home_id": "244",
+      "away_id": "101",
+      "score": 5.0,
+      "ref_exp": 10.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 6.33,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 11.67,
+        "away_l3_chaos": 9.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.67,
+        "away_l3_conceded": 5.0,
+        "home_spike": true,
+        "away_spike": false,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "S Bratislava",
+            "cr": 4,
+            "con": 1
+          },
+          {
+            "date": "22 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Sevilla",
+            "cr": 2,
+            "con": 7
+          },
+          {
+            "date": "13 Nov",
+            "comp": "CDR",
+            "ha": "A",
+            "opp": "CDA Navalcarnero",
+            "cr": 13,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Valencia",
+            "cr": 8,
+            "con": 5
+          },
+          {
+            "date": "08 Nov",
+            "comp": "LAL",
+            "ha": "A",
+            "opp": "Real Sociedad",
+            "cr": 6,
+            "con": 7
+          },
+          {
+            "date": "31 Oct",
+            "comp": "LAL",
+            "ha": "H",
+            "opp": "Celta Vigo",
+            "cr": 4,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401888236",
+      "formula_ver": "v4.2",
+      "league": "Turkish Super Lig",
+      "league_slug": "tur.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T13:00:00Z",
+      "home_team": "Samsunspor",
+      "away_team": "Genclerbirligi",
+      "home_id": "11429",
+      "away_id": "996",
+      "score": 1.5,
+      "ref_exp": 6.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 1.67,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 5.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 2.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Galatasaray",
+            "cr": 8,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Konyaspor",
+            "cr": 2,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Istanbul BB",
+            "cr": 2,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Gaziantep",
+            "cr": 1,
+            "con": 3
+          },
+          {
+            "date": "09 Nov",
+            "comp": "TUR",
+            "ha": "A",
+            "opp": "Besiktas",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "02 Nov",
+            "comp": "TUR",
+            "ha": "H",
+            "opp": "Alanyaspor",
+            "cr": 3,
+            "con": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "401883101",
+      "formula_ver": "v4.2",
+      "league": "La Liga 2",
+      "league_slug": "esp.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T13:00:00Z",
+      "home_team": "Las Palmas",
+      "away_team": "FC Andorra",
+      "home_id": "98",
+      "away_id": "20179",
+      "score": 3.0,
+      "ref_exp": 6.8,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.67,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 7.67,
+        "away_l3_chaos": 9.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 2.33,
+        "away_l3_conceded": 0.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Gijón",
+            "cr": 5,
+            "con": 3
+          },
+          {
+            "date": "15 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Granada",
+            "cr": 7,
+            "con": 2
+          },
+          {
+            "date": "10 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Eldense",
+            "cr": 5,
+            "con": 2
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "LL2",
+            "ha": "H",
+            "opp": "Leganés",
+            "cr": 7,
+            "con": 1
+          },
+          {
+            "date": "15 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Almería",
+            "cr": 6,
+            "con": 0
+          },
+          {
+            "date": "02 Nov",
+            "comp": "LL2",
+            "ha": "A",
+            "opp": "Tenerife",
+            "cr": 3,
+            "con": 0
+          }
+        ]
+      }
+    },
+    {
       "id": "401880725",
       "formula_ver": "v4.2",
       "league": "England League One",
@@ -2156,6 +6916,516 @@
             "ha": "H",
             "opp": "Brighton U21",
             "cr": 12,
+            "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880135",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:30:00Z",
+      "home_team": "Blackburn Rovers",
+      "away_team": "Charlton Athletic",
+      "home_id": "365",
+      "away_id": "372",
+      "score": 5.0,
+      "ref_exp": 10.1,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 5.67,
+        "home_l3_chaos": 7.34,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.0,
+        "away_l3_conceded": 5.33,
+        "home_spike": false,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Watford",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "22 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Burnley",
+            "cr": 2,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "West Ham",
+            "cr": 4,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Lincoln City",
+            "cr": 10,
+            "con": 3
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Wolves",
+            "cr": 6,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Sheffield Utd",
+            "cr": 1,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880133",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:30:00Z",
+      "home_team": "Lincoln City",
+      "away_team": "Wolverhampton Wanderers",
+      "home_id": "314",
+      "away_id": "380",
+      "score": 5.5,
+      "ref_exp": 11.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 8.33,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 13.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 7.0,
+        "away_l3_conceded": 3.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Charlton",
+            "cr": 3,
+            "con": 10
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Wrexham",
+            "cr": 7,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "QPR",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Derby",
+            "cr": 11,
+            "con": 1
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Charlton",
+            "cr": 7,
+            "con": 6
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Wrexham",
+            "cr": 7,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401880131",
+      "formula_ver": "v4.2",
+      "league": "Championship",
+      "league_slug": "eng.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:30:00Z",
+      "home_team": "Preston North End",
+      "away_team": "Norwich City",
+      "home_id": "394",
+      "away_id": "381",
+      "score": 4.5,
+      "ref_exp": 12.2,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.33,
+        "away_l3_corners": 5.0,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 10.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 10.33,
+        "away_l3_conceded": 4.67,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Cardiff",
+            "cr": 8,
+            "con": 8
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "West Ham",
+            "cr": 2,
+            "con": 14
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Southampton",
+            "cr": 3,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "25 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "QPR",
+            "cr": 4,
+            "con": 3
+          },
+          {
+            "date": "21 Nov",
+            "comp": "CHP",
+            "ha": "H",
+            "opp": "Cardiff",
+            "cr": 8,
+            "con": 3
+          },
+          {
+            "date": "07 Nov",
+            "comp": "CHP",
+            "ha": "A",
+            "opp": "Bristol City",
+            "cr": 3,
+            "con": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885044",
+      "formula_ver": "v4.2",
+      "league": "2. Bundesliga",
+      "league_slug": "ger.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:00:00Z",
+      "home_team": "Dynamo Dresden",
+      "away_team": "St. Pauli",
+      "home_id": "7017",
+      "away_id": "270",
+      "score": 4.5,
+      "ref_exp": 9.5,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 7.0,
+        "home_l3_chaos": 7.66,
+        "away_l3_chaos": 10.67,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.67,
+        "away_l3_conceded": 2.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Kaiserslautern",
+            "cr": 4,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Greuther Furth",
+            "cr": 3,
+            "con": 9
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Hannover",
+            "cr": 3,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Bochum",
+            "cr": 10,
+            "con": 1
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Magdeburg",
+            "cr": 7,
+            "con": 3
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "1. FC Nürnberg",
+            "cr": 4,
+            "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885046",
+      "formula_ver": "v4.2",
+      "league": "2. Bundesliga",
+      "league_slug": "ger.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:00:00Z",
+      "home_team": "Hertha Berlin",
+      "away_team": "Karlsruher SC",
+      "home_id": "129",
+      "away_id": "4471",
+      "score": 5.0,
+      "ref_exp": 10.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 8.33,
+        "away_l3_corners": 4.67,
+        "home_l3_chaos": 10.0,
+        "away_l3_chaos": 12.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 3.0,
+        "away_l3_conceded": 4.67,
+        "home_spike": true,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Cottbus",
+            "cr": 12,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Wolfsburg",
+            "cr": 10,
+            "con": 3
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Kaiserslautern",
+            "cr": 3,
+            "con": 3
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Osnabruck",
+            "cr": 9,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Bochum",
+            "cr": 1,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Heidenheim",
+            "cr": 4,
+            "con": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "401885043",
+      "formula_ver": "v4.2",
+      "league": "2. Bundesliga",
+      "league_slug": "ger.2",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T12:00:00Z",
+      "home_team": "Holstein Kiel",
+      "away_team": "Kaiserslautern",
+      "home_id": "7884",
+      "away_id": "130",
+      "score": 4.5,
+      "ref_exp": 10.3,
+      "actual_home_corners": null,
+      "actual_away_corners": null,
+      "actual_corners": null,
+      "status": "PENDING",
+      "extra_time": false,
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 3.67,
+        "home_l3_chaos": 6.33,
+        "away_l3_chaos": 10.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 8.0,
+        "away_l3_conceded": 4.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Wolfsburg",
+            "cr": 4,
+            "con": 10
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Bielefeld",
+            "cr": 6,
+            "con": 5
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Greuther Furth",
+            "cr": 5,
+            "con": 9
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "D Dresden",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BL2",
+            "ha": "A",
+            "opp": "Osnabruck",
+            "cr": 3,
+            "con": 5
+          },
+          {
+            "date": "31 Oct",
+            "comp": "BL2",
+            "ha": "H",
+            "opp": "Hertha",
+            "cr": 3,
             "con": 3
           }
         ]
