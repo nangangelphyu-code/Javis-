@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T23:04:06Z",
+  "generated_at": "2026-11-28T01:22:49Z",
   "engine_version": "5.0-v42sync",
   "max_records": 3000,
   "all_time_archived": {
@@ -1834,10 +1834,10 @@
       "away_id": "2022",
       "score": 6.5,
       "ref_exp": 11.5,
-      "actual_home_corners": null,
-      "actual_away_corners": null,
-      "actual_corners": null,
-      "status": "PENDING",
+      "actual_home_corners": 4,
+      "actual_away_corners": 5,
+      "actual_corners": 9,
+      "status": "LOSE",
       "extra_time": false,
       "snapshot": {
         "home_samples": 3,
@@ -3023,10 +3023,10 @@
       "away_id": "",
       "score": 2.0,
       "ref_exp": 8.2,
-      "actual_home_corners": null,
-      "actual_away_corners": null,
-      "actual_corners": null,
-      "status": "PENDING",
+      "actual_home_corners": 3,
+      "actual_away_corners": 7,
+      "actual_corners": 10,
+      "status": "LOSE",
       "extra_time": false,
       "snapshot": {
         "home_samples": 3,
