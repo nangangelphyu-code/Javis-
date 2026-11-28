@@ -1,8 +1,8 @@
 {
   "engineVersion": "4.1-cn-ultra-3L",
   "standardLine": 9.5,
-  "updatedAtUTC": "2026-11-28T08:47:59.424286+00:00",
-  "updatedAtMMT": "28 Nov 2026, 03:17 PM",
+  "updatedAtUTC": "2026-11-28T10:47:55.127689+00:00",
+  "updatedAtMMT": "28 Nov 2026, 05:17 PM",
   "leagueCount": 28,
   "matchCount": 93,
   "goldenCount": 6,
@@ -2919,308 +2919,6 @@
       }
     },
     {
-      "id": "401879227",
-      "leagueSlug": "eng.1",
-      "leagueCode": "EPL",
-      "leagueName": "Premier League",
-      "leagueGroup": "top5",
-      "homeId": "357",
-      "awayId": "388",
-      "home": "Leeds United",
-      "away": "Coventry City",
-      "kickoffUTC": "2026-11-28T15:00Z",
-      "kickoffMMT": "28 Nov, 09:30 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 4.0,
-        "l3_conceded": 3.67,
-        "l3_sot": 4.33,
-        "l3_total_shots": 15.67,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          2,
-          6,
-          4
-        ],
-        "recent_conceded": [
-          3,
-          4,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401879236",
-            "date": "21 Nov",
-            "leagueCode": "EPL",
-            "venue": "A",
-            "opponent": "Chelsea",
-            "cornersWon": 2,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401878758",
-            "date": "07 Nov",
-            "leagueCode": "EPL",
-            "venue": "H",
-            "opponent": "Spurs",
-            "cornersWon": 6,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401879251",
-            "date": "31 Oct",
-            "leagueCode": "EPL",
-            "venue": "A",
-            "opponent": "Bournemouth",
-            "cornersWon": 4,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 3.33,
-        "l3_conceded": 4.0,
-        "l3_sot": 5.0,
-        "l3_total_shots": 12.67,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          4,
-          2,
-          4
-        ],
-        "recent_conceded": [
-          6,
-          2,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401879235",
-            "date": "21 Nov",
-            "leagueCode": "EPL",
-            "venue": "H",
-            "opponent": "C Palace",
-            "cornersWon": 4,
-            "cornersConceded": 6
-          },
-          {
-            "id": "401879242",
-            "date": "07 Nov",
-            "leagueCode": "EPL",
-            "venue": "A",
-            "opponent": "Everton",
-            "cornersWon": 2,
-            "cornersConceded": 2
-          },
-          {
-            "id": "401879247",
-            "date": "31 Oct",
-            "leagueCode": "EPL",
-            "venue": "H",
-            "opponent": "Sunderland",
-            "cornersWon": 4,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 2.0,
-        "maxScore": 7.0,
-        "tier": "NO_BET",
-        "verdict": "NO BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 0.0,
-          "max": 3.0,
-          "home": 4.0,
-          "away": 3.33,
-          "total": 7.33
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 7.66,
-          "away": 8.33,
-          "total": 15.99
-        },
-        "l3": {
-          "pts": 0.0,
-          "max": 2.0,
-          "home": 3.67,
-          "away": 4.0,
-          "homePts": -0.5,
-          "awayPts": 0.5
-        },
-        "refExpHome": 4.0,
-        "refExpAway": 3.5,
-        "refTotal": 7.5,
-        "dominance": null,
-        "hasSpike": false,
-        "spikeNote": null,
-        "summaryText": "စုစုပေါင်း 2.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 7.33 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
-          "SOT+Blocked စုစုပေါင်း 15.99 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "Leeds United (3.67) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
-        ]
-      }
-    },
-    {
-      "id": "401879226",
-      "leagueSlug": "eng.1",
-      "leagueCode": "EPL",
-      "leagueName": "Premier League",
-      "leagueGroup": "top5",
-      "homeId": "360",
-      "awayId": "337",
-      "home": "Manchester United",
-      "away": "Brentford",
-      "kickoffUTC": "2026-11-28T15:00Z",
-      "kickoffMMT": "28 Nov, 09:30 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 5.0,
-        "l3_conceded": 6.33,
-        "l3_sot": 4.67,
-        "l3_total_shots": 14.33,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          2,
-          5,
-          8
-        ],
-        "recent_conceded": [
-          3,
-          15,
-          1
-        ],
-        "recent_matches": [
-          {
-            "id": "401915373",
-            "date": "26 Nov",
-            "leagueCode": "UCL",
-            "venue": "A",
-            "opponent": "Sporting",
-            "cornersWon": 2,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401878755",
-            "date": "22 Nov",
-            "leagueCode": "EPL",
-            "venue": "A",
-            "opponent": "Liverpool",
-            "cornersWon": 5,
-            "cornersConceded": 15
-          },
-          {
-            "id": "401879240",
-            "date": "08 Nov",
-            "leagueCode": "EPL",
-            "venue": "H",
-            "opponent": "Aston Villa",
-            "cornersWon": 8,
-            "cornersConceded": 1
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 4.0,
-        "l3_conceded": 4.67,
-        "l3_sot": 2.67,
-        "l3_total_shots": 11.0,
-        "l3_blocked": 4.33,
-        "recent_corners": [
-          6,
-          3,
-          3
-        ],
-        "recent_conceded": [
-          3,
-          7,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401879237",
-            "date": "24 Nov",
-            "leagueCode": "EPL",
-            "venue": "H",
-            "opponent": "Everton",
-            "cornersWon": 6,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401879244",
-            "date": "08 Nov",
-            "leagueCode": "EPL",
-            "venue": "A",
-            "opponent": "Brighton",
-            "cornersWon": 3,
-            "cornersConceded": 7
-          },
-          {
-            "id": "401879249",
-            "date": "31 Oct",
-            "leagueCode": "EPL",
-            "venue": "H",
-            "opponent": "Nottm Forest",
-            "cornersWon": 3,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 3.5,
-        "maxScore": 7.0,
-        "tier": "RISKY",
-        "verdict": "RISKY",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 1.0,
-          "max": 3.0,
-          "home": 5.0,
-          "away": 4.0,
-          "total": 9.0
-        },
-        "l2": {
-          "pts": 1.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 8.0,
-          "away": 7.0,
-          "total": 15.0
-        },
-        "l3": {
-          "pts": 1.5,
-          "max": 2.0,
-          "home": 6.33,
-          "away": 4.67,
-          "homePts": 1.0,
-          "awayPts": 0.5
-        },
-        "refExpHome": 4.8,
-        "refExpAway": 5.2,
-        "refTotal": 10.0,
-        "dominance": null,
-        "hasSpike": false,
-        "spikeNote": null,
-        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 9.0 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
-          "SOT+Blocked စုစုပေါင်း 15.0 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
-          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (6.33 / 4.67, +1.5)"
-        ]
-      }
-    },
-    {
       "id": "401880136",
       "leagueSlug": "eng.2",
       "leagueCode": "CHP",
@@ -4282,6 +3980,459 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 10.33 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
           "SOT+Blocked စုစုပေါင်း 9.0 ကြိမ်သာရှိ၍ ဂိုးပေါက်ဖိအားနည်းသည် (0)",
           "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (6.0 / 4.0, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401879227",
+      "leagueSlug": "eng.1",
+      "leagueCode": "EPL",
+      "leagueName": "Premier League",
+      "leagueGroup": "top5",
+      "homeId": "357",
+      "awayId": "388",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 3.67,
+        "l3_sot": 4.33,
+        "l3_total_shots": 15.67,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          2,
+          6,
+          4
+        ],
+        "recent_conceded": [
+          3,
+          4,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401879236",
+            "date": "21 Nov",
+            "leagueCode": "EPL",
+            "venue": "A",
+            "opponent": "Chelsea",
+            "cornersWon": 2,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401878758",
+            "date": "07 Nov",
+            "leagueCode": "EPL",
+            "venue": "H",
+            "opponent": "Spurs",
+            "cornersWon": 6,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401879251",
+            "date": "31 Oct",
+            "leagueCode": "EPL",
+            "venue": "A",
+            "opponent": "Bournemouth",
+            "cornersWon": 4,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 3.33,
+        "l3_conceded": 4.0,
+        "l3_sot": 5.0,
+        "l3_total_shots": 12.67,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          4,
+          2,
+          4
+        ],
+        "recent_conceded": [
+          6,
+          2,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401879235",
+            "date": "21 Nov",
+            "leagueCode": "EPL",
+            "venue": "H",
+            "opponent": "C Palace",
+            "cornersWon": 4,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401879242",
+            "date": "07 Nov",
+            "leagueCode": "EPL",
+            "venue": "A",
+            "opponent": "Everton",
+            "cornersWon": 2,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401879247",
+            "date": "31 Oct",
+            "leagueCode": "EPL",
+            "venue": "H",
+            "opponent": "Sunderland",
+            "cornersWon": 4,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 2.0,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 4.0,
+          "away": 3.33,
+          "total": 7.33
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 7.66,
+          "away": 8.33,
+          "total": 15.99
+        },
+        "l3": {
+          "pts": 0.0,
+          "max": 2.0,
+          "home": 3.67,
+          "away": 4.0,
+          "homePts": -0.5,
+          "awayPts": 0.5
+        },
+        "refExpHome": 4.0,
+        "refExpAway": 3.5,
+        "refTotal": 7.5,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 2.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 7.33 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 15.99 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "Leeds United (3.67) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
+        ]
+      }
+    },
+    {
+      "id": "401879226",
+      "leagueSlug": "eng.1",
+      "leagueCode": "EPL",
+      "leagueName": "Premier League",
+      "leagueGroup": "top5",
+      "homeId": "360",
+      "awayId": "337",
+      "home": "Manchester United",
+      "away": "Brentford",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.0,
+        "l3_conceded": 6.33,
+        "l3_sot": 4.67,
+        "l3_total_shots": 14.33,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          2,
+          5,
+          8
+        ],
+        "recent_conceded": [
+          3,
+          15,
+          1
+        ],
+        "recent_matches": [
+          {
+            "id": "401915373",
+            "date": "26 Nov",
+            "leagueCode": "UCL",
+            "venue": "A",
+            "opponent": "Sporting",
+            "cornersWon": 2,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401878755",
+            "date": "22 Nov",
+            "leagueCode": "EPL",
+            "venue": "A",
+            "opponent": "Liverpool",
+            "cornersWon": 5,
+            "cornersConceded": 15
+          },
+          {
+            "id": "401879240",
+            "date": "08 Nov",
+            "leagueCode": "EPL",
+            "venue": "H",
+            "opponent": "Aston Villa",
+            "cornersWon": 8,
+            "cornersConceded": 1
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 4.67,
+        "l3_sot": 2.67,
+        "l3_total_shots": 11.0,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          6,
+          3,
+          3
+        ],
+        "recent_conceded": [
+          3,
+          7,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401879237",
+            "date": "24 Nov",
+            "leagueCode": "EPL",
+            "venue": "H",
+            "opponent": "Everton",
+            "cornersWon": 6,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401879244",
+            "date": "08 Nov",
+            "leagueCode": "EPL",
+            "venue": "A",
+            "opponent": "Brighton",
+            "cornersWon": 3,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401879249",
+            "date": "31 Oct",
+            "leagueCode": "EPL",
+            "venue": "H",
+            "opponent": "Nottm Forest",
+            "cornersWon": 3,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 3.5,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 5.0,
+          "away": 4.0,
+          "total": 9.0
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 8.0,
+          "away": 7.0,
+          "total": 15.0
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 6.33,
+          "away": 4.67,
+          "homePts": 1.0,
+          "awayPts": 0.5
+        },
+        "refExpHome": 4.8,
+        "refExpAway": 5.2,
+        "refTotal": 10.0,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 3.5/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.0 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 15.0 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (6.33 / 4.67, +1.5)"
+        ]
+      }
+    },
+    {
+      "id": "401878929",
+      "leagueSlug": "bel.1",
+      "leagueCode": "BEL",
+      "leagueName": "Belgian Pro League",
+      "leagueGroup": "global",
+      "homeId": "606",
+      "awayId": "131235",
+      "home": "KVC Westerlo",
+      "away": "RAAL La Louvière",
+      "kickoffUTC": "2026-11-28T15:00Z",
+      "kickoffMMT": "28 Nov, 09:30 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 3.33,
+        "l3_conceded": 4.0,
+        "l3_sot": 4.33,
+        "l3_total_shots": 12.67,
+        "l3_blocked": 3.0,
+        "recent_corners": [
+          4,
+          1,
+          5
+        ],
+        "recent_conceded": [
+          2,
+          6,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401878937",
+            "date": "21 Nov",
+            "leagueCode": "BEL",
+            "venue": "A",
+            "opponent": "Cercle Brugge",
+            "cornersWon": 4,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401878947",
+            "date": "07 Nov",
+            "leagueCode": "BEL",
+            "venue": "H",
+            "opponent": "Royal Charleroi",
+            "cornersWon": 1,
+            "cornersConceded": 6
+          },
+          {
+            "id": "401878960",
+            "date": "01 Nov",
+            "leagueCode": "BEL",
+            "venue": "A",
+            "opponent": "Anderlecht",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 4.0,
+        "l3_conceded": 3.0,
+        "l3_sot": 2.67,
+        "l3_total_shots": 12.0,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          1,
+          6,
+          5
+        ],
+        "recent_conceded": [
+          3,
+          2,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401878939",
+            "date": "21 Nov",
+            "leagueCode": "BEL",
+            "venue": "A",
+            "opponent": "Genk",
+            "cornersWon": 1,
+            "cornersConceded": 3
+          },
+          {
+            "id": "401878948",
+            "date": "08 Nov",
+            "leagueCode": "BEL",
+            "venue": "H",
+            "opponent": "Cercle Brugge",
+            "cornersWon": 6,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401878955",
+            "date": "02 Nov",
+            "leagueCode": "BEL",
+            "venue": "A",
+            "opponent": "Royal Charleroi",
+            "cornersWon": 5,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 1.0,
+        "maxScore": 7.0,
+        "tier": "NO_BET",
+        "verdict": "NO BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 0.0,
+          "max": 3.0,
+          "home": 3.33,
+          "away": 4.0,
+          "total": 7.33
+        },
+        "l2": {
+          "pts": 1.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 7.33,
+          "away": 6.0,
+          "total": 13.33
+        },
+        "l3": {
+          "pts": 0.0,
+          "max": 2.0,
+          "home": 4.0,
+          "away": 3.0,
+          "homePts": 0.5,
+          "awayPts": -0.5
+        },
+        "refExpHome": 3.2,
+        "refExpAway": 4.0,
+        "refTotal": 7.2,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 1.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 7.33 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
+          "SOT+Blocked စုစုပေါင်း 13.33 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
+          "RAAL La Louvière (3.0) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
         ]
       }
     },
@@ -5661,157 +5812,6 @@
       }
     },
     {
-      "id": "401878929",
-      "leagueSlug": "bel.1",
-      "leagueCode": "BEL",
-      "leagueName": "Belgian Pro League",
-      "leagueGroup": "global",
-      "homeId": "606",
-      "awayId": "131235",
-      "home": "KVC Westerlo",
-      "away": "RAAL La Louvière",
-      "kickoffUTC": "2026-11-28T15:00Z",
-      "kickoffMMT": "28 Nov, 09:30 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 3.33,
-        "l3_conceded": 4.0,
-        "l3_sot": 4.33,
-        "l3_total_shots": 12.67,
-        "l3_blocked": 3.0,
-        "recent_corners": [
-          4,
-          1,
-          5
-        ],
-        "recent_conceded": [
-          2,
-          6,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401878937",
-            "date": "21 Nov",
-            "leagueCode": "BEL",
-            "venue": "A",
-            "opponent": "Cercle Brugge",
-            "cornersWon": 4,
-            "cornersConceded": 2
-          },
-          {
-            "id": "401878947",
-            "date": "07 Nov",
-            "leagueCode": "BEL",
-            "venue": "H",
-            "opponent": "Royal Charleroi",
-            "cornersWon": 1,
-            "cornersConceded": 6
-          },
-          {
-            "id": "401878960",
-            "date": "01 Nov",
-            "leagueCode": "BEL",
-            "venue": "A",
-            "opponent": "Anderlecht",
-            "cornersWon": 5,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 4.0,
-        "l3_conceded": 3.0,
-        "l3_sot": 2.67,
-        "l3_total_shots": 12.0,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          1,
-          6,
-          5
-        ],
-        "recent_conceded": [
-          3,
-          2,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401878939",
-            "date": "21 Nov",
-            "leagueCode": "BEL",
-            "venue": "A",
-            "opponent": "Genk",
-            "cornersWon": 1,
-            "cornersConceded": 3
-          },
-          {
-            "id": "401878948",
-            "date": "08 Nov",
-            "leagueCode": "BEL",
-            "venue": "H",
-            "opponent": "Cercle Brugge",
-            "cornersWon": 6,
-            "cornersConceded": 2
-          },
-          {
-            "id": "401878955",
-            "date": "02 Nov",
-            "leagueCode": "BEL",
-            "venue": "A",
-            "opponent": "Royal Charleroi",
-            "cornersWon": 5,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 1.0,
-        "maxScore": 7.0,
-        "tier": "NO_BET",
-        "verdict": "NO BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 0.0,
-          "max": 3.0,
-          "home": 3.33,
-          "away": 4.0,
-          "total": 7.33
-        },
-        "l2": {
-          "pts": 1.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 7.33,
-          "away": 6.0,
-          "total": 13.33
-        },
-        "l3": {
-          "pts": 0.0,
-          "max": 2.0,
-          "home": 4.0,
-          "away": 3.0,
-          "homePts": 0.5,
-          "awayPts": -0.5
-        },
-        "refExpHome": 3.2,
-        "refExpAway": 4.0,
-        "refTotal": 7.2,
-        "dominance": null,
-        "hasSpike": false,
-        "spikeNote": null,
-        "summaryText": "စုစုပေါင်း 1.0/7.0 သာ ရှိသဖြင့် ထောင့်ကန်ဘောနည်းနိုင်သောကြောင့် ရှောင်သင့်သောပွဲ (No Bet) ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 7.33 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
-          "SOT+Blocked စုစုပေါင်း 13.33 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
-          "RAAL La Louvière (3.0) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
-        ]
-      }
-    },
-    {
       "id": "401878332",
       "leagueSlug": "sco.1",
       "leagueCode": "SCO",
@@ -6893,6 +6893,157 @@
       }
     },
     {
+      "id": "401875537",
+      "leagueSlug": "ned.1",
+      "leagueCode": "ERE",
+      "leagueName": "Eredivisie",
+      "leagueGroup": "high5",
+      "homeId": "2566",
+      "awayId": "3735",
+      "home": "Excelsior",
+      "away": "Telstar",
+      "kickoffUTC": "2026-11-28T15:30Z",
+      "kickoffMMT": "28 Nov, 10:00 PM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 3.67,
+        "l3_conceded": 5.33,
+        "l3_sot": 2.33,
+        "l3_total_shots": 7.67,
+        "l3_blocked": 2.67,
+        "recent_corners": [
+          4,
+          7,
+          0
+        ],
+        "recent_conceded": [
+          8,
+          0,
+          8
+        ],
+        "recent_matches": [
+          {
+            "id": "401875543",
+            "date": "22 Nov",
+            "leagueCode": "ERE",
+            "venue": "A",
+            "opponent": "Feyenoord",
+            "cornersWon": 4,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401875554",
+            "date": "08 Nov",
+            "leagueCode": "ERE",
+            "venue": "H",
+            "opponent": "Go Ahead Eagles",
+            "cornersWon": 7,
+            "cornersConceded": 0
+          },
+          {
+            "id": "401875559",
+            "date": "01 Nov",
+            "leagueCode": "ERE",
+            "venue": "H",
+            "opponent": "FC Twente",
+            "cornersWon": 0,
+            "cornersConceded": 8
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 6.0,
+        "l3_conceded": 6.67,
+        "l3_sot": 7.0,
+        "l3_total_shots": 16.67,
+        "l3_blocked": 3.33,
+        "recent_corners": [
+          11,
+          4,
+          3
+        ],
+        "recent_conceded": [
+          7,
+          4,
+          9
+        ],
+        "recent_matches": [
+          {
+            "id": "401875539",
+            "date": "22 Nov",
+            "leagueCode": "ERE",
+            "venue": "H",
+            "opponent": "PEC Zwolle",
+            "cornersWon": 11,
+            "cornersConceded": 7
+          },
+          {
+            "id": "401875555",
+            "date": "07 Nov",
+            "leagueCode": "ERE",
+            "venue": "A",
+            "opponent": "Fortuna",
+            "cornersWon": 4,
+            "cornersConceded": 4
+          },
+          {
+            "id": "401875558",
+            "date": "01 Nov",
+            "leagueCode": "ERE",
+            "venue": "H",
+            "opponent": "FC Utrecht",
+            "cornersWon": 3,
+            "cornersConceded": 9
+          }
+        ],
+        "has_spike": true
+      },
+      "cn": {
+        "score": 5.0,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 1.0,
+          "max": 3.0,
+          "home": 3.67,
+          "away": 6.0,
+          "total": 9.67
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 5.0,
+          "away": 10.33,
+          "total": 15.33
+        },
+        "l3": {
+          "pts": 2.0,
+          "max": 2.0,
+          "home": 5.33,
+          "away": 6.67,
+          "homePts": 1.0,
+          "awayPts": 1.0
+        },
+        "refExpHome": 5.2,
+        "refExpAway": 5.7,
+        "refTotal": 10.9,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Excelsior နှင့် Telstar ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 5.0/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 9.67 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
+          "SOT+Blocked စုစုပေါင်း 15.33 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.33 / 6.67, +2)"
+        ]
+      }
+    },
+    {
       "id": "401885392",
       "leagueSlug": "por.1",
       "leagueCode": "POR",
@@ -7191,157 +7342,6 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 5.0 လုံးသာရှိ၍ အရှိန်နည်းနေသည် (0)",
           "SOT+Blocked စုစုပေါင်း 12.67 ကြိမ်ဖြင့် ဖိအားသင့်တင့်သည် (+1)",
           "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.67 / 5.67, +2)"
-        ]
-      }
-    },
-    {
-      "id": "401875537",
-      "leagueSlug": "ned.1",
-      "leagueCode": "ERE",
-      "leagueName": "Eredivisie",
-      "leagueGroup": "high5",
-      "homeId": "2566",
-      "awayId": "3735",
-      "home": "Excelsior",
-      "away": "Telstar",
-      "kickoffUTC": "2026-11-28T15:30Z",
-      "kickoffMMT": "28 Nov, 10:00 PM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 3.67,
-        "l3_conceded": 5.33,
-        "l3_sot": 2.33,
-        "l3_total_shots": 7.67,
-        "l3_blocked": 2.67,
-        "recent_corners": [
-          4,
-          7,
-          0
-        ],
-        "recent_conceded": [
-          8,
-          0,
-          8
-        ],
-        "recent_matches": [
-          {
-            "id": "401875543",
-            "date": "22 Nov",
-            "leagueCode": "ERE",
-            "venue": "A",
-            "opponent": "Feyenoord",
-            "cornersWon": 4,
-            "cornersConceded": 8
-          },
-          {
-            "id": "401875554",
-            "date": "08 Nov",
-            "leagueCode": "ERE",
-            "venue": "H",
-            "opponent": "Go Ahead Eagles",
-            "cornersWon": 7,
-            "cornersConceded": 0
-          },
-          {
-            "id": "401875559",
-            "date": "01 Nov",
-            "leagueCode": "ERE",
-            "venue": "H",
-            "opponent": "FC Twente",
-            "cornersWon": 0,
-            "cornersConceded": 8
-          }
-        ],
-        "has_spike": true
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 6.0,
-        "l3_conceded": 6.67,
-        "l3_sot": 7.0,
-        "l3_total_shots": 16.67,
-        "l3_blocked": 3.33,
-        "recent_corners": [
-          11,
-          4,
-          3
-        ],
-        "recent_conceded": [
-          7,
-          4,
-          9
-        ],
-        "recent_matches": [
-          {
-            "id": "401875539",
-            "date": "22 Nov",
-            "leagueCode": "ERE",
-            "venue": "H",
-            "opponent": "PEC Zwolle",
-            "cornersWon": 11,
-            "cornersConceded": 7
-          },
-          {
-            "id": "401875555",
-            "date": "07 Nov",
-            "leagueCode": "ERE",
-            "venue": "A",
-            "opponent": "Fortuna",
-            "cornersWon": 4,
-            "cornersConceded": 4
-          },
-          {
-            "id": "401875558",
-            "date": "01 Nov",
-            "leagueCode": "ERE",
-            "venue": "H",
-            "opponent": "FC Utrecht",
-            "cornersWon": 3,
-            "cornersConceded": 9
-          }
-        ],
-        "has_spike": true
-      },
-      "cn": {
-        "score": 5.0,
-        "maxScore": 7.0,
-        "tier": "VALUE",
-        "verdict": "VALUE BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 1.0,
-          "max": 3.0,
-          "home": 3.67,
-          "away": 6.0,
-          "total": 9.67
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 5.0,
-          "away": 10.33,
-          "total": 15.33
-        },
-        "l3": {
-          "pts": 2.0,
-          "max": 2.0,
-          "home": 5.33,
-          "away": 6.67,
-          "homePts": 1.0,
-          "awayPts": 1.0
-        },
-        "refExpHome": 5.2,
-        "refExpAway": 5.7,
-        "refTotal": 10.9,
-        "dominance": null,
-        "hasSpike": true,
-        "spikeNote": "Excelsior နှင့် Telstar ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
-        "summaryText": "စုစုပေါင်း 5.0/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 9.67 လုံးဖြင့် သင့်တင့်အဆင့်ရှိသည် (+1)",
-          "SOT+Blocked စုစုပေါင်း 15.33 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.33 / 6.67, +2)"
         ]
       }
     },
@@ -8260,6 +8260,308 @@
       }
     },
     {
+      "id": "401882793",
+      "leagueSlug": "esp.1",
+      "leagueCode": "LAL",
+      "leagueName": "La Liga",
+      "leagueGroup": "top5",
+      "homeId": "3751",
+      "awayId": "1068",
+      "home": "Elche",
+      "away": "Atlético Madrid",
+      "kickoffUTC": "2026-11-28T17:30Z",
+      "kickoffMMT": "29 Nov, 12:00 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 5.33,
+        "l3_conceded": 5.0,
+        "l3_sot": 2.0,
+        "l3_total_shots": 11.0,
+        "l3_blocked": 2.67,
+        "recent_corners": [
+          1,
+          9,
+          6
+        ],
+        "recent_conceded": [
+          5,
+          8,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401882802",
+            "date": "24 Nov",
+            "leagueCode": "LAL",
+            "venue": "A",
+            "opponent": "Levante",
+            "cornersWon": 1,
+            "cornersConceded": 5
+          },
+          {
+            "id": "401882814",
+            "date": "08 Nov",
+            "leagueCode": "LAL",
+            "venue": "H",
+            "opponent": "Betis",
+            "cornersWon": 9,
+            "cornersConceded": 8
+          },
+          {
+            "id": "401882823",
+            "date": "02 Nov",
+            "leagueCode": "LAL",
+            "venue": "H",
+            "opponent": "Valencia",
+            "cornersWon": 6,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": true
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.67,
+        "l3_conceded": 1.67,
+        "l3_sot": 7.67,
+        "l3_total_shots": 16.33,
+        "l3_blocked": 4.0,
+        "recent_corners": [
+          6,
+          7,
+          4
+        ],
+        "recent_conceded": [
+          1,
+          2,
+          2
+        ],
+        "recent_matches": [
+          {
+            "id": "401915291",
+            "date": "26 Nov",
+            "leagueCode": "UCL",
+            "venue": "H",
+            "opponent": "Viking FK",
+            "cornersWon": 6,
+            "cornersConceded": 1
+          },
+          {
+            "id": "401882803",
+            "date": "23 Nov",
+            "leagueCode": "LAL",
+            "venue": "A",
+            "opponent": "Getafe",
+            "cornersWon": 7,
+            "cornersConceded": 2
+          },
+          {
+            "id": "401882816",
+            "date": "09 Nov",
+            "leagueCode": "LAL",
+            "venue": "H",
+            "opponent": "Barcelona",
+            "cornersWon": 4,
+            "cornersConceded": 2
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 4.0,
+        "maxScore": 7.0,
+        "tier": "RISKY",
+        "verdict": "RISKY",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 5.33,
+          "away": 5.67,
+          "total": 11.0
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 4.67,
+          "away": 11.67,
+          "total": 16.34
+        },
+        "l3": {
+          "pts": 0.0,
+          "max": 2.0,
+          "home": 5.0,
+          "away": 1.67,
+          "homePts": 0.5,
+          "awayPts": -0.5
+        },
+        "refExpHome": 3.5,
+        "refExpAway": 5.3,
+        "refTotal": 8.8,
+        "dominance": null,
+        "hasSpike": true,
+        "spikeNote": "Elche ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
+        "summaryText": "စုစုပေါင်း 4.0/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 11.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 16.34 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "Atlético Madrid (1.67) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
+        ]
+      }
+    },
+    {
+      "id": "401933737",
+      "leagueSlug": "usa.1",
+      "leagueCode": "MLS",
+      "leagueName": "USA MLS",
+      "leagueGroup": "high5",
+      "homeId": "21300",
+      "awayId": "182",
+      "home": "Charlotte FC",
+      "away": "Chicago Fire FC",
+      "kickoffUTC": "2026-11-28T17:30Z",
+      "kickoffMMT": "29 Nov, 12:00 AM",
+      "homeStats": {
+        "sample_size": 3,
+        "l3_corners": 4.67,
+        "l3_conceded": 5.0,
+        "l3_sot": 5.33,
+        "l3_total_shots": 15.33,
+        "l3_blocked": 3.67,
+        "recent_corners": [
+          8,
+          2,
+          4
+        ],
+        "recent_conceded": [
+          5,
+          6,
+          4
+        ],
+        "recent_matches": [
+          {
+            "id": "401933730",
+            "date": "23 Nov",
+            "leagueCode": "MLS",
+            "venue": "A",
+            "opponent": "Chicago",
+            "cornersWon": 8,
+            "cornersConceded": 5
+          },
+          {
+            "id": "761938",
+            "date": "08 Nov",
+            "leagueCode": "MLS",
+            "venue": "A",
+            "opponent": "Miami",
+            "cornersWon": 2,
+            "cornersConceded": 6
+          },
+          {
+            "id": "761922",
+            "date": "31 Oct",
+            "leagueCode": "MLS",
+            "venue": "H",
+            "opponent": "Orlando",
+            "cornersWon": 4,
+            "cornersConceded": 4
+          }
+        ],
+        "has_spike": false
+      },
+      "awayStats": {
+        "sample_size": 3,
+        "l3_corners": 5.67,
+        "l3_conceded": 5.67,
+        "l3_sot": 5.33,
+        "l3_total_shots": 18.33,
+        "l3_blocked": 4.33,
+        "recent_corners": [
+          5,
+          6,
+          6
+        ],
+        "recent_conceded": [
+          8,
+          4,
+          5
+        ],
+        "recent_matches": [
+          {
+            "id": "401933730",
+            "date": "23 Nov",
+            "leagueCode": "MLS",
+            "venue": "H",
+            "opponent": "Charlotte",
+            "cornersWon": 5,
+            "cornersConceded": 8
+          },
+          {
+            "id": "761935",
+            "date": "08 Nov",
+            "leagueCode": "MLS",
+            "venue": "H",
+            "opponent": "Columbus",
+            "cornersWon": 6,
+            "cornersConceded": 4
+          },
+          {
+            "id": "761923",
+            "date": "01 Nov",
+            "leagueCode": "MLS",
+            "venue": "A",
+            "opponent": "Colorado",
+            "cornersWon": 6,
+            "cornersConceded": 5
+          }
+        ],
+        "has_spike": false
+      },
+      "cn": {
+        "score": 5.5,
+        "maxScore": 7.0,
+        "tier": "VALUE",
+        "verdict": "VALUE BET",
+        "targetLine": 9.5,
+        "l1": {
+          "pts": 2.0,
+          "max": 3.0,
+          "home": 4.67,
+          "away": 5.67,
+          "total": 10.34
+        },
+        "l2": {
+          "pts": 2.0,
+          "max": 2.0,
+          "mode": "exact",
+          "home": 9.0,
+          "away": 9.66,
+          "total": 18.66
+        },
+        "l3": {
+          "pts": 1.5,
+          "max": 2.0,
+          "home": 5.0,
+          "away": 5.67,
+          "homePts": 0.5,
+          "awayPts": 1.0
+        },
+        "refExpHome": 5.2,
+        "refExpAway": 5.3,
+        "refTotal": 10.5,
+        "dominance": null,
+        "hasSpike": false,
+        "spikeNote": null,
+        "summaryText": "စုစုပေါင်း 5.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
+        "reasons": [
+          "L3 ထောင့်ကန်ဘောပေါင်း 10.34 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
+          "SOT+Blocked စုစုပေါင်း 18.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
+          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.0 / 5.67, +1.5)"
+        ]
+      }
+    },
+    {
       "id": "401878752",
       "leagueSlug": "eng.1",
       "leagueCode": "EPL",
@@ -8566,308 +8868,6 @@
           "L3 ထောင့်ကန်ဘောပေါင်း 12.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
           "SOT+Blocked စုစုပေါင်း 18.33 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
           "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (6.33 / 4.33, +1.5)"
-        ]
-      }
-    },
-    {
-      "id": "401882793",
-      "leagueSlug": "esp.1",
-      "leagueCode": "LAL",
-      "leagueName": "La Liga",
-      "leagueGroup": "top5",
-      "homeId": "3751",
-      "awayId": "1068",
-      "home": "Elche",
-      "away": "Atlético Madrid",
-      "kickoffUTC": "2026-11-28T17:30Z",
-      "kickoffMMT": "29 Nov, 12:00 AM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 5.33,
-        "l3_conceded": 5.0,
-        "l3_sot": 2.0,
-        "l3_total_shots": 11.0,
-        "l3_blocked": 2.67,
-        "recent_corners": [
-          1,
-          9,
-          6
-        ],
-        "recent_conceded": [
-          5,
-          8,
-          2
-        ],
-        "recent_matches": [
-          {
-            "id": "401882802",
-            "date": "24 Nov",
-            "leagueCode": "LAL",
-            "venue": "A",
-            "opponent": "Levante",
-            "cornersWon": 1,
-            "cornersConceded": 5
-          },
-          {
-            "id": "401882814",
-            "date": "08 Nov",
-            "leagueCode": "LAL",
-            "venue": "H",
-            "opponent": "Betis",
-            "cornersWon": 9,
-            "cornersConceded": 8
-          },
-          {
-            "id": "401882823",
-            "date": "02 Nov",
-            "leagueCode": "LAL",
-            "venue": "H",
-            "opponent": "Valencia",
-            "cornersWon": 6,
-            "cornersConceded": 2
-          }
-        ],
-        "has_spike": true
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 5.67,
-        "l3_conceded": 1.67,
-        "l3_sot": 7.67,
-        "l3_total_shots": 16.33,
-        "l3_blocked": 4.0,
-        "recent_corners": [
-          6,
-          7,
-          4
-        ],
-        "recent_conceded": [
-          1,
-          2,
-          2
-        ],
-        "recent_matches": [
-          {
-            "id": "401915291",
-            "date": "26 Nov",
-            "leagueCode": "UCL",
-            "venue": "H",
-            "opponent": "Viking FK",
-            "cornersWon": 6,
-            "cornersConceded": 1
-          },
-          {
-            "id": "401882803",
-            "date": "23 Nov",
-            "leagueCode": "LAL",
-            "venue": "A",
-            "opponent": "Getafe",
-            "cornersWon": 7,
-            "cornersConceded": 2
-          },
-          {
-            "id": "401882816",
-            "date": "09 Nov",
-            "leagueCode": "LAL",
-            "venue": "H",
-            "opponent": "Barcelona",
-            "cornersWon": 4,
-            "cornersConceded": 2
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 4.0,
-        "maxScore": 7.0,
-        "tier": "RISKY",
-        "verdict": "RISKY",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 2.0,
-          "max": 3.0,
-          "home": 5.33,
-          "away": 5.67,
-          "total": 11.0
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 4.67,
-          "away": 11.67,
-          "total": 16.34
-        },
-        "l3": {
-          "pts": 0.0,
-          "max": 2.0,
-          "home": 5.0,
-          "away": 1.67,
-          "homePts": 0.5,
-          "awayPts": -0.5
-        },
-        "refExpHome": 3.5,
-        "refExpAway": 5.3,
-        "refTotal": 8.8,
-        "dominance": null,
-        "hasSpike": true,
-        "spikeNote": "Elche ၏ နောက်ဆုံး ၃ ပွဲမှတ်တမ်းတွင် တစ်ပွဲတည်း ထောင့်ကန်ဘော အလွန်များ/နည်း ကွာဟမှု (Outlier Spike) ရှိနေ၍ ပျမ်းမျှဂဏန်းကို သတိထားစစ်ဆေးပါ။",
-        "summaryText": "စုစုပေါင်း 4.0/7.0 သာ ရရှိပြီး အချက်အလက်အချို့ အားနည်းနေသဖြင့် သတိထား/ကျော်သင့်သောပွဲ ဖြစ်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 11.0 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
-          "SOT+Blocked စုစုပေါင်း 16.34 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "Atlético Madrid (1.67) ခံစစ်ကျစ်လျစ်၍ အမှတ်နှုတ်ခံရသည် (0)"
-        ]
-      }
-    },
-    {
-      "id": "401933737",
-      "leagueSlug": "usa.1",
-      "leagueCode": "MLS",
-      "leagueName": "USA MLS",
-      "leagueGroup": "high5",
-      "homeId": "21300",
-      "awayId": "182",
-      "home": "Charlotte FC",
-      "away": "Chicago Fire FC",
-      "kickoffUTC": "2026-11-28T17:30Z",
-      "kickoffMMT": "29 Nov, 12:00 AM",
-      "homeStats": {
-        "sample_size": 3,
-        "l3_corners": 4.67,
-        "l3_conceded": 5.0,
-        "l3_sot": 5.33,
-        "l3_total_shots": 15.33,
-        "l3_blocked": 3.67,
-        "recent_corners": [
-          8,
-          2,
-          4
-        ],
-        "recent_conceded": [
-          5,
-          6,
-          4
-        ],
-        "recent_matches": [
-          {
-            "id": "401933730",
-            "date": "23 Nov",
-            "leagueCode": "MLS",
-            "venue": "A",
-            "opponent": "Chicago",
-            "cornersWon": 8,
-            "cornersConceded": 5
-          },
-          {
-            "id": "761938",
-            "date": "08 Nov",
-            "leagueCode": "MLS",
-            "venue": "A",
-            "opponent": "Miami",
-            "cornersWon": 2,
-            "cornersConceded": 6
-          },
-          {
-            "id": "761922",
-            "date": "31 Oct",
-            "leagueCode": "MLS",
-            "venue": "H",
-            "opponent": "Orlando",
-            "cornersWon": 4,
-            "cornersConceded": 4
-          }
-        ],
-        "has_spike": false
-      },
-      "awayStats": {
-        "sample_size": 3,
-        "l3_corners": 5.67,
-        "l3_conceded": 5.67,
-        "l3_sot": 5.33,
-        "l3_total_shots": 18.33,
-        "l3_blocked": 4.33,
-        "recent_corners": [
-          5,
-          6,
-          6
-        ],
-        "recent_conceded": [
-          8,
-          4,
-          5
-        ],
-        "recent_matches": [
-          {
-            "id": "401933730",
-            "date": "23 Nov",
-            "leagueCode": "MLS",
-            "venue": "H",
-            "opponent": "Charlotte",
-            "cornersWon": 5,
-            "cornersConceded": 8
-          },
-          {
-            "id": "761935",
-            "date": "08 Nov",
-            "leagueCode": "MLS",
-            "venue": "H",
-            "opponent": "Columbus",
-            "cornersWon": 6,
-            "cornersConceded": 4
-          },
-          {
-            "id": "761923",
-            "date": "01 Nov",
-            "leagueCode": "MLS",
-            "venue": "A",
-            "opponent": "Colorado",
-            "cornersWon": 6,
-            "cornersConceded": 5
-          }
-        ],
-        "has_spike": false
-      },
-      "cn": {
-        "score": 5.5,
-        "maxScore": 7.0,
-        "tier": "VALUE",
-        "verdict": "VALUE BET",
-        "targetLine": 9.5,
-        "l1": {
-          "pts": 2.0,
-          "max": 3.0,
-          "home": 4.67,
-          "away": 5.67,
-          "total": 10.34
-        },
-        "l2": {
-          "pts": 2.0,
-          "max": 2.0,
-          "mode": "exact",
-          "home": 9.0,
-          "away": 9.66,
-          "total": 18.66
-        },
-        "l3": {
-          "pts": 1.5,
-          "max": 2.0,
-          "home": 5.0,
-          "away": 5.67,
-          "homePts": 0.5,
-          "awayPts": 1.0
-        },
-        "refExpHome": 5.2,
-        "refExpAway": 5.3,
-        "refTotal": 10.5,
-        "dominance": null,
-        "hasSpike": false,
-        "spikeNote": null,
-        "summaryText": "စုစုပေါင်း 5.5/7.0 ရရှိထားသော Value Pick ဖြစ်သည်။ Lineup နှင့် ပွဲအခြေအနေ ကိုက်ညီပါက ဝင်နိုင်သည်။",
-        "reasons": [
-          "L3 ထောင့်ကန်ဘောပေါင်း 10.34 လုံးဖြင့် အရှိန်ကောင်းနေသည် (+2)",
-          "SOT+Blocked စုစုပေါင်း 18.66 ကြိမ်ဖြင့် ဂိုးပေါက်ဖိအားမြင့်သည် (+2)",
-          "နှစ်ဖက်ခံစစ်လုံး ထောင့်ကန်ဘော ပြန်ပေးရမှုများသည် (5.0 / 5.67, +1.5)"
         ]
       }
     },
