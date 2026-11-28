@@ -1,7 +1,82 @@
 {
-  "generated_at": "2026-11-28T05:08:26Z",
+  "generated_at": "2026-11-28T07:22:05Z",
   "engine_version": "5.0-v42sync",
   "matches": [
+    {
+      "id": "401892132",
+      "league": "A-League",
+      "league_slug": "aus.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T08:40:00Z",
+      "home_team": "Central Coast Mariners FC",
+      "away_team": "Auckland FC",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 4.0,
+        "away_l3_corners": 5.33,
+        "home_l3_chaos": 6.0,
+        "away_l3_chaos": 8.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.67,
+        "away_l3_conceded": 5.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "ALE",
+            "ha": "H",
+            "opp": "Perth Glory",
+            "cr": 3,
+            "con": 7
+          },
+          {
+            "date": "06 Nov",
+            "comp": "ALE",
+            "ha": "A",
+            "opp": "Sydney FC",
+            "cr": 7,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ALE",
+            "ha": "A",
+            "opp": "Melbourne V",
+            "cr": 2,
+            "con": 6
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "ALE",
+            "ha": "H",
+            "opp": "Melbourne V",
+            "cr": 6,
+            "con": 0
+          },
+          {
+            "date": "07 Nov",
+            "comp": "ALE",
+            "ha": "H",
+            "opp": "Wellington",
+            "cr": 7,
+            "con": 3
+          },
+          {
+            "date": "30 Oct",
+            "comp": "ALE",
+            "ha": "A",
+            "opp": "Brisbane",
+            "cr": 3,
+            "con": 12
+          }
+        ]
+      }
+    },
     {
       "id": "401880725",
       "league": "England League One",
