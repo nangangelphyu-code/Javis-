@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T08:58:46Z",
+  "generated_at": "2026-11-28T10:57:01Z",
   "engine_version": "5.0-v42sync",
   "matches": [
     {
@@ -2103,81 +2103,6 @@
       }
     },
     {
-      "id": "401878929",
-      "league": "Belgian Pro League",
-      "league_slug": "bel.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-28T15:00:00Z",
-      "home_team": "KVC Westerlo",
-      "away_team": "RAAL La Louvière",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 3.33,
-        "away_l3_corners": 4.0,
-        "home_l3_chaos": 7.33,
-        "away_l3_chaos": 6.0,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 4.0,
-        "away_l3_conceded": 3.0,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "Cercle Brugge",
-            "cr": 4,
-            "con": 2
-          },
-          {
-            "date": "07 Nov",
-            "comp": "BEL",
-            "ha": "H",
-            "opp": "Royal Charleroi",
-            "cr": 1,
-            "con": 6
-          },
-          {
-            "date": "01 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "Anderlecht",
-            "cr": 5,
-            "con": 4
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "Genk",
-            "cr": 1,
-            "con": 3
-          },
-          {
-            "date": "08 Nov",
-            "comp": "BEL",
-            "ha": "H",
-            "opp": "Cercle Brugge",
-            "cr": 6,
-            "con": 2
-          },
-          {
-            "date": "02 Nov",
-            "comp": "BEL",
-            "ha": "A",
-            "opp": "Royal Charleroi",
-            "cr": 5,
-            "con": 4
-          }
-        ]
-      }
-    },
-    {
       "id": "401880730",
       "league": "England League One",
       "league_slug": "eng.3",
@@ -2853,6 +2778,81 @@
       }
     },
     {
+      "id": "401878929",
+      "league": "Belgian Pro League",
+      "league_slug": "bel.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "home_team": "KVC Westerlo",
+      "away_team": "RAAL La Louvière",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.33,
+        "away_l3_corners": 4.0,
+        "home_l3_chaos": 7.33,
+        "away_l3_chaos": 6.0,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 4.0,
+        "away_l3_conceded": 3.0,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Cercle Brugge",
+            "cr": 4,
+            "con": 2
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Royal Charleroi",
+            "cr": 1,
+            "con": 6
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Anderlecht",
+            "cr": 5,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Genk",
+            "cr": 1,
+            "con": 3
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BEL",
+            "ha": "H",
+            "opp": "Cercle Brugge",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "02 Nov",
+            "comp": "BEL",
+            "ha": "A",
+            "opp": "Royal Charleroi",
+            "cr": 5,
+            "con": 4
+          }
+        ]
+      }
+    },
+    {
       "id": "401878332",
       "league": "Scottish Premiership",
       "league_slug": "sco.1",
@@ -3378,81 +3378,6 @@
       }
     },
     {
-      "id": "401875537",
-      "league": "Eredivisie",
-      "league_slug": "ned.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-28T15:30:00Z",
-      "home_team": "Excelsior",
-      "away_team": "Telstar",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 3.67,
-        "away_l3_corners": 6.0,
-        "home_l3_chaos": 5.0,
-        "away_l3_chaos": 10.33,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 5.33,
-        "away_l3_conceded": 6.67,
-        "home_spike": true,
-        "away_spike": true,
-        "spike_flag": true,
-        "home_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "ERE",
-            "ha": "A",
-            "opp": "Feyenoord",
-            "cr": 4,
-            "con": 8
-          },
-          {
-            "date": "08 Nov",
-            "comp": "ERE",
-            "ha": "H",
-            "opp": "Go Ahead Eagles",
-            "cr": 7,
-            "con": 0
-          },
-          {
-            "date": "01 Nov",
-            "comp": "ERE",
-            "ha": "H",
-            "opp": "FC Twente",
-            "cr": 0,
-            "con": 8
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "22 Nov",
-            "comp": "ERE",
-            "ha": "H",
-            "opp": "PEC Zwolle",
-            "cr": 11,
-            "con": 7
-          },
-          {
-            "date": "07 Nov",
-            "comp": "ERE",
-            "ha": "A",
-            "opp": "Fortuna",
-            "cr": 4,
-            "con": 4
-          },
-          {
-            "date": "01 Nov",
-            "comp": "ERE",
-            "ha": "H",
-            "opp": "FC Utrecht",
-            "cr": 3,
-            "con": 9
-          }
-        ]
-      }
-    },
-    {
       "id": "401885392",
       "league": "Primeira Liga",
       "league_slug": "por.1",
@@ -3598,6 +3523,81 @@
             "opp": "Benfica",
             "cr": 2,
             "con": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "401875537",
+      "league": "Eredivisie",
+      "league_slug": "ned.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T15:30:00Z",
+      "home_team": "Excelsior",
+      "away_team": "Telstar",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 3.67,
+        "away_l3_corners": 6.0,
+        "home_l3_chaos": 5.0,
+        "away_l3_chaos": 10.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 5.33,
+        "away_l3_conceded": 6.67,
+        "home_spike": true,
+        "away_spike": true,
+        "spike_flag": true,
+        "home_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Feyenoord",
+            "cr": 4,
+            "con": 8
+          },
+          {
+            "date": "08 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "Go Ahead Eagles",
+            "cr": 7,
+            "con": 0
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "FC Twente",
+            "cr": 0,
+            "con": 8
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "22 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "PEC Zwolle",
+            "cr": 11,
+            "con": 7
+          },
+          {
+            "date": "07 Nov",
+            "comp": "ERE",
+            "ha": "A",
+            "opp": "Fortuna",
+            "cr": 4,
+            "con": 4
+          },
+          {
+            "date": "01 Nov",
+            "comp": "ERE",
+            "ha": "H",
+            "opp": "FC Utrecht",
+            "cr": 3,
+            "con": 9
           }
         ]
       }
@@ -4203,81 +4203,6 @@
       }
     },
     {
-      "id": "401884726",
-      "league": "Bundesliga",
-      "league_slug": "ger.1",
-      "comp_type": "club",
-      "kickoff_utc": "2026-11-28T17:30:00Z",
-      "home_team": "VfB Stuttgart",
-      "away_team": "Eintracht Frankfurt",
-      "snapshot": {
-        "home_samples": 3,
-        "away_samples": 3,
-        "home_l3_corners": 5.0,
-        "away_l3_corners": 7.0,
-        "home_l3_chaos": 8.0,
-        "away_l3_chaos": 10.33,
-        "chaos_mode": "exact",
-        "home_l3_conceded": 6.33,
-        "away_l3_conceded": 4.33,
-        "home_spike": false,
-        "away_spike": false,
-        "spike_flag": false,
-        "home_audit": [
-          {
-            "date": "26 Nov",
-            "comp": "UCL",
-            "ha": "A",
-            "opp": "Inter Milan",
-            "cr": 6,
-            "con": 11
-          },
-          {
-            "date": "22 Nov",
-            "comp": "BUN",
-            "ha": "A",
-            "opp": "Schalke",
-            "cr": 5,
-            "con": 4
-          },
-          {
-            "date": "08 Nov",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Bremen",
-            "cr": 4,
-            "con": 4
-          }
-        ],
-        "away_audit": [
-          {
-            "date": "21 Nov",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Hoffenheim",
-            "cr": 9,
-            "con": 5
-          },
-          {
-            "date": "07 Nov",
-            "comp": "BUN",
-            "ha": "A",
-            "opp": "Paderborn",
-            "cr": 6,
-            "con": 2
-          },
-          {
-            "date": "01 Nov",
-            "comp": "BUN",
-            "ha": "H",
-            "opp": "Hamburg",
-            "cr": 6,
-            "con": 6
-          }
-        ]
-      }
-    },
-    {
       "id": "401882793",
       "league": "La Liga",
       "league_slug": "esp.1",
@@ -4348,6 +4273,81 @@
             "opp": "Barcelona",
             "cr": 4,
             "con": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "401884726",
+      "league": "Bundesliga",
+      "league_slug": "ger.1",
+      "comp_type": "club",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "home_team": "VfB Stuttgart",
+      "away_team": "Eintracht Frankfurt",
+      "snapshot": {
+        "home_samples": 3,
+        "away_samples": 3,
+        "home_l3_corners": 5.0,
+        "away_l3_corners": 7.0,
+        "home_l3_chaos": 8.0,
+        "away_l3_chaos": 10.33,
+        "chaos_mode": "exact",
+        "home_l3_conceded": 6.33,
+        "away_l3_conceded": 4.33,
+        "home_spike": false,
+        "away_spike": false,
+        "spike_flag": false,
+        "home_audit": [
+          {
+            "date": "26 Nov",
+            "comp": "UCL",
+            "ha": "A",
+            "opp": "Inter Milan",
+            "cr": 6,
+            "con": 11
+          },
+          {
+            "date": "22 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Schalke",
+            "cr": 5,
+            "con": 4
+          },
+          {
+            "date": "08 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Bremen",
+            "cr": 4,
+            "con": 4
+          }
+        ],
+        "away_audit": [
+          {
+            "date": "21 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Hoffenheim",
+            "cr": 9,
+            "con": 5
+          },
+          {
+            "date": "07 Nov",
+            "comp": "BUN",
+            "ha": "A",
+            "opp": "Paderborn",
+            "cr": 6,
+            "con": 2
+          },
+          {
+            "date": "01 Nov",
+            "comp": "BUN",
+            "ha": "H",
+            "opp": "Hamburg",
+            "cr": 6,
+            "con": 6
           }
         ]
       }
